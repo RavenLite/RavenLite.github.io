@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/letter-r-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/letter-r-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/letter-r-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/letter-r-32x32.png?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="云服务器,阿里云,Linux," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="（一）我的第一台服务器1. 背景本学期选修了“Linux操作系统”课程。课上老师教大家利用传统的VMware + OS镜像方式在本机上体验Linux系统，但为了获得更优体验我选用了云服务器来学习Linux。 使用云服务器对这门课的学习也有几点好处：  最终的大作业可以搭建在线的服务器，真正投入生产环境  再也不用开虚拟机了，拯救电脑那点可怜的内存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="云服务器入门">
+<meta property="og:url" content="https://ravenxu.top/2018/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%85%A5%E9%97%A8/index.html">
+<meta property="og:site_name" content="Blog | Raven Xu">
+<meta property="og:description" content="（一）我的第一台服务器1. 背景本学期选修了“Linux操作系统”课程。课上老师教大家利用传统的VMware + OS镜像方式在本机上体验Linux系统，但为了获得更优体验我选用了云服务器来学习Linux。 使用云服务器对这门课的学习也有几点好处：  最终的大作业可以搭建在线的服务器，真正投入生产环境  再也不用开虚拟机了，拯救电脑那点可怜的内存">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/iwOPWn.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/iwO0SI.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/iwOqk4.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/iwXUBT.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/i0ZeiR.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/i0Zuz6.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/11/12/iLQWDO.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/11/12/iLQRKK.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/11/12/iLQcgx.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/11/12/iLQ681.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/iwvlSs.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/iwvMWj.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/iwxaHf.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/i0Sj9e.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/i0SMfe.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/i0pwE6.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/10/19/i09Ea6.png">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006tNc79ly1g40ui3p81vj30cx0cfwfy.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2018/11/12/iLQyCR.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/11/12/iLQgv6.png">
+<meta property="article:published_time" content="2018-11-11T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-11-29T14:12:02.643Z">
+<meta property="article:author" content="Raven Xu">
+<meta property="article:tag" content="云服务器">
+<meta property="article:tag" content="阿里云">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.ax1x.com/2018/10/19/iwOPWn.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://ravenxu.top/2018/云服务器入门/"/>
+
+
+
+
+
+  <title>云服务器入门 | Blog | Raven Xu</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+		<a target="_blank" rel="noopener" href="https://github.com/Raven98/Raven98.github.io" class="github-corner" aria-label="View source on Github">
+		<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog | Raven Xu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Make positive impact</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ravenxu.top/2018/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%85%A5%E9%97%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog | Raven Xu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">云服务器入门</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-12T00:00:00+08:00">
+                2018-11-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%85%A5%E9%97%A8/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%85%A5%E9%97%A8/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-files-o"></i>
+            </span>
+            <span id="busuanzi_value_page_pv"></span>次阅读
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  4.2k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  14
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="（一）我的第一台服务器"><a href="#（一）我的第一台服务器" class="headerlink" title="（一）我的第一台服务器"></a>（一）我的第一台服务器</h1><h2 id="1-背景"><a href="#1-背景" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>本学期选修了“Linux操作系统”课程。课上老师教大家利用传统的VMware + OS镜像方式在本机上体验Linux系统，但为了获得更优体验我选用了云服务器来学习Linux。</p>
+<p>使用云服务器对这门课的学习也有几点好处：</p>
+<ul>
+<li><p>最终的大作业可以搭建在线的服务器，真正投入生产环境</p>
+</li>
+<li><p>再也不用开虚拟机了，拯救电脑那点可怜的内存</p>
+</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="2-什么是云服务器？"><a href="#2-什么是云服务器？" class="headerlink" title="2. 什么是云服务器？"></a>2. 什么是云服务器？</h2><blockquote>
+<p>云服务器 Elastic Compute Service（ECS）是云服务器提供商提供的一种基础云计算服务。使用云服务器 ECS 就像使用水、电、煤气等资源一样便捷、高效。我们无需提前采购硬件设备，而是根据业务需要，随时创建所需数量的云服务器实例，并在使用过程中，随着业务的扩展，对云服务器进行扩容磁盘、增加带宽。如果不再需要云服务器，也可以方便的释放资源，节省费用。       </p>
+</blockquote>
+<blockquote>
+<p>云服务器 ECS 实例是一个虚拟的计算环境，包含了 CPU、内存、操作系统、磁盘、带宽等最基础的服务器组件，是 ECS 提供给每个用户的操作实体。一个实例就等同于一台虚拟机，您对所创建的实例拥有管理员权限，可以随时登录进行使用和管理。您可以在实例上进行基本操作，如挂载磁盘、创建快照、创建镜像、部署环境等。  </p>
+</blockquote>
+<blockquote>
+<p>正如马云所言，未来的云服务器就是社会的基础设施，就像我们打开水龙头就可以用水一样，我们也可以随时根据我们的需求使用我们的服务器。</p>
+</blockquote>
+<h2 id="3-云服务器的选择"><a href="#3-云服务器的选择" class="headerlink" title="3. 云服务器的选择"></a>3. 云服务器的选择</h2><p>前几日，一篇<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/46884081">《阿里云的这群疯子》</a>迅速在网络上传播开来，这篇文章有血有肉，有真实历史中的困难，也有克服困难后的信心重建。是近年来非常出色的一篇关于阿里云发展的报道。阿里云是目前国内最大的云服务器提供商，市场份额近50%，同时也是全球第三大云服务器提供商，仅次于亚马逊和微软。那么我们就选择比较让我们国内的程序员感到自豪的阿里云吧！</p>
+<h2 id="4-云服务器的购买"><a href="#4-云服务器的购买" class="headerlink" title="4. 云服务器的购买"></a>4. 云服务器的购买</h2><p>阿里云、腾讯云等国内大公司都提供了学生优惠的价格。  </p>
+<p><a target="_blank" rel="noopener" href="https://promotion.aliyun.com/ntms/act/campus2018.html?utm_content=se_1000442290">点击进入阿里云“云翼计划”学生优惠界面</a>  </p>
+<p>过程还比较简单啦，前三步是进行验证，第四部步进入如下所示的界面，终于要开始买我们的服务器啦！  </p>
+<img src="https://s1.ax1x.com/2018/10/19/iwOPWn.jpg" align=center width=500 alt="https://s1.ax1x.com/2018/10/19/iwOPWn.jpg"/>
+
+<p>在这一页我们有几个选择，我用标号标记出来了。  </p>
+<ol>
+<li><p>我们选择<strong>云服务器ECS</strong>。“轻量应用服务器”预装了一些工具，比如搭建博客的WordPress，写PHP的LAMP套件组合等等。我们想要一个全新的服务器，所以选择云服务器ECS就好，我们自己来安装。</p>
+</li>
+<li><p>选择比较主流的CentOS啦~用Ubuntu的同学也不用担心，云服务器一般就只有命令行啦，是没有图形界面的，选择CentOS没有什么过渡，可能默认下载工具命令会有所不同。</p>
+</li>
+<li><p>我们是东北，看起来华北和华东离我们都比较近，随便选一个吧，选华北。</p>
+</li>
+<li><p>先买一个月的吧。只要9.5哎！真的是很便宜的价格了。阿里云有学生认证可以买多次，腾讯云则是有次数限制的。</p>
+</li>
+<li><p>点击立即购买去付款就好啦~</p>
+</li>
+</ol>
+<h2 id="5-云上初体验"><a href="#5-云上初体验" class="headerlink" title="5. 云上初体验"></a>5. 云上初体验</h2><p>购买成功后我们进入控制台页面，如下图</p>
+<p><img src="https://s1.ax1x.com/2018/10/19/iwO0SI.png" alt="阿里云控制台"></p>
+<p>我们主要关注的就是我用箭头标注出来的那个公网IP，接下来，我们就要远程登录到这个IP地址啦！</p>
+<h1 id="（二）Windows用户上云"><a href="#（二）Windows用户上云" class="headerlink" title="（二）Windows用户上云"></a>（二）Windows用户上云</h1><h2 id="1-背景-1"><a href="#1-背景-1" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>恭喜你已经成功购买了阿里云服务器！</p>
+<p>众所周知，Windows的命令行功能不多和Unix完全不一样，这也就决定了我们Windows用户不能直接通过CMD来SSH远程连接到云服务器。在此向使用Windows的同学推荐Windows下的上云利器“putty+winscp”的组合方案。   </p>
+<p>另外，VSCode也有大量的辅助我们与云服务器交互的插件，感兴趣的同学也可以看一下「云服务器入门（三）Mac用户上云」，里面所提到的VSCode插件在Windows下也可以使用！</p>
+<h2 id="2-putty"><a href="#2-putty" class="headerlink" title="2. putty"></a>2. putty</h2><h3 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h3><blockquote>
+<p>PuTTY是一个Telnet、SSH、rlogin、纯TCP以及串行接口连接软件。较早的版本仅支持Windows平台，在最近的版本中开始支持各类Unix平台，并打算移植至Mac OS X上。除了官方版本外，有许多第三方的团体或个人将PuTTY移植到其他平台上，像是以Symbian为基础的移动电话。PuTTY为一开放源代码软件，主要由Simon Tatham维护，使用MIT licence授权。随着Linux在服务器端应用的普及，Linux系统管理越来越依赖于远程。在各种远程登录工具中，Putty是出色的工具之一。Putty是一个免费的、Windows x86平台下的Telnet、SSH和rlogin客户端，但是功能丝毫不逊色于商业的Telnet类工具。 ——《百度百科》  </p>
+</blockquote>
+<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">putty下载链接</a>  </p>
+</blockquote>
+<blockquote>
+<p>根据电脑实际选择32/64位下载就ok啦~</p>
+</blockquote>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2018/10/19/iwOqk4.png" alt="putty下载界面"></p>
+</blockquote>
+<blockquote>
+<p>安装过程不赘述。</p>
+</blockquote>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>见「云服务器入门（四）」</p>
+<h2 id="3-WinSCP"><a href="#3-WinSCP" class="headerlink" title="3. WinSCP"></a>3. WinSCP</h2><blockquote>
+<p>WinSCP是一个Windows环境下使用SSH的开源图形化SFTP客户端。同时支持SCP协议。它的主要功能就是在本地与远程计算机间安全的复制文件。winscp也可以链接其他系统,比如linux系统。WinSCP可以执行所有基本的文件操作，例如下载和上传。同时允许为文件和目录重命名、改变属性、建立符号链接和快捷方式。甚至还可以在线编辑文件内容。</p>
+</blockquote>
+<h3 id="下载安装-1"><a href="#下载安装-1" class="headerlink" title="下载安装"></a>下载安装</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://winscp.net/eng/download.php">WinSCP下载链接</a>  </p>
+</blockquote>
+<blockquote>
+<p>这个进去后直接下载就行。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2018/10/19/iwXUBT.png" alt="WinSCP下载界面"></p>
+</blockquote>
+<blockquote>
+<p>安装过程不赘述。</p>
+</blockquote>
+<h3 id="使用方法-1"><a href="#使用方法-1" class="headerlink" title="使用方法"></a>使用方法</h3><ol>
+<li><p>打开WinSCP</p>
+</li>
+<li><p>输入主机名(IP)和用户名及密码，WinSCP会帮你记住，下次就可以直接登录啦。   <img src="https://s1.ax1x.com/2018/10/19/i0ZeiR.png" alt="WinSCP配置"></p>
+</li>
+<li><p>进入操作界面。界面分为两部分，左侧是Windows的文件资源管理器，右侧是服务器的目录。<br><img src="https://s1.ax1x.com/2018/10/19/i0Zuz6.png" alt="WinSCP界面"></p>
+</li>
+</ol>
+<p>这样我们就可以愉快地拖拽文件上传到服务器啦~当然也可以从服务器上下载文件；</p>
+<p>另外，我们还可以直接右键点击服务器上的文件选择编辑，对于vim使用不熟练的我来说可以这样编辑文件真是太爽了~~</p>
+<h1 id="（三）Mac用户上云"><a href="#（三）Mac用户上云" class="headerlink" title="（三）Mac用户上云"></a>（三）Mac用户上云</h1><h2 id="1-背景-2"><a href="#1-背景-2" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>恭喜你已经成功购买了阿里云服务器！  </p>
+<p>众所周知，macOS是基于Unix开发的，所以mac自带的命令行已经能满足我们大部分的使用需求啦。今天我们来探讨一下如何更优雅的在Mac上连接远程服务器。</p>
+<p>macOS系统下普遍吐槽没有很好用的SCP应用（也有可能是我还没发现）。用推荐比较多的FileZilla后发现也不如Windows下强大的WinSCP。  </p>
+<p>说起WinSCP，最让我怀念它的倒不是极其方便的上传文件功能，毕竟scp命令也没多长，不用工具也可以解决，而是它可以右键服务器上的文件进行在线编辑，感觉比较方便。（对于vim掌握不熟练的我来说）</p>
+<p><img src="https://s1.ax1x.com/2018/11/12/iLQWDO.png" alt="image-20181021165826871"></p>
+<p>突发奇想，想看看我们越来越流行，越来越强大的VSCode有没有好的解决方案，还真的搜到了~~~在美国简书Medium上找到了一篇（原文作者和我有很相似的历程hh）：</p>
+<p><a target="_blank" rel="noopener" href="https://medium.com/@prtdomingo/editing-files-in-your-linux-virtual-machine-made-a-lot-easier-with-remote-vscode-6bb98d0639a4">Editing files in your Linux Virtual Machine made a lot easier with Remote VSCode</a></p>
+<h2 id="2-Remote-VSCode"><a href="#2-Remote-VSCode" class="headerlink" title="2. Remote VSCode"></a>2. Remote VSCode</h2><h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><ul>
+<li><p>本地：macOS+VSCode</p>
+</li>
+<li><p>服务器：CentOS 7.3</p>
+</li>
+</ul>
+<h3 id="VSCode内安装插件"><a href="#VSCode内安装插件" class="headerlink" title="VSCode内安装插件"></a>VSCode内安装插件</h3><ol>
+<li><p>打开VSCode<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VSCode下载</a></p>
+</li>
+<li><p>进入插件页，搜索“Remote VSCode”  </p>
+</li>
+</ol>
+<p><img src="https://s1.ax1x.com/2018/11/12/iLQRKK.png" alt="image-20181021165629137"></p>
+<ol start="3">
+<li>安装插件并重启VSCode</li>
+</ol>
+<h3 id="服务器上安装rmate组件"><a href="#服务器上安装rmate组件" class="headerlink" title="服务器上安装rmate组件"></a>服务器上安装rmate组件</h3><ol>
+<li><p>打开服务器，并执行以下命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo wget -O /usr/<span class="built_in">local</span>/bin/rmate https://raw.github.com/aurora/rmate/master/rmate</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo chmod a+x /usr/<span class="built_in">local</span>/bin/rmate</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="VSCode内使用这一插件"><a href="#VSCode内使用这一插件" class="headerlink" title="VSCode内使用这一插件"></a>VSCode内使用这一插件</h3><ol>
+<li>回到VSCode打开命令窗<code>Command + Shift + P</code>并执行 <code>Remote: Start Server</code></li>
+</ol>
+<blockquote>
+<p>（这一步是开启macOS的52698端口，保持TCP连接，等待请求）</p>
+</blockquote>
+<ol start="2">
+<li><p>OK之后，在VSCode内打开一个新的终端输入以下命令连接到你的Linux服务器：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh -R 52698:localhost:52698 VIRTUAL_MACHINE_IP_ADDRESS</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> （VIRTUAL_MACHINE_IP_ADDRESS 就是你的服务器IP地址）</span></span><br></pre></td></tr></table></figure></li>
+<li><p>在你的VSCode终端内，执行rmate命令来编辑你想编辑的文件。会看到服务器上的文件内容会在VSCode里面自动就显示出来啦<del>这时你再保存也是同步保存到服务器上的。你也同样可以在VSCode的终端里执行命令比如 python test.py 之类。也就是说只需要一个VSCode就可以完成连接、编辑、保存、执行操作。（就差一个SFTP上传了</del>，SFTP上传插件也找到了，这个暂时没需求，下次再试一下嘿嘿）<br><img src="https://s1.ax1x.com/2018/11/12/iLQcgx.png" alt="image-20181021170337024"></p>
+</li>
+</ol>
+<h3 id="为什么是52698"><a href="#为什么是52698" class="headerlink" title="为什么是52698?"></a>为什么是52698?</h3><p>52698是Remote VSCode插件的默认端口，你可以在“User Preference”页面内搜索”Remote VSCode configuration”来改变它。</p>
+<p><img src="https://s1.ax1x.com/2018/11/12/iLQ681.png" alt="image-20181021170055557"></p>
+<h2 id="3-iTerm2"><a href="#3-iTerm2" class="headerlink" title="3. iTerm2"></a>3. iTerm2</h2><p>另外再推荐一款命令行软件“<strong>iTerm2</strong>”。iTerm甚至可以说是Mac下开发的必备软件~</p>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote>
+<p>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with macOS 10.10 or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted.</p>
+</blockquote>
+<blockquote>
+<p>iTerm 2 有很多能够提升效率的实用功能。比如说窗口分割、热键窗口、智能搜索、自动完成、快速复制等等。</p>
+</blockquote>
+<h3 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h3><h4 id="下载安装-2"><a href="#下载安装-2" class="headerlink" title="下载安装"></a>下载安装</h4><p><a target="_blank" rel="noopener" href="https://www.iterm2.com/">iTerm2下载链接</a></p>
+<h4 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h4><p>推荐最多的一款主题叫Solarized。这款主题有它自己的官网，同时支持主流的editor和IDE。主题配置步骤如下： </p>
+<ol>
+<li><p>官网下载主题压缩包，<a target="_blank" rel="noopener" href="http://ethanschoonover.com/solarized/files/solarized.zip">下载链接</a>。 </p>
+</li>
+<li><p>下载后解压，然后按 <code>⌘，</code>，打开iTerm2的Preferences，接着<code>Profiles -&gt; Colors -&gt; Color Presets -&gt; Import</code>，选择刚解压的文件夹<code>solarized/iterm2-colors-solarized</code>下的<code>Solarized Dark.itermcolors</code>文件。 </p>
+</li>
+<li><p>在Color Presets 下拉菜单中选中 Solarized Dark 主题，大功告成。 </p>
+</li>
+<li><p>配置截图如下：<br><img src="https://s1.ax1x.com/2018/10/19/iwvlSs.png" alt="配置截图"></p>
+</li>
+<li><p>成功后是这样的：<br><img src="https://s1.ax1x.com/2018/10/19/iwvMWj.png" alt="最终效果"></p>
+</li>
+<li><p>当然啦，现在的字体还不够美观。我们在GitHub或者Google上能搜到无数其他的外观配置方案，就留给大家去探索啦~</p>
+</li>
+</ol>
+<h4 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h4><ol>
+<li><p><code>⌘+T</code> 打开一个新的标签页</p>
+</li>
+<li><p><code>⌘+;</code> 弹出自动补齐窗口</p>
+</li>
+<li><p><code>⌘+Shift+;</code> 弹出历史命令记录窗口</p>
+</li>
+<li><p><code>⌘+Shift+H</code> 弹出历史粘贴记录窗口</p>
+</li>
+<li><p><code>⌘+←</code>、<code>⌘+→</code>、 <code>⌘+&#123;, ⌘+&#125;</code>、<code>⌘+&lt;number&gt;</code> 切换标签页</p>
+</li>
+<li><p><code>⌘+F</code> 智能查找，支持正则查找</p>
+</li>
+<li><p><code>⌘+[</code>、<code>⌘+]</code>、<code>⌘+Option+方向键</code> 切换 pane</p>
+</li>
+<li><p><code>⌘+D</code> 水平切分屏幕，<code>⌘+Shift+D</code> 垂直切分屏幕</p>
+</li>
+<li><p><code>⌘+Enter</code> 进入与返回全屏模式</p>
+</li>
+</ol>
+<h1 id="（四）云服务器基本使用"><a href="#（四）云服务器基本使用" class="headerlink" title="（四）云服务器基本使用"></a>（四）云服务器基本使用</h1><h2 id="1-背景-3"><a href="#1-背景-3" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>先总结一下（二）和（三）的目的：</p>
+<blockquote>
+<p>因为我们要远程访问我们的服务器，所以我们需要一些工具(shell)去和它进行交互。</p>
+<p>Windows下因为Windows的CMD或者说powershell不支持Unix/Linux系统的那些bash命令，所以我们需要一款支持这些命令的软件“putty”去帮助我们。  </p>
+</blockquote>
+<blockquote>
+<p>同时，因为我们经常会有向服务器上传/下载文件的需求，所以我们用WinSCP这款工具去帮助我们。  </p>
+</blockquote>
+<blockquote>
+<p>对于Mac用户来讲呢，因为macOS就是基于Unix开发的，所以在Mac自带的终端内直接ssh就可以连接到云服务器啦。但是自带的终端略丑且功能称不上强大，所以我们用最流行的Mac下的终端软件“iTerm”去帮助我们获得更好的体验。  </p>
+</blockquote>
+<blockquote>
+<p>同时对于喜爱VSCode的同学，我们还介绍了一款插件去让我们所有的工作全部在VSCode完成。</p>
+</blockquote>
+<h2 id="2-登录"><a href="#2-登录" class="headerlink" title="2. 登录"></a>2. 登录</h2><ol>
+<li><p>开启终端（iTerm2/putty，本文使用的是iTerm2）<br>​    <img src="https://s1.ax1x.com/2018/10/19/iwxaHf.png" alt="终端界面"></p>
+</li>
+<li><p>SSH远程连接</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh Your_Server_IP_Address</span><br></pre></td></tr></table></figure></li>
+<li><p>输入用户名和密码</p>
+</li>
+<li><p>成功登陆啦！看到了阿里云的欢迎语。<br><img src="https://s1.ax1x.com/2018/10/19/i0Sj9e.png" alt="阿里云登录界面"></p>
+</li>
+</ol>
+<h2 id="3-随便干点什么"><a href="#3-随便干点什么" class="headerlink" title="3. 随便干点什么"></a>3. 随便干点什么</h2><p>大家可以看到，这和我们之前使用的虚拟机是完全一样的~<br>​    <img src="https://s1.ax1x.com/2018/10/19/i0SMfe.png"></p>
+<p>大家应该想到一点了，就是我们也可以用 <strong>putty/WinSCP/iTerm</strong> 这些工具去访问我们的虚拟机。</p>
+<p>在虚拟机内通过<code>ifconfig</code>命令就可以看到虚拟机的IP地址啦~</p>
+<h2 id="4-退出"><a href="#4-退出" class="headerlink" title="4. 退出"></a>4. 退出</h2><p>断开与服务器的连接也是一门学问。可能很多同学会直接点击窗口的红叉就关掉了，不过有时候如果我们保持了长连接，访问可能没被关闭。所以最正确的方法当然是在命令行里关闭：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure>
+<p><img src="https://s1.ax1x.com/2018/10/19/i0pwE6.png" alt="阿里云退出界面"></p>
+<h2 id="5-保持连接"><a href="#5-保持连接" class="headerlink" title="5. 保持连接"></a>5. 保持连接</h2><p>刚开始使用这些远程shell都会遇到一个问题就是如果隔一段时间没有输入新的命令，连接就会被自动断开。这是因为我们没有保持连接，下面介绍一下保持连接的办法。  </p>
+<p>两款软件保持连接的原理基本一致，都是每隔一段时间自动向服务器发送一条指令帮助我们保持连接。</p>
+<h3 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h3><blockquote>
+<p>Preferences -&gt; Profile -&gt; Session -&gt; When idle, send ASCII code…</p>
+</blockquote>
+<p><img src="https://s1.ax1x.com/2018/10/19/i09Ea6.png" alt="保持连接1"></p>
+<h3 id="putty"><a href="#putty" class="headerlink" title="putty"></a>putty</h3><blockquote>
+<p>Putty Configuration -&gt; Connection -&gt; Seconds between keepalives (0 to turn off), 默认为0, 改为30(介于30至150就ok)。  </p>
+</blockquote>
+<p><img src="http://ww4.sinaimg.cn/large/006tNc79ly1g40ui3p81vj30cx0cfwfy.jpg" alt="保持连接2"></p>
+<h1 id="（五）C-S实战"><a href="#（五）C-S实战" class="headerlink" title="（五）C/S实战"></a>（五）C/S实战</h1><h2 id="1-背景-4"><a href="#1-背景-4" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>这是云服务器入门系列的最后一节啦~很开心你能看到这里。五节内容都是我对云服务器日常使用的一些拙见，如有错误，还请包含！  </p>
+<p>我个人一直在用阿里云，本着“每台服务器只做一件事”的思想，用起来真的很爽！阿里云对学生的优惠真的蛮大的，我一直用￥9.5的学生机作为我开发的一款小程序的后端。￥9.5的配置还是能满足比较初级的需求的，我的后端大概每天有5000次左右的请求，服务器的负荷在高峰时(100次请求/s)也不过30%。  </p>
+<p>希望你能喜欢！</p>
+<p>最后一节我们来进行一个简单的实战，我们借助Linux下很好用的网络调试探测工具netcat(nc)来进行一个简单的服务器与客户端的连接。</p>
+<h2 id="2-安装nc"><a href="#2-安装nc" class="headerlink" title="2. 安装nc"></a>2. 安装nc</h2><p>服务器和本地虚拟机上都要安装一下nc客户端哦。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install nc # for centos</span><br><span class="line">sudo apt install netcat # for ubuntu</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-开启服务器端监听"><a href="#3-开启服务器端监听" class="headerlink" title="3. 开启服务器端监听"></a>3. 开启服务器端监听</h2><p>服务器在某个端口上侦听，使用<code>nc -l 主机ip地址 端口号</code>。</p>
+<p>我们可以加上-v来显示这个过程，如果不指定ip地址的话就默认是0.0.0.0，相当于INADDR_ANY。</p>
+<p>在我们的云服务器上执行如下命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nc -l -v 12345</span><br></pre></td></tr></table></figure>
+
+<p>显示如下：</p>
+<p><img src="https://s1.ax1x.com/2018/11/12/iLQyCR.png" alt="image-20181021204156047"></p>
+<h2 id="4-客户端发送请求"><a href="#4-客户端发送请求" class="headerlink" title="4. 客户端发送请求"></a>4. 客户端发送请求</h2><p>客户端通过 <code>nc 主机ip地址 端口号</code> 连接服务器，连接成功后，可以在任何一终端来相互发送数据了。</p>
+<p>在我们的本地虚拟机上执行如下指令（注意，<strong>YOUR_SERVER_IP_ADDRESS</strong>是你的服务器的数字地址哦）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nc -v YOUR_SERVER_IP_ADDRESS </span><br></pre></td></tr></table></figure>
+
+<p>连接成功后，客户端输入任意字符都会自动发送到服务器上啦。</p>
+<p><img src="https://s1.ax1x.com/2018/11/12/iLQgv6.png" alt="image-20181021212256452"></p>
+<p>下面我们可以在服务器上运行我们自己的server代码啦。比如实验四提供给我们的web server代码，我们在服务器上开启它后就可以通过客户端访问了。</p>
+<h2 id="5-在服务器上部署Java项目"><a href="#5-在服务器上部署Java项目" class="headerlink" title="5. 在服务器上部署Java项目"></a>5. 在服务器上部署Java项目</h2><p>执行如下步骤</p>
+<ol>
+<li>将Java项目打包成jar包/war包等压缩包</li>
+<li>利用WinSCP/FileZilla等FTP工具将压缩包上传至服务器（记住上传位置）</li>
+<li>利用命令行工具登录到服务器进入压缩包所在位置</li>
+<li>运行<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar yourprojectname.jar &amp; </span><br></pre></td></tr></table></figure>
+<ul>
+<li>nohup: 进程后台运行，将日志输出到文件</li>
+<li>&amp;: 回到命令行</li>
+</ul>
+</li>
+<li>部署成功，如果是前后端分离项目就可以用postman访问服务器地址测试啦<br>另外为了部署方便推荐使用jenkins，一键即可从github仓库拉取代码、maven打包、执行shell命令完成部署</li>
+</ol>
+<h2 id="6-总结"><a href="#6-总结" class="headerlink" title="6. 总结"></a>6. 总结</h2><p>以上五篇就是我所整理的一些「云服务器」从购买选择到初步使用的入门知识啦。感谢你能看到这里，如有错误还请包含。<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/47181746">留言板</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag"><i class="fa fa-tag"></i> 云服务器</a>
+          
+            <a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/" rel="tag"><i class="fa fa-tag"></i> 阿里云</a>
+          
+            <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/%E7%94%A8VSCode%E5%AF%B9%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%BE%91/" rel="next" title="用VSCode对云服务器文件进行在线编辑">
+                <i class="fa fa-chevron-left"></i> 用VSCode对云服务器文件进行在线编辑
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/%E9%A2%86%E5%9F%9F%E7%89%B9%E5%AE%9A%E8%AF%AD%E8%A8%80DSL%E4%B8%8E%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" rel="prev" title="领域特定语言DSL与正则表达式">
+                领域特定语言DSL与正则表达式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7Carchive">
+              
+                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">63</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.linkedin.com/in/%E7%91%9E%E6%96%87-%E8%AE%B8-bb512712b/" target="_blank" title="LinkedIn">
+                      
+                        <i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/RavenLite" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/ravenxu98/pins" target="_blank" title="Zhihu">
+                      
+                        <i class="fa fa-fw fa-star"></i>Zhihu</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:xrwgood@qq.com" target="_blank" title="Email">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>Email</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E5%8F%B0%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-text">（一）我的第一台服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E8%83%8C%E6%99%AF"><span class="nav-text">1. 背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9F"><span class="nav-text">2. 什么是云服务器？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E9%80%89%E6%8B%A9"><span class="nav-text">3. 云服务器的选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E8%B4%AD%E4%B9%B0"><span class="nav-text">4. 云服务器的购买</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E4%BA%91%E4%B8%8A%E5%88%9D%E4%BD%93%E9%AA%8C"><span class="nav-text">5. 云上初体验</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89Windows%E7%94%A8%E6%88%B7%E4%B8%8A%E4%BA%91"><span class="nav-text">（二）Windows用户上云</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E8%83%8C%E6%99%AF-1"><span class="nav-text">1. 背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-putty"><span class="nav-text">2. putty</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D"><span class="nav-text">基本介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="nav-text">下载安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-text">使用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-WinSCP"><span class="nav-text">3. WinSCP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85-1"><span class="nav-text">下载安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95-1"><span class="nav-text">使用方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89Mac%E7%94%A8%E6%88%B7%E4%B8%8A%E4%BA%91"><span class="nav-text">（三）Mac用户上云</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E8%83%8C%E6%99%AF-2"><span class="nav-text">1. 背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Remote-VSCode"><span class="nav-text">2. Remote VSCode</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83"><span class="nav-text">环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VSCode%E5%86%85%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="nav-text">VSCode内安装插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E5%AE%89%E8%A3%85rmate%E7%BB%84%E4%BB%B6"><span class="nav-text">服务器上安装rmate组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VSCode%E5%86%85%E4%BD%BF%E7%94%A8%E8%BF%99%E4%B8%80%E6%8F%92%E4%BB%B6"><span class="nav-text">VSCode内使用这一插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF52698"><span class="nav-text">为什么是52698?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-iTerm2"><span class="nav-text">3. iTerm2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE"><span class="nav-text">安装与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85-2"><span class="nav-text">下载安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98"><span class="nav-text">主题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-text">常用快捷键</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-text">（四）云服务器基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E8%83%8C%E6%99%AF-3"><span class="nav-text">1. 背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E7%99%BB%E5%BD%95"><span class="nav-text">2. 登录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E9%9A%8F%E4%BE%BF%E5%B9%B2%E7%82%B9%E4%BB%80%E4%B9%88"><span class="nav-text">3. 随便干点什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E9%80%80%E5%87%BA"><span class="nav-text">4. 退出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E4%BF%9D%E6%8C%81%E8%BF%9E%E6%8E%A5"><span class="nav-text">5. 保持连接</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#iTerm2"><span class="nav-text">iTerm2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#putty"><span class="nav-text">putty</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89C-S%E5%AE%9E%E6%88%98"><span class="nav-text">（五）C&#x2F;S实战</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E8%83%8C%E6%99%AF-4"><span class="nav-text">1. 背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%AE%89%E8%A3%85nc"><span class="nav-text">2. 安装nc</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%BC%80%E5%90%AF%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E7%9B%91%E5%90%AC"><span class="nav-text">3. 开启服务器端监听</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82"><span class="nav-text">4. 客户端发送请求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2Java%E9%A1%B9%E7%9B%AE"><span class="nav-text">5. 在服务器上部署Java项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E6%80%BB%E7%BB%93"><span class="nav-text">6. 总结</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Raven Xu</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">61.3k</span>
+  
+</div>
+
+
+  <div class="powered-by">
+  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+    本站总访问量 <span id="busuanzi_value_site_uv"></span>
+  </span>
+  </div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'RavenLite',
+            repo: 'RavenLite.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'e9cb1d86ff72f87ce95bd5b8a3b68385ca9021ee',
+            
+                client_id: 'c7e19c2c115361e6bb8b'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

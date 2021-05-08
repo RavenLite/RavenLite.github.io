@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/letter-r-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/letter-r-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/letter-r-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/letter-r-32x32.png?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="NEU,人工智能,自动驾驶," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="本文写于19年4月智能驾驶技术课程参考书籍  第一本无人驾驶技术书, 2017 Creating Autonomous Vehicle Systems, 2018  Ch1 Introduction to Autonomous Driving 自动驾驶技术简介1.1 Autonomous Driving Technologies Overview 概览自动驾驶技术不是一项单一的技术，而是一系列技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="自动驾驶系统课程笔记（第一章 简介）">
+<meta property="og:url" content="https://ravenxu.top/2019/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Blog | Raven Xu">
+<meta property="og:description" content="本文写于19年4月智能驾驶技术课程参考书籍  第一本无人驾驶技术书, 2017 Creating Autonomous Vehicle Systems, 2018  Ch1 Introduction to Autonomous Driving 自动驾驶技术简介1.1 Autonomous Driving Technologies Overview 概览自动驾驶技术不是一项单一的技术，而是一系列技术">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://ws1.sinaimg.cn/large/006tNc79ly1g227axbd1mj31660g2dk7.jpg">
+<meta property="og:image" content="http://ws3.sinaimg.cn/large/006tNc79ly1g2289evztfj30y80pun5z.jpg">
+<meta property="og:image" content="http://ws3.sinaimg.cn/large/006tNc79ly1g228wh8wnmj30x80qeaoe.jpg">
+<meta property="og:image" content="http://ws1.sinaimg.cn/large/006tNc79ly1g22c2a58y0j31220kk0yj.jpg">
+<meta property="og:image" content="http://ws4.sinaimg.cn/large/006tNc79ly1g22cc8j1ezj30yq0o2qec.jpg">
+<meta property="article:published_time" content="2019-04-14T10:30:00.000Z">
+<meta property="article:modified_time" content="2020-11-30T11:02:16.516Z">
+<meta property="article:author" content="Raven Xu">
+<meta property="article:tag" content="NEU">
+<meta property="article:tag" content="人工智能">
+<meta property="article:tag" content="自动驾驶">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ws1.sinaimg.cn/large/006tNc79ly1g227axbd1mj31660g2dk7.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://ravenxu.top/2019/自动驾驶系统课程笔记/"/>
+
+
+
+
+
+  <title>自动驾驶系统课程笔记（第一章 简介） | Blog | Raven Xu</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+		<a target="_blank" rel="noopener" href="https://github.com/Raven98/Raven98.github.io" class="github-corner" aria-label="View source on Github">
+		<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog | Raven Xu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Make positive impact</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ravenxu.top/2019/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog | Raven Xu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">自动驾驶系统课程笔记（第一章 简介）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-14T18:30:00+08:00">
+                2019-04-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-files-o"></i>
+            </span>
+            <span id="busuanzi_value_page_pv"></span>次阅读
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  2.1k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  7
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><em>本文写于19年4月智能驾驶技术课程</em><br><em>参考书籍</em></p>
+<ul>
+<li>第一本无人驾驶技术书, 2017</li>
+<li>Creating Autonomous Vehicle Systems, 2018</li>
+</ul>
+<h1 id="Ch1-Introduction-to-Autonomous-Driving-自动驾驶技术简介"><a href="#Ch1-Introduction-to-Autonomous-Driving-自动驾驶技术简介" class="headerlink" title="Ch1 Introduction to Autonomous Driving 自动驾驶技术简介"></a>Ch1 Introduction to Autonomous Driving 自动驾驶技术简介</h1><h2 id="1-1-Autonomous-Driving-Technologies-Overview-概览"><a href="#1-1-Autonomous-Driving-Technologies-Overview-概览" class="headerlink" title="1.1 Autonomous Driving Technologies Overview 概览"></a>1.1 Autonomous Driving Technologies Overview 概览</h2><p>自动驾驶技术不是一项单一的技术，而是一系列技术的整合。<br>主要由三部分构成：</p>
+<ul>
+<li>Algorithm<ul>
+<li>Sensing</li>
+<li>Perception</li>
+<li>Decision</li>
+</ul>
+</li>
+<li>Client System<ul>
+<li>Operating System</li>
+<li>Hardware Platform</li>
+</ul>
+</li>
+<li>Cloud Platform<ul>
+<li>High-definition (HD) Map</li>
+<li>Deep Learning Model Training</li>
+<li>Simulation</li>
+<li>Data storage</li>
+</ul>
+</li>
+</ul>
+<p align="center">
+<img src="http://ws1.sinaimg.cn/large/006tNc79ly1g227axbd1mj31660g2dk7.jpg" width="600"/>
+</p>
+
+<blockquote>
+<p>The algorithm subsystem extracts meaningful information from sensor raw data to under- stand its environment and to make decisions about its future actions. The client systems integrate these algorithms together to meet real-time and reliability requirements. For example, if the camera generates data at 60 Hz, the client systems need to make sure that the longest stage of the pro- cessing pipeline takes less than 16 ms to complete. The cloud platform provides offline computing and storage capabilities for autonomous cars. With the cloud platform, we are able to test new algorithms, update HD map, and train better recognition, tracking, and decision models.</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="1-2-Autonomous-Driving-Algorithm-算法"><a href="#1-2-Autonomous-Driving-Algorithm-算法" class="headerlink" title="1.2 Autonomous Driving Algorithm 算法"></a>1.2 Autonomous Driving Algorithm 算法</h2><h3 id="1-SENSING-传感"><a href="#1-SENSING-传感" class="headerlink" title="1.SENSING 传感"></a>1.SENSING 传感</h3><p>每种方法都有自己的优缺点，*实际情况下自动驾驶汽车结合了各种方法来保证可靠性和安全性。</p>
+<ul>
+<li>GPS/IMU（惯性测量单元）<br>GPS精度高但更新频率低，IMU精读随时间变化越来越低但更新频率高。</li>
+<li>LiDAR 光学雷达<br>精度高，用于绘制地图、定位及避障，作为主传感器使用。</li>
+<li>Cameras 相机<br>用于物体识别与追踪。多个摄像头产生巨额数据量。</li>
+<li>Radar and Sonar 雷达和声呐<br>雷达和声呐是避障的最后一道保障，产生的数据不需要过多处理直接被控制处理器采用（因为是紧急情况）。</li>
+</ul>
+<h3 id="2-Perception-感知"><a href="#2-Perception-感知" class="headerlink" title="2.Perception 感知"></a>2.Perception 感知</h3><ul>
+<li>定位<br>结合GPS和IMU的数据完成定位，因为有GPS室内环境(如隧道)无法工作等问题，引入摄像头作为辅助定位。摄像头的定位技术类似于对四维空间进行分析。问题又来了，因为摄像头定位需要充足的光线，也不够好，因此，借助于大量粒子滤波的激光雷达LiDAR通常被用作车辆定位的主传感器。<br>激光雷达产生的<strong>点云</strong>对环境进行了“形状化描述”，但并不足以区分各自不同的点，通过粒子滤波将已知HD地图与观测到的形状进行比较以减少位置的不确定性。<br>LiDAR也有缺点，它的缺点是会受到空气中的悬浮颗粒(雨滴或灰尘)的干扰。<br>综上所述，我们需要利用多种传感器融合技术进行多类型传感数据融合，处理以整合所有传感器的优点，完成可靠并精准的定位。</li>
+</ul>
+<p align="center">
+<img src="http://ws3.sinaimg.cn/large/006tNc79ly1g2289evztfj30y80pun5z.jpg" width="500"/>
+</p>
+
+<ul>
+<li>物体识别与追踪<br>LiDAR+CNN卷积神经网络：<ul>
+<li>卷积层使用不同的滤波器从输入图像中提取不同的特征，并且每个滤波器在完成训练阶段后都将抽取出一套“可供学习”的参数</li>
+<li>激活层决定是否启动目标神经元</li>
+<li>汇聚层压缩特征映射图所占用的空间以减少参数的数目，并由此降低所需要的计算量</li>
+<li>一旦某物体被CNN识别出来，下一步将自动预测它的运行轨迹或进行物体追踪 </li>
+</ul>
+</li>
+</ul>
+<h3 id="3-Action-决策"><a href="#3-Action-决策" class="headerlink" title="3.Action 决策"></a>3.Action 决策</h3><ul>
+<li>行为预测<ul>
+<li>预测其它车辆的行驶行为</li>
+<li>使用随记模型产生其它车辆的可达位置集合，并采用概率分布的方法预测每一个可达位置集的相关概率</li>
+</ul>
+</li>
+</ul>
+<p align="center">
+<img src="http://ws3.sinaimg.cn/large/006tNc79ly1g228wh8wnmj30x80qeaoe.jpg" width="500"/>
+</p>
+
+<ul>
+<li>路径规划<ul>
+<li>使用完全确定模型，搜索所有可能的路径并利用代价函数的方式确定最佳路径</li>
+<li>缺点是不实时。为了避免计算复杂性并提供实时的路径规划，使用概率性模型成为了主要的优化方向</li>
+</ul>
+</li>
+<li>避障<ul>
+<li>安全性是首位的！我们将至少使用两层级的避障机制</li>
+<li>第一层是基于交通情况预测的前瞻层级</li>
+<li>第二层是实时反应层级。使用本地雷达数据进行路径重新规划，一旦雷达侦测到前方出现障碍物，则立即执行避障（前面提到的雷达+声呐作为避障的最后一道屏障。他们产生的数据用来表示在车的前进方向上最近障碍物的距离）</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-3-Autonomous-Driving-Client-System-用户端系统"><a href="#1-3-Autonomous-Driving-Client-System-用户端系统" class="headerlink" title="1.3 Autonomous Driving Client System 用户端系统"></a>1.3 Autonomous Driving Client System 用户端系统</h2><p>用户端系统整合上述避障、路径规划等算法，以满足可靠性及实时性等要求。需要克服三个问题：</p>
+<ul>
+<li>系统必须确保捕捉到的大量传感器数据可以及时快速地得到处理</li>
+<li>如果系统的某部分失效，则系统需要有足够的健壮性能从错误中恢复</li>
+<li>系统必须在设计的能耗和资源限定下有效地完成所有的计算操作</li>
+</ul>
+<h3 id="1-机器人操作系统ROS"><a href="#1-机器人操作系统ROS" class="headerlink" title="1.机器人操作系统ROS"></a>1.机器人操作系统ROS</h3><p>ROS是现如今广泛被使用的、专为机器人应用裁剪的、强大的分布式计算框架。ROS非常适用于无人驾驶的场景，但是仍有一些问题需要解决。</p>
+<p align="center">
+<img src="http://ws1.sinaimg.cn/large/006tNc79ly1g22c2a58y0j31220kk0yj.jpg" width="500"/>
+</p>
+
+<h4 id="待解决问题"><a href="#待解决问题" class="headerlink" title="待解决问题"></a>待解决问题</h4><ul>
+<li>可靠性：ROS使用单主节点结构，并且没有监控机制以恢复失效的节点。</li>
+<li>性能：当节点之间使用广播消息的方式通信时，将产生多次信息复制导致性能下降。</li>
+<li>安全：ROS中没有授权和加密机制，因此安全性受到很大威胁。</li>
+</ul>
+<h4 id="可靠性"><a href="#可靠性" class="headerlink" title="可靠性"></a>可靠性</h4><ul>
+<li>使用类似于ZooKeeper的方法，改进后的ROS结构包括一个关键主节点及一个备用主节点。</li>
+</ul>
+<h4 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h4><ul>
+<li>不再使用TCP/IP的通信模式，取而代之地采用共享内存的方法完成节点通信。</li>
+<li>不再使用广播通信，改成目的更明确的多路径传输机制改善系统的带宽与吞吐量。</li>
+</ul>
+<h4 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h4><ul>
+<li>使用Linux containers(LXC)的方法限制每一个节点可供使用的资源数，并采用沙盒的方式以确保节点的运行独立，这样以来可最大限度地防止资源泄露。（防止因ROS节点被挟制后不断进行内存分配，内存耗尽而导致剩余节点失效继而全线崩溃）</li>
+<li>为通信消息进行了加密操作，以防止其被黑客窃听。</li>
+</ul>
+<h3 id="2-硬件平台"><a href="#2-硬件平台" class="headerlink" title="2.硬件平台"></a>2.硬件平台</h3><ul>
+<li>现有计算平台功耗高发热严重需要配备额外的散热装置，因而太贵。</li>
+<li>利用ARM面向移动市场的SoC可以尝试解决这些问题。<blockquote>
+<p>SoC: System on Chip.是一个将电脑或其他电子系统集成到单一芯片的集成电路。<br>指的是将CPU、GPU、RAM、通信基带、等整合在一起的<br>由于手机空间限制，不可能像PC一样，主板、CPU、GPU、内存条可以自己选择，自由组合，所以厂家直接整合在了一起，假设你找高通买了SOC，它就包含了CPU、GPU、内存条、通信基带等给你，厂家一般也不会单卖CPU给你。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="1-4-Autonomous-Driving-Cloud-Platform-云平台"><a href="#1-4-Autonomous-Driving-Cloud-Platform-云平台" class="headerlink" title="1.4 Autonomous Driving Cloud Platform 云平台"></a>1.4 Autonomous Driving Cloud Platform 云平台</h2><p>无人车是移动系统，因此需要云平台的支持。云平台可以提供：</p>
+<ul>
+<li>分布式计算</li>
+<li>分布式存储</li>
+</ul>
+<h3 id="1-仿真"><a href="#1-仿真" class="headerlink" title="1.仿真"></a>1.仿真</h3><ul>
+<li>开发无人驾驶新算法 –&gt; 仿真测试(回放ROS阶段采集点真实数据，模拟真实驾驶场景) –&gt; 真车测试(成本高昂、周期漫长)<br>因此仿真测试的全面性和正确性对降低生产成本和生产周期尤为重要。  </li>
+<li>利用Spark可以搭建服务器集群更快完成仿真测试。</li>
+</ul>
+<p align="center">
+<img src="http://ws4.sinaimg.cn/large/006tNc79ly1g22cc8j1ezj30yq0o2qec.jpg" width="500"/>
+</p>
+
+<h3 id="2-高精度地图生成"><a href="#2-高精度地图生成" class="headerlink" title="2.高精度地图生成"></a>2.高精度地图生成</h3><ul>
+<li>原始数据处理 –&gt; 点云生成 –&gt; 点云对齐 –&gt; 2D反射地图生成 –&gt; 高精地图标注 –&gt; 地图生成</li>
+<li>利用Spark内存计算不需要使用磁盘存储，数据访问速度加快，极大提高了高精度地图产生的性能。</li>
+</ul>
+<h3 id="3-深度学习模型训练"><a href="#3-深度学习模型训练" class="headerlink" title="3.深度学习模型训练"></a>3.深度学习模型训练</h3><ul>
+<li>单服务器计算模型缓慢</li>
+<li>使用Spark+Paddle来搭建分布式深度学习系统</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/NEU/" rel="tag"><i class="fa fa-tag"></i> NEU</a>
+          
+            <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" rel="tag"><i class="fa fa-tag"></i> 人工智能</a>
+          
+            <a href="/tags/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/" rel="tag"><i class="fa fa-tag"></i> 自动驾驶</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/0328-%E6%A0%A1%E6%8B%9B%E9%9D%A2%E8%AF%95%E5%88%9D%E4%BD%93%E9%AA%8C/" rel="next" title="0328-校招面试初体验&这一年">
+                <i class="fa fa-chevron-left"></i> 0328-校招面试初体验&这一年
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/%E4%B8%9C%E8%BD%AF%E7%9D%BF%E9%81%93%E5%AE%9E%E8%AE%AD%E6%9D%82%E8%AE%B0/" rel="prev" title="东软睿道实训杂记">
+                东软睿道实训杂记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7Carchive">
+              
+                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">63</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.linkedin.com/in/%E7%91%9E%E6%96%87-%E8%AE%B8-bb512712b/" target="_blank" title="LinkedIn">
+                      
+                        <i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/RavenLite" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/ravenxu98/pins" target="_blank" title="Zhihu">
+                      
+                        <i class="fa fa-fw fa-star"></i>Zhihu</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:xrwgood@qq.com" target="_blank" title="Email">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>Email</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Ch1-Introduction-to-Autonomous-Driving-%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E6%8A%80%E6%9C%AF%E7%AE%80%E4%BB%8B"><span class="nav-text">Ch1 Introduction to Autonomous Driving 自动驾驶技术简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-Autonomous-Driving-Technologies-Overview-%E6%A6%82%E8%A7%88"><span class="nav-text">1.1 Autonomous Driving Technologies Overview 概览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-Autonomous-Driving-Algorithm-%E7%AE%97%E6%B3%95"><span class="nav-text">1.2 Autonomous Driving Algorithm 算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-SENSING-%E4%BC%A0%E6%84%9F"><span class="nav-text">1.SENSING 传感</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Perception-%E6%84%9F%E7%9F%A5"><span class="nav-text">2.Perception 感知</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Action-%E5%86%B3%E7%AD%96"><span class="nav-text">3.Action 决策</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-Autonomous-Driving-Client-System-%E7%94%A8%E6%88%B7%E7%AB%AF%E7%B3%BB%E7%BB%9F"><span class="nav-text">1.3 Autonomous Driving Client System 用户端系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS"><span class="nav-text">1.机器人操作系统ROS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BE%85%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98"><span class="nav-text">待解决问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%AF%E9%9D%A0%E6%80%A7"><span class="nav-text">可靠性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%A7%E8%83%BD"><span class="nav-text">性能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E5%85%A8"><span class="nav-text">安全</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%A1%AC%E4%BB%B6%E5%B9%B3%E5%8F%B0"><span class="nav-text">2.硬件平台</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-Autonomous-Driving-Cloud-Platform-%E4%BA%91%E5%B9%B3%E5%8F%B0"><span class="nav-text">1.4 Autonomous Driving Cloud Platform 云平台</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%BB%BF%E7%9C%9F"><span class="nav-text">1.仿真</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE%E7%94%9F%E6%88%90"><span class="nav-text">2.高精度地图生成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83"><span class="nav-text">3.深度学习模型训练</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Raven Xu</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">61.3k</span>
+  
+</div>
+
+
+  <div class="powered-by">
+  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+    本站总访问量 <span id="busuanzi_value_site_uv"></span>
+  </span>
+  </div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'RavenLite',
+            repo: 'RavenLite.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'e9cb1d86ff72f87ce95bd5b8a3b68385ca9021ee',
+            
+                client_id: 'c7e19c2c115361e6bb8b'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
