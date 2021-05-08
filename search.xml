@@ -1,6 +1,778 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>0327-记在葫芦实习的六个月</title>
+    <url>/2019/0327-%E8%AE%B0%E5%9C%A8%E8%91%AB%E8%8A%A6%E5%AE%9E%E4%B9%A0%E7%9A%84%E5%85%AD%E4%B8%AA%E6%9C%88/</url>
+    <content><![CDATA[<h1 id="葫芦"><a href="#葫芦" class="headerlink" title="葫芦"></a>葫芦</h1><p>和葫芦科技的第一次接触是在18年9月，当时有幸在林根大佬的带领下接触到葫芦科技。葫芦科技是一家创业公司，挂靠在东北大学东创空间旗下。<br>短短六个月来持续开发维护运营了“weNEU小程序”、“东大葫芦服务号”、“享问3.0”等有趣的应用，也参与策划了“东大锦鲤”、“东大女生节”、“元旦晚会游戏”、“年终总结”等活动~六个月来认识了很多小伙伴，才发现有这么多和我同届但早已在创业方面做出很多成果的同学。</p>
+<h1 id="再见"><a href="#再见" class="headerlink" title="再见"></a>再见</h1><p>因为四月开始要忙于准备读研相关的事情，可能要暂时离开葫芦了，感谢大家一直以来的帮助，有缘再见~<br><img src="http://ws4.sinaimg.cn/large/006tKfTcly1g1ify2z9ahj31400u0qva.jpg" align=center></p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>葫芦科技</tag>
+        <tag>实习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>0328-校招面试初体验&amp;这一年</title>
+    <url>/2019/0328-%E6%A0%A1%E6%8B%9B%E9%9D%A2%E8%AF%95%E5%88%9D%E4%BD%93%E9%AA%8C/</url>
+    <content><![CDATA[<h1 id="试试看"><a href="#试试看" class="headerlink" title="试试看"></a>试试看</h1><p>前些日子腾讯来我校开暑期实习宣讲会，现场人多到爆<del>因为腾讯有年头没来我们学校开宣讲会了，今年能来实属不易，也感谢学院老师们背后的默默付出还有在腾讯工作的学姐学长们的努力。<br>因为是要读研，所以一直也没太准备找工作方面的事情，但感觉可以试试看，看看自己有没有能力通过第一关</del>索性投了WXG微信事业群的后台开发岗位。</p>
+<span id="more"></span>
+<h1 id="视频面试"><a href="#视频面试" class="headerlink" title="视频面试"></a>视频面试</h1><p>昨天下午收到了视频面试的短信，忐忑不安的刷了一天基础知识，发现之前学过的很多都忘了，连哈希冲突解决方法都记不住了。<br>五点面试准时开始，面试官首先问了我简历上写的实习经历，我讲了一下在葫芦那边做的小程序和服务号。<br>另外还问了我一些是不是动态爬虫，怎么解析网页的问题。</p>
+<h2 id="第一题-手写代码"><a href="#第一题-手写代码" class="headerlink" title="第一题 手写代码"></a>第一题 手写代码</h2><h3 id="最长子序列"><a href="#最长子序列" class="headerlink" title="最长子序列"></a>最长子序列</h3><p>小Q定义A(i,j)(i &lt;= j且都是数组A的合法下标)表示数组A中下标从i到j的这段子序列,即A(i,j) = {A[i],A[i+1]….A[j]}。<br>如果对于A(i, j), 能找到一个正整数v(v &gt; 1), 使得v可以整除A(i, j)中不低于一半的元素, 小Q就认为A(i, j)是一段很酷的子序列。<br>例如A(i, j) = {3, 3, 7, 9, 1, 10}, 六个元素中有三个元素可以被v = 3整除, 所以A(i, j)是酷的。<br>小Q现在给出一个数组A, 让你找出最长的酷的子序列。</p>
+<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入包括两行。<br>第一行包括一个正整数n(1 &lt;= n &lt;= 50), 表示数组的长度。<br>第二行包括n个正整数A_i,(1 &lt;= A_i &lt;= 1000), 表示数组中的每个元素。</p>
+<h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h3><p>输出一个整数, 表示最长的酷的子序列的长度, 如果没有解, 输出0。</p>
+<h3 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h3><ul>
+<li>输入<ul>
+<li>5</li>
+<li>8 8 5 5 4</li>
+</ul>
+</li>
+<li>输出<ul>
+<li>5</li>
+</ul>
+</li>
+</ul>
+<h2 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h2><p>Java顶层的集合类有哪些？常用哪些？</p>
+<h2 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h2><p>有没有写过多线程程序？讲讲多线程。</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>面试官出的几个问题都很简单，不过第一题因为是第一次面试很紧张也没什么经验我以为还要运行一下程序，还在想import的语句是什么。但其实并不需要，只要逻辑ok就行。读题不仔细，有两个地方理解错了在面试官的告知下才该对。应该是凉了，不过权当一次经历吧。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>从去年3月到今年3月这一年自己其实过得挺痛苦的，感觉目前的自己各方面都和目标差太远，无论是技术、学习能力还是各方面交际能力、为人处事都很一般。<br>不过这一年也算是大学两年半以来过得最充实的一段时间吧，学习方面两个学期拿到了90的均分，绩点提到了3.7；竞赛水了5个小奖，还有幸公费去了次哈尔滨；有了一段创业公司的实习经历，认识了很多与我同年级但情商智商碾压的大佬；通过大创接触到了一点点科研，虽然目前还没发出paper；陆陆续续做了自己喜欢的weNEU，寄托了自己对产品的价值理念等等~  </p>
+<h2 id="痛苦着"><a href="#痛苦着" class="headerlink" title="痛苦着"></a>痛苦着</h2><p>痛苦在于这一年意识到了自己和最优秀的同学们差距实在太大，而且这种差距还在不断拉大。我觉得人生的目标是不能做一个平凡的人，如果只是一个普普通通的人，天天被割韭菜活着也没什么意义。可是这一年我意识到自己越来越普通，和很多人一样为读研挤破头，参加竞赛顶多拿小奖，学习知识要花很长时间才能学懂；<br>另外的痛苦在于对未来选择的迷茫，从读研方向来看我甚至不知道自己该报考什么方向，对人工智能不感兴趣，对云计算大数据也不是很了解，密码学网络安全有些跨专业~对于未来的就业而言我其实觉得自己比较适合产品岗位，我自认自己的一些商业嗅觉比较灵敏，对用户体验的把控也有自己的见解，在做weNEU的期间真的对产品抱有极大的热情，看到有新用户增长会开心好久。但如果决定做产品似乎也没必要读研了，而且也挺喜欢敲代码不太想天天去做PPT。<br>痛苦了一年，也磨磨唧唧讲了一年。是时候不再总去想这些事情了，认识到差距就好。</p>
+<h2 id="读研"><a href="#读研" class="headerlink" title="读研"></a>读研</h2><p>目前来看我认为我读研的原因是：</p>
+<ul>
+<li>增加知识的深度：之前过于注重知识的广度，UI/UE、前端开发、后端开发、运维、产品运营、推广我都有或多或少的接触但并不精，读研我需要提升自己在某一方面的知识的深度，目前来看我应该会选择软件工程专硕，具体方向待定。</li>
+<li>我还年轻：不想太早离开象牙塔，我认为我不适合过早就业（应该不是逃避）；细想如果我2020开始工作，未来至少30年左右都会一直在工作~很难再回到现在这样大学校园中，珍惜读书的时光</li>
+<li>对学历的私心：本科只是一所末流985，研究生希望能到中九级别的学校吧，不然会很遗憾的。</li>
+</ul>
+<h2 id="学到的"><a href="#学到的" class="headerlink" title="学到的"></a>学到的</h2><ul>
+<li>告别舒适区：少刷已经学会的算法题；少做重复性工作；少写业务代码</li>
+<li>信息不对称：遇到机会要鼓起勇气，认识更多的人，获取更多的信息</li>
+<li>保持善良，不忘初心：之前总觉得这些假大空的形容词很无趣，但到头来才发现这其实都是最优秀的品质</li>
+</ul>
+<h2 id="拒绝平凡"><a href="#拒绝平凡" class="headerlink" title="拒绝平凡"></a>拒绝平凡</h2><p>引用很喜欢的毛不易的《像我这样的人》——像我这样不甘平凡的人~句句扎心，不认为“平凡可贵”</p>
+<h2 id="贵在坚持"><a href="#贵在坚持" class="headerlink" title="贵在坚持"></a>贵在坚持</h2><p>无论何时，贵在坚持都是最需要的。<br>如果我不能坚持的话，那么一切的向往，一切的为自己加油打气，一切的计划都是空谈。  </p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+        <tag>腾讯</tag>
+        <tag>思考</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo处理{{}}报错</title>
+    <url>/2019/Hexo%E5%A4%84%E7%90%86%7B%7B%7D%7D%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<p>今天在更新博客时有关于Vue动态绑定的内容，动态绑定<code>v-model</code>属性是配合双括号<code>这里报错</code>来实现的</p>
+<img src="http://ww1.sinaimg.cn/large/006tNc79ly1g37z4w7r1cj30vk01gjrr.jpg" />   
+
+<p>但是如果像上面图片里写这句话是会报错的呦，节选报错信息开头部分如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Template render error: (unknown path) [Line 1, Column 64]</span><br><span class="line">  unexpected token: &#125;&#125;</span><br><span class="line">    at Object._prettifyError (/Users/raven/workspace/blog/node_modules/nunjucks/src/lib.js:36:11)</span><br><span class="line">    at Template.render (/Users/raven/workspace/blog/node_modules/nunjucks/src/environment.js:524:21)</span><br></pre></td></tr></table></figure>
+
+<p>在一点点试错后发现正是两对紧密相连的<code>&#123;&#125;</code>使其报错，猜测应该是这种写法恰好和hexo内部的解析器有冲突吧</p>
+<p>在双括号内加入一些文字即不报错<code>&#123;&#123;message&#125;&#125;</code>，但是无法正常显示哦，就比如这一行的那个代码块，里面的message就没显示  </p>
+<img src="http://ww3.sinaimg.cn/large/006tNc79ly1g37zgjx4g2j312y00ydgb.jpg" />   
+
+<p><em>注意：在双括号内加入空格还是会报错哦</em>  </p>
+<p>目测应该还会有其他写法使hexo的转义发生错误，有时间看一下hexo源码找到错误位置再更新一下本文</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1125-记在字节实习的第一个月</title>
+    <url>/2019/1125-%E8%AE%B0%E5%9C%A8%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%AE%9E%E4%B9%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%9C%88/</url>
+    <content><![CDATA[<p>至今仍然感到很幸运，对于本想轻轻松松潇潇洒洒度过大四的我，在几乎完全没准备招聘面试的情况下，竟然通过了字节跳动的面试，转眼间已经入职一个月了，也来简单写写这一个月的一些心得与感悟。<br>简简单单的流水账~  </p>
+<h3 id="紧张与庆幸"><a href="#紧张与庆幸" class="headerlink" title="紧张与庆幸"></a>紧张与庆幸</h3><p>开篇提到了，我几乎完全没准备招聘面试的内容，面经刷题什么的基本上啥都没看，因为本来就是抱着随缘的心态投的简历，没想到运气这么好hh<br>可是我知道自己很菜，而且岗位还是和计算机网络深度相关的，作为软件工程专业的学生（非网络工程专业），本科就只上过“计算机网络”一门网络相关课程，感觉亚历山大，这种压力，在我收到offer通知电话那一刻就开始了，一直到入职前夜的失眠，到入驻当天的忐忑，到入驻后看着纷乱复杂的各种名词，直到现在，我依然很紧张<br>但是我也很庆幸，非常庆幸我能在大四上学期，在读研之前意识到我在计算机网络方面的知识储备很少，意识到计算机网络的体系是如此庞大，我能做的只有抓紧时间，利用字节跳动提供的这么好的机会打好计算机网络基础，为研究生的学习与科研做准备  </p>
+<img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9asxzyam2j31400u04qr.jpg" align=center>
+
+<span id="more"></span>
+
+<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><p>感觉自己九月份以来的运气真的特别好，顺利地拿到了保研资格，顺利地确定了自己心心念念的计算机网络就是我最想攻读的方向，顺利的发现拿到offer的东南大学计算机恰好计算机网络是其最强的方向，顺利地被年轻有为帅气的S老师收下（老师看过我博客，先吹一下老师hhh），顺利地找到一份计算机网络相关的实习，顺利地遇到了如此优秀非常佩服的Ian担任我的mentor~<br>当然最幸运的就是上面我所说的，意识到<strong>自己还有更大的理想和目标！一定要把握好每一个机会利用好每一段时光</strong><br>还想谈谈自己为什么选择了计算机网络，原因有2吧  </p>
+<ul>
+<li>想避开人工智能的热潮。保研期间看到很多同学直奔人工智能那些方向，竞争激烈而且我对人工智能没有太大的兴趣，本科有几门课接触过人工智能，我觉得我还是更喜欢“计算机网络”，“操作系统”这些学完后感觉学到了知识心里踏实的课哈哈。尤其是计算机网络，在本科四门主要专业课中是我最喜欢也是分数最高的一门课~~</li>
+<li>贴近产品思维。当然，计算机网络分很多分支，我最初想选择的是 物联网 或 产业互联网 这两个方向，因为在调研之后我发现这两个方向的应用落地都做的还不错，都是现在国家和大厂纷纷押宝的风口，最重要的是这些领域的研究很多都是面向用户的，面向用户的C端产品自然需要很强的产品思维，我觉得我在产品运营方面还是有一定的独到见解，因而选择了这两个细分领域。</li>
+</ul>
+<h3 id="在做的工作"><a href="#在做的工作" class="headerlink" title="在做的工作"></a>在做的工作</h3><p>我所在的部门是系统部的网络工程组，最初来到这里很惊讶只有大概20人左右其中主管运维建设的不足10人就能建设起公司如此巨大的网络架构。<br>目前在做的项目是网络告警平台，后来经组会讨论升级为网络数据平台，主要工作是升级目前系统内分散部分未聚合展现形式落户的告警平台，同时利用采集的数据搭建一套数据平台，为SDN等项目提供低时延高可靠的数据支撑。<br>完整的数据平台预计在十二月中旬就能初步成型，之后可能会同时参与到SDN项目的开发之中，考虑到研究生的方向，后续会尝试多接触与算法设计分析相关的工作，另外SDN的设计思想（大规模服务器集群数据中心的必然产物）和多无人机协同的管理平台也有异曲同工之处。</p>
+<h3 id="最大的挑战"><a href="#最大的挑战" class="headerlink" title="最大的挑战"></a>最大的挑战</h3><p>于我而言，最大的挑战还是人际关系。我每次到一个新的环境中都比较内向<br>然而熟了之后就完全放得开了。不过实习可能是全新的一种环境，人与人之间是同事关系，而且年龄差，工作内容，知识量上的差距还是让我和大家的融入不是那么地顺利，不过我相信我会努力让大家看到我的闪光点。<br>努力哦~</p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+        <tag>字节跳动</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MIT 算法导论</title>
+    <url>/2019/MIT%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/</url>
+    <content><![CDATA[<p>算法课程分为</p>
+<ul>
+<li>Analysis of Algorithms</li>
+<li>Design of Algorithms</li>
+</ul>
+<p>算法分析是理论研究(The theoretical study of computer program <strong>performance</strong> and resource usage)<br>我们关注 Performance</p>
+<p>Q1：软件领域什么比 Performance 更重要呢？<br>Correctness, Maintainability, Features, Functionality, Modularity, Security, Scalability, User-friendliness…</p>
+<p>Q2：这么多比 Performance 重要的内容为什么我们还关注 Performance？</p>
+<ul>
+<li>通常，性能的好坏直接决定着是否可行</li>
+<li>算法是一种描述程序行为的语言，他就像钱一样，需要性能作为支付其他东西的“货币”（例如为了 Functionality 愿意牺牲2倍性能），这决定了 Performance 是处于最底层的，他是衡量一般性的标准</li>
+<li>这里充满了乐趣，速度总是让人激动</li>
+</ul>
+<span id="more"></span>
+
+<h3 id="Insertion-Sort-插入排序"><a href="#Insertion-Sort-插入排序" class="headerlink" title="Insertion Sort 插入排序"></a>Insertion Sort 插入排序</h3><p>Pseudocode 伪代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">INSERTION-SORT(A, n) //Sort A[1...n]</span><br><span class="line">    for j &lt;- 2 to n</span><br><span class="line">        do key &lt;- A[j]</span><br><span class="line">            i &lt;- j-1</span><br><span class="line">            while i &gt; 0 and A[i]&gt;key</span><br><span class="line">                do A[i+1] &lt;- A[i]</span><br><span class="line">                    i &lt;- i-1</span><br><span class="line">            A[i+1] &lt;- key</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Running-Time-运行时间"><a href="#Running-Time-运行时间" class="headerlink" title="Running Time 运行时间"></a>Running Time 运行时间</h3><p>取决于“输入本身（是否有序）”和“输入规模”<br>将时间T与输入规模n函数化关联</p>
+<h4 id="Worst-case-usually"><a href="#Worst-case-usually" class="headerlink" title="Worst-case(usually)"></a>Worst-case(usually)</h4><p>运行时间的上界：是对用户的一个承诺<br><code>T(n) = max time on any input of size n</code></p>
+<h4 id="Average-case-sometimes"><a href="#Average-case-sometimes" class="headerlink" title="Average-case(sometimes)"></a>Average-case(sometimes)</h4><p><code>T(n) = expected time over all inputs of size n</code><br><em>expectation: 数学概念： 每种输入的运行时间乘以那种输入出现的概率（这里假设每种输入情形出现的概率是等可能性的，均匀分布）</em></p>
+<h4 id="Best-case-bogus-假象（没啥用）"><a href="#Best-case-bogus-假象（没啥用）" class="headerlink" title="Best-case(bogus 假象（没啥用）)"></a>Best-case(bogus 假象（没啥用）)</h4><p>Cheat~</p>
+<p>Q3：插入排序的运行时间分析？<br>运行时间与机器有关</p>
+<ul>
+<li>relative speed(on same machine)</li>
+<li>absolute speed(on diff machine)</li>
+</ul>
+<p>引出了算法的大局观</p>
+<h3 id="BIG-IDEA"><a href="#BIG-IDEA" class="headerlink" title="BIG IDEA"></a>BIG IDEA</h3><p>Asymptotic Analysis</p>
+<ul>
+<li>Ignore machine dependant constants</li>
+<li>Look at growth of T(n) as n -&gt; ♾  </li>
+</ul>
+<p>渐进分析</p>
+<ul>
+<li>忽略掉依赖于机器的常量</li>
+<li>不是去检查实际的运行时间，而是关注运行时间的增长</li>
+</ul>
+<p>渐进符号<br>θ-notation: drop lowerder terms, ignore leading constants<br>Ex: 3n3-90n2-5n+6046 = θ(n3)</p>
+<blockquote>
+<p>算法分析要求我们既有对待数学的严谨，又有对待工程那样富有直觉</p>
+</blockquote>
+<p>渐进符号可以满足我们对相对速度和绝对速度的要求，随着n的增大，渐进结果一般而言不会改变</p>
+<p>从工程的角度还有一件事情需要处理，就是有时候需要n足够大某个算法的优势才可以被显现，这时我们经常会使用一些低速算法，在合理的范围内满足我们对速度的要求。因此，我们就必须在我们的数学理解和工程直觉之间做好平衡。</p>
+<p>插入排序的Worst-case T(n): θ(n2)</p>
+<h3 id="Merge-Sort-归并排序"><a href="#Merge-Sort-归并排序" class="headerlink" title="Merge Sort 归并排序"></a>Merge Sort 归并排序</h3><p>Merge sort A[1..n]</p>
+<ol>
+<li>If n=1, done</li>
+<li>Recursively sort A[1..n/2(上界)] and A[n/2(上界)+1..n]</li>
+<li>Merge 2 sorted lists</li>
+</ol>
+<p>我们会用到一个归并子程序 Key subroutine-Merge<br>T(n) = θ(1) if n = 1  （通常省略）<br>     = 2T(n/2) + θ(n) if n &gt; 1</p>
+<p>Recursion tree: T(n) = 2T(n/2) + cn (const c &gt; 0)<br>使用递归树分析，归并排序的时间复杂度T(n)=θ(nlgn)<br><em>树的高度是lgn，叶节点层之和为θ(n)，其他层每层为cn</em><br><em>在n大于30左右之和，归并排序比插入排序要快</em></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>MIT</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL简单优化</title>
+    <url>/2019/MySQL%20varchar%E9%95%BF%E5%BA%A6%E6%8E%A2%E6%9E%90/</url>
+    <content><![CDATA[<p>记录一下一些简单的在设计表结构方面对MySQL的简单优化。</p>
+<ul>
+<li><a href="https://www.cnblogs.com/duanxz/p/3724120.html">MySQL中的两种临时表</a></li>
+<li><a href="https://www.jianshu.com/p/7fe85454a4f4">varchar类型的长度怎么确定？有什么样的原则，和Text和LongText的区别是什么？</a></li>
+<li><a href="https://blog.csdn.net/github_26672553/article/details/82942313">mysql中int(1)中int后面的数字（简单介绍）</a></li>
+<li><a href="http://www.zhimengzhe.com/shujuku/MySQL/83409.html">mysql int(11)字段左边自动补零了</a></li>
+</ul>
+<p><img src="http://ww1.sinaimg.cn/large/006tNc79ly1g3c79vgsn0j30cm0b8my0.jpg"></p>
+<p>如上图，int所谓的长度不是他真的长度，设置为int就占4个字节，设置为tinyint就占一个字节</p>
+<ul>
+<li><p><a href="https://www.cnblogs.com/lhj588/p/4245719.html">Mysql 如何设置字段自动获取当前时间</a></p>
+</li>
+<li><p><a href="https://www.cnblogs.com/xiaozhang2014/p/7750562.html">前后端分离，如何防止接口被其他人调用或恶意重发</a></p>
+</li>
+</ul>
+<h2 id="常量表设计"><a href="#常量表设计" class="headerlink" title="常量表设计"></a>常量表设计</h2><p>对于一些明显有类型的字符串数据，有两种技术方案</p>
+<ul>
+<li>对于需要做到下拉列表里的数据，存储到常量表里</li>
+<li>对于每次都随实体出现的，直接以字符串存到表里，即便用数字id更节省空间，但是我们更注重效率，减少连表查询次数，提高性能。</li>
+</ul>
+<h2 id="开发规范"><a href="#开发规范" class="headerlink" title="开发规范"></a>开发规范</h2><p><a href="https://www.jianshu.com/p/41e134657902">谈谈ali与Google的Java开发规范</a></p>
+<p><a href="https://www.cnblogs.com/xiaozhang2014/p/7750562.html">前后端分离，如何防止接口被其他人调用或恶意重发</a></p>
+<p><a href="https://blog.csdn.net/u011870547/article/details/81077153">PO,BO,VO和POJO的区别</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>什么是模型？</title>
+    <url>/2019/%E4%BB%80%E4%B9%88%E6%98%AF%E6%A8%A1%E5%9E%8B%EF%BC%9F/</url>
+    <content><![CDATA[<h1 id="什么是模型？"><a href="#什么是模型？" class="headerlink" title="什么是模型？"></a>什么是模型？</h1><p>最近在上人工智能课程，总看到模型model一词。加之一月份又要参加2019年的数学建模美赛，所以对「模型」这个概念感到很好奇。和『大佬』这些词一样，都是上大学后才了解到的。<br>关于模型，摘抄原文如下：</p>
+<blockquote>
+<p>A model can come in many shapes, sizes, and styles. It is important to emphasize that a model is not the real world but merely a human construct to help us better understand real world systems. In general all models have an information input, an information processor, and an output of expected results. Modeling Methodology for Physics Teachers (more info) (1998) provides an outline of generic model structure that is useful for geoscience instruction. In “Modeling the Environment” Andrew Ford gives a philosophical discussion of what models are and why they are useful. The first few paragraphs of Chapter 1 of Ford’s book are worth a look.<br>Key features in common with the development of any model is that:  </p>
+<ul>
+<li>simplifying assumptions must be made;</li>
+<li>boundary conditions or initial conditions must be identified;</li>
+<li>the range of applicability of the model should be understood.</li>
+</ul>
+</blockquote>
+<p>概括地来说，模型首先不局限于形式，有很多表达方式。它用来抽象现实世界的某一个方面。<br>模型有输入，处理机制和输出。我们要优化我们的处理机制以便让由输入得到的输出符合我们的期待。<br>有接触到的比如数模里的函数，AI课学习的「决策树」『minimax』等，模型有很多不同的表达形式。或许使用最多的还是函数。  </p>
+<span id="more"></span>
+
+<h1 id="模型类型举例"><a href="#模型类型举例" class="headerlink" title="模型类型举例"></a>模型类型举例</h1><h2 id="Conceptual-Models"><a href="#Conceptual-Models" class="headerlink" title="Conceptual Models"></a>Conceptual Models</h2><p>Conceptual Models are qualitative models that help highlight important connections in real world systems and processes. They are used as a first step in the development of more complex models.<br><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fxy8bi0p27j304604djr8.jpg"></p>
+<h2 id="Interactive-Lecture-Demonstrations"><a href="#Interactive-Lecture-Demonstrations" class="headerlink" title="Interactive Lecture Demonstrations"></a>Interactive Lecture Demonstrations</h2><p>Interactive Lecture Demonstrations Interactive demonstrations are physical models of systems that can be easily observed and manipulated and which have characteristics similar to key features of more complex systems in the real world. These models can help bridge the gap between conceptual models and models of more complex real world systems.<br><img src="https://ws2.sinaimg.cn/large/006tNbRwly1fxy8bskxjdj3046050web.jpg"></p>
+<h2 id="Mathematical-and-Statistical-Models"><a href="#Mathematical-and-Statistical-Models" class="headerlink" title="Mathematical and Statistical Models"></a>Mathematical and Statistical Models</h2><p>Mathematical and Statistical Models involve solving relevant equation(s) of a system or characterizing a system based upon its statisical parameters such as mean, mode, variance or regression coefficients. Mathematical models include Analytical models and Numerical Models. Statistical models are useful in helping identify patterns and underlying relationships between data sets.<br><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fxy8c0gmcsj304g04ojra.jpg"><br><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fxy8c862s3j305n03rt8k.jpg"></p>
+<h2 id="Teaching-with-Visualizations"><a href="#Teaching-with-Visualizations" class="headerlink" title="Teaching with Visualizations"></a>Teaching with Visualizations</h2><p>Teaching with Visualizations By this we mean anything that can help one visualize how a system works. A visualization model can be a direct link between data and some graphic or image output or can be linked in series with some other type of model so to convert its output into a visually useful format. Examples include 1-, 2-, and 3-D graphics packages, map overlays, animations, image manipulation and image analysis.<br><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fxy8cesqgej304002odfo.jpg"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>抽象或许是建模的第一要素</li>
+<li>模型概念很广</li>
+<li>AI所说的“我们训练了一个很好的模型”指的就是利用我们的模型，输入所给的输入，得到的输出很符合我们的期望。比如给机器人一张视觉的影像，他知道该怎么移动怎么操作，知道拿起苹果放到指定位置，这符合我们对输出的期望（输出就是机器人所做出的动作）。这就是好的模型。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>人工智能</tag>
+        <tag>模型</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初探数据库连接池</title>
+    <url>/2019/%E5%88%9D%E6%8E%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0/</url>
+    <content><![CDATA[<p>参考资料</p>
+<ul>
+<li><a href="https://blog.csdn.net/crankz/article/details/82874158">数据库连接池学习笔记（一）：原理介绍+常用连接池介绍</a></li>
+<li><a href="https://blog.csdn.net/frightingforambition/article/details/25464129">java数据库连接池实现原理</a></li>
+<li><a href="https://juejin.im/entry/58fb03220ce4630061233c98">高性能数据库连接池的内幕</a></li>
+</ul>
+<h1 id="为什么要使用连接池"><a href="#为什么要使用连接池" class="headerlink" title="为什么要使用连接池"></a>为什么要使用连接池</h1><p>数据库连接是一种关键的有限的昂贵的资源，这一点在多用户的网页应用程序中体现得尤为突出。  一个数据库连接对象均对应一个物理数据库连接，每次操作都打开一个物理连接，使用完都关闭连接，这样造成系统的 性能低下。 数据库连接池的解决方案是在应用程序启动时建立足够的数据库连接，并讲这些连接组成一个连接池(简单说：在一个“池”里放了好多半成品的数据库联接对象)，由应用程序动态地对池中的连接进行申请、使用和释放。对于多于连接池中连接数的并发请求，应该在请求队列中排队等待。并且应用程序可以根据池中连接的使用率，动态增加或减少池中的连接数。 连接池技术尽可能多地重用了消耗内存地资源，大大节省了内存，提高了服务器地服务效率，能够支持更多的客户服务。通过使用连接池，将大大提高程序运行效率，同时，我们可以通过其自身的管理机制来监视数据库连接的数量、使用情况等。 </p>
+<span id="more"></span>
+
+<h1 id="传统的连接机制与数据库连接池的运行机制区别"><a href="#传统的连接机制与数据库连接池的运行机制区别" class="headerlink" title="传统的连接机制与数据库连接池的运行机制区别"></a>传统的连接机制与数据库连接池的运行机制区别</h1><h2 id="不使用连接池流程"><a href="#不使用连接池流程" class="headerlink" title="不使用连接池流程"></a>不使用连接池流程</h2><p>下面以访问MySQL为例，执行一个SQL命令，如果不使用连接池，需要经过哪些流程。<br><img src="https://ws3.sinaimg.cn/large/006tNc79ly1g3116moxfaj30d40dgdgt.jpg" width="400px" /></p>
+<ul>
+<li><p>步骤</p>
+<ol>
+<li>TCP建立连接的三次握手（JDBC与MySQL的连接基于TCP协议）</li>
+<li>MySQL认证的三次握手</li>
+<li>真正的SQL执行</li>
+<li>MySQL的关闭</li>
+<li>TCP的四次握手关闭<br>可以看到，为了执行一条SQL，却多了非常多我们不关心的网络交互。</li>
+</ol>
+</li>
+<li><p>优点</p>
+<ul>
+<li>实现简单</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ol>
+<li>网络IO较多</li>
+<li>数据库的负载较高</li>
+<li>响应时间较长及QPS较低（每秒查询率QPS是对一个特定的查询服务器在规定时间内所处理流量多少的衡量标准）</li>
+<li>应用频繁的创建连接和关闭连接，导致临时对象较多，GC频繁</li>
+<li>在关闭连接后，会出现大量TIME_WAIT的TCP状态（在2个MSL之后关闭，这个是TCP/IP的设计者规定的<a href="https://www.cnblogs.com/sunxucool/p/3449068.html">详情</a>）</li>
+</ol>
+</li>
+</ul>
+<h2 id="使用数据库连接池"><a href="#使用数据库连接池" class="headerlink" title="使用数据库连接池"></a>使用数据库连接池</h2><img src="https://ws4.sinaimg.cn/large/006tNc79ly1g311fkf2cqj30f80fdtb5.jpg" width="400px" />
+
+<ul>
+<li><p>步骤</p>
+<ul>
+<li>第一次访问的时候，需要建立连接。 但是之后的访问，均会复用之前创建的连接，直接执行SQL语句。</li>
+</ul>
+</li>
+<li><p>优点</p>
+<ol>
+<li>较少了网络开销</li>
+<li>系统的性能会有一个实质的提升</li>
+<li>没了麻烦的TIME_WAIT状态</li>
+</ol>
+</li>
+</ul>
+<h1 id="数据库连接池的工作原理"><a href="#数据库连接池的工作原理" class="headerlink" title="数据库连接池的工作原理"></a>数据库连接池的工作原理</h1><p>连接池的工作原理主要由三部分组成，分别为</p>
+<ol>
+<li>连接池的建立</li>
+<li>连接池中连接的使用管理</li>
+<li>连接池的关闭</li>
+</ol>
+<p>第一、连接池的建立。一般在系统初始化时，连接池会根据系统配置建立，并在池中创建了几个连接对象，以便使用时能从连接池中获取。连接池中的连接不能随意创建和关闭，这样避免了连接随意建立和关闭造成的系统开销。Java中提供了很多容器类可以方便的构建连接池，例如Vector、Stack等。</p>
+<p>第二、连接池的管理。连接池管理策略是连接池机制的核心，连接池内连接的分配和释放对系统的性能有很大的影响。其管理策略是：<br>当客户请求数据库连接时，首先查看连接池中是否有空闲连接，如果存在空闲连接，则将连接分配给客户使用；如果没有空闲连接，则查看当前所开的连接数是否已经达到最大连接数，如果没达到就重新创建一个连接给请求的客户；如果达到就按设定的最大等待时间进行等待，如果超出最大等待时间，则抛出异常给客户。<br>当客户释放数据库连接时，先判断该连接的引用次数是否超过了规定值，如果超过就从连接池中删除该连接，否则保留为其他客户服务。<br>该策略保证了数据库连接的有效复用，避免频繁的建立、释放连接所带来的系统资源开销。</p>
+<p>第三、连接池的关闭。当应用程序退出时，关闭连接池中所有的连接，释放连接池相关的资源，该过程正好与创建相反。</p>
+<h1 id="连接池主要参数"><a href="#连接池主要参数" class="headerlink" title="连接池主要参数"></a>连接池主要参数</h1><p><strong>使用连接池时，要配置一下参数</strong></p>
+<ol>
+<li>最小连接数：是连接池一直保持的数据库连接,所以如果应用程序对数据库连接的使用量不大,将会有大量的数据库连接资源被浪费.</li>
+<li>最大连接数：是连接池能申请的最大连接数,如果数据库连接请求超过次数,后面的数据库连接请求将被加入到等待队列中,这会影响以后的数据库操作</li>
+<li>最大空闲时间</li>
+<li>获取连接超时时间</li>
+<li>超时重试连接次数</li>
+</ol>
+<h1 id="连接池需要注意的点"><a href="#连接池需要注意的点" class="headerlink" title="连接池需要注意的点"></a>连接池需要注意的点</h1><h2 id="并发问题"><a href="#并发问题" class="headerlink" title="并发问题"></a>并发问题</h2><p>为了使连接管理服务具有最大的通用性，必须考虑多线程环境，即并发问题。这个问题相对比较好解决，因为各个语言自身提供了对并发管理的支持像java,c#等等，使用synchronized(java)lock(C#)关键字即可确保线程是同步的。</p>
+<h2 id="事务处理"><a href="#事务处理" class="headerlink" title="事务处理"></a>事务处理</h2><p>我们知道，事务具有原子性，此时要求对数据库的操作符合“ALL-OR-NOTHING”原则,即对于一组SQL语句要么全做，要么全不做。<br>我们知道当2个线程共用一个连接Connection对象，而且各自都有自己的事务要处理时候，对于连接池是一个很头疼的问题，因为即使Connection类提供了相应的事务支持，可是我们仍然不能确定那个数据库操作是对应那个事务的，这是由于我们有２个线程都在进行事务操作而引起的。为此我们可以使用每一个事务独占一个连接来实现，虽然这种方法有点浪费连接池资源但是可以大大降低事务管理的复杂性。 </p>
+<h2 id="连接池的分配与释放"><a href="#连接池的分配与释放" class="headerlink" title="连接池的分配与释放"></a>连接池的分配与释放</h2><p>连接池的分配与释放，对系统的性能有很大的影响。合理的分配与释放，可以提高连接的复用度，从而降低建立新连接的开销，同时还可以加快用户的访问速度。<br>对于连接的管理可使用一个List。即把已经创建的连接都放入List中去统一管理。每当用户请求一个连接时，系统检查这个List中有没有可以分配的连接。如果有就把那个最合适的连接分配给他；如果没有就抛出一个异常给用户，List中连接是否可以被分配由一个线程来专门管理捎后我会介绍这个线程的具体实现。</p>
+<h2 id="连接池的配置与维护"><a href="#连接池的配置与维护" class="headerlink" title="连接池的配置与维护"></a>连接池的配置与维护</h2><p>连接池中到底应该放置多少连接，才能使系统的性能最佳？系统可采取设置最小连接数（minConnection）和最大连接数（maxConnection）等参数来控制连接池中的连接。比方说，最小连接数是系统启动时连接池所创建的连接数。如果创建过多，则系统启动就慢，但创建后系统的响应速度会很快；如果创建过少，则系统启动的很快，响应起来却慢。这样，可以在开发时，设置较小的最小连接数，开发起来会快，而在系统实际使用时设置较大的，因为这样对访问客户来说速度会快些。最大连接数是连接池中允许连接的最大数目，具体设置多少，要看系统的访问量，可通过软件需求上得到。 <br>如何确保连接池中的最小连接数呢？有动态和静态两种策略。动态即每隔一定时间就对连接池进行检测，如果发现连接数量大于最小连接数，则补充相应数量的新连接,以保证连接池的正常运转。静态是发现空闲连接不够时再去检查。</p>
+<h1 id="数据库对比"><a href="#数据库对比" class="headerlink" title="数据库对比"></a>数据库对比</h1><h2 id="第一、二代连接池"><a href="#第一、二代连接池" class="headerlink" title="第一、二代连接池"></a>第一、二代连接池</h2><p>区分一个数据库连接池是属于第一代产品还是代二代产品有一个最重要的特征就是看它在架构和设计时采用的线程模型，因为这直接影响的是并发环境下存取数据库连接的性能。</p>
+<p>一般来讲采用单线程同步的架构设计都属于第一代连接池，二采用多线程异步架构的则属于第二代。比较有代表性的就是Apache Commons DBCP，在1.x版本中，一直延续着单线程设计模式，到2.x才采用多线程模型。</p>
+<p>二代产品对一代产品的超越是颠覆性的，除了一些“历史原因”，你很难再找到第二条理由说服自己不选择二代产品，但任何成功都不是偶然的，二代产品的成功很大程度上得益于前代产品们打下的基础，站在巨人的肩膀上，新一代的连接池的设计师们将这一项“工具化”的产品，推向了极致。其中，最具代表性的两款产品是：</p>
+<ul>
+<li>HikariCP</li>
+<li>Druid</li>
+</ul>
+<p>下面更多介绍请参考<a href="https://blog.csdn.net/crankz/article/details/82874158">数据库连接池对比</a></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>时至今日，虽然每个应用（需要RDBMS的）都离不开连接池，但在实际使用的时候，连接池已经可以做到“<strong>隐形</strong>”了。也就是说在通常情况下，连接池完成项目初始化配置之后，就再不需要再做任何改动了。不论你是选择Druid或是HikariCP，甚至是DBCP，它们都足够稳定且高效！之前讨论了很多关于连接池的性能的问题，但这些性能上的差异，是相较于其他连接池而言的，对整个系统应用来说，第二代连接池在使用过程中体会到的差别是微乎其微的，基本上不存在因为连接池的自身的配饰和使用导致系统性能下降的情况，除非是在单点应用的数据库负载足够高的时候（压力测试的时候），但即便是如此，通用的优化的方式也是单点改集群，而不是在单点的连接池上死扣。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+        <tag>数据库</tag>
+        <tag>连接池</tag>
+        <tag>dbcp2</tag>
+        <tag>转载</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自动驾驶系统课程笔记（第一章 简介）</title>
+    <url>/2019/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p><em>本文写于19年4月智能驾驶技术课程</em><br><em>参考书籍</em></p>
+<ul>
+<li>第一本无人驾驶技术书, 2017</li>
+<li>Creating Autonomous Vehicle Systems, 2018</li>
+</ul>
+<h1 id="Ch1-Introduction-to-Autonomous-Driving-自动驾驶技术简介"><a href="#Ch1-Introduction-to-Autonomous-Driving-自动驾驶技术简介" class="headerlink" title="Ch1 Introduction to Autonomous Driving 自动驾驶技术简介"></a>Ch1 Introduction to Autonomous Driving 自动驾驶技术简介</h1><h2 id="1-1-Autonomous-Driving-Technologies-Overview-概览"><a href="#1-1-Autonomous-Driving-Technologies-Overview-概览" class="headerlink" title="1.1 Autonomous Driving Technologies Overview 概览"></a>1.1 Autonomous Driving Technologies Overview 概览</h2><p>自动驾驶技术不是一项单一的技术，而是一系列技术的整合。<br>主要由三部分构成：</p>
+<ul>
+<li>Algorithm<ul>
+<li>Sensing</li>
+<li>Perception</li>
+<li>Decision</li>
+</ul>
+</li>
+<li>Client System<ul>
+<li>Operating System</li>
+<li>Hardware Platform</li>
+</ul>
+</li>
+<li>Cloud Platform<ul>
+<li>High-definition (HD) Map</li>
+<li>Deep Learning Model Training</li>
+<li>Simulation</li>
+<li>Data storage</li>
+</ul>
+</li>
+</ul>
+<p align="center">
+<img src="http://ws1.sinaimg.cn/large/006tNc79ly1g227axbd1mj31660g2dk7.jpg" width="600"/>
+</p>
+
+<blockquote>
+<p>The algorithm subsystem extracts meaningful information from sensor raw data to under- stand its environment and to make decisions about its future actions. The client systems integrate these algorithms together to meet real-time and reliability requirements. For example, if the camera generates data at 60 Hz, the client systems need to make sure that the longest stage of the pro- cessing pipeline takes less than 16 ms to complete. The cloud platform provides offline computing and storage capabilities for autonomous cars. With the cloud platform, we are able to test new algorithms, update HD map, and train better recognition, tracking, and decision models.</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="1-2-Autonomous-Driving-Algorithm-算法"><a href="#1-2-Autonomous-Driving-Algorithm-算法" class="headerlink" title="1.2 Autonomous Driving Algorithm 算法"></a>1.2 Autonomous Driving Algorithm 算法</h2><h3 id="1-SENSING-传感"><a href="#1-SENSING-传感" class="headerlink" title="1.SENSING 传感"></a>1.SENSING 传感</h3><p>每种方法都有自己的优缺点，*实际情况下自动驾驶汽车结合了各种方法来保证可靠性和安全性。</p>
+<ul>
+<li>GPS/IMU（惯性测量单元）<br>GPS精度高但更新频率低，IMU精读随时间变化越来越低但更新频率高。</li>
+<li>LiDAR 光学雷达<br>精度高，用于绘制地图、定位及避障，作为主传感器使用。</li>
+<li>Cameras 相机<br>用于物体识别与追踪。多个摄像头产生巨额数据量。</li>
+<li>Radar and Sonar 雷达和声呐<br>雷达和声呐是避障的最后一道保障，产生的数据不需要过多处理直接被控制处理器采用（因为是紧急情况）。</li>
+</ul>
+<h3 id="2-Perception-感知"><a href="#2-Perception-感知" class="headerlink" title="2.Perception 感知"></a>2.Perception 感知</h3><ul>
+<li>定位<br>结合GPS和IMU的数据完成定位，因为有GPS室内环境(如隧道)无法工作等问题，引入摄像头作为辅助定位。摄像头的定位技术类似于对四维空间进行分析。问题又来了，因为摄像头定位需要充足的光线，也不够好，因此，借助于大量粒子滤波的激光雷达LiDAR通常被用作车辆定位的主传感器。<br>激光雷达产生的<strong>点云</strong>对环境进行了“形状化描述”，但并不足以区分各自不同的点，通过粒子滤波将已知HD地图与观测到的形状进行比较以减少位置的不确定性。<br>LiDAR也有缺点，它的缺点是会受到空气中的悬浮颗粒(雨滴或灰尘)的干扰。<br>综上所述，我们需要利用多种传感器融合技术进行多类型传感数据融合，处理以整合所有传感器的优点，完成可靠并精准的定位。</li>
+</ul>
+<p align="center">
+<img src="http://ws3.sinaimg.cn/large/006tNc79ly1g2289evztfj30y80pun5z.jpg" width="500"/>
+</p>
+
+<ul>
+<li>物体识别与追踪<br>LiDAR+CNN卷积神经网络：<ul>
+<li>卷积层使用不同的滤波器从输入图像中提取不同的特征，并且每个滤波器在完成训练阶段后都将抽取出一套“可供学习”的参数</li>
+<li>激活层决定是否启动目标神经元</li>
+<li>汇聚层压缩特征映射图所占用的空间以减少参数的数目，并由此降低所需要的计算量</li>
+<li>一旦某物体被CNN识别出来，下一步将自动预测它的运行轨迹或进行物体追踪 </li>
+</ul>
+</li>
+</ul>
+<h3 id="3-Action-决策"><a href="#3-Action-决策" class="headerlink" title="3.Action 决策"></a>3.Action 决策</h3><ul>
+<li>行为预测<ul>
+<li>预测其它车辆的行驶行为</li>
+<li>使用随记模型产生其它车辆的可达位置集合，并采用概率分布的方法预测每一个可达位置集的相关概率</li>
+</ul>
+</li>
+</ul>
+<p align="center">
+<img src="http://ws3.sinaimg.cn/large/006tNc79ly1g228wh8wnmj30x80qeaoe.jpg" width="500"/>
+</p>
+
+<ul>
+<li>路径规划<ul>
+<li>使用完全确定模型，搜索所有可能的路径并利用代价函数的方式确定最佳路径</li>
+<li>缺点是不实时。为了避免计算复杂性并提供实时的路径规划，使用概率性模型成为了主要的优化方向</li>
+</ul>
+</li>
+<li>避障<ul>
+<li>安全性是首位的！我们将至少使用两层级的避障机制</li>
+<li>第一层是基于交通情况预测的前瞻层级</li>
+<li>第二层是实时反应层级。使用本地雷达数据进行路径重新规划，一旦雷达侦测到前方出现障碍物，则立即执行避障（前面提到的雷达+声呐作为避障的最后一道屏障。他们产生的数据用来表示在车的前进方向上最近障碍物的距离）</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-3-Autonomous-Driving-Client-System-用户端系统"><a href="#1-3-Autonomous-Driving-Client-System-用户端系统" class="headerlink" title="1.3 Autonomous Driving Client System 用户端系统"></a>1.3 Autonomous Driving Client System 用户端系统</h2><p>用户端系统整合上述避障、路径规划等算法，以满足可靠性及实时性等要求。需要克服三个问题：</p>
+<ul>
+<li>系统必须确保捕捉到的大量传感器数据可以及时快速地得到处理</li>
+<li>如果系统的某部分失效，则系统需要有足够的健壮性能从错误中恢复</li>
+<li>系统必须在设计的能耗和资源限定下有效地完成所有的计算操作</li>
+</ul>
+<h3 id="1-机器人操作系统ROS"><a href="#1-机器人操作系统ROS" class="headerlink" title="1.机器人操作系统ROS"></a>1.机器人操作系统ROS</h3><p>ROS是现如今广泛被使用的、专为机器人应用裁剪的、强大的分布式计算框架。ROS非常适用于无人驾驶的场景，但是仍有一些问题需要解决。</p>
+<p align="center">
+<img src="http://ws1.sinaimg.cn/large/006tNc79ly1g22c2a58y0j31220kk0yj.jpg" width="500"/>
+</p>
+
+<h4 id="待解决问题"><a href="#待解决问题" class="headerlink" title="待解决问题"></a>待解决问题</h4><ul>
+<li>可靠性：ROS使用单主节点结构，并且没有监控机制以恢复失效的节点。</li>
+<li>性能：当节点之间使用广播消息的方式通信时，将产生多次信息复制导致性能下降。</li>
+<li>安全：ROS中没有授权和加密机制，因此安全性受到很大威胁。</li>
+</ul>
+<h4 id="可靠性"><a href="#可靠性" class="headerlink" title="可靠性"></a>可靠性</h4><ul>
+<li>使用类似于ZooKeeper的方法，改进后的ROS结构包括一个关键主节点及一个备用主节点。</li>
+</ul>
+<h4 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h4><ul>
+<li>不再使用TCP/IP的通信模式，取而代之地采用共享内存的方法完成节点通信。</li>
+<li>不再使用广播通信，改成目的更明确的多路径传输机制改善系统的带宽与吞吐量。</li>
+</ul>
+<h4 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h4><ul>
+<li>使用Linux containers(LXC)的方法限制每一个节点可供使用的资源数，并采用沙盒的方式以确保节点的运行独立，这样以来可最大限度地防止资源泄露。（防止因ROS节点被挟制后不断进行内存分配，内存耗尽而导致剩余节点失效继而全线崩溃）</li>
+<li>为通信消息进行了加密操作，以防止其被黑客窃听。</li>
+</ul>
+<h3 id="2-硬件平台"><a href="#2-硬件平台" class="headerlink" title="2.硬件平台"></a>2.硬件平台</h3><ul>
+<li>现有计算平台功耗高发热严重需要配备额外的散热装置，因而太贵。</li>
+<li>利用ARM面向移动市场的SoC可以尝试解决这些问题。<blockquote>
+<p>SoC: System on Chip.是一个将电脑或其他电子系统集成到单一芯片的集成电路。<br>指的是将CPU、GPU、RAM、通信基带、等整合在一起的<br>由于手机空间限制，不可能像PC一样，主板、CPU、GPU、内存条可以自己选择，自由组合，所以厂家直接整合在了一起，假设你找高通买了SOC，它就包含了CPU、GPU、内存条、通信基带等给你，厂家一般也不会单卖CPU给你。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="1-4-Autonomous-Driving-Cloud-Platform-云平台"><a href="#1-4-Autonomous-Driving-Cloud-Platform-云平台" class="headerlink" title="1.4 Autonomous Driving Cloud Platform 云平台"></a>1.4 Autonomous Driving Cloud Platform 云平台</h2><p>无人车是移动系统，因此需要云平台的支持。云平台可以提供：</p>
+<ul>
+<li>分布式计算</li>
+<li>分布式存储</li>
+</ul>
+<h3 id="1-仿真"><a href="#1-仿真" class="headerlink" title="1.仿真"></a>1.仿真</h3><ul>
+<li>开发无人驾驶新算法 –&gt; 仿真测试(回放ROS阶段采集点真实数据，模拟真实驾驶场景) –&gt; 真车测试(成本高昂、周期漫长)<br>因此仿真测试的全面性和正确性对降低生产成本和生产周期尤为重要。  </li>
+<li>利用Spark可以搭建服务器集群更快完成仿真测试。</li>
+</ul>
+<p align="center">
+<img src="http://ws4.sinaimg.cn/large/006tNc79ly1g22cc8j1ezj30yq0o2qec.jpg" width="500"/>
+</p>
+
+<h3 id="2-高精度地图生成"><a href="#2-高精度地图生成" class="headerlink" title="2.高精度地图生成"></a>2.高精度地图生成</h3><ul>
+<li>原始数据处理 –&gt; 点云生成 –&gt; 点云对齐 –&gt; 2D反射地图生成 –&gt; 高精地图标注 –&gt; 地图生成</li>
+<li>利用Spark内存计算不需要使用磁盘存储，数据访问速度加快，极大提高了高精度地图产生的性能。</li>
+</ul>
+<h3 id="3-深度学习模型训练"><a href="#3-深度学习模型训练" class="headerlink" title="3.深度学习模型训练"></a>3.深度学习模型训练</h3><ul>
+<li>单服务器计算模型缓慢</li>
+<li>使用Spark+Paddle来搭建分布式深度学习系统</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>人工智能</tag>
+        <tag>NEU</tag>
+        <tag>自动驾驶</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>排序算法</title>
+    <url>/2019/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><ul>
+<li>排序是使用最多的算法</li>
+<li>数据结构设计思想<ul>
+<li>divide and conquer 分治</li>
+<li>specialised data structures</li>
+<li>randomised algorithms</li>
+<li>lower bounds</li>
+</ul>
+</li>
+<li>排序算法是很多其他算法的基础<ul>
+<li>搜索</li>
+<li>最短路径</li>
+<li>元素唯一性 Element uniqueness</li>
+<li>频率分布 Frequency distribution</li>
+<li>选择</li>
+<li>计算几何和计算机图形学 Computational Geometry and Computer Graphics(CG)<br>Convex hull 扫描法找凸包 根据角度排序构建最外层点的凸多边形</li>
+</ul>
+</li>
+</ul>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><img src="http://ws4.sinaimg.cn/large/006tNc79ly1g24y3dkjlgj311o0huqhl.jpg" align=center width=400>
+
+<ul>
+<li>内部排序 Internal Sort<ul>
+<li>关键字比较法<ul>
+<li> incremental method: Insertion Sort插入排序</li>
+<li> Divide- and- conquer: Quick Sort 快速排序, Merge Sort 归并排序</li>
+<li> Heap Sort 堆排序</li>
+</ul>
+</li>
+<li>distribution<ul>
+<li> Radix Sort 基数排序</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> 外部排序 External Sort</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><ul>
+<li>输入Input: 一串数字</li>
+<li>输出Output: 输入序列重排序后的排列</li>
+</ul>
+<h3 id="评估方面1-稳定排序-Stable-Sorting"><a href="#评估方面1-稳定排序-Stable-Sorting" class="headerlink" title="评估方面1-稳定排序 Stable Sorting"></a>评估方面1-稳定排序 Stable Sorting</h3><p>相等的数字排序前后相对位置不变</p>
+<h3 id="评估方面2-时间复杂度-Time-Complexity"><a href="#评估方面2-时间复杂度-Time-Complexity" class="headerlink" title="评估方面2-时间复杂度 Time Complexity"></a>评估方面2-时间复杂度 Time Complexity</h3><p>基于比较的排序，时间由比较次数决定</p>
+<h3 id="评估方面3-in-place-sorting-algorithm"><a href="#评估方面3-in-place-sorting-algorithm" class="headerlink" title="评估方面3-in-place sorting algorithm"></a>评估方面3-in-place sorting algorithm</h3><p>不借助额外的数据结构</p>
+<blockquote>
+<p>In computer science, an in-place algorithm is an algorithm which transforms input using no auxiliary data structure. However a small amount of extra storage space is allowed for auxiliary variables. The input is usually overwritten by the output as the algorithm executes. In-place algorithm updates input sequence only through replacement or swapping of elements. An algorithm which is not in-place is sometimes called not-in-place or out-of-place.</p>
+</blockquote>
+<h1 id="插入排序-Insertion-Sort"><a href="#插入排序-Insertion-Sort" class="headerlink" title="插入排序 Insertion Sort"></a>插入排序 Insertion Sort</h1><h1 id="快速排序-Quick-Sort"><a href="#快速排序-Quick-Sort" class="headerlink" title="快速排序 Quick Sort"></a>快速排序 Quick Sort</h1><h1 id="归并排序-Merge-Sort"><a href="#归并排序-Merge-Sort" class="headerlink" title="归并排序 Merge Sort"></a>归并排序 Merge Sort</h1><h1 id="堆排序-Heap-Sort"><a href="#堆排序-Heap-Sort" class="headerlink" title="堆排序 Heap Sort"></a>堆排序 Heap Sort</h1><h1 id="桶排序-Bucket-Sort"><a href="#桶排序-Bucket-Sort" class="headerlink" title="桶排序 Bucket Sort"></a>桶排序 Bucket Sort</h1><h1 id="基数排序-Radix-Sort"><a href="#基数排序-Radix-Sort" class="headerlink" title="基数排序 Radix Sort"></a>基数排序 Radix Sort</h1>]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>排序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机热门研究领域扫盲</title>
+    <url>/2019/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%83%AD%E9%97%A8%E7%A0%94%E7%A9%B6%E9%A2%86%E5%9F%9F%E6%89%AB%E7%9B%B2/</url>
+    <content><![CDATA[<p>最近有幸得到了东南大学预推免的机会，之前凭借自己对行业的观察和直觉选择了数据科学方向，但发现自己甚至还没有对数据科学的一些基本了解<br>借此机会对当前计算机领域各个研究方向做一个全面的基础的了解，算是一个扫盲的过程。</p>
+<span id="more"></span>
+
+<h1 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h1><h2 id="云与云计算"><a href="#云与云计算" class="headerlink" title="云与云计算"></a>云与云计算</h2><ul>
+<li><a href="https://blog.csdn.net/weixin_41918841/article/details/89088987">云计算到底是怎么玩的(入门介绍)</a></li>
+</ul>
+<p>计算机资源不在本地，通过网络使用其他设备的计算机资源（计算资源，网络资源，存储资源等）。</p>
+<blockquote>
+<p>“云”实质上就是一个网络，狭义上讲，云计算就是一种提供资源的网络，使用者可以随时获取“云”上的资源，按需求量使用，并且可以看成是无限扩展的，只要按使用量付费就可以，“云”就像自来水厂一样，我们可以随时接水，并且不限量，按照自己家的用水量，付费给自来水厂就可以。<br>从广义上说，云计算是与信息技术、软件、互联网相关的一种服务，这种计算资源共享池叫做“云”，云计算把许多计算资源集合起来，通过软件实现自动化管理，只需要很少的人参与，就能让资源被快速提供。也就是说，计算能力作为一种商品，可以在互联网上流通，就像水、电、煤气一样，可以方便地取用，且价格较为低廉。<br>总之，云计算不是一种全新的网络技术，而是一种全新的网络应用概念，云计算的核心概念就是以互联网为中心，在网站上提供快速且安全的云计算服务与数据存储，让每一个使用互联网的人都可以使用网络上的庞大计算资源与数据中心。<br>云计算是继互联网、计算机后在信息时代有一种新的革新，云计算是信息时代的一个大飞跃，未来的时代可能是云计算的时代，虽然目前有关云计算的定义有很多，但总体上来说，云计算虽然有许多得含义，但概括来说，云计算的基本含义是一致的，即云计算具有很强的扩展性和需要性，可以为用户提供一种全新的体验，云计算的核心是可以将很多的计算机资源协调在一起，因此，使用户通过网络就可以获取到无限的资源，同时获取的资源不受时间和空间的限制。</p>
+</blockquote>
+<h2 id="虚拟化"><a href="#虚拟化" class="headerlink" title="虚拟化"></a>虚拟化</h2><p>目的是实现调度灵活。时间灵活性与空间灵活性。</p>
+<h2 id="相关技术"><a href="#相关技术" class="headerlink" title="相关技术"></a>相关技术</h2><ul>
+<li>Hypervisor：完成物理资源虚拟化，如VMware，KVM</li>
+<li>OpenStack：KVM这样的Hypervisor软件，实际上是提供了一种虚拟化能力，模拟CPU的运行，更为底层。但是它的用户交互并不良好，不方便使用。于是，为了更好地管理虚拟机，就需要OpenStack这样的云管理平台。（这些属于IaaS）</li>
+<li>容器：容器也是虚拟化，但是属于“轻量级”的虚拟化。它的目的和虚拟机一样，都是为了创造“隔离环境”。但是，它又和虚拟机有很大的不同——虚拟机是操作系统级别的资源隔离，而容器本质上是进程级的资源隔离。而大家常听说的Docker，就是创建容器的工具，是应用容器引擎。</li>
+<li>K8S：除了Docker对容器进行创建之外，我们还需要一个工具，对容器进行编排。这个工具，就是K8S。K8S是一个容器集群管理系统，主要职责是容器编排（Container Orchestration）——启动容器，自动化部署、扩展和管理容器应用，还有回收容器。</li>
+</ul>
+<h2 id="私有云与公有云"><a href="#私有云与公有云" class="headerlink" title="私有云与公有云"></a>私有云与公有云</h2><p>公有云就是阿里云，腾讯云这些云服务商提供的服务。</p>
+<p>私有云是企业或者个人自己拥有的云服务器，并且服务器不对外开放，仅供自己公司内部人使用。比如说有些大的企业数据文档需要共享，用云盘就很方便并且不用交给第三方保管，这从某种意义上来说降低了泄密的风险。另外，云服务器<strong>容错能力、抗风险能力都比较高</strong>，这是传统服务器所不能比的。<br>（私有云利用了云计算的特点，即资源不在本地，员工们随用随取）</p>
+<p>另外还有混合云，主要由提供商管理的公共云与主要由客户业务管理的私有云之间的组合。这使得公司可以选择他们希望在内部保留哪些服务以及他们想要作为更通用（和通用）平台访问哪些服务，同时仍然将所有内容保留在云中。</p>
+<h2 id="IaaS、PaaS-和-SaaS"><a href="#IaaS、PaaS-和-SaaS" class="headerlink" title="IaaS、PaaS 和 SaaS"></a>IaaS、PaaS 和 SaaS</h2><ul>
+<li><p><a href="https://www.zhihu.com/question/20387284">怎么理解 IaaS、SaaS 和 PaaS 的区别？</a></p>
+</li>
+<li><p><a href="https://www.zhihu.com/question/21641778/answer/62523535">有哪些通俗易懂的例子可以解释 IaaS、PaaS、SaaS 的区别？ - 何足道的回答 - 知乎</a></p>
+</li>
+<li><p>IaaS：基础设施即服务</p>
+</li>
+<li><p>PaaS：平台即服务</p>
+</li>
+<li><p>SaaS：软件即服务</p>
+</li>
+</ul>
+<p>以阿里云为例，普通的ECS云服务器属于IaaS，但例如云数据库，云存储这样的云应用属于平台级的PaaS。另外例如阿里学生机提供的「轻量应用服务器」也可以认为是PaaS。（IaaS和PaaS的界限不明显）</p>
+<blockquote>
+<p>如果你是一个网站站长，想要建立一个网站。不采用云服务，你所需要的投入大概是：买服务器，安装服务器软件，编写网站程序。现在你追随潮流，采用流行的云计算，如果你采用IaaS服务，那么意味着你就不用自己买服务器了，随便在哪家购买虚拟机，但是还是需要自己装服务器软件而如果你采用PaaS的服务，那么意味着你既不需要买服务器，也不需要自己装服务器软件，只需要自己开发网站程序如果你再进一步，购买某些在线论坛或者在线网店的服务,这意味着你也不用自己开发网站程序，只需要使用它们开发好的程序，而且他们会负责程序的升级、维护、增加服务器等，而你只需要专心运营即可，此即为SaaS。</p>
+</blockquote>
+<blockquote>
+<p>Platform as a Service: 平台即服务, 是面向软件开发者的服务, 云计算平台提供硬件, OS, 编程语言, 开发库, 部署工具, 帮助软件开发者更快的开发软件服务. 比如Google的GAE.SaaS: 软件即服务, 是面向软件消费者的, 用户无需安装, 通过标准的Internet工具(比如浏览器), 即可使用云计算平台提供的软件, 比如Salesforce的CRM管理系统, Google的Gmail.还有IaaS 基础设施即服务, 这个跟PaaS的区别倒是不那么明显, 比如Amazon的IaaS服务AWS越来越像PaaS了。</p>
+</blockquote>
+<p><img src="https://pic3.zhimg.com/80/v2-cd6d71e4481f5ffe432c6b1255ae601b_hd.jpg"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>云计算面向用户隐藏了足够多的技术细节，我认为利用阿里云这些公有云厂商最大的好处一是弹性空间即买即用，二是省去了大量的运维工作。<br>云计算的研究应该还是侧重如何更好地进行资源调度，如何帮助用户进行资源迁移与部署。两个方面分别帮助云服务提供商和用户节省成本。</p>
+<h1 id="分布式系统"><a href="#分布式系统" class="headerlink" title="分布式系统"></a>分布式系统</h1><ul>
+<li><a href="https://www.cnblogs.com/xybaby/p/7787034.html">什么是分布式系统，如何学习分布式系统</a><br>分布式系统是由一组通过网络进行通信、为了完成共同的任务而协调工作的计算机节点组成的系统。分布式系统的出现是为了用廉价的、普通的机器完成单个计算机无法完成的计算、存储任务。其目的是利用更多的机器，处理更多的数据。</li>
+</ul>
+<h2 id="以一个请求为例串起分布式系统的技术细节"><a href="#以一个请求为例串起分布式系统的技术细节" class="headerlink" title="以一个请求为例串起分布式系统的技术细节"></a>以一个请求为例串起分布式系统的技术细节</h2><p>　　用户使用Web、APP、SDK，通过HTTP、TCP连接到系统。在分布式系统中，为了高并发、高可用，一般都是多个节点提供相同的服务。那么，第一个问题就是具体选择哪个节点来提供服务，这个就是负载均衡（load balance）。负载均衡的思想很简单，但使用非常广泛，在分布式系统、大型网站的方方面面都有使用，或者说，只要涉及到多个节点提供同质的服务，就需要负载均衡。</p>
+<p>　　通过负载均衡找到一个节点，接下来就是真正处理用户的请求，请求有可能简单，也有可能很复杂。简单的请求，比如读取数据，那么很可能是有缓存的，即分布式缓存，如果缓存没有命中，那么需要去数据库拉取数据。对于复杂的请求，可能会调用到系统中其他的服务。</p>
+<p>　　承上，假设服务A需要调用服务B的服务，首先两个节点需要通信，网络通信都是建立在TCP/IP协议的基础上，但是，每个应用都手写socket是一件冗杂、低效的事情，因此需要应用层的封装，因此有了HTTP、FTP等各种应用层协议。当系统愈加复杂，提供大量的http接口也是一件困难的事情。因此，有了更进一步的抽象，那就是RPC（remote produce call），是的远程调用就跟本地过程调用一样方便，屏蔽了网络通信等诸多细节，增加新的接口也更加方便。</p>
+<p>　　一个请求可能包含诸多操作，即在服务A上做一些操作，然后在服务B上做另一些操作。比如简化版的网络购物，在订单服务上发货，在账户服务上扣款。这两个操作需要保证原子性，要么都成功，要么都不操作。这就涉及到分布式事务的问题，分布式事务是从应用层面保证一致性：某种守恒关系。</p>
+<p>　　上面说道一个请求包含多个操作，其实就是涉及到多个服务，分布式系统中有大量的服务，每个服务又是多个节点组成。那么一个服务怎么找到另一个服务（的某个节点呢）？通信是需要地址的，怎么获取这个地址，最简单的办法就是配置文件写死，或者写入到数据库，但这些方法在节点数据巨大、节点动态增删的时候都不大方便，这个时候就需要服务注册与发现：提供服务的节点向一个协调中心注册自己的地址，使用服务的节点去协调中心拉取地址。</p>
+<p>　　从上可以看见，协调中心提供了中心化的服务：以一组节点提供类似单点的服务，使用非常广泛，比如命令服务、分布式锁。协调中心最出名的就是chubby，zookeeper。</p>
+<p>　　回到用户请求这个点，请求操作会产生一些数据、日志，通常为信息，其他一些系统可能会对这些消息感兴趣，比如个性化推荐、监控等，这里就抽象出了两个概念，消息的生产者与消费者。那么生产者怎么讲消息发送给消费者呢，RPC并不是一个很好的选择，因为RPC肯定得指定消息发给谁，但实际的情况是生产者并不清楚、也不关心谁会消费这个消息，这个时候消息队列就出马了。简单来说，生产者只用往消息队列里面发就行了，队列会将消息按主题（topic）分发给关注这个主题的消费者。消息队列起到了异步处理、应用解耦的作用。</p>
+<p>　　上面提到，用户操作会产生一些数据，这些数据忠实记录了用户的操作习惯、喜好，是各行各业最宝贵的财富。比如各种推荐、广告投放、自动识别。这就催生了分布式计算平台，比如Hadoop，Storm等，用来处理这些海量的数据。</p>
+<p>　　最后，用户的操作完成之后，用户的数据需要持久化，但数据量很大，大到按个节点无法存储，那么这个时候就需要分布式存储：将数据进行划分放在不同的节点上，同时，为了防止数据的丢失，每一份数据会保存多分。传统的关系型数据库是单点存储，为了在应用层透明的情况下分库分表，会引用额外的代理层。而对于NoSql，一般天然支持分布式。</p>
+<h2 id="REST与RPC"><a href="#REST与RPC" class="headerlink" title="REST与RPC"></a>REST与RPC</h2><ul>
+<li><a href="https://baijiahao.baidu.com/s?id=1617168792520937104&wfr=spider&for=pc">面试问题：REST与RPC区别？</a><br>REST调用及测试都很方便，RPC就显得有点繁琐，但是RPC的效率是毋庸置疑的，所以建议在多系统之间的内部调用采用RPC。  </li>
+</ul>
+<p><strong>对外提供的服务，Rest更加合适。</strong></p>
+<h1 id="数据科学"><a href="#数据科学" class="headerlink" title="数据科学"></a>数据科学</h1><ul>
+<li><a href="https://www.zhihu.com/question/54521940/answer/489379445">数据科学 data science 是什么？</a><br>包括了：<ul>
+<li>数据挖掘</li>
+<li>统计推断</li>
+<li>机器学习</li>
+<li>数据工程</li>
+<li>决策智能</li>
+</ul>
+</li>
+</ul>
+<h2 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h2><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/40217622">大数据学什么？</a></li>
+<li><a href="https://www.zhihu.com/question/27292215/answer/133141387">如何入门大数据（数据挖掘方面）？</a></li>
+</ul>
+<p>看了一圈之后发现其实目前的这些热门方向可以连在一起形成一个闭环。</p>
+<h2 id="ETL程序"><a href="#ETL程序" class="headerlink" title="ETL程序"></a>ETL程序</h2><p>ETL是将业务系统的数据经过抽取、清洗转换之后加载到数据仓库的过程，目的是将企业中的分散、零乱、标准不统一的数据整合到一起，为企业的决策提供分析依据。</p>
+<h1 id="物联网"><a href="#物联网" class="headerlink" title="物联网"></a>物联网</h1><ul>
+<li><a href="https://www.zhihu.com/question/19751763/answer/95871992">什么是物联网？其发展前景如何？</a></li>
+</ul>
+<h2 id="边缘计算"><a href="#边缘计算" class="headerlink" title="边缘计算"></a>边缘计算</h2><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/52864297">一文读懂边缘计算和边缘智能，以及它们和ARM的暧昧关系</a><br>“大智能”在云端，“小智能”在边缘，仍是长期趋势。</li>
+</ul>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>看完之后依旧头大，还没完全清楚自己感兴趣的方向。另外一个感觉就是这些名词总是在把简单问题复杂化，接下来的这些天再继续了解。  </p>
+<h2 id="从招聘入手"><a href="#从招聘入手" class="headerlink" title="从招聘入手"></a>从招聘入手</h2><p>突发奇想想看看大厂们的招聘都在招什么岗位</p>
+<ul>
+<li><p><a href="https://campus.alibaba.com/positionList.htm?spm=a1z3e1.11770916.0.0.6c0f723anKzi6x">阿里巴巴校园招聘岗位</a></p>
+</li>
+<li><p>算法工程师</p>
+<ul>
+<li>语音对话交互：深度学习、语音识别、语音合成、自然语言处理、语音交互、人工智能</li>
+<li>运筹优化：机器学习、运筹学（电商，物流和计算资源调度）</li>
+<li>自然语言处理</li>
+<li>计算机图形</li>
+<li>计算机视觉</li>
+<li>机器学习</li>
+</ul>
+</li>
+<li><p>数据研发工程师</p>
+<ul>
+<li>大数据的采集、存储、处理，通过分布式大数据平台加工数据，支持业务管理决策</li>
+<li>大数据体系的设计、开发、维护，通过数据仓库、元数据、质量体系有效的管理和组织几百P的数据</li>
+<li>大数据产品的研发，通过对数据的理解，发挥你的商业sense，发掘数据价值，探索大数据商业化</li>
+</ul>
+</li>
+<li><p>研发工程师</p>
+<ul>
+<li>基础技术（基础软件的设计、开发和维护）</li>
+<li>高性能分布式技术</li>
+<li>搜索技术</li>
+<li>电子商务产品技术</li>
+<li>海量数据处理和开发</li>
+<li>客户端开发</li>
+</ul>
+</li>
+<li><p>基础平台研发工程师（全栈）</p>
+<ul>
+<li>云基础设施技术</li>
+<li>虚拟化技术</li>
+<li>MySQL、PostgrelSQL、MongoDB、Redis、HBase等开源数据库内核的改进</li>
+<li>分布式系统</li>
+<li>大数据在线引擎体系</li>
+</ul>
+</li>
+</ul>
+<h2 id="SEU"><a href="#SEU" class="headerlink" title="SEU"></a>SEU</h2><p>根据SEU计算机学院的导师方向对目前计算机科学的研究领域做一个分类</p>
+<ul>
+<li>网络计算</li>
+<li>数据科学</li>
+<li>机器学习与知识工程</li>
+<li>智能系统与应用</li>
+<li>计算机软件与理论</li>
+<li>影响科学与图像处理</li>
+</ul>
+<p>总体来说，交叉技术运用的越来越明显，人工智能，网络，软件理论是几个主要的研究方向。</p>
+<p>最后放一张闲来无事做的SEU计算机学院导师们研究方向的词云。<br><img src="http://ww4.sinaimg.cn/large/006y8mN6ly1g67cepr7rej314v0u0x0u.jpg"></p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>研究生</tag>
+        <tag>科普</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>认真搞清楚static, final, final static</title>
+    <url>/2019/%E8%AE%A4%E7%9C%9F%E6%90%9E%E6%B8%85%E6%A5%9Astatic,%20final,%20final%20static/</url>
+    <content><![CDATA[<h1 id="static"><a href="#static" class="headerlink" title="static"></a>static</h1><p><em>为什么要用static?</em><br>有一些频繁使用的东西，如果你每次使用都重新new一下，那么这个开销可能会很高，如果使用static，一直放在内存中，那么想用就直接用，而不需要重新new一块空间初始化数据。那么static就是为了实现一个系统的缓存作用的，其生命周期直到应用程序退出结束。<br>这说明，static修饰的类成员，在程序运行过程中，只需要初始化一次即可，不会进行多次的初始化。static可以修饰：方法，属性，代码段，内部类（静态内部类或嵌套内部类）<br>主要有四种用法：</p>
+<h2 id="static成员变量"><a href="#static成员变量" class="headerlink" title="static成员变量"></a>static成员变量</h2><p><strong>用来修饰成员变量，将其变为类的成员，从而实现所有对象对于该成员的共享</strong><br>静态变量和非静态变量的区别是：  </p>
+<ul>
+<li>静态变量被所有的对象所共享，在内存中只有一个副本，它当且仅当在类初次加载时会被初始化。</li>
+<li>非静态变量是对象所拥有的，在创建对象的时候被初始化，存在多个副本，各个对象拥有的副本互不影响。<br>static不允许用来修饰局部变量，只能修饰成员变量。</li>
+</ul>
+<h2 id="static方法"><a href="#static方法" class="headerlink" title="static方法"></a>static方法</h2><p><strong>用来修饰成员方法，将其变为类方法，可以直接使用“类名.方法名”的方式调用，常用于工具类</strong>  </p>
+<ul>
+<li>首先，在静态方法中不能访问类的非静态成员变量和非静态成员方法。<br>原因：非静态成员（变量和方法）属于类的对象，所以只有在类的对象产生（创建类的实例）时才会分配内存，然后通过类的对象（实例）去访问。在一个类的静态成员中去访问其非静态成员之所以会出错是因为在类的非静态成员不存在的时候类的静态成员就已经存在了，访问一个内存中不存在的东西当然会出错。  </li>
+<li>其次，即使没有显示地声明为static，类的构造器实际上也是静态方法。</li>
+</ul>
+<h2 id="static代码块"><a href="#static代码块" class="headerlink" title="static代码块"></a>static代码块</h2><p><strong>静态块用法，将多个类成员放在一起初始化，使得程序更加规整，其中理解对象的初始化过程非常关键</strong><br>static块可以用来优化程序性能，是因为它的特性:只会在类加载的时候执行一次。<br>很多时候会将一些只需要进行一次的初始化操作都放在static代码块中进行。</p>
+<blockquote>
+<p>一个Java文件从编码完成到最终执行，一般主要包括两个过程</p>
+<ul>
+<li>编译</li>
+<li>运行<br>编译，即把我们写好的java文件，通过javac命令编译成字节码，也就是我们常说的.class文件。<br>运行，则是把编译声称的.class文件交给Java虚拟机(JVM)执行。<br>而我们所说的类加载过程即是指JVM虚拟机把.class文件中类信息加载进内存，并进行解析生成对应的class对象的过程。<br>举个通俗点的例子来说，JVM在执行某段代码时，遇到了class A， 然而此时内存中并没有class A的相关信息，于是JVM就会到相应的class文件中去寻找class A的类信息，并加载进内存中，这就是我们所说的类加载过程。  </li>
+</ul>
+<p><strong>由此可见，JVM不是一开始就把所有的类都加载进内存中，而是只有第一次遇到某个需要运行的类时才会加载，且只加载一次。</strong>  </p>
+</blockquote>
+<span id="more"></span>
+<blockquote>
+<p>静态代码块先于main函数执行，这是必然的，因为静态代码块是随着类的加载而执行。</p>
+</blockquote>
+<hr>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">StaticDemo</span></span>&#123;</span><br><span class="line">    <span class="comment">//静态代码块</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;父类静态代码块被执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//非静态代码块 </span></span><br><span class="line">    &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;父类非静态代码块被执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//构造方法</span></span><br><span class="line">    StaticDemo() &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;父类构造方法被执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StaticTest</span> <span class="keyword">extends</span> <span class="title">StaticDemo</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 静态代码块的特点：</span></span><br><span class="line"><span class="comment">    * 随着类的加载而执行，而且只执行一次</span></span><br><span class="line"><span class="comment">    * 静态代码块额执行顺序优先于main函数</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;子类静态代码块被执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//非静态代码块</span></span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;子类非静态代码块被执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    StaticTest() &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;子类构造方法被执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] hq)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;main函数&quot;</span>);</span><br><span class="line">        <span class="keyword">new</span> StaticTest();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出结果</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">父类静态代码块被执行</span><br><span class="line">子类静态代码块被执行</span><br><span class="line">main函数</span><br><span class="line">父类非静态代码块被执行</span><br><span class="line">父类构造方法被执行</span><br><span class="line">子类非静态代码块被执行</span><br><span class="line">子类构造方法被执行</span><br></pre></td></tr></table></figure>
+
+<h2 id="static内部类"><a href="#static内部类" class="headerlink" title="static内部类"></a>static内部类</h2><p><strong>静态导包用法，将类的方法直接导入到当前类中，从而直接使用“方法名”即可调用类方法，更加方便</strong><br>static内部类与非static内部类的区别：</p>
+<ul>
+<li>首先，在非静态内部类中不可以声明静态成员。</li>
+<li>其次，静态内部类不能访问其外部类的非静态成员变量和方法。</li>
+<li>最后在创建静态类内部对象时，不需要其外部类的对象。<br>java在实现LinkedList时使用了如下内部类：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LinkedList</span>&lt;<span class="title">E</span>&gt; </span></span><br><span class="line"><span class="class">       <span class="title">extendsAbstractSequentialList</span>&lt;<span class="title">E</span>&gt; </span></span><br><span class="line"><span class="class">       <span class="keyword">implements</span> <span class="title">List</span>&lt;<span class="title">E</span>&gt;,<span class="title">Deque</span>&lt;<span class="title">E</span>&gt;, <span class="title">Cloneable</span>, <span class="title">java</span>.<span class="title">io</span>.<span class="title">Serializable</span></span></span><br><span class="line"><span class="class">   </span>&#123; </span><br><span class="line">   ........ </span><br><span class="line">       <span class="keyword">private</span> <span class="keyword">static</span> classEntry&lt;E&gt; &#123; </span><br><span class="line">               E element; </span><br><span class="line">               Entry&lt;E&gt; next; </span><br><span class="line">               Entry&lt;E&gt; previous; </span><br><span class="line"></span><br><span class="line">               Entry(E element,Entry&lt;E&gt; next, Entry&lt;E&gt; previous) &#123;</span><br><span class="line">                       <span class="keyword">this</span>.element =element; </span><br><span class="line">                       <span class="keyword">this</span>.next = next;</span><br><span class="line">                       <span class="keyword">this</span>.previous =previous; </span><br><span class="line">               &#125; </span><br><span class="line">   &#125; </span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> Entry&lt;E&gt; <span class="title">addBefore</span><span class="params">(E e,Entry&lt;E&gt; entry)</span> </span>&#123;</span><br><span class="line">               Entry&lt;E&gt; newEntry =<span class="keyword">new</span> Entry&lt;E&gt;(e, entry, entry.previous);</span><br><span class="line">               newEntry.previous.next = newEntry;</span><br><span class="line">               newEntry.next.previous =newEntry; </span><br><span class="line">               size++; </span><br><span class="line">               modCount++; </span><br><span class="line">               <span class="keyword">return</span> newEntry; </span><br><span class="line">   &#125; </span><br><span class="line">   ........ </span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p>这里即静态内部类的典型用法</p>
+<h1 id="final"><a href="#final" class="headerlink" title="final"></a>final</h1><p>在java的关键字中，static和final是两个我们必须掌握的关键字。不同于其他关键字，他们都有多种用法，而且在一定环境下使用，可以提高程序的运行性能，优化程序的结构。<br>在java中，final的含义在不同的场景下有细微的差别，但总体上来说，它指的是“这是不可变的”。下面，我们来讲final的四种主要用法。</p>
+<h2 id="修饰数据"><a href="#修饰数据" class="headerlink" title="修饰数据"></a>修饰数据</h2><p>在编写程序时，我们经常需要说明一个数据是不可变的，我们成为常量。在java中，用final关键字修饰的变量，只能进行一次赋值操作，并且在生存期内不可以改变它的值。更重要的是，final会告诉编译器，这个数据是不会修改的，那么编译器就可能会在编译时期就对该数据进行替换甚至执行计算，这样可以对我们的程序起到一点优化。不过在针对基本类型和引用类型时，final关键字的效果存在细微差别。我们来看下面的例子：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Value</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> v;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Value</span><span class="params">(<span class="keyword">int</span> v)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.v = v;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FinalTest</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">int</span> f1 = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">int</span> f2;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">FinalTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        f2 = <span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">int</span> value1 = <span class="number">1</span>;</span><br><span class="line">        <span class="comment">// value1 = 4;</span></span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">double</span> value2;</span><br><span class="line">        value2 = <span class="number">2.0</span>;</span><br><span class="line">        <span class="keyword">final</span> Value value3 = <span class="keyword">new</span> Value(<span class="number">1</span>);</span><br><span class="line">        value3.v = <span class="number">4</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的例子中，我们先来看一下main方法中的几个final修饰的数据，在给value1赋初始值之后，我们无法再对value1的值进行修改，final关键字起到了常量的作用。从value2我们可以看到，final修饰的变量可以不在声明时赋值，即可以先声明，后赋值。value3时一个引用变量，这里我们可以看到final修饰引用变量时，只是限定了引用变量的引用不可改变，即不能将value3再次引用另一个Value对象，但是引用的对象的值是可以改变的，从内存模型中我们看的更加清晰：</p>
+<img src="http://ws3.sinaimg.cn/large/006tNc79ly1g2ywdvorkcj30dd05ot90.jpg" width="500rpx"/>
+
+<p>上图中，final修饰的值用粗线条的边框表示它的值是不可改变的，我们知道引用变量的值实际上是它所引用的对象的地址，也就是说该地址的值是不可改变的，从而说明了为什么引用变量不可以改变引用对象。而实际引用的对象实际上是不受final关键字的影响的，所以它的值是可以改变的。</p>
+<p>另一方面，我们看到了用final修饰成员变量时的细微差别，因为final修饰的数据的值是不可改变的，所以我们必须确保在使用前就已经对成员变量赋值了。因此对于final修饰的成员变量，我们有且只有两个地方可以给它赋值，一个是声明该成员时赋值，另一个是在构造方法中赋值，在这两个地方我们必须给它们赋初始值。</p>
+<p>最后我们需要注意的一点是，同时使用static和final修饰的成员在内存中只占据一段不能改变的存储空间。</p>
+<h2 id="修饰方法参数"><a href="#修饰方法参数" class="headerlink" title="修饰方法参数"></a>修饰方法参数</h2><p>前面我们可以看到，如果变量是我们自己创建的，那么使用final修饰表示我们只会给它赋值一次且不会改变变量的值。那么如果变量是作为参数传入的，我们怎么保证它的值不会改变呢？这就用到了final的第二种用法，即在我们编写方法时，可以在参数前面添加final关键字，它表示在整个方法中，我们不会（实际上是不能）改变参数的值：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FinalTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* ... */</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">finalFunc</span><span class="params">(<span class="keyword">final</span> <span class="keyword">int</span> i, <span class="keyword">final</span> Value value)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// i = 5; 不能改变i的值</span></span><br><span class="line">        <span class="comment">// value = new Value(); 不能改变v的值</span></span><br><span class="line">        value.v = <span class="number">5</span>; <span class="comment">// 可以改变引用对象的值</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="修饰方法"><a href="#修饰方法" class="headerlink" title="修饰方法"></a>修饰方法</h2><p>第三种方式，即用final关键字修饰方法，它表示该方法不能被覆盖。这种使用方式主要是从设计的角度考虑，即明确告诉其他可能会继承该类的程序员，不希望他们去覆盖这个方法。这种方式我们很容易理解，然而，关于private和final关键字还有一点联系，这就是类中所有的private方法都隐式地指定为是final的，由于无法在类外使用private方法，所以也就无法覆盖它。</p>
+<h2 id="修饰类"><a href="#修饰类" class="headerlink" title="修饰类"></a>修饰类</h2><p>了解了final关键字的其他用法，我们很容易可以想到使用final关键字修饰类的作用，那就是用final修饰的类是无法被继承的。</p>
+<p>上面我们讲解了final的四种用法，然而，对于第三种和第四种用法，我们却甚少使用，这不是没有道理的。<br>从final的设计来讲，这两种用法甚至可以说是鸡肋，因为对于开发人员来讲，如果我们写的类被继承的越多，就说明我们写的类越有价值，越成功。即使是从设计的角度来讲，也没有必要将一个类设计为不可继承的。Java标准库就是一个很好的反例，特别是Java 1.0/1.1中Vector类被如此广泛的运用，如果所有的方法均未被指定为final的话，它可能会更加有用。如此有用的类，我们很容易想到去继承和重写他们，然而，由于final的作用，导致我们对Vector类的扩展受到了一些阻碍，导致了Vector并没有完全发挥它应有的全部价值。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>final关键字是我们经常使用的关键字之一，它的用法有很多，但是并不是每一种用法都值得我们去广泛使用。它的主要用法有以下四种：</p>
+<ul>
+<li>用来修饰数据，包括成员变量和局部变量，该变量只能被赋值一次且它的值无法被改变。对于成员变量来讲，我们必须在声明时或者构造方法中对它赋值；</li>
+<li>用来修饰方法参数，表示在变量的生存期中它的值不能被改变；</li>
+<li>修饰方法，表示该方法无法被重写；</li>
+<li>修饰类，表示该类无法被继承。  </li>
+</ul>
+<p>上面的四种方法中，第三种和第四种方法需要谨慎使用，因为在大多数情况下，如果是仅仅为了一点设计上的考虑，我们并不需要使用final来修饰方法和类。</p>
+<h1 id="static-final"><a href="#static-final" class="headerlink" title="static final"></a>static final</h1><p>static final == final static<br>同时使用static和final修饰的成员在内存中只占据一段不能改变的存储空间。</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://blog.csdn.net/zhangyanli0414/article/details/79008681">Java中如何理解Static，Final，Static Final</a></li>
+<li><a href="https://www.cnblogs.com/dotgua/p/6357951.html">java final关键字的几种用法</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo+github pages搭建个人博客</title>
     <url>/2018/Hexo+github%20pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p><strong>尊重原创，请先阅读这一篇教程：</strong><a href="http://www.cnblogs.com/dantefung/p/d8c48ba8030bcab7cfc364d423186fee.html" title="尊重原创">Hexo+github搭建个人博客</a></p>
@@ -26,8 +798,8 @@
         <category>技术</category>
       </categories>
       <tags>
-        <tag>博客</tag>
         <tag>Hexo</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
   <entry>
@@ -370,780 +1142,64 @@
         <category>学习</category>
       </categories>
       <tags>
+        <tag>NEU</tag>
         <tag>计算机网络</tag>
-        <tag>NEU</tag>
       </tags>
   </entry>
   <entry>
-    <title>0327-记在葫芦实习的六个月</title>
-    <url>/2019/0327-%E8%AE%B0%E5%9C%A8%E8%91%AB%E8%8A%A6%E5%AE%9E%E4%B9%A0%E7%9A%84%E5%85%AD%E4%B8%AA%E6%9C%88/</url>
-    <content><![CDATA[<h1 id="葫芦"><a href="#葫芦" class="headerlink" title="葫芦"></a>葫芦</h1><p>和葫芦科技的第一次接触是在18年9月，当时有幸在林根大佬的带领下接触到葫芦科技。葫芦科技是一家创业公司，挂靠在东北大学东创空间旗下。<br>短短六个月来持续开发维护运营了“weNEU小程序”、“东大葫芦服务号”、“享问3.0”等有趣的应用，也参与策划了“东大锦鲤”、“东大女生节”、“元旦晚会游戏”、“年终总结”等活动~六个月来认识了很多小伙伴，才发现有这么多和我同届但早已在创业方面做出很多成果的同学。</p>
-<h1 id="再见"><a href="#再见" class="headerlink" title="再见"></a>再见</h1><p>因为四月开始要忙于准备读研相关的事情，可能要暂时离开葫芦了，感谢大家一直以来的帮助，有缘再见~<br><img src="http://ws4.sinaimg.cn/large/006tKfTcly1g1ify2z9ahj31400u0qva.jpg" align=center></p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>葫芦科技</tag>
-        <tag>实习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>0328-校招面试初体验&amp;这一年</title>
-    <url>/2019/0328-%E6%A0%A1%E6%8B%9B%E9%9D%A2%E8%AF%95%E5%88%9D%E4%BD%93%E9%AA%8C/</url>
-    <content><![CDATA[<h1 id="试试看"><a href="#试试看" class="headerlink" title="试试看"></a>试试看</h1><p>前些日子腾讯来我校开暑期实习宣讲会，现场人多到爆<del>因为腾讯有年头没来我们学校开宣讲会了，今年能来实属不易，也感谢学院老师们背后的默默付出还有在腾讯工作的学姐学长们的努力。<br>因为是要读研，所以一直也没太准备找工作方面的事情，但感觉可以试试看，看看自己有没有能力通过第一关</del>索性投了WXG微信事业群的后台开发岗位。</p>
-<span id="more"></span>
-<h1 id="视频面试"><a href="#视频面试" class="headerlink" title="视频面试"></a>视频面试</h1><p>昨天下午收到了视频面试的短信，忐忑不安的刷了一天基础知识，发现之前学过的很多都忘了，连哈希冲突解决方法都记不住了。<br>五点面试准时开始，面试官首先问了我简历上写的实习经历，我讲了一下在葫芦那边做的小程序和服务号。<br>另外还问了我一些是不是动态爬虫，怎么解析网页的问题。</p>
-<h2 id="第一题-手写代码"><a href="#第一题-手写代码" class="headerlink" title="第一题 手写代码"></a>第一题 手写代码</h2><h3 id="最长子序列"><a href="#最长子序列" class="headerlink" title="最长子序列"></a>最长子序列</h3><p>小Q定义A(i,j)(i &lt;= j且都是数组A的合法下标)表示数组A中下标从i到j的这段子序列,即A(i,j) = {A[i],A[i+1]….A[j]}。<br>如果对于A(i, j), 能找到一个正整数v(v &gt; 1), 使得v可以整除A(i, j)中不低于一半的元素, 小Q就认为A(i, j)是一段很酷的子序列。<br>例如A(i, j) = {3, 3, 7, 9, 1, 10}, 六个元素中有三个元素可以被v = 3整除, 所以A(i, j)是酷的。<br>小Q现在给出一个数组A, 让你找出最长的酷的子序列。</p>
-<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入包括两行。<br>第一行包括一个正整数n(1 &lt;= n &lt;= 50), 表示数组的长度。<br>第二行包括n个正整数A_i,(1 &lt;= A_i &lt;= 1000), 表示数组中的每个元素。</p>
-<h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h3><p>输出一个整数, 表示最长的酷的子序列的长度, 如果没有解, 输出0。</p>
-<h3 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h3><ul>
-<li>输入<ul>
-<li>5</li>
-<li>8 8 5 5 4</li>
-</ul>
-</li>
-<li>输出<ul>
-<li>5</li>
-</ul>
-</li>
-</ul>
-<h2 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h2><p>Java顶层的集合类有哪些？常用哪些？</p>
-<h2 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h2><p>有没有写过多线程程序？讲讲多线程。</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>面试官出的几个问题都很简单，不过第一题因为是第一次面试很紧张也没什么经验我以为还要运行一下程序，还在想import的语句是什么。但其实并不需要，只要逻辑ok就行。读题不仔细，有两个地方理解错了在面试官的告知下才该对。应该是凉了，不过权当一次经历吧。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>从去年3月到今年3月这一年自己其实过得挺痛苦的，感觉目前的自己各方面都和目标差太远，无论是技术、学习能力还是各方面交际能力、为人处事都很一般。<br>不过这一年也算是大学两年半以来过得最充实的一段时间吧，学习方面两个学期拿到了90的均分，绩点提到了3.7；竞赛水了5个小奖，还有幸公费去了次哈尔滨；有了一段创业公司的实习经历，认识了很多与我同年级但情商智商碾压的大佬；通过大创接触到了一点点科研，虽然目前还没发出paper；陆陆续续做了自己喜欢的weNEU，寄托了自己对产品的价值理念等等~  </p>
-<h2 id="痛苦着"><a href="#痛苦着" class="headerlink" title="痛苦着"></a>痛苦着</h2><p>痛苦在于这一年意识到了自己和最优秀的同学们差距实在太大，而且这种差距还在不断拉大。我觉得人生的目标是不能做一个平凡的人，如果只是一个普普通通的人，天天被割韭菜活着也没什么意义。可是这一年我意识到自己越来越普通，和很多人一样为读研挤破头，参加竞赛顶多拿小奖，学习知识要花很长时间才能学懂；<br>另外的痛苦在于对未来选择的迷茫，从读研方向来看我甚至不知道自己该报考什么方向，对人工智能不感兴趣，对云计算大数据也不是很了解，密码学网络安全有些跨专业~对于未来的就业而言我其实觉得自己比较适合产品岗位，我自认自己的一些商业嗅觉比较灵敏，对用户体验的把控也有自己的见解，在做weNEU的期间真的对产品抱有极大的热情，看到有新用户增长会开心好久。但如果决定做产品似乎也没必要读研了，而且也挺喜欢敲代码不太想天天去做PPT。<br>痛苦了一年，也磨磨唧唧讲了一年。是时候不再总去想这些事情了，认识到差距就好。</p>
-<h2 id="读研"><a href="#读研" class="headerlink" title="读研"></a>读研</h2><p>目前来看我认为我读研的原因是：</p>
+    <title>动手实现一个 Python 版本的 MysqlClient</title>
+    <url>/2020/01_%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%20Python%20%E7%89%88%E6%9C%AC%E7%9A%84%20MysqlClient/%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%20Python%20%E7%89%88%E6%9C%AC%E7%9A%84%20MysqlClient/</url>
+    <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>在实际项目中我们会在项目的各个角落进行数据库访问操作，显然我们需要将对数据库的访问做一定的封装，在统一管理的基础上也可以做一些额外的优化。<br>所以我们打算实现一个叫做<code>MysqlClient</code>的类对数据库访问做统一管理，我们期待它的作用有：</p>
 <ul>
-<li>增加知识的深度：之前过于注重知识的广度，UI/UE、前端开发、后端开发、运维、产品运营、推广我都有或多或少的接触但并不精，读研我需要提升自己在某一方面的知识的深度，目前来看我应该会选择软件工程专硕，具体方向待定。</li>
-<li>我还年轻：不想太早离开象牙塔，我认为我不适合过早就业（应该不是逃避）；细想如果我2020开始工作，未来至少30年左右都会一直在工作~很难再回到现在这样大学校园中，珍惜读书的时光</li>
-<li>对学历的私心：本科只是一所末流985，研究生希望能到中九级别的学校吧，不然会很遗憾的。</li>
+<li>统一管理数据库访问凭证</li>
+<li>对<code>query</code>和<code>execute</code>两类操作进行封装</li>
+<li>预处理sql以防 SQL注入</li>
+<li>引入数据库连接池</li>
+<li>合适的错误检查与记录</li>
+<li>以及如何正确使用</li>
 </ul>
-<h2 id="学到的"><a href="#学到的" class="headerlink" title="学到的"></a>学到的</h2><ul>
-<li>告别舒适区：少刷已经学会的算法题；少做重复性工作；少写业务代码</li>
-<li>信息不对称：遇到机会要鼓起勇气，认识更多的人，获取更多的信息</li>
-<li>保持善良，不忘初心：之前总觉得这些假大空的形容词很无趣，但到头来才发现这其实都是最优秀的品质</li>
-</ul>
-<h2 id="拒绝平凡"><a href="#拒绝平凡" class="headerlink" title="拒绝平凡"></a>拒绝平凡</h2><p>引用很喜欢的毛不易的《像我这样的人》——像我这样不甘平凡的人~句句扎心，不认为“平凡可贵”</p>
-<h2 id="贵在坚持"><a href="#贵在坚持" class="headerlink" title="贵在坚持"></a>贵在坚持</h2><p>无论何时，贵在坚持都是最需要的。<br>如果我不能坚持的话，那么一切的向往，一切的为自己加油打气，一切的计划都是空谈。  </p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>实习</tag>
-        <tag>腾讯</tag>
-        <tag>思考</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>1125-记在字节实习的第一个月</title>
-    <url>/2019/1125-%E8%AE%B0%E5%9C%A8%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%AE%9E%E4%B9%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%9C%88/</url>
-    <content><![CDATA[<p>至今仍然感到很幸运，对于本想轻轻松松潇潇洒洒度过大四的我，在几乎完全没准备招聘面试的情况下，竟然通过了字节跳动的面试，转眼间已经入职一个月了，也来简单写写这一个月的一些心得与感悟。<br>简简单单的流水账~  </p>
-<h3 id="紧张与庆幸"><a href="#紧张与庆幸" class="headerlink" title="紧张与庆幸"></a>紧张与庆幸</h3><p>开篇提到了，我几乎完全没准备招聘面试的内容，面经刷题什么的基本上啥都没看，因为本来就是抱着随缘的心态投的简历，没想到运气这么好hh<br>可是我知道自己很菜，而且岗位还是和计算机网络深度相关的，作为软件工程专业的学生（非网络工程专业），本科就只上过“计算机网络”一门网络相关课程，感觉亚历山大，这种压力，在我收到offer通知电话那一刻就开始了，一直到入职前夜的失眠，到入驻当天的忐忑，到入驻后看着纷乱复杂的各种名词，直到现在，我依然很紧张<br>但是我也很庆幸，非常庆幸我能在大四上学期，在读研之前意识到我在计算机网络方面的知识储备很少，意识到计算机网络的体系是如此庞大，我能做的只有抓紧时间，利用字节跳动提供的这么好的机会打好计算机网络基础，为研究生的学习与科研做准备  </p>
-<img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9asxzyam2j31400u04qr.jpg" align=center>
-
-<span id="more"></span>
-
-<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><p>感觉自己九月份以来的运气真的特别好，顺利地拿到了保研资格，顺利地确定了自己心心念念的计算机网络就是我最想攻读的方向，顺利的发现拿到offer的东南大学计算机恰好计算机网络是其最强的方向，顺利地被年轻有为帅气的S老师收下（老师看过我博客，先吹一下老师hhh），顺利地找到一份计算机网络相关的实习，顺利地遇到了如此优秀非常佩服的Ian担任我的mentor~<br>当然最幸运的就是上面我所说的，意识到<strong>自己还有更大的理想和目标！一定要把握好每一个机会利用好每一段时光</strong><br>还想谈谈自己为什么选择了计算机网络，原因有2吧  </p>
-<ul>
-<li>想避开人工智能的热潮。保研期间看到很多同学直奔人工智能那些方向，竞争激烈而且我对人工智能没有太大的兴趣，本科有几门课接触过人工智能，我觉得我还是更喜欢“计算机网络”，“操作系统”这些学完后感觉学到了知识心里踏实的课哈哈。尤其是计算机网络，在本科四门主要专业课中是我最喜欢也是分数最高的一门课~~</li>
-<li>贴近产品思维。当然，计算机网络分很多分支，我最初想选择的是 物联网 或 产业互联网 这两个方向，因为在调研之后我发现这两个方向的应用落地都做的还不错，都是现在国家和大厂纷纷押宝的风口，最重要的是这些领域的研究很多都是面向用户的，面向用户的C端产品自然需要很强的产品思维，我觉得我在产品运营方面还是有一定的独到见解，因而选择了这两个细分领域。</li>
-</ul>
-<h3 id="在做的工作"><a href="#在做的工作" class="headerlink" title="在做的工作"></a>在做的工作</h3><p>我所在的部门是系统部的网络工程组，最初来到这里很惊讶只有大概20人左右其中主管运维建设的不足10人就能建设起公司如此巨大的网络架构。<br>目前在做的项目是网络告警平台，后来经组会讨论升级为网络数据平台，主要工作是升级目前系统内分散部分未聚合展现形式落户的告警平台，同时利用采集的数据搭建一套数据平台，为SDN等项目提供低时延高可靠的数据支撑。<br>完整的数据平台预计在十二月中旬就能初步成型，之后可能会同时参与到SDN项目的开发之中，考虑到研究生的方向，后续会尝试多接触与算法设计分析相关的工作，另外SDN的设计思想（大规模服务器集群数据中心的必然产物）和多无人机协同的管理平台也有异曲同工之处。</p>
-<h3 id="最大的挑战"><a href="#最大的挑战" class="headerlink" title="最大的挑战"></a>最大的挑战</h3><p>于我而言，最大的挑战还是人际关系。我每次到一个新的环境中都比较内向<br>然而熟了之后就完全放得开了。不过实习可能是全新的一种环境，人与人之间是同事关系，而且年龄差，工作内容，知识量上的差距还是让我和大家的融入不是那么地顺利，不过我相信我会努力让大家看到我的闪光点。<br>努力哦~</p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>实习</tag>
-        <tag>字节跳动</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo处理{{}}报错</title>
-    <url>/2019/Hexo%E5%A4%84%E7%90%86%7B%7B%7D%7D%E6%8A%A5%E9%94%99/</url>
-    <content><![CDATA[<p>今天在更新博客时有关于Vue动态绑定的内容，动态绑定<code>v-model</code>属性是配合双括号<code>这里报错</code>来实现的</p>
-<img src="http://ww1.sinaimg.cn/large/006tNc79ly1g37z4w7r1cj30vk01gjrr.jpg" />   
-
-<p>但是如果像上面图片里写这句话是会报错的呦，节选报错信息开头部分如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Template render error: (unknown path) [Line 1, Column 64]</span><br><span class="line">  unexpected token: &#125;&#125;</span><br><span class="line">    at Object._prettifyError (/Users/raven/workspace/blog/node_modules/nunjucks/src/lib.js:36:11)</span><br><span class="line">    at Template.render (/Users/raven/workspace/blog/node_modules/nunjucks/src/environment.js:524:21)</span><br></pre></td></tr></table></figure>
-
-<p>在一点点试错后发现正是两对紧密相连的<code>&#123;&#125;</code>使其报错，猜测应该是这种写法恰好和hexo内部的解析器有冲突吧</p>
-<p>在双括号内加入一些文字即不报错<code>&#123;&#123;message&#125;&#125;</code>，但是无法正常显示哦，就比如这一行的那个代码块，里面的message就没显示  </p>
-<img src="http://ww3.sinaimg.cn/large/006tNc79ly1g37zgjx4g2j312y00ydgb.jpg" />   
-
-<p><em>注意：在双括号内加入空格还是会报错哦</em>  </p>
-<p>目测应该还会有其他写法使hexo的转义发生错误，有时间看一下hexo源码找到错误位置再更新一下本文</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MIT 算法导论</title>
-    <url>/2019/MIT%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/</url>
-    <content><![CDATA[<p>算法课程分为</p>
-<ul>
-<li>Analysis of Algorithms</li>
-<li>Design of Algorithms</li>
-</ul>
-<p>算法分析是理论研究(The theoretical study of computer program <strong>performance</strong> and resource usage)<br>我们关注 Performance</p>
-<p>Q1：软件领域什么比 Performance 更重要呢？<br>Correctness, Maintainability, Features, Functionality, Modularity, Security, Scalability, User-friendliness…</p>
-<p>Q2：这么多比 Performance 重要的内容为什么我们还关注 Performance？</p>
-<ul>
-<li>通常，性能的好坏直接决定着是否可行</li>
-<li>算法是一种描述程序行为的语言，他就像钱一样，需要性能作为支付其他东西的“货币”（例如为了 Functionality 愿意牺牲2倍性能），这决定了 Performance 是处于最底层的，他是衡量一般性的标准</li>
-<li>这里充满了乐趣，速度总是让人激动</li>
-</ul>
-<span id="more"></span>
-
-<h3 id="Insertion-Sort-插入排序"><a href="#Insertion-Sort-插入排序" class="headerlink" title="Insertion Sort 插入排序"></a>Insertion Sort 插入排序</h3><p>Pseudocode 伪代码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">INSERTION-SORT(A, n) //Sort A[1...n]</span><br><span class="line">    for j &lt;- 2 to n</span><br><span class="line">        do key &lt;- A[j]</span><br><span class="line">            i &lt;- j-1</span><br><span class="line">            while i &gt; 0 and A[i]&gt;key</span><br><span class="line">                do A[i+1] &lt;- A[i]</span><br><span class="line">                    i &lt;- i-1</span><br><span class="line">            A[i+1] &lt;- key</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="Running-Time-运行时间"><a href="#Running-Time-运行时间" class="headerlink" title="Running Time 运行时间"></a>Running Time 运行时间</h3><p>取决于“输入本身（是否有序）”和“输入规模”<br>将时间T与输入规模n函数化关联</p>
-<h4 id="Worst-case-usually"><a href="#Worst-case-usually" class="headerlink" title="Worst-case(usually)"></a>Worst-case(usually)</h4><p>运行时间的上界：是对用户的一个承诺<br><code>T(n) = max time on any input of size n</code></p>
-<h4 id="Average-case-sometimes"><a href="#Average-case-sometimes" class="headerlink" title="Average-case(sometimes)"></a>Average-case(sometimes)</h4><p><code>T(n) = expected time over all inputs of size n</code><br><em>expectation: 数学概念： 每种输入的运行时间乘以那种输入出现的概率（这里假设每种输入情形出现的概率是等可能性的，均匀分布）</em></p>
-<h4 id="Best-case-bogus-假象（没啥用）"><a href="#Best-case-bogus-假象（没啥用）" class="headerlink" title="Best-case(bogus 假象（没啥用）)"></a>Best-case(bogus 假象（没啥用）)</h4><p>Cheat~</p>
-<p>Q3：插入排序的运行时间分析？<br>运行时间与机器有关</p>
-<ul>
-<li>relative speed(on same machine)</li>
-<li>absolute speed(on diff machine)</li>
-</ul>
-<p>引出了算法的大局观</p>
-<h3 id="BIG-IDEA"><a href="#BIG-IDEA" class="headerlink" title="BIG IDEA"></a>BIG IDEA</h3><p>Asymptotic Analysis</p>
-<ul>
-<li>Ignore machine dependant constants</li>
-<li>Look at growth of T(n) as n -&gt; ♾  </li>
-</ul>
-<p>渐进分析</p>
-<ul>
-<li>忽略掉依赖于机器的常量</li>
-<li>不是去检查实际的运行时间，而是关注运行时间的增长</li>
-</ul>
-<p>渐进符号<br>θ-notation: drop lowerder terms, ignore leading constants<br>Ex: 3n3-90n2-5n+6046 = θ(n3)</p>
+<p>在百度上随便一搜就能搜到类似的实现，不过他们大部分都是只实现了对<code>query</code>，<code>execute</code>的封装，少部分加上了预处理sql，我希望提供一个更完整的<code>MysqlClient</code>实现。</p>
 <blockquote>
-<p>算法分析要求我们既有对待数学的严谨，又有对待工程那样富有直觉</p>
+<p>我最初也是在百度上复制了一个封装了query、execute两个操作的MysqlClient，后来被公司安全部门提示有sql注入风险，所幸将平常遇到的对数据库访问对象的需求一次考虑清楚设计一个比较完善的实现。</p>
 </blockquote>
-<p>渐进符号可以满足我们对相对速度和绝对速度的要求，随着n的增大，渐进结果一般而言不会改变</p>
-<p>从工程的角度还有一件事情需要处理，就是有时候需要n足够大某个算法的优势才可以被显现，这时我们经常会使用一些低速算法，在合理的范围内满足我们对速度的要求。因此，我们就必须在我们的数学理解和工程直觉之间做好平衡。</p>
-<p>插入排序的Worst-case T(n): θ(n2)</p>
-<h3 id="Merge-Sort-归并排序"><a href="#Merge-Sort-归并排序" class="headerlink" title="Merge Sort 归并排序"></a>Merge Sort 归并排序</h3><p>Merge sort A[1..n]</p>
-<ol>
-<li>If n=1, done</li>
-<li>Recursively sort A[1..n/2(上界)] and A[n/2(上界)+1..n]</li>
-<li>Merge 2 sorted lists</li>
-</ol>
-<p>我们会用到一个归并子程序 Key subroutine-Merge<br>T(n) = θ(1) if n = 1  （通常省略）<br>     = 2T(n/2) + θ(n) if n &gt; 1</p>
-<p>Recursion tree: T(n) = 2T(n/2) + cn (const c &gt; 0)<br>使用递归树分析，归并排序的时间复杂度T(n)=θ(nlgn)<br><em>树的高度是lgn，叶节点层之和为θ(n)，其他层每层为cn</em><br><em>在n大于30左右之和，归并排序比插入排序要快</em></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>MIT</tag>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL简单优化</title>
-    <url>/2019/MySQL%20varchar%E9%95%BF%E5%BA%A6%E6%8E%A2%E6%9E%90/</url>
-    <content><![CDATA[<p>记录一下一些简单的在设计表结构方面对MySQL的简单优化。</p>
-<ul>
-<li><a href="https://www.cnblogs.com/duanxz/p/3724120.html">MySQL中的两种临时表</a></li>
-<li><a href="https://www.jianshu.com/p/7fe85454a4f4">varchar类型的长度怎么确定？有什么样的原则，和Text和LongText的区别是什么？</a></li>
-<li><a href="https://blog.csdn.net/github_26672553/article/details/82942313">mysql中int(1)中int后面的数字（简单介绍）</a></li>
-<li><a href="http://www.zhimengzhe.com/shujuku/MySQL/83409.html">mysql int(11)字段左边自动补零了</a></li>
-</ul>
-<p><img src="http://ww1.sinaimg.cn/large/006tNc79ly1g3c79vgsn0j30cm0b8my0.jpg"></p>
-<p>如上图，int所谓的长度不是他真的长度，设置为int就占4个字节，设置为tinyint就占一个字节</p>
-<ul>
-<li><p><a href="https://www.cnblogs.com/lhj588/p/4245719.html">Mysql 如何设置字段自动获取当前时间</a></p>
+<h1 id="上代码"><a href="#上代码" class="headerlink" title="上代码"></a>上代码</h1><blockquote>
+<p>Python 3.7，遵循 PEP8 代码风格</p>
+</blockquote>
+<span id="more"></span>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># encoding: utf-8</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">@desc: MySQL client. Manage the access evidence, wrap the common action, improve the performance, keep the security.</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"><span class="keyword">import</span> glog</span><br><span class="line"><span class="keyword">from</span> DBUtils.PooledDB <span class="keyword">import</span> PooledDB</span><br><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> create_engine</span><br><span class="line"><span class="keyword">from</span> sqlalchemy.orm <span class="keyword">import</span> sessionmaker</span><br><span class="line"></span><br><span class="line"><span class="comment"># database configuration</span></span><br><span class="line">__DATABASE_HOST = <span class="string">&quot;127.0.0.1&quot;</span></span><br><span class="line">__DATABASE_PORT = <span class="string">&quot;3306&quot;</span></span><br><span class="line">__DATABASE_USER = <span class="string">&quot;root&quot;</span></span><br><span class="line">__DATABASE_PASSWORD = <span class="string">&quot;password&quot;</span></span><br><span class="line">__DATABASE_NAME = <span class="string">&quot;demo&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># database connection pool configuration</span></span><br><span class="line">__NUM_DEFAULT_CONNECTION = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_mysql_connection_pool</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Database connection to the server using the connection pool.</span></span><br><span class="line"><span class="string">    :return: database connection</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    db_host = __DATABASE_HOST</span><br><span class="line">    db_port = __DATABASE_PORT</span><br><span class="line">    db_user = __DATABASE_USER</span><br><span class="line">    db_password = __DATABASE_PASSWORD</span><br><span class="line">    db_name = __DATABASE_NAME</span><br><span class="line"></span><br><span class="line">    num_connection = __NUM_DEFAULT_CONNECTION</span><br><span class="line"></span><br><span class="line">    connection_pool = PooledDB(MySQLdb, num_connection,</span><br><span class="line">                               host=db_host, port=db_port, user=db_user, passwd=db_password, db=db_name)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> connection_pool</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_session</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Used by ORM framework.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    db_host = __DATABASE_HOST</span><br><span class="line">    db_port = __DATABASE_PORT</span><br><span class="line">    db_user = __DATABASE_USER</span><br><span class="line">    db_password = __DATABASE_PASSWORD</span><br><span class="line">    db_name = __DATABASE_NAME</span><br><span class="line"></span><br><span class="line">    engine = create_engine(<span class="string">&#x27;mysql+mysqlconnector://&#x27;</span></span><br><span class="line">                           + db_user + <span class="string">&#x27;:&#x27;</span> + db_password + <span class="string">&#x27;@&#x27;</span> + db_host + <span class="string">&#x27;:&#x27;</span> + db_port + <span class="string">&#x27;/&#x27;</span> + db_name)</span><br><span class="line">    da_session = sessionmaker(bind=engine)</span><br><span class="line">    session = da_session()</span><br><span class="line">    <span class="keyword">return</span> session</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">watch_prepared_statement</span>(<span class="params">sql, params</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    When we use prepared sql statement, the program doesn&#x27;t the real sql neither in the python program or</span></span><br><span class="line"><span class="string">    database process. This function will parse the expected sql statement for debugging.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    expected_sql = sql % <span class="built_in">tuple</span>(params)</span><br><span class="line">    <span class="keyword">return</span> expected_sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MysqlClient</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Package actions about the database.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.connection_pool = get_mysql_connection_pool()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">query</span>(<span class="params">self, sql, params=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Query action.</span></span><br><span class="line"><span class="string">        :param sql: being executed sql statement</span></span><br><span class="line"><span class="string">        :param params: sql param, to avoid the sql injection</span></span><br><span class="line"><span class="string">        :return: Query Result</span></span><br><span class="line"><span class="string">        :rtype: list</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        connection = self.connection_pool.connection()</span><br><span class="line">        cursor = connection.cursor()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> params <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            params = []</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            cursor.execute(<span class="built_in">str</span>(sql), params)</span><br><span class="line">            result = cursor.fetchall()</span><br><span class="line">            <span class="keyword">return</span> result</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            expected_sql = watch_prepared_statement(sql, params)</span><br><span class="line">            glog.error(<span class="string">&quot;[&quot;</span> + <span class="built_in">str</span>(e) + <span class="string">&quot;]&quot;</span> + expected_sql)</span><br><span class="line">            result = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="comment"># release the connection to the pooled</span></span><br><span class="line">            cursor.close()</span><br><span class="line">            connection.close()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">update</span>(<span class="params">self, sql, params=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Update action.</span></span><br><span class="line"><span class="string">        :param sql: being executed sql statement</span></span><br><span class="line"><span class="string">        :param params: sql param, to avoid the sql injection</span></span><br><span class="line"><span class="string">        :return: affected rows count and the last row id</span></span><br><span class="line"><span class="string">        :rtype: tuple</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        connection = self.connection_pool.connection()</span><br><span class="line">        cursor = connection.cursor()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> params <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            params = []</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            cursor.execute(<span class="built_in">str</span>(sql), params)</span><br><span class="line">            row_count = cursor.rowcount</span><br><span class="line">            row_id = cursor.lastrowid</span><br><span class="line">            connection.commit()</span><br><span class="line">            result = row_count, row_id</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            expected_sql = watch_prepared_statement(sql, params)</span><br><span class="line">            glog.error(<span class="string">&quot;[&quot;</span> + <span class="built_in">str</span>(e) + <span class="string">&quot;]&quot;</span> + expected_sql)</span><br><span class="line">            result = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="comment"># release the connection to the pooled</span></span><br><span class="line">            cursor.close()</span><br><span class="line">            connection.close()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_connection</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Other actions. Return the connection to finish other operations, such as executemany and so on.</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">return</span> self.connection_pool.connection()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">__mysql_client = MysqlClient()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_mysql_client</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Initialize the singleton object.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">return</span> __mysql_client</span><br></pre></td></tr></table></figure>
+
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ul>
+<li><p>外部访问时通过调用<code>get_mysql_client()</code>函数来获得单例的 MysqlClient。</p>
+<blockquote>
+<p>实现单例模式最简单的方法：在模块内定义变量，模块被import时被初始化</p>
+</blockquote>
 </li>
-<li><p><a href="https://www.cnblogs.com/xiaozhang2014/p/7750562.html">前后端分离，如何防止接口被其他人调用或恶意重发</a></p>
+<li><p><code>watch_prepared_statement()</code>函数用于观察预处理后的sql语句</p>
+<blockquote>
+<p>通俗地说，预处理就是把 <strong>%</strong> 变为 <strong>,</strong></p>
+</blockquote>
+</li>
+<li><p><code>get_session()</code>是相对独立的一部分，在使用如 SQLAlchemy 这样的ORM框架时会用到。</p>
+</li>
+<li><p>提供了<code>get_connection()</code>用于完成不常用的数据库操作，当然如果在项目层面常用也可以增加额外的封装方法。</p>
+</li>
+<li><p>数据库连接池部分还可以对cache，连接数做额外的配置，这个可以根据项目实际需求做改动。</p>
+</li>
+<li><p>对配置信息部分，还可以引入<code>ConfigParser</code>对其进行统一管理在配置文件。 </p>
 </li>
 </ul>
-<h2 id="常量表设计"><a href="#常量表设计" class="headerlink" title="常量表设计"></a>常量表设计</h2><p>对于一些明显有类型的字符串数据，有两种技术方案</p>
-<ul>
-<li>对于需要做到下拉列表里的数据，存储到常量表里</li>
-<li>对于每次都随实体出现的，直接以字符串存到表里，即便用数字id更节省空间，但是我们更注重效率，减少连表查询次数，提高性能。</li>
-</ul>
-<h2 id="开发规范"><a href="#开发规范" class="headerlink" title="开发规范"></a>开发规范</h2><p><a href="https://www.jianshu.com/p/41e134657902">谈谈ali与Google的Java开发规范</a></p>
-<p><a href="https://www.cnblogs.com/xiaozhang2014/p/7750562.html">前后端分离，如何防止接口被其他人调用或恶意重发</a></p>
-<p><a href="https://blog.csdn.net/u011870547/article/details/81077153">PO,BO,VO和POJO的区别</a></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>MySQL</tag>
-        <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>什么是模型？</title>
-    <url>/2019/%E4%BB%80%E4%B9%88%E6%98%AF%E6%A8%A1%E5%9E%8B%EF%BC%9F/</url>
-    <content><![CDATA[<h1 id="什么是模型？"><a href="#什么是模型？" class="headerlink" title="什么是模型？"></a>什么是模型？</h1><p>最近在上人工智能课程，总看到模型model一词。加之一月份又要参加2019年的数学建模美赛，所以对「模型」这个概念感到很好奇。和『大佬』这些词一样，都是上大学后才了解到的。<br>关于模型，摘抄原文如下：</p>
-<blockquote>
-<p>A model can come in many shapes, sizes, and styles. It is important to emphasize that a model is not the real world but merely a human construct to help us better understand real world systems. In general all models have an information input, an information processor, and an output of expected results. Modeling Methodology for Physics Teachers (more info) (1998) provides an outline of generic model structure that is useful for geoscience instruction. In “Modeling the Environment” Andrew Ford gives a philosophical discussion of what models are and why they are useful. The first few paragraphs of Chapter 1 of Ford’s book are worth a look.<br>Key features in common with the development of any model is that:  </p>
-<ul>
-<li>simplifying assumptions must be made;</li>
-<li>boundary conditions or initial conditions must be identified;</li>
-<li>the range of applicability of the model should be understood.</li>
-</ul>
-</blockquote>
-<p>概括地来说，模型首先不局限于形式，有很多表达方式。它用来抽象现实世界的某一个方面。<br>模型有输入，处理机制和输出。我们要优化我们的处理机制以便让由输入得到的输出符合我们的期待。<br>有接触到的比如数模里的函数，AI课学习的「决策树」『minimax』等，模型有很多不同的表达形式。或许使用最多的还是函数。  </p>
-<span id="more"></span>
-
-<h1 id="模型类型举例"><a href="#模型类型举例" class="headerlink" title="模型类型举例"></a>模型类型举例</h1><h2 id="Conceptual-Models"><a href="#Conceptual-Models" class="headerlink" title="Conceptual Models"></a>Conceptual Models</h2><p>Conceptual Models are qualitative models that help highlight important connections in real world systems and processes. They are used as a first step in the development of more complex models.<br><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fxy8bi0p27j304604djr8.jpg"></p>
-<h2 id="Interactive-Lecture-Demonstrations"><a href="#Interactive-Lecture-Demonstrations" class="headerlink" title="Interactive Lecture Demonstrations"></a>Interactive Lecture Demonstrations</h2><p>Interactive Lecture Demonstrations Interactive demonstrations are physical models of systems that can be easily observed and manipulated and which have characteristics similar to key features of more complex systems in the real world. These models can help bridge the gap between conceptual models and models of more complex real world systems.<br><img src="https://ws2.sinaimg.cn/large/006tNbRwly1fxy8bskxjdj3046050web.jpg"></p>
-<h2 id="Mathematical-and-Statistical-Models"><a href="#Mathematical-and-Statistical-Models" class="headerlink" title="Mathematical and Statistical Models"></a>Mathematical and Statistical Models</h2><p>Mathematical and Statistical Models involve solving relevant equation(s) of a system or characterizing a system based upon its statisical parameters such as mean, mode, variance or regression coefficients. Mathematical models include Analytical models and Numerical Models. Statistical models are useful in helping identify patterns and underlying relationships between data sets.<br><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fxy8c0gmcsj304g04ojra.jpg"><br><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fxy8c862s3j305n03rt8k.jpg"></p>
-<h2 id="Teaching-with-Visualizations"><a href="#Teaching-with-Visualizations" class="headerlink" title="Teaching with Visualizations"></a>Teaching with Visualizations</h2><p>Teaching with Visualizations By this we mean anything that can help one visualize how a system works. A visualization model can be a direct link between data and some graphic or image output or can be linked in series with some other type of model so to convert its output into a visually useful format. Examples include 1-, 2-, and 3-D graphics packages, map overlays, animations, image manipulation and image analysis.<br><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fxy8cesqgej304002odfo.jpg"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li>抽象或许是建模的第一要素</li>
-<li>模型概念很广</li>
-<li>AI所说的“我们训练了一个很好的模型”指的就是利用我们的模型，输入所给的输入，得到的输出很符合我们的期望。比如给机器人一张视觉的影像，他知道该怎么移动怎么操作，知道拿起苹果放到指定位置，这符合我们对输出的期望（输出就是机器人所做出的动作）。这就是好的模型。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>人工智能</tag>
-        <tag>模型</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>初探数据库连接池</title>
-    <url>/2019/%E5%88%9D%E6%8E%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0/</url>
-    <content><![CDATA[<p>参考资料</p>
-<ul>
-<li><a href="https://blog.csdn.net/crankz/article/details/82874158">数据库连接池学习笔记（一）：原理介绍+常用连接池介绍</a></li>
-<li><a href="https://blog.csdn.net/frightingforambition/article/details/25464129">java数据库连接池实现原理</a></li>
-<li><a href="https://juejin.im/entry/58fb03220ce4630061233c98">高性能数据库连接池的内幕</a></li>
-</ul>
-<h1 id="为什么要使用连接池"><a href="#为什么要使用连接池" class="headerlink" title="为什么要使用连接池"></a>为什么要使用连接池</h1><p>数据库连接是一种关键的有限的昂贵的资源，这一点在多用户的网页应用程序中体现得尤为突出。  一个数据库连接对象均对应一个物理数据库连接，每次操作都打开一个物理连接，使用完都关闭连接，这样造成系统的 性能低下。 数据库连接池的解决方案是在应用程序启动时建立足够的数据库连接，并讲这些连接组成一个连接池(简单说：在一个“池”里放了好多半成品的数据库联接对象)，由应用程序动态地对池中的连接进行申请、使用和释放。对于多于连接池中连接数的并发请求，应该在请求队列中排队等待。并且应用程序可以根据池中连接的使用率，动态增加或减少池中的连接数。 连接池技术尽可能多地重用了消耗内存地资源，大大节省了内存，提高了服务器地服务效率，能够支持更多的客户服务。通过使用连接池，将大大提高程序运行效率，同时，我们可以通过其自身的管理机制来监视数据库连接的数量、使用情况等。 </p>
-<span id="more"></span>
-
-<h1 id="传统的连接机制与数据库连接池的运行机制区别"><a href="#传统的连接机制与数据库连接池的运行机制区别" class="headerlink" title="传统的连接机制与数据库连接池的运行机制区别"></a>传统的连接机制与数据库连接池的运行机制区别</h1><h2 id="不使用连接池流程"><a href="#不使用连接池流程" class="headerlink" title="不使用连接池流程"></a>不使用连接池流程</h2><p>下面以访问MySQL为例，执行一个SQL命令，如果不使用连接池，需要经过哪些流程。<br><img src="https://ws3.sinaimg.cn/large/006tNc79ly1g3116moxfaj30d40dgdgt.jpg" width="400px" /></p>
-<ul>
-<li><p>步骤</p>
-<ol>
-<li>TCP建立连接的三次握手（JDBC与MySQL的连接基于TCP协议）</li>
-<li>MySQL认证的三次握手</li>
-<li>真正的SQL执行</li>
-<li>MySQL的关闭</li>
-<li>TCP的四次握手关闭<br>可以看到，为了执行一条SQL，却多了非常多我们不关心的网络交互。</li>
-</ol>
-</li>
-<li><p>优点</p>
-<ul>
-<li>实现简单</li>
-</ul>
-</li>
-<li><p>缺点</p>
-<ol>
-<li>网络IO较多</li>
-<li>数据库的负载较高</li>
-<li>响应时间较长及QPS较低（每秒查询率QPS是对一个特定的查询服务器在规定时间内所处理流量多少的衡量标准）</li>
-<li>应用频繁的创建连接和关闭连接，导致临时对象较多，GC频繁</li>
-<li>在关闭连接后，会出现大量TIME_WAIT的TCP状态（在2个MSL之后关闭，这个是TCP/IP的设计者规定的<a href="https://www.cnblogs.com/sunxucool/p/3449068.html">详情</a>）</li>
-</ol>
-</li>
-</ul>
-<h2 id="使用数据库连接池"><a href="#使用数据库连接池" class="headerlink" title="使用数据库连接池"></a>使用数据库连接池</h2><img src="https://ws4.sinaimg.cn/large/006tNc79ly1g311fkf2cqj30f80fdtb5.jpg" width="400px" />
-
-<ul>
-<li><p>步骤</p>
-<ul>
-<li>第一次访问的时候，需要建立连接。 但是之后的访问，均会复用之前创建的连接，直接执行SQL语句。</li>
-</ul>
-</li>
-<li><p>优点</p>
-<ol>
-<li>较少了网络开销</li>
-<li>系统的性能会有一个实质的提升</li>
-<li>没了麻烦的TIME_WAIT状态</li>
-</ol>
-</li>
-</ul>
-<h1 id="数据库连接池的工作原理"><a href="#数据库连接池的工作原理" class="headerlink" title="数据库连接池的工作原理"></a>数据库连接池的工作原理</h1><p>连接池的工作原理主要由三部分组成，分别为</p>
-<ol>
-<li>连接池的建立</li>
-<li>连接池中连接的使用管理</li>
-<li>连接池的关闭</li>
-</ol>
-<p>第一、连接池的建立。一般在系统初始化时，连接池会根据系统配置建立，并在池中创建了几个连接对象，以便使用时能从连接池中获取。连接池中的连接不能随意创建和关闭，这样避免了连接随意建立和关闭造成的系统开销。Java中提供了很多容器类可以方便的构建连接池，例如Vector、Stack等。</p>
-<p>第二、连接池的管理。连接池管理策略是连接池机制的核心，连接池内连接的分配和释放对系统的性能有很大的影响。其管理策略是：<br>当客户请求数据库连接时，首先查看连接池中是否有空闲连接，如果存在空闲连接，则将连接分配给客户使用；如果没有空闲连接，则查看当前所开的连接数是否已经达到最大连接数，如果没达到就重新创建一个连接给请求的客户；如果达到就按设定的最大等待时间进行等待，如果超出最大等待时间，则抛出异常给客户。<br>当客户释放数据库连接时，先判断该连接的引用次数是否超过了规定值，如果超过就从连接池中删除该连接，否则保留为其他客户服务。<br>该策略保证了数据库连接的有效复用，避免频繁的建立、释放连接所带来的系统资源开销。</p>
-<p>第三、连接池的关闭。当应用程序退出时，关闭连接池中所有的连接，释放连接池相关的资源，该过程正好与创建相反。</p>
-<h1 id="连接池主要参数"><a href="#连接池主要参数" class="headerlink" title="连接池主要参数"></a>连接池主要参数</h1><p><strong>使用连接池时，要配置一下参数</strong></p>
-<ol>
-<li>最小连接数：是连接池一直保持的数据库连接,所以如果应用程序对数据库连接的使用量不大,将会有大量的数据库连接资源被浪费.</li>
-<li>最大连接数：是连接池能申请的最大连接数,如果数据库连接请求超过次数,后面的数据库连接请求将被加入到等待队列中,这会影响以后的数据库操作</li>
-<li>最大空闲时间</li>
-<li>获取连接超时时间</li>
-<li>超时重试连接次数</li>
-</ol>
-<h1 id="连接池需要注意的点"><a href="#连接池需要注意的点" class="headerlink" title="连接池需要注意的点"></a>连接池需要注意的点</h1><h2 id="并发问题"><a href="#并发问题" class="headerlink" title="并发问题"></a>并发问题</h2><p>为了使连接管理服务具有最大的通用性，必须考虑多线程环境，即并发问题。这个问题相对比较好解决，因为各个语言自身提供了对并发管理的支持像java,c#等等，使用synchronized(java)lock(C#)关键字即可确保线程是同步的。</p>
-<h2 id="事务处理"><a href="#事务处理" class="headerlink" title="事务处理"></a>事务处理</h2><p>我们知道，事务具有原子性，此时要求对数据库的操作符合“ALL-OR-NOTHING”原则,即对于一组SQL语句要么全做，要么全不做。<br>我们知道当2个线程共用一个连接Connection对象，而且各自都有自己的事务要处理时候，对于连接池是一个很头疼的问题，因为即使Connection类提供了相应的事务支持，可是我们仍然不能确定那个数据库操作是对应那个事务的，这是由于我们有２个线程都在进行事务操作而引起的。为此我们可以使用每一个事务独占一个连接来实现，虽然这种方法有点浪费连接池资源但是可以大大降低事务管理的复杂性。 </p>
-<h2 id="连接池的分配与释放"><a href="#连接池的分配与释放" class="headerlink" title="连接池的分配与释放"></a>连接池的分配与释放</h2><p>连接池的分配与释放，对系统的性能有很大的影响。合理的分配与释放，可以提高连接的复用度，从而降低建立新连接的开销，同时还可以加快用户的访问速度。<br>对于连接的管理可使用一个List。即把已经创建的连接都放入List中去统一管理。每当用户请求一个连接时，系统检查这个List中有没有可以分配的连接。如果有就把那个最合适的连接分配给他；如果没有就抛出一个异常给用户，List中连接是否可以被分配由一个线程来专门管理捎后我会介绍这个线程的具体实现。</p>
-<h2 id="连接池的配置与维护"><a href="#连接池的配置与维护" class="headerlink" title="连接池的配置与维护"></a>连接池的配置与维护</h2><p>连接池中到底应该放置多少连接，才能使系统的性能最佳？系统可采取设置最小连接数（minConnection）和最大连接数（maxConnection）等参数来控制连接池中的连接。比方说，最小连接数是系统启动时连接池所创建的连接数。如果创建过多，则系统启动就慢，但创建后系统的响应速度会很快；如果创建过少，则系统启动的很快，响应起来却慢。这样，可以在开发时，设置较小的最小连接数，开发起来会快，而在系统实际使用时设置较大的，因为这样对访问客户来说速度会快些。最大连接数是连接池中允许连接的最大数目，具体设置多少，要看系统的访问量，可通过软件需求上得到。 <br>如何确保连接池中的最小连接数呢？有动态和静态两种策略。动态即每隔一定时间就对连接池进行检测，如果发现连接数量大于最小连接数，则补充相应数量的新连接,以保证连接池的正常运转。静态是发现空闲连接不够时再去检查。</p>
-<h1 id="数据库对比"><a href="#数据库对比" class="headerlink" title="数据库对比"></a>数据库对比</h1><h2 id="第一、二代连接池"><a href="#第一、二代连接池" class="headerlink" title="第一、二代连接池"></a>第一、二代连接池</h2><p>区分一个数据库连接池是属于第一代产品还是代二代产品有一个最重要的特征就是看它在架构和设计时采用的线程模型，因为这直接影响的是并发环境下存取数据库连接的性能。</p>
-<p>一般来讲采用单线程同步的架构设计都属于第一代连接池，二采用多线程异步架构的则属于第二代。比较有代表性的就是Apache Commons DBCP，在1.x版本中，一直延续着单线程设计模式，到2.x才采用多线程模型。</p>
-<p>二代产品对一代产品的超越是颠覆性的，除了一些“历史原因”，你很难再找到第二条理由说服自己不选择二代产品，但任何成功都不是偶然的，二代产品的成功很大程度上得益于前代产品们打下的基础，站在巨人的肩膀上，新一代的连接池的设计师们将这一项“工具化”的产品，推向了极致。其中，最具代表性的两款产品是：</p>
-<ul>
-<li>HikariCP</li>
-<li>Druid</li>
-</ul>
-<p>下面更多介绍请参考<a href="https://blog.csdn.net/crankz/article/details/82874158">数据库连接池对比</a></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>时至今日，虽然每个应用（需要RDBMS的）都离不开连接池，但在实际使用的时候，连接池已经可以做到“<strong>隐形</strong>”了。也就是说在通常情况下，连接池完成项目初始化配置之后，就再不需要再做任何改动了。不论你是选择Druid或是HikariCP，甚至是DBCP，它们都足够稳定且高效！之前讨论了很多关于连接池的性能的问题，但这些性能上的差异，是相较于其他连接池而言的，对整个系统应用来说，第二代连接池在使用过程中体会到的差别是微乎其微的，基本上不存在因为连接池的自身的配饰和使用导致系统性能下降的情况，除非是在单点应用的数据库负载足够高的时候（压力测试的时候），但即便是如此，通用的优化的方式也是单点改集群，而不是在单点的连接池上死扣。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-        <tag>数据库</tag>
-        <tag>连接池</tag>
-        <tag>dbcp2</tag>
-        <tag>转载</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>排序算法</title>
-    <url>/2019/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><ul>
-<li>排序是使用最多的算法</li>
-<li>数据结构设计思想<ul>
-<li>divide and conquer 分治</li>
-<li>specialised data structures</li>
-<li>randomised algorithms</li>
-<li>lower bounds</li>
-</ul>
-</li>
-<li>排序算法是很多其他算法的基础<ul>
-<li>搜索</li>
-<li>最短路径</li>
-<li>元素唯一性 Element uniqueness</li>
-<li>频率分布 Frequency distribution</li>
-<li>选择</li>
-<li>计算几何和计算机图形学 Computational Geometry and Computer Graphics(CG)<br>Convex hull 扫描法找凸包 根据角度排序构建最外层点的凸多边形</li>
-</ul>
-</li>
-</ul>
-<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><img src="http://ws4.sinaimg.cn/large/006tNc79ly1g24y3dkjlgj311o0huqhl.jpg" align=center width=400>
-
-<ul>
-<li>内部排序 Internal Sort<ul>
-<li>关键字比较法<ul>
-<li> incremental method: Insertion Sort插入排序</li>
-<li> Divide- and- conquer: Quick Sort 快速排序, Merge Sort 归并排序</li>
-<li> Heap Sort 堆排序</li>
-</ul>
-</li>
-<li>distribution<ul>
-<li> Radix Sort 基数排序</li>
-</ul>
-</li>
-</ul>
-</li>
-<li> 外部排序 External Sort</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><ul>
-<li>输入Input: 一串数字</li>
-<li>输出Output: 输入序列重排序后的排列</li>
-</ul>
-<h3 id="评估方面1-稳定排序-Stable-Sorting"><a href="#评估方面1-稳定排序-Stable-Sorting" class="headerlink" title="评估方面1-稳定排序 Stable Sorting"></a>评估方面1-稳定排序 Stable Sorting</h3><p>相等的数字排序前后相对位置不变</p>
-<h3 id="评估方面2-时间复杂度-Time-Complexity"><a href="#评估方面2-时间复杂度-Time-Complexity" class="headerlink" title="评估方面2-时间复杂度 Time Complexity"></a>评估方面2-时间复杂度 Time Complexity</h3><p>基于比较的排序，时间由比较次数决定</p>
-<h3 id="评估方面3-in-place-sorting-algorithm"><a href="#评估方面3-in-place-sorting-algorithm" class="headerlink" title="评估方面3-in-place sorting algorithm"></a>评估方面3-in-place sorting algorithm</h3><p>不借助额外的数据结构</p>
-<blockquote>
-<p>In computer science, an in-place algorithm is an algorithm which transforms input using no auxiliary data structure. However a small amount of extra storage space is allowed for auxiliary variables. The input is usually overwritten by the output as the algorithm executes. In-place algorithm updates input sequence only through replacement or swapping of elements. An algorithm which is not in-place is sometimes called not-in-place or out-of-place.</p>
-</blockquote>
-<h1 id="插入排序-Insertion-Sort"><a href="#插入排序-Insertion-Sort" class="headerlink" title="插入排序 Insertion Sort"></a>插入排序 Insertion Sort</h1><h1 id="快速排序-Quick-Sort"><a href="#快速排序-Quick-Sort" class="headerlink" title="快速排序 Quick Sort"></a>快速排序 Quick Sort</h1><h1 id="归并排序-Merge-Sort"><a href="#归并排序-Merge-Sort" class="headerlink" title="归并排序 Merge Sort"></a>归并排序 Merge Sort</h1><h1 id="堆排序-Heap-Sort"><a href="#堆排序-Heap-Sort" class="headerlink" title="堆排序 Heap Sort"></a>堆排序 Heap Sort</h1><h1 id="桶排序-Bucket-Sort"><a href="#桶排序-Bucket-Sort" class="headerlink" title="桶排序 Bucket Sort"></a>桶排序 Bucket Sort</h1><h1 id="基数排序-Radix-Sort"><a href="#基数排序-Radix-Sort" class="headerlink" title="基数排序 Radix Sort"></a>基数排序 Radix Sort</h1>]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>排序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>自动驾驶系统课程笔记（第一章 简介）</title>
-    <url>/2019/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p><em>本文写于19年4月智能驾驶技术课程</em><br><em>参考书籍</em></p>
-<ul>
-<li>第一本无人驾驶技术书, 2017</li>
-<li>Creating Autonomous Vehicle Systems, 2018</li>
-</ul>
-<h1 id="Ch1-Introduction-to-Autonomous-Driving-自动驾驶技术简介"><a href="#Ch1-Introduction-to-Autonomous-Driving-自动驾驶技术简介" class="headerlink" title="Ch1 Introduction to Autonomous Driving 自动驾驶技术简介"></a>Ch1 Introduction to Autonomous Driving 自动驾驶技术简介</h1><h2 id="1-1-Autonomous-Driving-Technologies-Overview-概览"><a href="#1-1-Autonomous-Driving-Technologies-Overview-概览" class="headerlink" title="1.1 Autonomous Driving Technologies Overview 概览"></a>1.1 Autonomous Driving Technologies Overview 概览</h2><p>自动驾驶技术不是一项单一的技术，而是一系列技术的整合。<br>主要由三部分构成：</p>
-<ul>
-<li>Algorithm<ul>
-<li>Sensing</li>
-<li>Perception</li>
-<li>Decision</li>
-</ul>
-</li>
-<li>Client System<ul>
-<li>Operating System</li>
-<li>Hardware Platform</li>
-</ul>
-</li>
-<li>Cloud Platform<ul>
-<li>High-definition (HD) Map</li>
-<li>Deep Learning Model Training</li>
-<li>Simulation</li>
-<li>Data storage</li>
-</ul>
-</li>
-</ul>
-<p align="center">
-<img src="http://ws1.sinaimg.cn/large/006tNc79ly1g227axbd1mj31660g2dk7.jpg" width="600"/>
-</p>
-
-<blockquote>
-<p>The algorithm subsystem extracts meaningful information from sensor raw data to under- stand its environment and to make decisions about its future actions. The client systems integrate these algorithms together to meet real-time and reliability requirements. For example, if the camera generates data at 60 Hz, the client systems need to make sure that the longest stage of the pro- cessing pipeline takes less than 16 ms to complete. The cloud platform provides offline computing and storage capabilities for autonomous cars. With the cloud platform, we are able to test new algorithms, update HD map, and train better recognition, tracking, and decision models.</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="1-2-Autonomous-Driving-Algorithm-算法"><a href="#1-2-Autonomous-Driving-Algorithm-算法" class="headerlink" title="1.2 Autonomous Driving Algorithm 算法"></a>1.2 Autonomous Driving Algorithm 算法</h2><h3 id="1-SENSING-传感"><a href="#1-SENSING-传感" class="headerlink" title="1.SENSING 传感"></a>1.SENSING 传感</h3><p>每种方法都有自己的优缺点，*实际情况下自动驾驶汽车结合了各种方法来保证可靠性和安全性。</p>
-<ul>
-<li>GPS/IMU（惯性测量单元）<br>GPS精度高但更新频率低，IMU精读随时间变化越来越低但更新频率高。</li>
-<li>LiDAR 光学雷达<br>精度高，用于绘制地图、定位及避障，作为主传感器使用。</li>
-<li>Cameras 相机<br>用于物体识别与追踪。多个摄像头产生巨额数据量。</li>
-<li>Radar and Sonar 雷达和声呐<br>雷达和声呐是避障的最后一道保障，产生的数据不需要过多处理直接被控制处理器采用（因为是紧急情况）。</li>
-</ul>
-<h3 id="2-Perception-感知"><a href="#2-Perception-感知" class="headerlink" title="2.Perception 感知"></a>2.Perception 感知</h3><ul>
-<li>定位<br>结合GPS和IMU的数据完成定位，因为有GPS室内环境(如隧道)无法工作等问题，引入摄像头作为辅助定位。摄像头的定位技术类似于对四维空间进行分析。问题又来了，因为摄像头定位需要充足的光线，也不够好，因此，借助于大量粒子滤波的激光雷达LiDAR通常被用作车辆定位的主传感器。<br>激光雷达产生的<strong>点云</strong>对环境进行了“形状化描述”，但并不足以区分各自不同的点，通过粒子滤波将已知HD地图与观测到的形状进行比较以减少位置的不确定性。<br>LiDAR也有缺点，它的缺点是会受到空气中的悬浮颗粒(雨滴或灰尘)的干扰。<br>综上所述，我们需要利用多种传感器融合技术进行多类型传感数据融合，处理以整合所有传感器的优点，完成可靠并精准的定位。</li>
-</ul>
-<p align="center">
-<img src="http://ws3.sinaimg.cn/large/006tNc79ly1g2289evztfj30y80pun5z.jpg" width="500"/>
-</p>
-
-<ul>
-<li>物体识别与追踪<br>LiDAR+CNN卷积神经网络：<ul>
-<li>卷积层使用不同的滤波器从输入图像中提取不同的特征，并且每个滤波器在完成训练阶段后都将抽取出一套“可供学习”的参数</li>
-<li>激活层决定是否启动目标神经元</li>
-<li>汇聚层压缩特征映射图所占用的空间以减少参数的数目，并由此降低所需要的计算量</li>
-<li>一旦某物体被CNN识别出来，下一步将自动预测它的运行轨迹或进行物体追踪 </li>
-</ul>
-</li>
-</ul>
-<h3 id="3-Action-决策"><a href="#3-Action-决策" class="headerlink" title="3.Action 决策"></a>3.Action 决策</h3><ul>
-<li>行为预测<ul>
-<li>预测其它车辆的行驶行为</li>
-<li>使用随记模型产生其它车辆的可达位置集合，并采用概率分布的方法预测每一个可达位置集的相关概率</li>
-</ul>
-</li>
-</ul>
-<p align="center">
-<img src="http://ws3.sinaimg.cn/large/006tNc79ly1g228wh8wnmj30x80qeaoe.jpg" width="500"/>
-</p>
-
-<ul>
-<li>路径规划<ul>
-<li>使用完全确定模型，搜索所有可能的路径并利用代价函数的方式确定最佳路径</li>
-<li>缺点是不实时。为了避免计算复杂性并提供实时的路径规划，使用概率性模型成为了主要的优化方向</li>
-</ul>
-</li>
-<li>避障<ul>
-<li>安全性是首位的！我们将至少使用两层级的避障机制</li>
-<li>第一层是基于交通情况预测的前瞻层级</li>
-<li>第二层是实时反应层级。使用本地雷达数据进行路径重新规划，一旦雷达侦测到前方出现障碍物，则立即执行避障（前面提到的雷达+声呐作为避障的最后一道屏障。他们产生的数据用来表示在车的前进方向上最近障碍物的距离）</li>
-</ul>
-</li>
-</ul>
-<h2 id="1-3-Autonomous-Driving-Client-System-用户端系统"><a href="#1-3-Autonomous-Driving-Client-System-用户端系统" class="headerlink" title="1.3 Autonomous Driving Client System 用户端系统"></a>1.3 Autonomous Driving Client System 用户端系统</h2><p>用户端系统整合上述避障、路径规划等算法，以满足可靠性及实时性等要求。需要克服三个问题：</p>
-<ul>
-<li>系统必须确保捕捉到的大量传感器数据可以及时快速地得到处理</li>
-<li>如果系统的某部分失效，则系统需要有足够的健壮性能从错误中恢复</li>
-<li>系统必须在设计的能耗和资源限定下有效地完成所有的计算操作</li>
-</ul>
-<h3 id="1-机器人操作系统ROS"><a href="#1-机器人操作系统ROS" class="headerlink" title="1.机器人操作系统ROS"></a>1.机器人操作系统ROS</h3><p>ROS是现如今广泛被使用的、专为机器人应用裁剪的、强大的分布式计算框架。ROS非常适用于无人驾驶的场景，但是仍有一些问题需要解决。</p>
-<p align="center">
-<img src="http://ws1.sinaimg.cn/large/006tNc79ly1g22c2a58y0j31220kk0yj.jpg" width="500"/>
-</p>
-
-<h4 id="待解决问题"><a href="#待解决问题" class="headerlink" title="待解决问题"></a>待解决问题</h4><ul>
-<li>可靠性：ROS使用单主节点结构，并且没有监控机制以恢复失效的节点。</li>
-<li>性能：当节点之间使用广播消息的方式通信时，将产生多次信息复制导致性能下降。</li>
-<li>安全：ROS中没有授权和加密机制，因此安全性受到很大威胁。</li>
-</ul>
-<h4 id="可靠性"><a href="#可靠性" class="headerlink" title="可靠性"></a>可靠性</h4><ul>
-<li>使用类似于ZooKeeper的方法，改进后的ROS结构包括一个关键主节点及一个备用主节点。</li>
-</ul>
-<h4 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h4><ul>
-<li>不再使用TCP/IP的通信模式，取而代之地采用共享内存的方法完成节点通信。</li>
-<li>不再使用广播通信，改成目的更明确的多路径传输机制改善系统的带宽与吞吐量。</li>
-</ul>
-<h4 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h4><ul>
-<li>使用Linux containers(LXC)的方法限制每一个节点可供使用的资源数，并采用沙盒的方式以确保节点的运行独立，这样以来可最大限度地防止资源泄露。（防止因ROS节点被挟制后不断进行内存分配，内存耗尽而导致剩余节点失效继而全线崩溃）</li>
-<li>为通信消息进行了加密操作，以防止其被黑客窃听。</li>
-</ul>
-<h3 id="2-硬件平台"><a href="#2-硬件平台" class="headerlink" title="2.硬件平台"></a>2.硬件平台</h3><ul>
-<li>现有计算平台功耗高发热严重需要配备额外的散热装置，因而太贵。</li>
-<li>利用ARM面向移动市场的SoC可以尝试解决这些问题。<blockquote>
-<p>SoC: System on Chip.是一个将电脑或其他电子系统集成到单一芯片的集成电路。<br>指的是将CPU、GPU、RAM、通信基带、等整合在一起的<br>由于手机空间限制，不可能像PC一样，主板、CPU、GPU、内存条可以自己选择，自由组合，所以厂家直接整合在了一起，假设你找高通买了SOC，它就包含了CPU、GPU、内存条、通信基带等给你，厂家一般也不会单卖CPU给你。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="1-4-Autonomous-Driving-Cloud-Platform-云平台"><a href="#1-4-Autonomous-Driving-Cloud-Platform-云平台" class="headerlink" title="1.4 Autonomous Driving Cloud Platform 云平台"></a>1.4 Autonomous Driving Cloud Platform 云平台</h2><p>无人车是移动系统，因此需要云平台的支持。云平台可以提供：</p>
-<ul>
-<li>分布式计算</li>
-<li>分布式存储</li>
-</ul>
-<h3 id="1-仿真"><a href="#1-仿真" class="headerlink" title="1.仿真"></a>1.仿真</h3><ul>
-<li>开发无人驾驶新算法 –&gt; 仿真测试(回放ROS阶段采集点真实数据，模拟真实驾驶场景) –&gt; 真车测试(成本高昂、周期漫长)<br>因此仿真测试的全面性和正确性对降低生产成本和生产周期尤为重要。  </li>
-<li>利用Spark可以搭建服务器集群更快完成仿真测试。</li>
-</ul>
-<p align="center">
-<img src="http://ws4.sinaimg.cn/large/006tNc79ly1g22cc8j1ezj30yq0o2qec.jpg" width="500"/>
-</p>
-
-<h3 id="2-高精度地图生成"><a href="#2-高精度地图生成" class="headerlink" title="2.高精度地图生成"></a>2.高精度地图生成</h3><ul>
-<li>原始数据处理 –&gt; 点云生成 –&gt; 点云对齐 –&gt; 2D反射地图生成 –&gt; 高精地图标注 –&gt; 地图生成</li>
-<li>利用Spark内存计算不需要使用磁盘存储，数据访问速度加快，极大提高了高精度地图产生的性能。</li>
-</ul>
-<h3 id="3-深度学习模型训练"><a href="#3-深度学习模型训练" class="headerlink" title="3.深度学习模型训练"></a>3.深度学习模型训练</h3><ul>
-<li>单服务器计算模型缓慢</li>
-<li>使用Spark+Paddle来搭建分布式深度学习系统</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>NEU</tag>
-        <tag>人工智能</tag>
-        <tag>自动驾驶</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机热门研究领域扫盲</title>
-    <url>/2019/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%83%AD%E9%97%A8%E7%A0%94%E7%A9%B6%E9%A2%86%E5%9F%9F%E6%89%AB%E7%9B%B2/</url>
-    <content><![CDATA[<p>最近有幸得到了东南大学预推免的机会，之前凭借自己对行业的观察和直觉选择了数据科学方向，但发现自己甚至还没有对数据科学的一些基本了解<br>借此机会对当前计算机领域各个研究方向做一个全面的基础的了解，算是一个扫盲的过程。</p>
-<span id="more"></span>
-
-<h1 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h1><h2 id="云与云计算"><a href="#云与云计算" class="headerlink" title="云与云计算"></a>云与云计算</h2><ul>
-<li><a href="https://blog.csdn.net/weixin_41918841/article/details/89088987">云计算到底是怎么玩的(入门介绍)</a></li>
-</ul>
-<p>计算机资源不在本地，通过网络使用其他设备的计算机资源（计算资源，网络资源，存储资源等）。</p>
-<blockquote>
-<p>“云”实质上就是一个网络，狭义上讲，云计算就是一种提供资源的网络，使用者可以随时获取“云”上的资源，按需求量使用，并且可以看成是无限扩展的，只要按使用量付费就可以，“云”就像自来水厂一样，我们可以随时接水，并且不限量，按照自己家的用水量，付费给自来水厂就可以。<br>从广义上说，云计算是与信息技术、软件、互联网相关的一种服务，这种计算资源共享池叫做“云”，云计算把许多计算资源集合起来，通过软件实现自动化管理，只需要很少的人参与，就能让资源被快速提供。也就是说，计算能力作为一种商品，可以在互联网上流通，就像水、电、煤气一样，可以方便地取用，且价格较为低廉。<br>总之，云计算不是一种全新的网络技术，而是一种全新的网络应用概念，云计算的核心概念就是以互联网为中心，在网站上提供快速且安全的云计算服务与数据存储，让每一个使用互联网的人都可以使用网络上的庞大计算资源与数据中心。<br>云计算是继互联网、计算机后在信息时代有一种新的革新，云计算是信息时代的一个大飞跃，未来的时代可能是云计算的时代，虽然目前有关云计算的定义有很多，但总体上来说，云计算虽然有许多得含义，但概括来说，云计算的基本含义是一致的，即云计算具有很强的扩展性和需要性，可以为用户提供一种全新的体验，云计算的核心是可以将很多的计算机资源协调在一起，因此，使用户通过网络就可以获取到无限的资源，同时获取的资源不受时间和空间的限制。</p>
-</blockquote>
-<h2 id="虚拟化"><a href="#虚拟化" class="headerlink" title="虚拟化"></a>虚拟化</h2><p>目的是实现调度灵活。时间灵活性与空间灵活性。</p>
-<h2 id="相关技术"><a href="#相关技术" class="headerlink" title="相关技术"></a>相关技术</h2><ul>
-<li>Hypervisor：完成物理资源虚拟化，如VMware，KVM</li>
-<li>OpenStack：KVM这样的Hypervisor软件，实际上是提供了一种虚拟化能力，模拟CPU的运行，更为底层。但是它的用户交互并不良好，不方便使用。于是，为了更好地管理虚拟机，就需要OpenStack这样的云管理平台。（这些属于IaaS）</li>
-<li>容器：容器也是虚拟化，但是属于“轻量级”的虚拟化。它的目的和虚拟机一样，都是为了创造“隔离环境”。但是，它又和虚拟机有很大的不同——虚拟机是操作系统级别的资源隔离，而容器本质上是进程级的资源隔离。而大家常听说的Docker，就是创建容器的工具，是应用容器引擎。</li>
-<li>K8S：除了Docker对容器进行创建之外，我们还需要一个工具，对容器进行编排。这个工具，就是K8S。K8S是一个容器集群管理系统，主要职责是容器编排（Container Orchestration）——启动容器，自动化部署、扩展和管理容器应用，还有回收容器。</li>
-</ul>
-<h2 id="私有云与公有云"><a href="#私有云与公有云" class="headerlink" title="私有云与公有云"></a>私有云与公有云</h2><p>公有云就是阿里云，腾讯云这些云服务商提供的服务。</p>
-<p>私有云是企业或者个人自己拥有的云服务器，并且服务器不对外开放，仅供自己公司内部人使用。比如说有些大的企业数据文档需要共享，用云盘就很方便并且不用交给第三方保管，这从某种意义上来说降低了泄密的风险。另外，云服务器<strong>容错能力、抗风险能力都比较高</strong>，这是传统服务器所不能比的。<br>（私有云利用了云计算的特点，即资源不在本地，员工们随用随取）</p>
-<p>另外还有混合云，主要由提供商管理的公共云与主要由客户业务管理的私有云之间的组合。这使得公司可以选择他们希望在内部保留哪些服务以及他们想要作为更通用（和通用）平台访问哪些服务，同时仍然将所有内容保留在云中。</p>
-<h2 id="IaaS、PaaS-和-SaaS"><a href="#IaaS、PaaS-和-SaaS" class="headerlink" title="IaaS、PaaS 和 SaaS"></a>IaaS、PaaS 和 SaaS</h2><ul>
-<li><p><a href="https://www.zhihu.com/question/20387284">怎么理解 IaaS、SaaS 和 PaaS 的区别？</a></p>
-</li>
-<li><p><a href="https://www.zhihu.com/question/21641778/answer/62523535">有哪些通俗易懂的例子可以解释 IaaS、PaaS、SaaS 的区别？ - 何足道的回答 - 知乎</a></p>
-</li>
-<li><p>IaaS：基础设施即服务</p>
-</li>
-<li><p>PaaS：平台即服务</p>
-</li>
-<li><p>SaaS：软件即服务</p>
-</li>
-</ul>
-<p>以阿里云为例，普通的ECS云服务器属于IaaS，但例如云数据库，云存储这样的云应用属于平台级的PaaS。另外例如阿里学生机提供的「轻量应用服务器」也可以认为是PaaS。（IaaS和PaaS的界限不明显）</p>
-<blockquote>
-<p>如果你是一个网站站长，想要建立一个网站。不采用云服务，你所需要的投入大概是：买服务器，安装服务器软件，编写网站程序。现在你追随潮流，采用流行的云计算，如果你采用IaaS服务，那么意味着你就不用自己买服务器了，随便在哪家购买虚拟机，但是还是需要自己装服务器软件而如果你采用PaaS的服务，那么意味着你既不需要买服务器，也不需要自己装服务器软件，只需要自己开发网站程序如果你再进一步，购买某些在线论坛或者在线网店的服务,这意味着你也不用自己开发网站程序，只需要使用它们开发好的程序，而且他们会负责程序的升级、维护、增加服务器等，而你只需要专心运营即可，此即为SaaS。</p>
-</blockquote>
-<blockquote>
-<p>Platform as a Service: 平台即服务, 是面向软件开发者的服务, 云计算平台提供硬件, OS, 编程语言, 开发库, 部署工具, 帮助软件开发者更快的开发软件服务. 比如Google的GAE.SaaS: 软件即服务, 是面向软件消费者的, 用户无需安装, 通过标准的Internet工具(比如浏览器), 即可使用云计算平台提供的软件, 比如Salesforce的CRM管理系统, Google的Gmail.还有IaaS 基础设施即服务, 这个跟PaaS的区别倒是不那么明显, 比如Amazon的IaaS服务AWS越来越像PaaS了。</p>
-</blockquote>
-<p><img src="https://pic3.zhimg.com/80/v2-cd6d71e4481f5ffe432c6b1255ae601b_hd.jpg"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>云计算面向用户隐藏了足够多的技术细节，我认为利用阿里云这些公有云厂商最大的好处一是弹性空间即买即用，二是省去了大量的运维工作。<br>云计算的研究应该还是侧重如何更好地进行资源调度，如何帮助用户进行资源迁移与部署。两个方面分别帮助云服务提供商和用户节省成本。</p>
-<h1 id="分布式系统"><a href="#分布式系统" class="headerlink" title="分布式系统"></a>分布式系统</h1><ul>
-<li><a href="https://www.cnblogs.com/xybaby/p/7787034.html">什么是分布式系统，如何学习分布式系统</a><br>分布式系统是由一组通过网络进行通信、为了完成共同的任务而协调工作的计算机节点组成的系统。分布式系统的出现是为了用廉价的、普通的机器完成单个计算机无法完成的计算、存储任务。其目的是利用更多的机器，处理更多的数据。</li>
-</ul>
-<h2 id="以一个请求为例串起分布式系统的技术细节"><a href="#以一个请求为例串起分布式系统的技术细节" class="headerlink" title="以一个请求为例串起分布式系统的技术细节"></a>以一个请求为例串起分布式系统的技术细节</h2><p>　　用户使用Web、APP、SDK，通过HTTP、TCP连接到系统。在分布式系统中，为了高并发、高可用，一般都是多个节点提供相同的服务。那么，第一个问题就是具体选择哪个节点来提供服务，这个就是负载均衡（load balance）。负载均衡的思想很简单，但使用非常广泛，在分布式系统、大型网站的方方面面都有使用，或者说，只要涉及到多个节点提供同质的服务，就需要负载均衡。</p>
-<p>　　通过负载均衡找到一个节点，接下来就是真正处理用户的请求，请求有可能简单，也有可能很复杂。简单的请求，比如读取数据，那么很可能是有缓存的，即分布式缓存，如果缓存没有命中，那么需要去数据库拉取数据。对于复杂的请求，可能会调用到系统中其他的服务。</p>
-<p>　　承上，假设服务A需要调用服务B的服务，首先两个节点需要通信，网络通信都是建立在TCP/IP协议的基础上，但是，每个应用都手写socket是一件冗杂、低效的事情，因此需要应用层的封装，因此有了HTTP、FTP等各种应用层协议。当系统愈加复杂，提供大量的http接口也是一件困难的事情。因此，有了更进一步的抽象，那就是RPC（remote produce call），是的远程调用就跟本地过程调用一样方便，屏蔽了网络通信等诸多细节，增加新的接口也更加方便。</p>
-<p>　　一个请求可能包含诸多操作，即在服务A上做一些操作，然后在服务B上做另一些操作。比如简化版的网络购物，在订单服务上发货，在账户服务上扣款。这两个操作需要保证原子性，要么都成功，要么都不操作。这就涉及到分布式事务的问题，分布式事务是从应用层面保证一致性：某种守恒关系。</p>
-<p>　　上面说道一个请求包含多个操作，其实就是涉及到多个服务，分布式系统中有大量的服务，每个服务又是多个节点组成。那么一个服务怎么找到另一个服务（的某个节点呢）？通信是需要地址的，怎么获取这个地址，最简单的办法就是配置文件写死，或者写入到数据库，但这些方法在节点数据巨大、节点动态增删的时候都不大方便，这个时候就需要服务注册与发现：提供服务的节点向一个协调中心注册自己的地址，使用服务的节点去协调中心拉取地址。</p>
-<p>　　从上可以看见，协调中心提供了中心化的服务：以一组节点提供类似单点的服务，使用非常广泛，比如命令服务、分布式锁。协调中心最出名的就是chubby，zookeeper。</p>
-<p>　　回到用户请求这个点，请求操作会产生一些数据、日志，通常为信息，其他一些系统可能会对这些消息感兴趣，比如个性化推荐、监控等，这里就抽象出了两个概念，消息的生产者与消费者。那么生产者怎么讲消息发送给消费者呢，RPC并不是一个很好的选择，因为RPC肯定得指定消息发给谁，但实际的情况是生产者并不清楚、也不关心谁会消费这个消息，这个时候消息队列就出马了。简单来说，生产者只用往消息队列里面发就行了，队列会将消息按主题（topic）分发给关注这个主题的消费者。消息队列起到了异步处理、应用解耦的作用。</p>
-<p>　　上面提到，用户操作会产生一些数据，这些数据忠实记录了用户的操作习惯、喜好，是各行各业最宝贵的财富。比如各种推荐、广告投放、自动识别。这就催生了分布式计算平台，比如Hadoop，Storm等，用来处理这些海量的数据。</p>
-<p>　　最后，用户的操作完成之后，用户的数据需要持久化，但数据量很大，大到按个节点无法存储，那么这个时候就需要分布式存储：将数据进行划分放在不同的节点上，同时，为了防止数据的丢失，每一份数据会保存多分。传统的关系型数据库是单点存储，为了在应用层透明的情况下分库分表，会引用额外的代理层。而对于NoSql，一般天然支持分布式。</p>
-<h2 id="REST与RPC"><a href="#REST与RPC" class="headerlink" title="REST与RPC"></a>REST与RPC</h2><ul>
-<li><a href="https://baijiahao.baidu.com/s?id=1617168792520937104&wfr=spider&for=pc">面试问题：REST与RPC区别？</a><br>REST调用及测试都很方便，RPC就显得有点繁琐，但是RPC的效率是毋庸置疑的，所以建议在多系统之间的内部调用采用RPC。  </li>
-</ul>
-<p><strong>对外提供的服务，Rest更加合适。</strong></p>
-<h1 id="数据科学"><a href="#数据科学" class="headerlink" title="数据科学"></a>数据科学</h1><ul>
-<li><a href="https://www.zhihu.com/question/54521940/answer/489379445">数据科学 data science 是什么？</a><br>包括了：<ul>
-<li>数据挖掘</li>
-<li>统计推断</li>
-<li>机器学习</li>
-<li>数据工程</li>
-<li>决策智能</li>
-</ul>
-</li>
-</ul>
-<h2 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h2><ul>
-<li><a href="https://zhuanlan.zhihu.com/p/40217622">大数据学什么？</a></li>
-<li><a href="https://www.zhihu.com/question/27292215/answer/133141387">如何入门大数据（数据挖掘方面）？</a></li>
-</ul>
-<p>看了一圈之后发现其实目前的这些热门方向可以连在一起形成一个闭环。</p>
-<h2 id="ETL程序"><a href="#ETL程序" class="headerlink" title="ETL程序"></a>ETL程序</h2><p>ETL是将业务系统的数据经过抽取、清洗转换之后加载到数据仓库的过程，目的是将企业中的分散、零乱、标准不统一的数据整合到一起，为企业的决策提供分析依据。</p>
-<h1 id="物联网"><a href="#物联网" class="headerlink" title="物联网"></a>物联网</h1><ul>
-<li><a href="https://www.zhihu.com/question/19751763/answer/95871992">什么是物联网？其发展前景如何？</a></li>
-</ul>
-<h2 id="边缘计算"><a href="#边缘计算" class="headerlink" title="边缘计算"></a>边缘计算</h2><ul>
-<li><a href="https://zhuanlan.zhihu.com/p/52864297">一文读懂边缘计算和边缘智能，以及它们和ARM的暧昧关系</a><br>“大智能”在云端，“小智能”在边缘，仍是长期趋势。</li>
-</ul>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>看完之后依旧头大，还没完全清楚自己感兴趣的方向。另外一个感觉就是这些名词总是在把简单问题复杂化，接下来的这些天再继续了解。  </p>
-<h2 id="从招聘入手"><a href="#从招聘入手" class="headerlink" title="从招聘入手"></a>从招聘入手</h2><p>突发奇想想看看大厂们的招聘都在招什么岗位</p>
-<ul>
-<li><p><a href="https://campus.alibaba.com/positionList.htm?spm=a1z3e1.11770916.0.0.6c0f723anKzi6x">阿里巴巴校园招聘岗位</a></p>
-</li>
-<li><p>算法工程师</p>
-<ul>
-<li>语音对话交互：深度学习、语音识别、语音合成、自然语言处理、语音交互、人工智能</li>
-<li>运筹优化：机器学习、运筹学（电商，物流和计算资源调度）</li>
-<li>自然语言处理</li>
-<li>计算机图形</li>
-<li>计算机视觉</li>
-<li>机器学习</li>
-</ul>
-</li>
-<li><p>数据研发工程师</p>
-<ul>
-<li>大数据的采集、存储、处理，通过分布式大数据平台加工数据，支持业务管理决策</li>
-<li>大数据体系的设计、开发、维护，通过数据仓库、元数据、质量体系有效的管理和组织几百P的数据</li>
-<li>大数据产品的研发，通过对数据的理解，发挥你的商业sense，发掘数据价值，探索大数据商业化</li>
-</ul>
-</li>
-<li><p>研发工程师</p>
-<ul>
-<li>基础技术（基础软件的设计、开发和维护）</li>
-<li>高性能分布式技术</li>
-<li>搜索技术</li>
-<li>电子商务产品技术</li>
-<li>海量数据处理和开发</li>
-<li>客户端开发</li>
-</ul>
-</li>
-<li><p>基础平台研发工程师（全栈）</p>
-<ul>
-<li>云基础设施技术</li>
-<li>虚拟化技术</li>
-<li>MySQL、PostgrelSQL、MongoDB、Redis、HBase等开源数据库内核的改进</li>
-<li>分布式系统</li>
-<li>大数据在线引擎体系</li>
-</ul>
-</li>
-</ul>
-<h2 id="SEU"><a href="#SEU" class="headerlink" title="SEU"></a>SEU</h2><p>根据SEU计算机学院的导师方向对目前计算机科学的研究领域做一个分类</p>
-<ul>
-<li>网络计算</li>
-<li>数据科学</li>
-<li>机器学习与知识工程</li>
-<li>智能系统与应用</li>
-<li>计算机软件与理论</li>
-<li>影响科学与图像处理</li>
-</ul>
-<p>总体来说，交叉技术运用的越来越明显，人工智能，网络，软件理论是几个主要的研究方向。</p>
-<p>最后放一张闲来无事做的SEU计算机学院导师们研究方向的词云。<br><img src="http://ww4.sinaimg.cn/large/006y8mN6ly1g67cepr7rej314v0u0x0u.jpg"></p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>研究生</tag>
-        <tag>科普</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>认真搞清楚static, final, final static</title>
-    <url>/2019/%E8%AE%A4%E7%9C%9F%E6%90%9E%E6%B8%85%E6%A5%9Astatic,%20final,%20final%20static/</url>
-    <content><![CDATA[<h1 id="static"><a href="#static" class="headerlink" title="static"></a>static</h1><p><em>为什么要用static?</em><br>有一些频繁使用的东西，如果你每次使用都重新new一下，那么这个开销可能会很高，如果使用static，一直放在内存中，那么想用就直接用，而不需要重新new一块空间初始化数据。那么static就是为了实现一个系统的缓存作用的，其生命周期直到应用程序退出结束。<br>这说明，static修饰的类成员，在程序运行过程中，只需要初始化一次即可，不会进行多次的初始化。static可以修饰：方法，属性，代码段，内部类（静态内部类或嵌套内部类）<br>主要有四种用法：</p>
-<h2 id="static成员变量"><a href="#static成员变量" class="headerlink" title="static成员变量"></a>static成员变量</h2><p><strong>用来修饰成员变量，将其变为类的成员，从而实现所有对象对于该成员的共享</strong><br>静态变量和非静态变量的区别是：  </p>
-<ul>
-<li>静态变量被所有的对象所共享，在内存中只有一个副本，它当且仅当在类初次加载时会被初始化。</li>
-<li>非静态变量是对象所拥有的，在创建对象的时候被初始化，存在多个副本，各个对象拥有的副本互不影响。<br>static不允许用来修饰局部变量，只能修饰成员变量。</li>
-</ul>
-<h2 id="static方法"><a href="#static方法" class="headerlink" title="static方法"></a>static方法</h2><p><strong>用来修饰成员方法，将其变为类方法，可以直接使用“类名.方法名”的方式调用，常用于工具类</strong>  </p>
-<ul>
-<li>首先，在静态方法中不能访问类的非静态成员变量和非静态成员方法。<br>原因：非静态成员（变量和方法）属于类的对象，所以只有在类的对象产生（创建类的实例）时才会分配内存，然后通过类的对象（实例）去访问。在一个类的静态成员中去访问其非静态成员之所以会出错是因为在类的非静态成员不存在的时候类的静态成员就已经存在了，访问一个内存中不存在的东西当然会出错。  </li>
-<li>其次，即使没有显示地声明为static，类的构造器实际上也是静态方法。</li>
-</ul>
-<h2 id="static代码块"><a href="#static代码块" class="headerlink" title="static代码块"></a>static代码块</h2><p><strong>静态块用法，将多个类成员放在一起初始化，使得程序更加规整，其中理解对象的初始化过程非常关键</strong><br>static块可以用来优化程序性能，是因为它的特性:只会在类加载的时候执行一次。<br>很多时候会将一些只需要进行一次的初始化操作都放在static代码块中进行。</p>
-<blockquote>
-<p>一个Java文件从编码完成到最终执行，一般主要包括两个过程</p>
-<ul>
-<li>编译</li>
-<li>运行<br>编译，即把我们写好的java文件，通过javac命令编译成字节码，也就是我们常说的.class文件。<br>运行，则是把编译声称的.class文件交给Java虚拟机(JVM)执行。<br>而我们所说的类加载过程即是指JVM虚拟机把.class文件中类信息加载进内存，并进行解析生成对应的class对象的过程。<br>举个通俗点的例子来说，JVM在执行某段代码时，遇到了class A， 然而此时内存中并没有class A的相关信息，于是JVM就会到相应的class文件中去寻找class A的类信息，并加载进内存中，这就是我们所说的类加载过程。  </li>
-</ul>
-<p><strong>由此可见，JVM不是一开始就把所有的类都加载进内存中，而是只有第一次遇到某个需要运行的类时才会加载，且只加载一次。</strong>  </p>
-</blockquote>
-<span id="more"></span>
-<blockquote>
-<p>静态代码块先于main函数执行，这是必然的，因为静态代码块是随着类的加载而执行。</p>
-</blockquote>
-<hr>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">StaticDemo</span></span>&#123;</span><br><span class="line">    <span class="comment">//静态代码块</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;父类静态代码块被执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//非静态代码块 </span></span><br><span class="line">    &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;父类非静态代码块被执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//构造方法</span></span><br><span class="line">    StaticDemo() &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;父类构造方法被执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StaticTest</span> <span class="keyword">extends</span> <span class="title">StaticDemo</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 静态代码块的特点：</span></span><br><span class="line"><span class="comment">    * 随着类的加载而执行，而且只执行一次</span></span><br><span class="line"><span class="comment">    * 静态代码块额执行顺序优先于main函数</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;子类静态代码块被执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//非静态代码块</span></span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;子类非静态代码块被执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    StaticTest() &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;子类构造方法被执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] hq)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;main函数&quot;</span>);</span><br><span class="line">        <span class="keyword">new</span> StaticTest();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>输出结果</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">父类静态代码块被执行</span><br><span class="line">子类静态代码块被执行</span><br><span class="line">main函数</span><br><span class="line">父类非静态代码块被执行</span><br><span class="line">父类构造方法被执行</span><br><span class="line">子类非静态代码块被执行</span><br><span class="line">子类构造方法被执行</span><br></pre></td></tr></table></figure>
-
-<h2 id="static内部类"><a href="#static内部类" class="headerlink" title="static内部类"></a>static内部类</h2><p><strong>静态导包用法，将类的方法直接导入到当前类中，从而直接使用“方法名”即可调用类方法，更加方便</strong><br>static内部类与非static内部类的区别：</p>
-<ul>
-<li>首先，在非静态内部类中不可以声明静态成员。</li>
-<li>其次，静态内部类不能访问其外部类的非静态成员变量和方法。</li>
-<li>最后在创建静态类内部对象时，不需要其外部类的对象。<br>java在实现LinkedList时使用了如下内部类：</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LinkedList</span>&lt;<span class="title">E</span>&gt; </span></span><br><span class="line"><span class="class">       <span class="title">extendsAbstractSequentialList</span>&lt;<span class="title">E</span>&gt; </span></span><br><span class="line"><span class="class">       <span class="keyword">implements</span> <span class="title">List</span>&lt;<span class="title">E</span>&gt;,<span class="title">Deque</span>&lt;<span class="title">E</span>&gt;, <span class="title">Cloneable</span>, <span class="title">java</span>.<span class="title">io</span>.<span class="title">Serializable</span></span></span><br><span class="line"><span class="class">   </span>&#123; </span><br><span class="line">   ........ </span><br><span class="line">       <span class="keyword">private</span> <span class="keyword">static</span> classEntry&lt;E&gt; &#123; </span><br><span class="line">               E element; </span><br><span class="line">               Entry&lt;E&gt; next; </span><br><span class="line">               Entry&lt;E&gt; previous; </span><br><span class="line"></span><br><span class="line">               Entry(E element,Entry&lt;E&gt; next, Entry&lt;E&gt; previous) &#123;</span><br><span class="line">                       <span class="keyword">this</span>.element =element; </span><br><span class="line">                       <span class="keyword">this</span>.next = next;</span><br><span class="line">                       <span class="keyword">this</span>.previous =previous; </span><br><span class="line">               &#125; </span><br><span class="line">   &#125; </span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> Entry&lt;E&gt; <span class="title">addBefore</span><span class="params">(E e,Entry&lt;E&gt; entry)</span> </span>&#123;</span><br><span class="line">               Entry&lt;E&gt; newEntry =<span class="keyword">new</span> Entry&lt;E&gt;(e, entry, entry.previous);</span><br><span class="line">               newEntry.previous.next = newEntry;</span><br><span class="line">               newEntry.next.previous =newEntry; </span><br><span class="line">               size++; </span><br><span class="line">               modCount++; </span><br><span class="line">               <span class="keyword">return</span> newEntry; </span><br><span class="line">   &#125; </span><br><span class="line">   ........ </span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
-<p>这里即静态内部类的典型用法</p>
-<h1 id="final"><a href="#final" class="headerlink" title="final"></a>final</h1><p>在java的关键字中，static和final是两个我们必须掌握的关键字。不同于其他关键字，他们都有多种用法，而且在一定环境下使用，可以提高程序的运行性能，优化程序的结构。<br>在java中，final的含义在不同的场景下有细微的差别，但总体上来说，它指的是“这是不可变的”。下面，我们来讲final的四种主要用法。</p>
-<h2 id="修饰数据"><a href="#修饰数据" class="headerlink" title="修饰数据"></a>修饰数据</h2><p>在编写程序时，我们经常需要说明一个数据是不可变的，我们成为常量。在java中，用final关键字修饰的变量，只能进行一次赋值操作，并且在生存期内不可以改变它的值。更重要的是，final会告诉编译器，这个数据是不会修改的，那么编译器就可能会在编译时期就对该数据进行替换甚至执行计算，这样可以对我们的程序起到一点优化。不过在针对基本类型和引用类型时，final关键字的效果存在细微差别。我们来看下面的例子：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Value</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> v;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Value</span><span class="params">(<span class="keyword">int</span> v)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.v = v;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FinalTest</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">int</span> f1 = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">int</span> f2;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">FinalTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        f2 = <span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">int</span> value1 = <span class="number">1</span>;</span><br><span class="line">        <span class="comment">// value1 = 4;</span></span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">double</span> value2;</span><br><span class="line">        value2 = <span class="number">2.0</span>;</span><br><span class="line">        <span class="keyword">final</span> Value value3 = <span class="keyword">new</span> Value(<span class="number">1</span>);</span><br><span class="line">        value3.v = <span class="number">4</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>上面的例子中，我们先来看一下main方法中的几个final修饰的数据，在给value1赋初始值之后，我们无法再对value1的值进行修改，final关键字起到了常量的作用。从value2我们可以看到，final修饰的变量可以不在声明时赋值，即可以先声明，后赋值。value3时一个引用变量，这里我们可以看到final修饰引用变量时，只是限定了引用变量的引用不可改变，即不能将value3再次引用另一个Value对象，但是引用的对象的值是可以改变的，从内存模型中我们看的更加清晰：</p>
-<img src="http://ws3.sinaimg.cn/large/006tNc79ly1g2ywdvorkcj30dd05ot90.jpg" width="500rpx"/>
-
-<p>上图中，final修饰的值用粗线条的边框表示它的值是不可改变的，我们知道引用变量的值实际上是它所引用的对象的地址，也就是说该地址的值是不可改变的，从而说明了为什么引用变量不可以改变引用对象。而实际引用的对象实际上是不受final关键字的影响的，所以它的值是可以改变的。</p>
-<p>另一方面，我们看到了用final修饰成员变量时的细微差别，因为final修饰的数据的值是不可改变的，所以我们必须确保在使用前就已经对成员变量赋值了。因此对于final修饰的成员变量，我们有且只有两个地方可以给它赋值，一个是声明该成员时赋值，另一个是在构造方法中赋值，在这两个地方我们必须给它们赋初始值。</p>
-<p>最后我们需要注意的一点是，同时使用static和final修饰的成员在内存中只占据一段不能改变的存储空间。</p>
-<h2 id="修饰方法参数"><a href="#修饰方法参数" class="headerlink" title="修饰方法参数"></a>修饰方法参数</h2><p>前面我们可以看到，如果变量是我们自己创建的，那么使用final修饰表示我们只会给它赋值一次且不会改变变量的值。那么如果变量是作为参数传入的，我们怎么保证它的值不会改变呢？这就用到了final的第二种用法，即在我们编写方法时，可以在参数前面添加final关键字，它表示在整个方法中，我们不会（实际上是不能）改变参数的值：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FinalTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* ... */</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">finalFunc</span><span class="params">(<span class="keyword">final</span> <span class="keyword">int</span> i, <span class="keyword">final</span> Value value)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// i = 5; 不能改变i的值</span></span><br><span class="line">        <span class="comment">// value = new Value(); 不能改变v的值</span></span><br><span class="line">        value.v = <span class="number">5</span>; <span class="comment">// 可以改变引用对象的值</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="修饰方法"><a href="#修饰方法" class="headerlink" title="修饰方法"></a>修饰方法</h2><p>第三种方式，即用final关键字修饰方法，它表示该方法不能被覆盖。这种使用方式主要是从设计的角度考虑，即明确告诉其他可能会继承该类的程序员，不希望他们去覆盖这个方法。这种方式我们很容易理解，然而，关于private和final关键字还有一点联系，这就是类中所有的private方法都隐式地指定为是final的，由于无法在类外使用private方法，所以也就无法覆盖它。</p>
-<h2 id="修饰类"><a href="#修饰类" class="headerlink" title="修饰类"></a>修饰类</h2><p>了解了final关键字的其他用法，我们很容易可以想到使用final关键字修饰类的作用，那就是用final修饰的类是无法被继承的。</p>
-<p>上面我们讲解了final的四种用法，然而，对于第三种和第四种用法，我们却甚少使用，这不是没有道理的。<br>从final的设计来讲，这两种用法甚至可以说是鸡肋，因为对于开发人员来讲，如果我们写的类被继承的越多，就说明我们写的类越有价值，越成功。即使是从设计的角度来讲，也没有必要将一个类设计为不可继承的。Java标准库就是一个很好的反例，特别是Java 1.0/1.1中Vector类被如此广泛的运用，如果所有的方法均未被指定为final的话，它可能会更加有用。如此有用的类，我们很容易想到去继承和重写他们，然而，由于final的作用，导致我们对Vector类的扩展受到了一些阻碍，导致了Vector并没有完全发挥它应有的全部价值。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>final关键字是我们经常使用的关键字之一，它的用法有很多，但是并不是每一种用法都值得我们去广泛使用。它的主要用法有以下四种：</p>
-<ul>
-<li>用来修饰数据，包括成员变量和局部变量，该变量只能被赋值一次且它的值无法被改变。对于成员变量来讲，我们必须在声明时或者构造方法中对它赋值；</li>
-<li>用来修饰方法参数，表示在变量的生存期中它的值不能被改变；</li>
-<li>修饰方法，表示该方法无法被重写；</li>
-<li>修饰类，表示该类无法被继承。  </li>
-</ul>
-<p>上面的四种方法中，第三种和第四种方法需要谨慎使用，因为在大多数情况下，如果是仅仅为了一点设计上的考虑，我们并不需要使用final来修饰方法和类。</p>
-<h1 id="static-final"><a href="#static-final" class="headerlink" title="static final"></a>static final</h1><p>static final == final static<br>同时使用static和final修饰的成员在内存中只占据一段不能改变的存储空间。</p>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://blog.csdn.net/zhangyanli0414/article/details/79008681">Java中如何理解Static，Final，Static Final</a></li>
-<li><a href="https://www.cnblogs.com/dotgua/p/6357951.html">java final关键字的几种用法</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
+        <tag>数据库连接池</tag>
+        <tag>代码风格</tag>
+        <tag>安全</tag>
+        <tag>SQL注入</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1733,6 +1789,41 @@
       </tags>
   </entry>
   <entry>
+    <title>Github 使用经典问题：如何同步 fork 项目原仓库的更新</title>
+    <url>/2020/04_Github%20%E4%BD%BF%E7%94%A8%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98%EF%BC%9A%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%20fork%20%E9%A1%B9%E7%9B%AE%E5%8E%9F%E4%BB%93%E5%BA%93%E7%9A%84%E6%9B%B4%E6%96%B0/Github%20%E4%BD%BF%E7%94%A8%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98%EF%BC%9A%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%20fork%20%E9%A1%B9%E7%9B%AE%E5%8E%9F%E4%BB%93%E5%BA%93%E7%9A%84%E6%9B%B4%E6%96%B0/</url>
+    <content><![CDATA[<p>Github 我们经常会通过 fork 开源项目在自己的仓库中更新，然后提交 Pull Request (Merge Request) 为开源项目做贡献。</p>
+<p>不过我们经常会遇到原仓库更新，重新 fork 显然是不优雅的，那我我们该怎么同步更新呢？</p>
+<span id="more"></span>
+
+<p><img src="pic1.jpg"></p>
+<h1 id="如何在-Github-网页端同步更新？"><a href="#如何在-Github-网页端同步更新？" class="headerlink" title="如何在 Github 网页端同步更新？"></a>如何在 Github 网页端同步更新？</h1><ol>
+<li>进入你自己的 fork 过来的仓库。</li>
+<li>点击 “Pull requests” ，如何点击右侧绿色的 “New pull request”。</li>
+<li>Github 首先会比较源仓库与你 fork 后的仓库，如果你没有做任何更改，则找不到要 PR 的内容。所以，我们需要点击 “switching the base”，会将我们的仓库作为基础版本，原仓库作为 head 版本，现在我们会看到我们的需要需要 “catch up” 的更新。</li>
+<li>点击 “Create pull request”，起一个名字，然后点击 “Create pull request”。</li>
+<li>点击 “Merge pull request”，然后点击 “Confirm merge”。</li>
+<li>如果我们没提交什么新代码，merge 过程将自动完成。</li>
+</ol>
+<h1 id="如何通过本地命令行同步更新？"><a href="#如何通过本地命令行同步更新？" class="headerlink" title="如何通过本地命令行同步更新？"></a>如何通过本地命令行同步更新？</h1><ol>
+<li>验证远程分支可以 fetch 或 push<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
+<li>指明我们需要同步的仓库<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote add upstream https://github.com/OriginalRepo/OriginalProject.git</span><br></pre></td></tr></table></figure></li>
+<li>验证<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
+<li>拉取更新的 branches 和 commits<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git fetch upstream</span><br></pre></td></tr></table></figure></li>
+<li>Checkout 本地分支<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout master</span><br></pre></td></tr></table></figure></li>
+<li>合并<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git merge upstream/master</span><br></pre></td></tr></table></figure></li>
+<li>提交<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Github</tag>
+        <tag>版本管理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>好用的前端框架助你 Make positive impact!</title>
     <url>//https://raven.feishu.cn/docs/doccnz0lWjK0BTeC58iTuZ18Xhc</url>
     <content><![CDATA[<blockquote>
@@ -1854,97 +1945,6 @@
         <tag>前端</tag>
         <tag>前端框架</tag>
         <tag>经验</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>动手实现一个 Python 版本的 MysqlClient</title>
-    <url>/2020/01_%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%20Python%20%E7%89%88%E6%9C%AC%E7%9A%84%20MysqlClient/%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%20Python%20%E7%89%88%E6%9C%AC%E7%9A%84%20MysqlClient/</url>
-    <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>在实际项目中我们会在项目的各个角落进行数据库访问操作，显然我们需要将对数据库的访问做一定的封装，在统一管理的基础上也可以做一些额外的优化。<br>所以我们打算实现一个叫做<code>MysqlClient</code>的类对数据库访问做统一管理，我们期待它的作用有：</p>
-<ul>
-<li>统一管理数据库访问凭证</li>
-<li>对<code>query</code>和<code>execute</code>两类操作进行封装</li>
-<li>预处理sql以防 SQL注入</li>
-<li>引入数据库连接池</li>
-<li>合适的错误检查与记录</li>
-<li>以及如何正确使用</li>
-</ul>
-<p>在百度上随便一搜就能搜到类似的实现，不过他们大部分都是只实现了对<code>query</code>，<code>execute</code>的封装，少部分加上了预处理sql，我希望提供一个更完整的<code>MysqlClient</code>实现。</p>
-<blockquote>
-<p>我最初也是在百度上复制了一个封装了query、execute两个操作的MysqlClient，后来被公司安全部门提示有sql注入风险，所幸将平常遇到的对数据库访问对象的需求一次考虑清楚设计一个比较完善的实现。</p>
-</blockquote>
-<h1 id="上代码"><a href="#上代码" class="headerlink" title="上代码"></a>上代码</h1><blockquote>
-<p>Python 3.7，遵循 PEP8 代码风格</p>
-</blockquote>
-<span id="more"></span>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># encoding: utf-8</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">@desc: MySQL client. Manage the access evidence, wrap the common action, improve the performance, keep the security.</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"><span class="keyword">import</span> glog</span><br><span class="line"><span class="keyword">from</span> DBUtils.PooledDB <span class="keyword">import</span> PooledDB</span><br><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> create_engine</span><br><span class="line"><span class="keyword">from</span> sqlalchemy.orm <span class="keyword">import</span> sessionmaker</span><br><span class="line"></span><br><span class="line"><span class="comment"># database configuration</span></span><br><span class="line">__DATABASE_HOST = <span class="string">&quot;127.0.0.1&quot;</span></span><br><span class="line">__DATABASE_PORT = <span class="string">&quot;3306&quot;</span></span><br><span class="line">__DATABASE_USER = <span class="string">&quot;root&quot;</span></span><br><span class="line">__DATABASE_PASSWORD = <span class="string">&quot;password&quot;</span></span><br><span class="line">__DATABASE_NAME = <span class="string">&quot;demo&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># database connection pool configuration</span></span><br><span class="line">__NUM_DEFAULT_CONNECTION = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_mysql_connection_pool</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Database connection to the server using the connection pool.</span></span><br><span class="line"><span class="string">    :return: database connection</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    db_host = __DATABASE_HOST</span><br><span class="line">    db_port = __DATABASE_PORT</span><br><span class="line">    db_user = __DATABASE_USER</span><br><span class="line">    db_password = __DATABASE_PASSWORD</span><br><span class="line">    db_name = __DATABASE_NAME</span><br><span class="line"></span><br><span class="line">    num_connection = __NUM_DEFAULT_CONNECTION</span><br><span class="line"></span><br><span class="line">    connection_pool = PooledDB(MySQLdb, num_connection,</span><br><span class="line">                               host=db_host, port=db_port, user=db_user, passwd=db_password, db=db_name)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> connection_pool</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_session</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Used by ORM framework.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    db_host = __DATABASE_HOST</span><br><span class="line">    db_port = __DATABASE_PORT</span><br><span class="line">    db_user = __DATABASE_USER</span><br><span class="line">    db_password = __DATABASE_PASSWORD</span><br><span class="line">    db_name = __DATABASE_NAME</span><br><span class="line"></span><br><span class="line">    engine = create_engine(<span class="string">&#x27;mysql+mysqlconnector://&#x27;</span></span><br><span class="line">                           + db_user + <span class="string">&#x27;:&#x27;</span> + db_password + <span class="string">&#x27;@&#x27;</span> + db_host + <span class="string">&#x27;:&#x27;</span> + db_port + <span class="string">&#x27;/&#x27;</span> + db_name)</span><br><span class="line">    da_session = sessionmaker(bind=engine)</span><br><span class="line">    session = da_session()</span><br><span class="line">    <span class="keyword">return</span> session</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">watch_prepared_statement</span>(<span class="params">sql, params</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    When we use prepared sql statement, the program doesn&#x27;t the real sql neither in the python program or</span></span><br><span class="line"><span class="string">    database process. This function will parse the expected sql statement for debugging.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    expected_sql = sql % <span class="built_in">tuple</span>(params)</span><br><span class="line">    <span class="keyword">return</span> expected_sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MysqlClient</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Package actions about the database.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.connection_pool = get_mysql_connection_pool()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">query</span>(<span class="params">self, sql, params=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Query action.</span></span><br><span class="line"><span class="string">        :param sql: being executed sql statement</span></span><br><span class="line"><span class="string">        :param params: sql param, to avoid the sql injection</span></span><br><span class="line"><span class="string">        :return: Query Result</span></span><br><span class="line"><span class="string">        :rtype: list</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        connection = self.connection_pool.connection()</span><br><span class="line">        cursor = connection.cursor()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> params <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            params = []</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            cursor.execute(<span class="built_in">str</span>(sql), params)</span><br><span class="line">            result = cursor.fetchall()</span><br><span class="line">            <span class="keyword">return</span> result</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            expected_sql = watch_prepared_statement(sql, params)</span><br><span class="line">            glog.error(<span class="string">&quot;[&quot;</span> + <span class="built_in">str</span>(e) + <span class="string">&quot;]&quot;</span> + expected_sql)</span><br><span class="line">            result = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="comment"># release the connection to the pooled</span></span><br><span class="line">            cursor.close()</span><br><span class="line">            connection.close()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">update</span>(<span class="params">self, sql, params=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Update action.</span></span><br><span class="line"><span class="string">        :param sql: being executed sql statement</span></span><br><span class="line"><span class="string">        :param params: sql param, to avoid the sql injection</span></span><br><span class="line"><span class="string">        :return: affected rows count and the last row id</span></span><br><span class="line"><span class="string">        :rtype: tuple</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        connection = self.connection_pool.connection()</span><br><span class="line">        cursor = connection.cursor()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> params <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            params = []</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            cursor.execute(<span class="built_in">str</span>(sql), params)</span><br><span class="line">            row_count = cursor.rowcount</span><br><span class="line">            row_id = cursor.lastrowid</span><br><span class="line">            connection.commit()</span><br><span class="line">            result = row_count, row_id</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            expected_sql = watch_prepared_statement(sql, params)</span><br><span class="line">            glog.error(<span class="string">&quot;[&quot;</span> + <span class="built_in">str</span>(e) + <span class="string">&quot;]&quot;</span> + expected_sql)</span><br><span class="line">            result = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="comment"># release the connection to the pooled</span></span><br><span class="line">            cursor.close()</span><br><span class="line">            connection.close()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_connection</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Other actions. Return the connection to finish other operations, such as executemany and so on.</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">return</span> self.connection_pool.connection()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">__mysql_client = MysqlClient()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_mysql_client</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Initialize the singleton object.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">return</span> __mysql_client</span><br></pre></td></tr></table></figure>
-
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ul>
-<li><p>外部访问时通过调用<code>get_mysql_client()</code>函数来获得单例的 MysqlClient。</p>
-<blockquote>
-<p>实现单例模式最简单的方法：在模块内定义变量，模块被import时被初始化</p>
-</blockquote>
-</li>
-<li><p><code>watch_prepared_statement()</code>函数用于观察预处理后的sql语句</p>
-<blockquote>
-<p>通俗地说，预处理就是把 <strong>%</strong> 变为 <strong>,</strong></p>
-</blockquote>
-</li>
-<li><p><code>get_session()</code>是相对独立的一部分，在使用如 SQLAlchemy 这样的ORM框架时会用到。</p>
-</li>
-<li><p>提供了<code>get_connection()</code>用于完成不常用的数据库操作，当然如果在项目层面常用也可以增加额外的封装方法。</p>
-</li>
-<li><p>数据库连接池部分还可以对cache，连接数做额外的配置，这个可以根据项目实际需求做改动。</p>
-</li>
-<li><p>对配置信息部分，还可以引入<code>ConfigParser</code>对其进行统一管理在配置文件。 </p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-        <tag>数据库连接池</tag>
-        <tag>代码风格</tag>
-        <tag>安全</tag>
-        <tag>SQL注入</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Github 使用经典问题：如何同步 fork 项目原仓库的更新</title>
-    <url>/2020/04_Github%20%E4%BD%BF%E7%94%A8%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98%EF%BC%9A%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%20fork%20%E9%A1%B9%E7%9B%AE%E5%8E%9F%E4%BB%93%E5%BA%93%E7%9A%84%E6%9B%B4%E6%96%B0/Github%20%E4%BD%BF%E7%94%A8%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98%EF%BC%9A%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%20fork%20%E9%A1%B9%E7%9B%AE%E5%8E%9F%E4%BB%93%E5%BA%93%E7%9A%84%E6%9B%B4%E6%96%B0/</url>
-    <content><![CDATA[<p>Github 我们经常会通过 fork 开源项目在自己的仓库中更新，然后提交 Pull Request (Merge Request) 为开源项目做贡献。</p>
-<p>不过我们经常会遇到原仓库更新，重新 fork 显然是不优雅的，那我我们该怎么同步更新呢？</p>
-<span id="more"></span>
-
-<p><img src="pic1.jpg"></p>
-<h1 id="如何在-Github-网页端同步更新？"><a href="#如何在-Github-网页端同步更新？" class="headerlink" title="如何在 Github 网页端同步更新？"></a>如何在 Github 网页端同步更新？</h1><ol>
-<li>进入你自己的 fork 过来的仓库。</li>
-<li>点击 “Pull requests” ，如何点击右侧绿色的 “New pull request”。</li>
-<li>Github 首先会比较源仓库与你 fork 后的仓库，如果你没有做任何更改，则找不到要 PR 的内容。所以，我们需要点击 “switching the base”，会将我们的仓库作为基础版本，原仓库作为 head 版本，现在我们会看到我们的需要需要 “catch up” 的更新。</li>
-<li>点击 “Create pull request”，起一个名字，然后点击 “Create pull request”。</li>
-<li>点击 “Merge pull request”，然后点击 “Confirm merge”。</li>
-<li>如果我们没提交什么新代码，merge 过程将自动完成。</li>
-</ol>
-<h1 id="如何通过本地命令行同步更新？"><a href="#如何通过本地命令行同步更新？" class="headerlink" title="如何通过本地命令行同步更新？"></a>如何通过本地命令行同步更新？</h1><ol>
-<li>验证远程分支可以 fetch 或 push<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
-<li>指明我们需要同步的仓库<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote add upstream https://github.com/OriginalRepo/OriginalProject.git</span><br></pre></td></tr></table></figure></li>
-<li>验证<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
-<li>拉取更新的 branches 和 commits<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git fetch upstream</span><br></pre></td></tr></table></figure></li>
-<li>Checkout 本地分支<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout master</span><br></pre></td></tr></table></figure></li>
-<li>合并<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git merge upstream/master</span><br></pre></td></tr></table></figure></li>
-<li>提交<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Github</tag>
-        <tag>版本管理</tag>
       </tags>
   </entry>
   <entry>
@@ -2256,8 +2256,8 @@
         <category>学习</category>
       </categories>
       <tags>
-        <tag>NEU</tag>
         <tag>算法</tag>
+        <tag>NEU</tag>
         <tag>数据结构</tag>
       </tags>
   </entry>
