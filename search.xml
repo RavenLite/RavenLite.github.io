@@ -381,7 +381,7 @@
 <h1 id="再见"><a href="#再见" class="headerlink" title="再见"></a>再见</h1><p>因为四月开始要忙于准备读研相关的事情，可能要暂时离开葫芦了，感谢大家一直以来的帮助，有缘再见~<br><img src="http://ws4.sinaimg.cn/large/006tKfTcly1g1ify2z9ahj31400u0qva.jpg" align=center></p>
 ]]></content>
       <categories>
-        <category>随记</category>
+        <category>杂文随笔</category>
       </categories>
       <tags>
         <tag>葫芦科技</tag>
@@ -428,7 +428,7 @@
 <h2 id="贵在坚持"><a href="#贵在坚持" class="headerlink" title="贵在坚持"></a>贵在坚持</h2><p>无论何时，贵在坚持都是最需要的。<br>如果我不能坚持的话，那么一切的向往，一切的为自己加油打气，一切的计划都是空谈。  </p>
 ]]></content>
       <categories>
-        <category>随记</category>
+        <category>杂文随笔</category>
       </categories>
       <tags>
         <tag>实习</tag>
@@ -454,7 +454,7 @@
 <h3 id="最大的挑战"><a href="#最大的挑战" class="headerlink" title="最大的挑战"></a>最大的挑战</h3><p>于我而言，最大的挑战还是人际关系。我每次到一个新的环境中都比较内向<br>然而熟了之后就完全放得开了。不过实习可能是全新的一种环境，人与人之间是同事关系，而且年龄差，工作内容，知识量上的差距还是让我和大家的融入不是那么地顺利，不过我相信我会努力让大家看到我的闪光点。<br>努力哦~</p>
 ]]></content>
       <categories>
-        <category>随记</category>
+        <category>杂文随笔</category>
       </categories>
       <tags>
         <tag>实习</tag>
@@ -478,7 +478,7 @@
 <p>目测应该还会有其他写法使hexo的转义发生错误，有时间看一下hexo源码找到错误位置再更新一下本文</p>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>技术探究</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -543,7 +543,7 @@
 <p>Recursion tree: T(n) = 2T(n/2) + cn (const c &gt; 0)<br>使用递归树分析，归并排序的时间复杂度T(n)=θ(nlgn)<br><em>树的高度是lgn，叶节点层之和为θ(n)，其他层每层为cn</em><br><em>在n大于30左右之和，归并排序比插入排序要快</em></p>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>学习笔记</category>
       </categories>
       <tags>
         <tag>MIT</tag>
@@ -578,7 +578,7 @@
 <p><a href="https://blog.csdn.net/u011870547/article/details/81077153">PO,BO,VO和POJO的区别</a></p>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>技术探究</category>
       </categories>
       <tags>
         <tag>MySQL</tag>
@@ -705,7 +705,7 @@
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>时至今日，虽然每个应用（需要RDBMS的）都离不开连接池，但在实际使用的时候，连接池已经可以做到“<strong>隐形</strong>”了。也就是说在通常情况下，连接池完成项目初始化配置之后，就再不需要再做任何改动了。不论你是选择Druid或是HikariCP，甚至是DBCP，它们都足够稳定且高效！之前讨论了很多关于连接池的性能的问题，但这些性能上的差异，是相较于其他连接池而言的，对整个系统应用来说，第二代连接池在使用过程中体会到的差别是微乎其微的，基本上不存在因为连接池的自身的配饰和使用导致系统性能下降的情况，除非是在单点应用的数据库负载足够高的时候（压力测试的时候），但即便是如此，通用的优化的方式也是单点改集群，而不是在单点的连接池上死扣。</p>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>技术探究</category>
       </categories>
       <tags>
         <tag>MySQL</tag>
@@ -918,7 +918,7 @@
 </ul>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>学习笔记</category>
       </categories>
       <tags>
         <tag>NEU</tag>
@@ -1063,7 +1063,7 @@
 <p>最后放一张闲来无事做的SEU计算机学院导师们研究方向的词云。<br><img src="http://ww4.sinaimg.cn/large/006y8mN6ly1g67cepr7rej314v0u0x0u.jpg"></p>
 ]]></content>
       <categories>
-        <category>科研</category>
+        <category>科研记录</category>
       </categories>
       <tags>
         <tag>研究生</tag>
@@ -1140,7 +1140,7 @@
 </ul>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>技术探究</category>
       </categories>
       <tags>
         <tag>Java</tag>
@@ -3221,7 +3221,7 @@
 <p><em>项目代码将在答辩结束后全部开源</em></p>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>学习笔记</category>
       </categories>
       <tags>
         <tag>实习</tag>
