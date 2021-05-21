@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/letter-r-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/letter-r-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/letter-r-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/letter-r-32x32.png?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="MySQL,数据库连接池,代码风格,安全,SQL注入,Python," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="背景在实际项目中我们会在项目的各个角落进行数据库访问操作，显然我们需要将对数据库的访问做一定的封装，在统一管理的基础上也可以做一些额外的优化。所以我们打算实现一个叫做MysqlClient的类对数据库访问做统一管理，我们期待它的作用有：  统一管理数据库访问凭证 对query和execute两类操作进行封装 预处理sql以防 SQL注入 引入数据库连接池 合适的错误检查与记录 以及如何正确使用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="动手实现一个 Python 版本的 MysqlClient">
+<meta property="og:url" content="https://ravenxu.top/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%20Python%20%E7%89%88%E6%9C%AC%E7%9A%84%20MysqlClient/index.html">
+<meta property="og:site_name" content="Blog | Raven Xu">
+<meta property="og:description" content="背景在实际项目中我们会在项目的各个角落进行数据库访问操作，显然我们需要将对数据库的访问做一定的封装，在统一管理的基础上也可以做一些额外的优化。所以我们打算实现一个叫做MysqlClient的类对数据库访问做统一管理，我们期待它的作用有：  统一管理数据库访问凭证 对query和execute两类操作进行封装 预处理sql以防 SQL注入 引入数据库连接池 合适的错误检查与记录 以及如何正确使用">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-05-21T11:05:02.323Z">
+<meta property="article:author" content="Raven Xu">
+<meta property="article:tag" content="MySQL">
+<meta property="article:tag" content="数据库连接池">
+<meta property="article:tag" content="代码风格">
+<meta property="article:tag" content="安全">
+<meta property="article:tag" content="SQL注入">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://ravenxu.top/a.技术探究/History/动手实现一个 Python 版本的 MysqlClient/"/>
+
+
+
+
+
+  <title>动手实现一个 Python 版本的 MysqlClient | Blog | Raven Xu</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+		<a target="_blank" rel="noopener" href="https://github.com/Raven98/Raven98.github.io" class="github-corner" aria-label="View source on Github">
+		<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog | Raven Xu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Make positive impact</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ravenxu.tophttps://raven.feishu.cn/docs/doccn7ge2s4mVMWsRQpswHJJNld">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog | Raven Xu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a class="post-title-link post-title-link-external" target="_blank" href="https://raven.feishu.cn/docs/doccn7ge2s4mVMWsRQpswHJJNld" itemprop="url">
+                动手实现一个 Python 版本的 MysqlClient
+                <i class="fa fa-external-link"></i>
+              </a>
+            </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-26T00:00:00+08:00">
+                2020-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/" itemprop="url" rel="index">
+                    <span itemprop="name">技术探究</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a target="_blank" rel="noopener" href="https://raven.feishu.cn/docs/doccn7ge2s4mVMWsRQpswHJJNld#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="https://raven.feishu.cn/docs/doccn7ge2s4mVMWsRQpswHJJNld" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-files-o"></i>
+            </span>
+            <span id="busuanzi_value_page_pv"></span>次阅读
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>在实际项目中我们会在项目的各个角落进行数据库访问操作，显然我们需要将对数据库的访问做一定的封装，在统一管理的基础上也可以做一些额外的优化。<br>所以我们打算实现一个叫做<code>MysqlClient</code>的类对数据库访问做统一管理，我们期待它的作用有：</p>
+<ul>
+<li>统一管理数据库访问凭证</li>
+<li>对<code>query</code>和<code>execute</code>两类操作进行封装</li>
+<li>预处理sql以防 SQL注入</li>
+<li>引入数据库连接池</li>
+<li>合适的错误检查与记录</li>
+<li>以及如何正确使用</li>
+</ul>
+<p>在百度上随便一搜就能搜到类似的实现，不过他们大部分都是只实现了对<code>query</code>，<code>execute</code>的封装，少部分加上了预处理sql，我希望提供一个更完整的<code>MysqlClient</code>实现。</p>
+<blockquote>
+<p>我最初也是在百度上复制了一个封装了query、execute两个操作的MysqlClient，后来被公司安全部门提示有sql注入风险，所幸将平常遇到的对数据库访问对象的需求一次考虑清楚设计一个比较完善的实现。</p>
+</blockquote>
+<h1 id="上代码"><a href="#上代码" class="headerlink" title="上代码"></a>上代码</h1><blockquote>
+<p>Python 3.7，遵循 PEP8 代码风格</p>
+</blockquote>
+<span id="more"></span>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># encoding: utf-8</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">@desc: MySQL client. Manage the access evidence, wrap the common action, improve the performance, keep the security.</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"><span class="keyword">import</span> glog</span><br><span class="line"><span class="keyword">from</span> DBUtils.PooledDB <span class="keyword">import</span> PooledDB</span><br><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> create_engine</span><br><span class="line"><span class="keyword">from</span> sqlalchemy.orm <span class="keyword">import</span> sessionmaker</span><br><span class="line"></span><br><span class="line"><span class="comment"># database configuration</span></span><br><span class="line">__DATABASE_HOST = <span class="string">&quot;127.0.0.1&quot;</span></span><br><span class="line">__DATABASE_PORT = <span class="string">&quot;3306&quot;</span></span><br><span class="line">__DATABASE_USER = <span class="string">&quot;root&quot;</span></span><br><span class="line">__DATABASE_PASSWORD = <span class="string">&quot;password&quot;</span></span><br><span class="line">__DATABASE_NAME = <span class="string">&quot;demo&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># database connection pool configuration</span></span><br><span class="line">__NUM_DEFAULT_CONNECTION = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_mysql_connection_pool</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Database connection to the server using the connection pool.</span></span><br><span class="line"><span class="string">    :return: database connection</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    db_host = __DATABASE_HOST</span><br><span class="line">    db_port = __DATABASE_PORT</span><br><span class="line">    db_user = __DATABASE_USER</span><br><span class="line">    db_password = __DATABASE_PASSWORD</span><br><span class="line">    db_name = __DATABASE_NAME</span><br><span class="line"></span><br><span class="line">    num_connection = __NUM_DEFAULT_CONNECTION</span><br><span class="line"></span><br><span class="line">    connection_pool = PooledDB(MySQLdb, num_connection,</span><br><span class="line">                               host=db_host, port=db_port, user=db_user, passwd=db_password, db=db_name)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> connection_pool</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_session</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Used by ORM framework.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    db_host = __DATABASE_HOST</span><br><span class="line">    db_port = __DATABASE_PORT</span><br><span class="line">    db_user = __DATABASE_USER</span><br><span class="line">    db_password = __DATABASE_PASSWORD</span><br><span class="line">    db_name = __DATABASE_NAME</span><br><span class="line"></span><br><span class="line">    engine = create_engine(<span class="string">&#x27;mysql+mysqlconnector://&#x27;</span></span><br><span class="line">                           + db_user + <span class="string">&#x27;:&#x27;</span> + db_password + <span class="string">&#x27;@&#x27;</span> + db_host + <span class="string">&#x27;:&#x27;</span> + db_port + <span class="string">&#x27;/&#x27;</span> + db_name)</span><br><span class="line">    da_session = sessionmaker(bind=engine)</span><br><span class="line">    session = da_session()</span><br><span class="line">    <span class="keyword">return</span> session</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">watch_prepared_statement</span>(<span class="params">sql, params</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    When we use prepared sql statement, the program doesn&#x27;t the real sql neither in the python program or</span></span><br><span class="line"><span class="string">    database process. This function will parse the expected sql statement for debugging.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    expected_sql = sql % <span class="built_in">tuple</span>(params)</span><br><span class="line">    <span class="keyword">return</span> expected_sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MysqlClient</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Package actions about the database.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.connection_pool = get_mysql_connection_pool()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">query</span>(<span class="params">self, sql, params=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Query action.</span></span><br><span class="line"><span class="string">        :param sql: being executed sql statement</span></span><br><span class="line"><span class="string">        :param params: sql param, to avoid the sql injection</span></span><br><span class="line"><span class="string">        :return: Query Result</span></span><br><span class="line"><span class="string">        :rtype: list</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        connection = self.connection_pool.connection()</span><br><span class="line">        cursor = connection.cursor()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> params <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            params = []</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            cursor.execute(<span class="built_in">str</span>(sql), params)</span><br><span class="line">            result = cursor.fetchall()</span><br><span class="line">            <span class="keyword">return</span> result</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            expected_sql = watch_prepared_statement(sql, params)</span><br><span class="line">            glog.error(<span class="string">&quot;[&quot;</span> + <span class="built_in">str</span>(e) + <span class="string">&quot;]&quot;</span> + expected_sql)</span><br><span class="line">            result = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="comment"># release the connection to the pooled</span></span><br><span class="line">            cursor.close()</span><br><span class="line">            connection.close()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">update</span>(<span class="params">self, sql, params=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Update action.</span></span><br><span class="line"><span class="string">        :param sql: being executed sql statement</span></span><br><span class="line"><span class="string">        :param params: sql param, to avoid the sql injection</span></span><br><span class="line"><span class="string">        :return: affected rows count and the last row id</span></span><br><span class="line"><span class="string">        :rtype: tuple</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        connection = self.connection_pool.connection()</span><br><span class="line">        cursor = connection.cursor()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> params <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            params = []</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            cursor.execute(<span class="built_in">str</span>(sql), params)</span><br><span class="line">            row_count = cursor.rowcount</span><br><span class="line">            row_id = cursor.lastrowid</span><br><span class="line">            connection.commit()</span><br><span class="line">            result = row_count, row_id</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            expected_sql = watch_prepared_statement(sql, params)</span><br><span class="line">            glog.error(<span class="string">&quot;[&quot;</span> + <span class="built_in">str</span>(e) + <span class="string">&quot;]&quot;</span> + expected_sql)</span><br><span class="line">            result = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="comment"># release the connection to the pooled</span></span><br><span class="line">            cursor.close()</span><br><span class="line">            connection.close()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_connection</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Other actions. Return the connection to finish other operations, such as executemany and so on.</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">return</span> self.connection_pool.connection()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">__mysql_client = MysqlClient()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_mysql_client</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Initialize the singleton object.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">return</span> __mysql_client</span><br></pre></td></tr></table></figure>
+
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ul>
+<li><p>外部访问时通过调用<code>get_mysql_client()</code>函数来获得单例的 MysqlClient。</p>
+<blockquote>
+<p>实现单例模式最简单的方法：在模块内定义变量，模块被import时被初始化</p>
+</blockquote>
+</li>
+<li><p><code>watch_prepared_statement()</code>函数用于观察预处理后的sql语句</p>
+<blockquote>
+<p>通俗地说，预处理就是把 <strong>%</strong> 变为 <strong>,</strong></p>
+</blockquote>
+</li>
+<li><p><code>get_session()</code>是相对独立的一部分，在使用如 SQLAlchemy 这样的ORM框架时会用到。</p>
+</li>
+<li><p>提供了<code>get_connection()</code>用于完成不常用的数据库操作，当然如果在项目层面常用也可以增加额外的封装方法。</p>
+</li>
+<li><p>数据库连接池部分还可以对cache，连接数做额外的配置，这个可以根据项目实际需求做改动。</p>
+</li>
+<li><p>对配置信息部分，还可以引入<code>ConfigParser</code>对其进行统一管理在配置文件。 </p>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MySQL/" rel="tag"><i class="fa fa-tag"></i> MySQL</a>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0/" rel="tag"><i class="fa fa-tag"></i> 数据库连接池</a>
+          
+            <a href="/tags/%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC/" rel="tag"><i class="fa fa-tag"></i> 代码风格</a>
+          
+            <a href="/tags/%E5%AE%89%E5%85%A8/" rel="tag"><i class="fa fa-tag"></i> 安全</a>
+          
+            <a href="/tags/SQL%E6%B3%A8%E5%85%A5/" rel="tag"><i class="fa fa-tag"></i> SQL注入</a>
+          
+            <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E8%AE%B0%E5%9C%A8%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%AE%9E%E4%B9%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%9C%88/" rel="next" title="1125-记在字节实习的第一个月">
+                <i class="fa fa-chevron-left"></i> 1125-记在字节实习的第一个月
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/Github%20%E4%BD%BF%E7%94%A8%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98%EF%BC%9A%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%20fork%20%E9%A1%B9%E7%9B%AE%E5%8E%9F%E4%BB%93%E5%BA%93%E7%9A%84%E6%9B%B4%E6%96%B0/" rel="prev" title="Github 使用经典问题：如何同步 fork 项目原仓库的更新">
+                Github 使用经典问题：如何同步 fork 项目原仓库的更新 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7Carchive">
+              
+                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">69</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.linkedin.com/in/%E7%91%9E%E6%96%87-%E8%AE%B8-bb512712b/" target="_blank" title="LinkedIn">
+                      
+                        <i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/RavenLite" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/ravenxu98/pins" target="_blank" title="Zhihu">
+                      
+                        <i class="fa fa-fw fa-star"></i>Zhihu</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:xrwgood@qq.com" target="_blank" title="Email">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>Email</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8A%E4%BB%A3%E7%A0%81"><span class="nav-text">上代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Raven Xu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">
+  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+    本站总访问量 <span id="busuanzi_value_site_uv"></span>
+  </span>
+  </div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'RavenLite',
+            repo: 'RavenLite.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'e9cb1d86ff72f87ce95bd5b8a3b68385ca9021ee',
+            
+                client_id: 'c7e19c2c115361e6bb8b'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
