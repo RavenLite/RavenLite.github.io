@@ -3,7 +3,10 @@
   <entry>
     <title>Hexo-NexT-Index - 使用飞书享受博客写作乐趣</title>
     <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/Hexo-NexT-Index-%E4%BD%BF%E7%94%A8%E9%A3%9E%E4%B9%A6%E4%BA%AB%E5%8F%97%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C%E4%B9%90%E8%B6%A3/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<blockquote>
+<p>📓如果你在寻找一个简单优雅的博文写作方式？如果你也和我一样懒想自建博客但又不愿为维护投入太多精力？如果你喜欢简洁追求效率？我相信，你一定会喜欢 Hexo-NexT-Index 😉<br>这也是本博客搭建的方式</p>
+</blockquote>
+]]></content>
       <categories>
         <category>杂文随笔</category>
       </categories>
@@ -3267,23 +3270,14 @@
       </tags>
   </entry>
   <entry>
-    <title>通用的产品与运营思维</title>
-    <url>/e.%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/%E9%80%9A%E7%94%A8%E7%9A%84%E4%BA%A7%E5%93%81%E4%B8%8E%E8%BF%90%E8%90%A5%E6%80%9D%E7%BB%B4/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>观察思考</category>
-      </categories>
-      <tags>
-        <tag>方法论</tag>
-        <tag>运营</tag>
-        <tag>产品</tag>
-        <tag>管理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>三大室内技术：WIFI室内定位、蓝牙室内定位、UWB室内定位技术对比</title>
     <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E4%B8%89%E5%A4%A7%E5%AE%A4%E5%86%85%E6%8A%80%E6%9C%AF%EF%BC%9AWIFI%E5%AE%A4%E5%86%85%E5%AE%9A%E4%BD%8D%E3%80%81%E8%93%9D%E7%89%99%E5%AE%A4%E5%86%85%E5%AE%9A%E4%BD%8D%E3%80%81UWB%E5%AE%A4%E5%86%85%E5%AE%9A%E4%BD%8D%E6%8A%80%E6%9C%AF%E5%AF%B9%E6%AF%94/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>在万物互联的大背景下，位置信息的获取和应用在项目落地中越来越重要。相对于室外定位，室内定位的工作环境更为复杂、精细，其技术更是多种多样。<br>一般情况下，我们根据技术原理和使用信号源的不同，可以将室内定位技术分为以下这些：</p>
+<ul>
+<li>按定位原理划分：ID 定位、区间定位、三边定位、信号到达角定位、指纹定位、惯性推算等；</li>
+<li>按定位所使用的信号源划分：Wi-Fi定位、ZigBee定位、蓝牙定位、UWB定位、RFID定位、卫星定位、低频触发定位、基站定位、声波定位、光定位、地磁定位等。<br>未来，室内定位技术将席卷我们生产、生活的方方面面，例如：智慧工厂人员及货物管理与调度、 生产安全管理、地下停车场寻车导航、智慧大楼人员/访客定位管理、 会展位置导航等。<br>下面我们就来探讨一下，目前的行业应用中比较常见的、基于无线局域网的三种室内定位技术。</li>
+</ul>
+]]></content>
       <categories>
         <category>科研分享</category>
       </categories>
@@ -3295,7 +3289,8 @@
   <entry>
     <title>CrazyFlie 基础调研与学习</title>
     <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/CrazyFlie-%E5%9F%BA%E7%A1%80%E8%B0%83%E7%A0%94%E4%B8%8E%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>Crazyflie 微型四轴飞行器的硬件设计得非常优秀，不管是 PCB 机械层的轮廓设计、信号层上元器件的布局还是整个电路板的走线都非常合理，而且最重要的是 Bitcraze 团队将模块化的理念带入到 Crazyflie产品的设计之中，这使得 Crazyflie 微型四轴除了基本的飞行功能之外，还可以通过堆叠不同扩展坞的方式来实现不同功能的扩展。</p>
+]]></content>
       <categories>
         <category>科研分享</category>
       </categories>
@@ -3384,21 +3379,10 @@
       </tags>
   </entry>
   <entry>
-    <title>分享一个东南大学 PPT 模板</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/%E5%88%86%E4%BA%AB%E4%B8%80%E4%B8%AA%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6-PPT-%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>PPT</tag>
-        <tag>东南大学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>How to read a paper?</title>
     <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/How-to-read-a-paper/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>Researchers spend a great deal of time reading research papers. However, this skill is rarely taught, leading to much wasted effort. This article outlines a practical and efficient three-pass method for reading research papers. I also describe how to use this method to do a literature survey.</p>
+]]></content>
       <categories>
         <category>科研分享</category>
       </categories>
@@ -3410,9 +3394,107 @@
       </tags>
   </entry>
   <entry>
-    <title>嵌入式开发常用通信协议</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
+    <title>飞书在高校先进科研协作中的实践</title>
+    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E9%A3%9E%E4%B9%A6%E5%9C%A8%E9%AB%98%E6%A0%A1%E5%85%88%E8%BF%9B%E7%A7%91%E7%A0%94%E5%8D%8F%E4%BD%9C%E4%B8%AD%E7%9A%84%E5%AE%9E%E8%B7%B5/</url>
+    <content><![CDATA[<p>高校之中尤其是计算机学科相关的科研团队其实与互联网公司在工作内容、工作方式、组织结构上有着高度的相似性，但一个科研团队之中几乎人人都是“研发人员”，缺少了“行政、产品、运营、效率、HRBP”等各职能同学的支持。<br>但还好，我们有飞书。<br>飞书是一款理念先进、贴合用户需求的 all in one 办公套件，这些特点帮助我们在飞书上高效开展科研项目协作。</p>
+]]></content>
+      <categories>
+        <category>杂文随笔</category>
+      </categories>
+      <tags>
+        <tag>飞书</tag>
+        <tag>效率</tag>
+        <tag>协作</tag>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dubbo 3 知识结构梳理</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Dubbo-3-%E7%9F%A5%E8%AF%86%E7%BB%93%E6%9E%84%E6%A2%B3%E7%90%86/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Dubbo</tag>
+        <tag>服务发现</tag>
+        <tag>RPC</tag>
+        <tag>云原生</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>云计算常见软件概念梳理</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E4%BA%91%E8%AE%A1%E7%AE%97%E5%B8%B8%E8%A7%81%E8%BD%AF%E4%BB%B6%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<p>IT软件技术架构进入云化时代后，新概念、新技术大量涌现。从几年前热火的Openstack、计算存储网络三大虚拟化技术、Iaas平台，到近几年更火热的容器和云原生的相关技术，在云计算这一领域新技术可谓是层出不穷。<br>我们经常会听到的这些概念，比如容器、docker、kubernetes、微服务架构、PaaS平台、服务中台、Devops、云原生等等。这些技术和概念彼此之间感觉是独立的，我们很容易从其中某一个角度学习入手并应用；但是，很多时候，我们会发现这些技术彼此之间又有密切的关联，从文章也好、技术落地应用的场景也好，它们往往又出现在同一个地方。它们之间究竟有什么联系，彼此之间有什么依赖，让人十分的困惑。<br>在本文中，从这些技术彼此之间的依赖和关系入手，讲述它们在当今软件云化和微服务化时代中的作用，希望读者从这些总结对比入手，对微服务相关的技术体系建立全局性的视野和理解。  </p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>云原生</tag>
+        <tag>云计算</tag>
+        <tag>微服务</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>东南大学止于至善学术风 PPT 模板（英文）</title>
+    <url>/f.%E6%94%B6%E8%97%8F%E6%95%B4%E7%90%86/%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%AD%A2%E4%BA%8E%E8%87%B3%E5%96%84%E5%AD%A6%E6%9C%AF%E9%A3%8E-PPT-%E6%A8%A1%E6%9D%BF%EF%BC%88%E8%8B%B1%E6%96%87%EF%BC%89/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>收藏整理</category>
+      </categories>
+      <tags>
+        <tag>PPT</tag>
+        <tag>东南大学</tag>
+        <tag>模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>东南大学止于至善学术风 PPT 模板（中文）</title>
+    <url>/f.%E6%94%B6%E8%97%8F%E6%95%B4%E7%90%86/%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%AD%A2%E4%BA%8E%E8%87%B3%E5%96%84%E5%AD%A6%E6%9C%AF%E9%A3%8E-PPT-%E6%A8%A1%E6%9D%BF%EF%BC%88%E4%B8%AD%E6%96%87%EF%BC%89/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>收藏整理</category>
+      </categories>
+      <tags>
+        <tag>PPT</tag>
+        <tag>东南大学</tag>
+        <tag>模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科学上网原理</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<p>科学上网本质上是对从本机到目的服务器间的网络通信方式进行加密，使流量不能被防火墙检测到，进而绕开访问限制。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>网络</tag>
+        <tag>ssh</tag>
+        <tag>科学上网</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我在字节跳动的十个月</title>
+    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E6%88%91%E5%9C%A8%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E7%9A%84%E5%8D%81%E4%B8%AA%E6%9C%88/</url>
+    <content><![CDATA[<p>很荣幸在大四得到了字节网络组的实习机会，没想到这一待就是十个月。<br>虽然赶上了新冠疫情这一黑天鹅，但还是在这段时间学到了很多东西，除了技术上的学习，对未来工作内容，对大公司运作模式，对网络开发完整流程的体验以及伴随而来的方法论也学到了很多，也在不断寻找自己的定位与目标。<br>感谢非常非常厉害的 mentor，感谢各位优秀的同事，第一次有机会和这么多优秀的人一起做有挑战的事，提出的每个想法都得到了积极的倾听与反馈并给予足够的机会与鼓励去尝试，作为网络小菜鸡真的感受到了足够的平等与尊重。<br>Last day 赶上了最后一次团建，被灌了最多的酒也愈发舍不得离开。祝愿字节在成为全球顶级科技公司的道路上永远保持活力，祝愿各位 ByteDancers 永远年轻，永远快乐。<br>即将开始研究生的新征程，期待与字节的下一次邂逅！  </p>
+]]></content>
+      <categories>
+        <category>杂文随笔</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+        <tag>字节跳动</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>嵌入式开发常用通信协议</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
+    <content><![CDATA[<p>在嵌入式系统中，板上通信接口是指用于将各种集成电路与其他外围设备交互连接的通信通路或总线。<br>以下内容为常用板上通信接口：包括 I2C、SPI、UART、1-Wire。</p>
+]]></content>
       <categories>
         <category>知识角落</category>
       </categories>
@@ -3422,17 +3504,18 @@
       </tags>
   </entry>
   <entry>
-    <title>飞书在高校先进科研协作中的实践</title>
-    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E9%A3%9E%E4%B9%A6%E5%9C%A8%E9%AB%98%E6%A0%A1%E5%85%88%E8%BF%9B%E7%A7%91%E7%A0%94%E5%8D%8F%E4%BD%9C%E4%B8%AD%E7%9A%84%E5%AE%9E%E8%B7%B5/</url>
-    <content><![CDATA[]]></content>
+    <title>通用的产品与运营思维</title>
+    <url>/e.%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/History/%E9%80%9A%E7%94%A8%E7%9A%84%E4%BA%A7%E5%93%81%E4%B8%8E%E8%BF%90%E8%90%A5%E6%80%9D%E7%BB%B4/</url>
+    <content><![CDATA[<p>现代互联网企业尤其是国内互联网企业除了开发外还有 产品 和 运营 两个所谓的“文职岗位”，即开放给不想写代码的计算机专业学生和想转互联网行业的其他专业学生的岗位。<br>不过我认为产品和运营两个领域的能力对于像我这样技术一般般的同学来说还是很重要的，用产品思维去设计软件或服务，哪怕是一个对外的 API 接口；用运营能力去在合适的位置推广软件或服务，获得持续的反馈。</p>
+]]></content>
       <categories>
-        <category>杂文随笔</category>
+        <category>观察思考</category>
       </categories>
       <tags>
-        <tag>飞书</tag>
-        <tag>效率</tag>
-        <tag>协作</tag>
-        <tag>科研</tag>
+        <tag>方法论</tag>
+        <tag>运营</tag>
+        <tag>产品</tag>
+        <tag>管理</tag>
       </tags>
   </entry>
 </search>
