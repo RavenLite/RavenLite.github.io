@@ -2797,7 +2797,11 @@
   <entry>
     <title>使用InfluxDB和Telegraf为服务器搭建基础监控</title>
     <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/%E4%BD%BF%E7%94%A8InfluxDB%E5%92%8CTelegraf%E4%B8%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%9B%91%E6%8E%A7/</url>
-    <content><![CDATA[<p>想要监控服务器性能我们自然需要采集其性能数据并存储，InfluxDB 搭配 Telegraf 是目前最主流的服务器监控方案之一。<br>Telegraf 是一个插件驱动的服务端代理用于采集并发送服务器上软件系统性能 metrics。<br>InfluxDB 是一个知名的时序数据库，它和 Telegraf 都是 InfluxData 公司的产品。<br><img src="../../images/211231-a-influxdb.png"></p>
+    <content><![CDATA[<p>想要监控服务器性能我们自然需要采集其性能数据并存储，InfluxDB 搭配 Telegraf 是目前最主流的服务器监控方案之一。<br>Telegraf 是一个插件驱动的服务端代理用于采集并发送服务器上软件系统性能 metrics。<br>InfluxDB 是一个知名的时序数据库，它和 Telegraf 都是 InfluxData 公司的产品。</p>
+<hr>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="../../images/211231-a-influxdb.png"></h2><img src="../../images/211231-a-influxdb.png" width="60%" height="60%" />
+
+<hr>
 ]]></content>
       <categories>
         <category>技术探究</category>
