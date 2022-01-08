@@ -456,67 +456,6 @@
       </tags>
   </entry>
   <entry>
-    <title>排序算法</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><ul>
-<li>排序是使用最多的算法</li>
-<li>数据结构设计思想<ul>
-<li>divide and conquer 分治</li>
-<li>specialised data structures</li>
-<li>randomised algorithms</li>
-<li>lower bounds</li>
-</ul>
-</li>
-<li>排序算法是很多其他算法的基础<ul>
-<li>搜索</li>
-<li>最短路径</li>
-<li>元素唯一性 Element uniqueness</li>
-<li>频率分布 Frequency distribution</li>
-<li>选择</li>
-<li>计算几何和计算机图形学 Computational Geometry and Computer Graphics(CG)<br>Convex hull 扫描法找凸包 根据角度排序构建最外层点的凸多边形</li>
-</ul>
-</li>
-</ul>
-<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><img src="http://ws4.sinaimg.cn/large/006tNc79ly1g24y3dkjlgj311o0huqhl.jpg" align=center width=400>
-
-<ul>
-<li>内部排序 Internal Sort<ul>
-<li>关键字比较法<ul>
-<li> incremental method: Insertion Sort插入排序</li>
-<li> Divide- and- conquer: Quick Sort 快速排序, Merge Sort 归并排序</li>
-<li> Heap Sort 堆排序</li>
-</ul>
-</li>
-<li>distribution<ul>
-<li> Radix Sort 基数排序</li>
-</ul>
-</li>
-</ul>
-</li>
-<li> 外部排序 External Sort</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><ul>
-<li>输入Input: 一串数字</li>
-<li>输出Output: 输入序列重排序后的排列</li>
-</ul>
-<h3 id="评估方面1-稳定排序-Stable-Sorting"><a href="#评估方面1-稳定排序-Stable-Sorting" class="headerlink" title="评估方面1-稳定排序 Stable Sorting"></a>评估方面1-稳定排序 Stable Sorting</h3><p>相等的数字排序前后相对位置不变</p>
-<h3 id="评估方面2-时间复杂度-Time-Complexity"><a href="#评估方面2-时间复杂度-Time-Complexity" class="headerlink" title="评估方面2-时间复杂度 Time Complexity"></a>评估方面2-时间复杂度 Time Complexity</h3><p>基于比较的排序，时间由比较次数决定</p>
-<h3 id="评估方面3-in-place-sorting-algorithm"><a href="#评估方面3-in-place-sorting-algorithm" class="headerlink" title="评估方面3-in-place sorting algorithm"></a>评估方面3-in-place sorting algorithm</h3><p>不借助额外的数据结构</p>
-<blockquote>
-<p>In computer science, an in-place algorithm is an algorithm which transforms input using no auxiliary data structure. However a small amount of extra storage space is allowed for auxiliary variables. The input is usually overwritten by the output as the algorithm executes. In-place algorithm updates input sequence only through replacement or swapping of elements. An algorithm which is not in-place is sometimes called not-in-place or out-of-place.</p>
-</blockquote>
-<h1 id="插入排序-Insertion-Sort"><a href="#插入排序-Insertion-Sort" class="headerlink" title="插入排序 Insertion Sort"></a>插入排序 Insertion Sort</h1><h1 id="快速排序-Quick-Sort"><a href="#快速排序-Quick-Sort" class="headerlink" title="快速排序 Quick Sort"></a>快速排序 Quick Sort</h1><h1 id="归并排序-Merge-Sort"><a href="#归并排序-Merge-Sort" class="headerlink" title="归并排序 Merge Sort"></a>归并排序 Merge Sort</h1><h1 id="堆排序-Heap-Sort"><a href="#堆排序-Heap-Sort" class="headerlink" title="堆排序 Heap Sort"></a>堆排序 Heap Sort</h1><h1 id="桶排序-Bucket-Sort"><a href="#桶排序-Bucket-Sort" class="headerlink" title="桶排序 Bucket Sort"></a>桶排序 Bucket Sort</h1><h1 id="基数排序-Radix-Sort"><a href="#基数排序-Radix-Sort" class="headerlink" title="基数排序 Radix Sort"></a>基数排序 Radix Sort</h1>]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>排序</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>用VSCode对云服务器文件进行在线编辑</title>
     <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/%E7%94%A8VSCode%E5%AF%B9%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%BE%91/</url>
     <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>前两天用上了macOS后发现Mac下没有很好用的SCP应用（也有可能是我还没发现）。用推荐比较多的FileZilla后发现也不如Windows下强大的WinSCP。<br>说起WinSCP，最让我怀念它的倒不是极其方便的上传文件功能，毕竟scp命令也没多长，不用工具也可以解决，而是它可以右键服务器上的文件进行在线编辑，感觉比较方便。（对于vim掌握不熟练的我来说）</p>
@@ -746,71 +685,6 @@
       </tags>
   </entry>
   <entry>
-    <title>MIT 算法导论</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/MIT%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/</url>
-    <content><![CDATA[<p>算法课程分为</p>
-<ul>
-<li>Analysis of Algorithms</li>
-<li>Design of Algorithms</li>
-</ul>
-<p>算法分析是理论研究(The theoretical study of computer program <strong>performance</strong> and resource usage)<br>我们关注 Performance</p>
-<p>Q1：软件领域什么比 Performance 更重要呢？<br>Correctness, Maintainability, Features, Functionality, Modularity, Security, Scalability, User-friendliness…</p>
-<p>Q2：这么多比 Performance 重要的内容为什么我们还关注 Performance？</p>
-<ul>
-<li>通常，性能的好坏直接决定着是否可行</li>
-<li>算法是一种描述程序行为的语言，他就像钱一样，需要性能作为支付其他东西的“货币”（例如为了 Functionality 愿意牺牲2倍性能），这决定了 Performance 是处于最底层的，他是衡量一般性的标准</li>
-<li>这里充满了乐趣，速度总是让人激动</li>
-</ul>
-<span id="more"></span>
-
-<h3 id="Insertion-Sort-插入排序"><a href="#Insertion-Sort-插入排序" class="headerlink" title="Insertion Sort 插入排序"></a>Insertion Sort 插入排序</h3><p>Pseudocode 伪代码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">INSERTION-SORT(A, n) //Sort A[1...n]</span><br><span class="line">    for j &lt;- 2 to n</span><br><span class="line">        do key &lt;- A[j]</span><br><span class="line">            i &lt;- j-1</span><br><span class="line">            while i &gt; 0 and A[i]&gt;key</span><br><span class="line">                do A[i+1] &lt;- A[i]</span><br><span class="line">                    i &lt;- i-1</span><br><span class="line">            A[i+1] &lt;- key</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="Running-Time-运行时间"><a href="#Running-Time-运行时间" class="headerlink" title="Running Time 运行时间"></a>Running Time 运行时间</h3><p>取决于“输入本身（是否有序）”和“输入规模”<br>将时间T与输入规模n函数化关联</p>
-<h4 id="Worst-case-usually"><a href="#Worst-case-usually" class="headerlink" title="Worst-case(usually)"></a>Worst-case(usually)</h4><p>运行时间的上界：是对用户的一个承诺<br><code>T(n) = max time on any input of size n</code></p>
-<h4 id="Average-case-sometimes"><a href="#Average-case-sometimes" class="headerlink" title="Average-case(sometimes)"></a>Average-case(sometimes)</h4><p><code>T(n) = expected time over all inputs of size n</code><br><em>expectation: 数学概念： 每种输入的运行时间乘以那种输入出现的概率（这里假设每种输入情形出现的概率是等可能性的，均匀分布）</em></p>
-<h4 id="Best-case-bogus-假象（没啥用）"><a href="#Best-case-bogus-假象（没啥用）" class="headerlink" title="Best-case(bogus 假象（没啥用）)"></a>Best-case(bogus 假象（没啥用）)</h4><p>Cheat~</p>
-<p>Q3：插入排序的运行时间分析？<br>运行时间与机器有关</p>
-<ul>
-<li>relative speed(on same machine)</li>
-<li>absolute speed(on diff machine)</li>
-</ul>
-<p>引出了算法的大局观</p>
-<h3 id="BIG-IDEA"><a href="#BIG-IDEA" class="headerlink" title="BIG IDEA"></a>BIG IDEA</h3><p>Asymptotic Analysis</p>
-<ul>
-<li>Ignore machine dependant constants</li>
-<li>Look at growth of T(n) as n -&gt; ♾  </li>
-</ul>
-<p>渐进分析</p>
-<ul>
-<li>忽略掉依赖于机器的常量</li>
-<li>不是去检查实际的运行时间，而是关注运行时间的增长</li>
-</ul>
-<p>渐进符号<br>θ-notation: drop lowerder terms, ignore leading constants<br>Ex: 3n3-90n2-5n+6046 = θ(n3)</p>
-<blockquote>
-<p>算法分析要求我们既有对待数学的严谨，又有对待工程那样富有直觉</p>
-</blockquote>
-<p>渐进符号可以满足我们对相对速度和绝对速度的要求，随着n的增大，渐进结果一般而言不会改变</p>
-<p>从工程的角度还有一件事情需要处理，就是有时候需要n足够大某个算法的优势才可以被显现，这时我们经常会使用一些低速算法，在合理的范围内满足我们对速度的要求。因此，我们就必须在我们的数学理解和工程直觉之间做好平衡。</p>
-<p>插入排序的Worst-case T(n): θ(n2)</p>
-<h3 id="Merge-Sort-归并排序"><a href="#Merge-Sort-归并排序" class="headerlink" title="Merge Sort 归并排序"></a>Merge Sort 归并排序</h3><p>Merge sort A[1..n]</p>
-<ol>
-<li>If n=1, done</li>
-<li>Recursively sort A[1..n/2(上界)] and A[n/2(上界)+1..n]</li>
-<li>Merge 2 sorted lists</li>
-</ol>
-<p>我们会用到一个归并子程序 Key subroutine-Merge<br>T(n) = θ(1) if n = 1  （通常省略）<br>     = 2T(n/2) + θ(n) if n &gt; 1</p>
-<p>Recursion tree: T(n) = 2T(n/2) + cn (const c &gt; 0)<br>使用递归树分析，归并排序的时间复杂度T(n)=θ(nlgn)<br><em>树的高度是lgn，叶节点层之和为θ(n)，其他层每层为cn</em><br><em>在n大于30左右之和，归并排序比插入排序要快</em></p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>MIT</tag>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数值分析学习笔记</title>
     <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>本学期开设了<em><strong>数值分析</strong></em>课程。这是我本科期间最后一门数学课了。<br>认真学习之余，整理了很多解题套路。虽然直接上套路解题不好，但我认为如果能先把题解出来，我们也可以更好地反思解题的原理。<br><em>另外，想了很久还是决定用手写到白纸上，这样更容易表达我的想法。</em><br><strong>希望这学期的数值分析会有好结果！加油！</strong>  </p>
@@ -854,441 +728,6 @@
       <tags>
         <tag>数学</tag>
         <tag>数值分析</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>自动驾驶系统课程笔记（第一章 简介）</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p><em>本文写于19年4月智能驾驶技术课程</em><br><em>参考书籍</em></p>
-<ul>
-<li>第一本无人驾驶技术书, 2017</li>
-<li>Creating Autonomous Vehicle Systems, 2018</li>
-</ul>
-<h1 id="Ch1-Introduction-to-Autonomous-Driving-自动驾驶技术简介"><a href="#Ch1-Introduction-to-Autonomous-Driving-自动驾驶技术简介" class="headerlink" title="Ch1 Introduction to Autonomous Driving 自动驾驶技术简介"></a>Ch1 Introduction to Autonomous Driving 自动驾驶技术简介</h1><h2 id="1-1-Autonomous-Driving-Technologies-Overview-概览"><a href="#1-1-Autonomous-Driving-Technologies-Overview-概览" class="headerlink" title="1.1 Autonomous Driving Technologies Overview 概览"></a>1.1 Autonomous Driving Technologies Overview 概览</h2><p>自动驾驶技术不是一项单一的技术，而是一系列技术的整合。<br>主要由三部分构成：</p>
-<ul>
-<li>Algorithm<ul>
-<li>Sensing</li>
-<li>Perception</li>
-<li>Decision</li>
-</ul>
-</li>
-<li>Client System<ul>
-<li>Operating System</li>
-<li>Hardware Platform</li>
-</ul>
-</li>
-<li>Cloud Platform<ul>
-<li>High-definition (HD) Map</li>
-<li>Deep Learning Model Training</li>
-<li>Simulation</li>
-<li>Data storage</li>
-</ul>
-</li>
-</ul>
-<p align="center">
-<img src="http://ws1.sinaimg.cn/large/006tNc79ly1g227axbd1mj31660g2dk7.jpg" width="600"/>
-</p>
-
-<blockquote>
-<p>The algorithm subsystem extracts meaningful information from sensor raw data to under- stand its environment and to make decisions about its future actions. The client systems integrate these algorithms together to meet real-time and reliability requirements. For example, if the camera generates data at 60 Hz, the client systems need to make sure that the longest stage of the pro- cessing pipeline takes less than 16 ms to complete. The cloud platform provides offline computing and storage capabilities for autonomous cars. With the cloud platform, we are able to test new algorithms, update HD map, and train better recognition, tracking, and decision models.</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="1-2-Autonomous-Driving-Algorithm-算法"><a href="#1-2-Autonomous-Driving-Algorithm-算法" class="headerlink" title="1.2 Autonomous Driving Algorithm 算法"></a>1.2 Autonomous Driving Algorithm 算法</h2><h3 id="1-SENSING-传感"><a href="#1-SENSING-传感" class="headerlink" title="1.SENSING 传感"></a>1.SENSING 传感</h3><p>每种方法都有自己的优缺点，*实际情况下自动驾驶汽车结合了各种方法来保证可靠性和安全性。</p>
-<ul>
-<li>GPS/IMU（惯性测量单元）<br>GPS精度高但更新频率低，IMU精读随时间变化越来越低但更新频率高。</li>
-<li>LiDAR 光学雷达<br>精度高，用于绘制地图、定位及避障，作为主传感器使用。</li>
-<li>Cameras 相机<br>用于物体识别与追踪。多个摄像头产生巨额数据量。</li>
-<li>Radar and Sonar 雷达和声呐<br>雷达和声呐是避障的最后一道保障，产生的数据不需要过多处理直接被控制处理器采用（因为是紧急情况）。</li>
-</ul>
-<h3 id="2-Perception-感知"><a href="#2-Perception-感知" class="headerlink" title="2.Perception 感知"></a>2.Perception 感知</h3><ul>
-<li>定位<br>结合GPS和IMU的数据完成定位，因为有GPS室内环境(如隧道)无法工作等问题，引入摄像头作为辅助定位。摄像头的定位技术类似于对四维空间进行分析。问题又来了，因为摄像头定位需要充足的光线，也不够好，因此，借助于大量粒子滤波的激光雷达LiDAR通常被用作车辆定位的主传感器。<br>激光雷达产生的<strong>点云</strong>对环境进行了“形状化描述”，但并不足以区分各自不同的点，通过粒子滤波将已知HD地图与观测到的形状进行比较以减少位置的不确定性。<br>LiDAR也有缺点，它的缺点是会受到空气中的悬浮颗粒(雨滴或灰尘)的干扰。<br>综上所述，我们需要利用多种传感器融合技术进行多类型传感数据融合，处理以整合所有传感器的优点，完成可靠并精准的定位。</li>
-</ul>
-<p align="center">
-<img src="http://ws3.sinaimg.cn/large/006tNc79ly1g2289evztfj30y80pun5z.jpg" width="500"/>
-</p>
-
-<ul>
-<li>物体识别与追踪<br>LiDAR+CNN卷积神经网络：<ul>
-<li>卷积层使用不同的滤波器从输入图像中提取不同的特征，并且每个滤波器在完成训练阶段后都将抽取出一套“可供学习”的参数</li>
-<li>激活层决定是否启动目标神经元</li>
-<li>汇聚层压缩特征映射图所占用的空间以减少参数的数目，并由此降低所需要的计算量</li>
-<li>一旦某物体被CNN识别出来，下一步将自动预测它的运行轨迹或进行物体追踪 </li>
-</ul>
-</li>
-</ul>
-<h3 id="3-Action-决策"><a href="#3-Action-决策" class="headerlink" title="3.Action 决策"></a>3.Action 决策</h3><ul>
-<li>行为预测<ul>
-<li>预测其它车辆的行驶行为</li>
-<li>使用随记模型产生其它车辆的可达位置集合，并采用概率分布的方法预测每一个可达位置集的相关概率</li>
-</ul>
-</li>
-</ul>
-<p align="center">
-<img src="http://ws3.sinaimg.cn/large/006tNc79ly1g228wh8wnmj30x80qeaoe.jpg" width="500"/>
-</p>
-
-<ul>
-<li>路径规划<ul>
-<li>使用完全确定模型，搜索所有可能的路径并利用代价函数的方式确定最佳路径</li>
-<li>缺点是不实时。为了避免计算复杂性并提供实时的路径规划，使用概率性模型成为了主要的优化方向</li>
-</ul>
-</li>
-<li>避障<ul>
-<li>安全性是首位的！我们将至少使用两层级的避障机制</li>
-<li>第一层是基于交通情况预测的前瞻层级</li>
-<li>第二层是实时反应层级。使用本地雷达数据进行路径重新规划，一旦雷达侦测到前方出现障碍物，则立即执行避障（前面提到的雷达+声呐作为避障的最后一道屏障。他们产生的数据用来表示在车的前进方向上最近障碍物的距离）</li>
-</ul>
-</li>
-</ul>
-<h2 id="1-3-Autonomous-Driving-Client-System-用户端系统"><a href="#1-3-Autonomous-Driving-Client-System-用户端系统" class="headerlink" title="1.3 Autonomous Driving Client System 用户端系统"></a>1.3 Autonomous Driving Client System 用户端系统</h2><p>用户端系统整合上述避障、路径规划等算法，以满足可靠性及实时性等要求。需要克服三个问题：</p>
-<ul>
-<li>系统必须确保捕捉到的大量传感器数据可以及时快速地得到处理</li>
-<li>如果系统的某部分失效，则系统需要有足够的健壮性能从错误中恢复</li>
-<li>系统必须在设计的能耗和资源限定下有效地完成所有的计算操作</li>
-</ul>
-<h3 id="1-机器人操作系统ROS"><a href="#1-机器人操作系统ROS" class="headerlink" title="1.机器人操作系统ROS"></a>1.机器人操作系统ROS</h3><p>ROS是现如今广泛被使用的、专为机器人应用裁剪的、强大的分布式计算框架。ROS非常适用于无人驾驶的场景，但是仍有一些问题需要解决。</p>
-<p align="center">
-<img src="http://ws1.sinaimg.cn/large/006tNc79ly1g22c2a58y0j31220kk0yj.jpg" width="500"/>
-</p>
-
-<h4 id="待解决问题"><a href="#待解决问题" class="headerlink" title="待解决问题"></a>待解决问题</h4><ul>
-<li>可靠性：ROS使用单主节点结构，并且没有监控机制以恢复失效的节点。</li>
-<li>性能：当节点之间使用广播消息的方式通信时，将产生多次信息复制导致性能下降。</li>
-<li>安全：ROS中没有授权和加密机制，因此安全性受到很大威胁。</li>
-</ul>
-<h4 id="可靠性"><a href="#可靠性" class="headerlink" title="可靠性"></a>可靠性</h4><ul>
-<li>使用类似于ZooKeeper的方法，改进后的ROS结构包括一个关键主节点及一个备用主节点。</li>
-</ul>
-<h4 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h4><ul>
-<li>不再使用TCP/IP的通信模式，取而代之地采用共享内存的方法完成节点通信。</li>
-<li>不再使用广播通信，改成目的更明确的多路径传输机制改善系统的带宽与吞吐量。</li>
-</ul>
-<h4 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h4><ul>
-<li>使用Linux containers(LXC)的方法限制每一个节点可供使用的资源数，并采用沙盒的方式以确保节点的运行独立，这样以来可最大限度地防止资源泄露。（防止因ROS节点被挟制后不断进行内存分配，内存耗尽而导致剩余节点失效继而全线崩溃）</li>
-<li>为通信消息进行了加密操作，以防止其被黑客窃听。</li>
-</ul>
-<h3 id="2-硬件平台"><a href="#2-硬件平台" class="headerlink" title="2.硬件平台"></a>2.硬件平台</h3><ul>
-<li>现有计算平台功耗高发热严重需要配备额外的散热装置，因而太贵。</li>
-<li>利用ARM面向移动市场的SoC可以尝试解决这些问题。<blockquote>
-<p>SoC: System on Chip.是一个将电脑或其他电子系统集成到单一芯片的集成电路。<br>指的是将CPU、GPU、RAM、通信基带、等整合在一起的<br>由于手机空间限制，不可能像PC一样，主板、CPU、GPU、内存条可以自己选择，自由组合，所以厂家直接整合在了一起，假设你找高通买了SOC，它就包含了CPU、GPU、内存条、通信基带等给你，厂家一般也不会单卖CPU给你。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="1-4-Autonomous-Driving-Cloud-Platform-云平台"><a href="#1-4-Autonomous-Driving-Cloud-Platform-云平台" class="headerlink" title="1.4 Autonomous Driving Cloud Platform 云平台"></a>1.4 Autonomous Driving Cloud Platform 云平台</h2><p>无人车是移动系统，因此需要云平台的支持。云平台可以提供：</p>
-<ul>
-<li>分布式计算</li>
-<li>分布式存储</li>
-</ul>
-<h3 id="1-仿真"><a href="#1-仿真" class="headerlink" title="1.仿真"></a>1.仿真</h3><ul>
-<li>开发无人驾驶新算法 –&gt; 仿真测试(回放ROS阶段采集点真实数据，模拟真实驾驶场景) –&gt; 真车测试(成本高昂、周期漫长)<br>因此仿真测试的全面性和正确性对降低生产成本和生产周期尤为重要。  </li>
-<li>利用Spark可以搭建服务器集群更快完成仿真测试。</li>
-</ul>
-<p align="center">
-<img src="http://ws4.sinaimg.cn/large/006tNc79ly1g22cc8j1ezj30yq0o2qec.jpg" width="500"/>
-</p>
-
-<h3 id="2-高精度地图生成"><a href="#2-高精度地图生成" class="headerlink" title="2.高精度地图生成"></a>2.高精度地图生成</h3><ul>
-<li>原始数据处理 –&gt; 点云生成 –&gt; 点云对齐 –&gt; 2D反射地图生成 –&gt; 高精地图标注 –&gt; 地图生成</li>
-<li>利用Spark内存计算不需要使用磁盘存储，数据访问速度加快，极大提高了高精度地图产生的性能。</li>
-</ul>
-<h3 id="3-深度学习模型训练"><a href="#3-深度学习模型训练" class="headerlink" title="3.深度学习模型训练"></a>3.深度学习模型训练</h3><ul>
-<li>单服务器计算模型缓慢</li>
-<li>使用Spark+Paddle来搭建分布式深度学习系统</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>NEU</tag>
-        <tag>人工智能</tag>
-        <tag>自动驾驶</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Crazyflie with AI-deck - 低功耗边缘计算实战</title>
-    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/Crazyflie%20with%20AI-deck%20-%20%E4%BD%8E%E5%8A%9F%E8%80%97%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97%E5%AE%9E%E6%88%98/</url>
-    <content><![CDATA[<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>边缘计算：边缘计算（Edge Computing）指将数据的处理、应用程序的运行甚至一些功能服务的实现，由网络中心下放到网络边缘的节点上。</p>
-<p>我们今天要介绍的是 <strong>低功耗</strong>的边缘计算，这允许我们在更轻量级的物联网设备上完成更复杂的计算任务，实现更灵活的功能。</p>
-<p>我们选择的平台是开源的微型无人机 Crazyflie，基于 Crazyflie 背后团队最新推出的低功耗边缘计算扩展板 AI-deck 来运行我们的边缘计算实例。</p>
-<span id="more"></span>
-
-<h1 id="Crazyflie"><a href="#Crazyflie" class="headerlink" title="Crazyflie"></a>Crazyflie</h1><p>Crazyflie 是来自瑞典的 Bitcraze 公司开发并生产的重量仅有 <strong>30g</strong> 的 <strong>微型无人机</strong>，项目完全开源并且提供软硬件工具给用户来建构其生态。</p>
-<img src="crazyflie_2.1.png" alt="Crazyflie 2.1" style="zoom:50%;" />
-
-<h3 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h3><p>Crazyflie 微型四轴飞行器的硬件设计得非常优秀，不管是 PCB 机械层的轮廓设计、信号层上元器件的布局还是整个电路板的走线都非常合理，而且最重要的是 Bitcraze 团队将模块化的理念带入到 Crazyflie产品的设计之中，这使得 Crazyflie 微型四轴除了基本的飞行功能之外，还可以通过堆叠不同<strong>扩展板</strong>的方式来实现不同功能的扩展。</p>
-<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><p>Crazyflie 微型四轴飞行器的软件开发全部基于 Linux 开发环境，并使用已有开源且强大的软件工具（比如 ARM-GCC，Make、PyQt 等）进行开发。除此之外，Crazyflie 微型四轴飞行器的软件源码还被托管在 GitHub 上，非常方便世界各地的爱好者、研究者对其进行二次开发。</p>
-<h3 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h3><p>除了以上两点有关技术层面的优势，Crazyflie 微型四轴飞行器项目还有一个非常优秀的地方——丰富的文档。作为一家不以盈利为主要目的团队任然可以将自己的开源项目文档写得如此详细，他们这种乐于分享的精神实在是值得我们学习。</p>
-<h1 id="AI-deck"><a href="#AI-deck" class="headerlink" title="AI-deck"></a>AI-deck</h1><h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><ul>
-<li><p>用途：边缘计算</p>
-</li>
-<li><p>重量：只有 30g</p>
-</li>
-<li><p>组成：</p>
-<ul>
-<li>GAP8 Ultra-low power 8+1 core RISC-V IoT Application Processor</li>
-<li>Himax HM01B0 – Ultra low power 320×320 Bayer RGB camera.</li>
-<li>512 Mbit HyperFlash and 64 Mbit HyperRAM</li>
-<li>ESP32 for WiFi and more (NINA-W102)</li>
-<li>2 x Cortex-M 10-pin JTAG for GAP8 and ESP32</li>
-<li>Button connected to ESP32 for UART bootloader or other action</li>
-<li>1 x green LED connected to GAP8 (A2)</li>
-<li>1 x green LED connected to ESP32 (GPIO_24)</li>
-<li>Can work stand alone. Power board on VCOM</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>板子上有GAP8和NINA两块芯片，以及分别的调试接口。<br>GAP8是一款基于RISC-V的物联网处理器芯片，用于完成AI计算任务。<br>NINA是一款以ESP32芯片为核心的WiFi模组，用于完成图像传输。</p>
-</blockquote>
-<ul>
-<li>存在的主要问题：AI-deck尚处早期研发，挑战与机遇并存</li>
-</ul>
-<img src="ai-deck.png" alt="Crazyflie 2.1" style="zoom:80%;" />
-
-<h2 id="PULP-DroNet"><a href="#PULP-DroNet" class="headerlink" title="PULP-DroNet"></a>PULP-DroNet</h2><p>AI-deck 来自于一个叫 PULP-DroNet 的项目。AI-deck 基于 PULP-DroNet 项目开发的 PULP-Shield 开发板，进行了适当的改进。</p>
-<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><strong>PULP-DroNet</strong> 是一个由深度学习驱动的 <strong>视觉导航引擎</strong>，帮助微型无人机在未知的环境中进行自主导航。得益于 PULP-DroNet，微型无人机可以完全自主地探索环境，避免与移动障碍物发生碰撞。<strong>无需人工操作，无需临时外部信号，也无需远程笔记本电脑！</strong>这意味着所有复杂的计算都可以直接在飞机上快速完成。</p>
-<ul>
-<li><p>PULP-DroNet：PULP-Shield + DroNet</p>
-<ul>
-<li><p>Software</p>
-<ul>
-<li>Based on DroNet: a shallow convolutional neural network developed by <a href="http://rpg.ifi.uzh.ch/">RPG</a></li>
-</ul>
-</li>
-<li><p>Hardware</p>
-<ul>
-<li>Based on PULP (Parallel Ultra-Low-Power) GAP8 SoC (System on Chip) from <a href="https://greenwaves-technologies.com/">GreenWaves Technologies</a></li>
-<li>an ultra-low power HiMax HBM01 camera</li>
-<li>off-chip Flash/DRAM memory</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>缩写</p>
-<ul>
-<li>PULP：Parallel Ultra-Low-Power 并行超低功耗</li>
-<li>GWT：GreenWaves Technologies 一家芯片公司，生产了 GAP8 这款 PULP 的 SoC</li>
-</ul>
-</li>
-<li><p>术语</p>
-<ul>
-<li>PULP-Shield：与 Crazyflie 兼容的可插拔的 PCB，上面搭载 PULP GAP8 SoC 或 PULP Mr.Wolf SoC</li>
-<li>PULP Virtual Platform：一个软件模拟环境，在自己的电脑上运行程序，模拟程序运行在 PULP SoC 上的效果</li>
-<li>Autotiler：一个软件工具，作为lib.a发布。它会生成一些为了编译PULP-DroNet所需要的 c 文件。</li>
-<li>GAPuino board：GWT Arduino 兼容的开发板，其中包括 PULP GAP8 SoC。</li>
-</ul>
-</li>
-</ul>
-<h3 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h3><p><img src="pulp-shield.png"></p>
-<ul>
-<li><p>PULP-DroNet 基于 ETHZürich 和博洛尼亚大学设想的 <a href="https://www.pulp-platform.org/">并行超低功耗</a>（PULP）项目。</p>
-<ul>
-<li>功率低至几毫瓦</li>
-<li>应用在先进 IoT 节点，智能传感器，当然还有 微型无人机</li>
-<li>对诸如相机之类的传感器生成的数据流进行灵活，高级的处理，而这超出了典型微控制器的能力</li>
-<li>硬件基于 RISC-V 架构，可替代同为 RISC 的 ARM，开源</li>
-</ul>
-</li>
-<li><p>第一步是开发 PULP-Shield（可以认为是 AI-Deck 早期的原型产品）</p>
-<ul>
-<li><p>使用的是 PULP GAP8 SoC （GAP8 是 PULP 项目的第一个商用版本）</p>
-<ul>
-<li><p>9 RISC-V-based cores</p>
-<ul>
-<li>an on-chip microcontroller (1 core, called <em>Fabric Ctrl)</em></li>
-<li>a <em>cluster</em> accelerator of 8 cores</li>
-</ul>
-</li>
-<li><p>64 kB L1 memory</p>
-</li>
-<li><p>512kB L2 memory</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>接下来选择基于DroNet的高级人工智能算法作为自主导航引擎的算法核心</p>
-<ul>
-<li>因为资源受限，对 DroNet 进行了一些改进，输出碰撞概率和转向角两条信息，最后转换成 <strong>前进速度</strong> 和 <strong>转角率</strong> (angular yaw rate) 用于控制无人机。</li>
-</ul>
-</li>
-</ul>
-<p><img src="pulp-dronet.png"></p>
-<h3 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h3><ul>
-<li><a href="https://github.com/pulp-platform/pulp-dronet">Github - PULP-DroNet</a></li>
-<li><a href="https://arxiv.org/abs/1805.01831">A 64mW DNN-based Visual Navigation Engine for Autonomous Nano-Drones</a>（arxiv文章关于上面提到的如何将 DroNet 移植到功率受限的 CF 上）</li>
-<li><a href="https://www.pulp-platform.org/">PULP Platform</a>，<a href="https://www.youtube.com/channel/UCpad_lwSfoMZkb6X7FdjU0g">Youtube</a></li>
-</ul>
-<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><h2 id="硬件配置"><a href="#硬件配置" class="headerlink" title="硬件配置"></a>硬件配置</h2><ol>
-<li><p>微型无人机：<a href="https://store.bitcraze.io/collections/kits/products/crazyflie-2-1">Crazyflie 2.1</a></p>
-</li>
-<li><p>边缘计算扩展板：<a href="https://store.bitcraze.io/collections/decks/products/ai-deck">AI-deck</a></p>
-</li>
-<li><p>与扩展板 AI-deck 进行通信/程序烧录的 Debugger：<a href="https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY-H/">Olimex ARM-USB-TINY-H JTAG</a></p>
-</li>
-<li><p>用于连接 Debugger 与 AI-deck 的转接器：<a href="https://www.olimex.com/Products/ARM/JTAG/ARM-JTAG-20-10/">ARM JTAG 20 to 10 pin adapter</a></p>
-</li>
-<li><p>用于连接 Debugger 与 PC 的 USB 线：<a href="https://www.olimex.com/Products/Components/Cables/CABLE-USB-A-B-1.8M/">CABLE USB A-B 1.8M</a></p>
-</li>
-<li><p>与 Crazyflie 进行通信/程序烧录的 USB Dongle：<a href="https://store.bitcraze.io/collections/kits/products/crazyradio-pa">Crazyradio PA 2.4 GHz USB dongle</a></p>
-</li>
-</ol>
-<blockquote>
-<p>设备 3 提到的 debugger 有多种选择，但官方示例选用的是 olimex 的这款，为了避免不必要的麻烦，推荐在设备选择方面 follow 成功案例，从而专心软件开发。</p>
-</blockquote>
-<p><img src="cable_connection.png" alt="接线方式"></p>
-<blockquote>
-<p>接线方式即烧录方式有两种选择。</p>
-<ul>
-<li><em><strong>① Flash based on JTAG (wired)</strong></em>: 使用设备 3-5 以有线方式通过 OpenOCD 基于 JTAG 与 AI-deck 进行通信。  </li>
-<li><em><strong>② Flash using Crazyradio PA (wireless)</strong></em>: 使用设备 6 以无线方式基于蓝牙与 Crazyflie 进行通信。</li>
-</ul>
-</blockquote>
-<h2 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h2><h3 id="Virtual-Machine"><a href="#Virtual-Machine" class="headerlink" title="Virtual Machine"></a>Virtual Machine</h3><ul>
-<li>AI-deck 需要用到 GAP8 SDK，该 SDK 只提供了 Ubuntu 版本</li>
-<li>所以这里推荐安装 <a href="https://wiki.bitcraze.io/projects:virtualmachine:index#download">Bitcraze Virtual Machine</a></li>
-<li>需要预先安装 <a href="https://www.virtualbox.org/">Oracle VirtualBox</a></li>
-</ul>
-<h3 id="GAP8-amp-NINA"><a href="#GAP8-amp-NINA" class="headerlink" title="GAP8 &amp; NINA"></a>GAP8 &amp; NINA</h3><blockquote>
-<p>从官方商店购买的设备应该是已经烧录好了相应的firmware，但是我们从第三方购买的没有烧录，需要自行烧录。下面的实践环节会详细介绍。</p>
-</blockquote>
-<h1 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h1><h2 id="Step-1-下载官方示例项目"><a href="#Step-1-下载官方示例项目" class="headerlink" title="Step 1: 下载官方示例项目"></a>Step 1: 下载官方示例项目</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/bitcraze/AIdeck_examples.git</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://github.com/bitcraze/AIdeck_examples">AIdeck_examples</a> 项目为我们准备的几个示例程序的固件源码，以及使用 Docker 以最便捷的方式安装 AI-deck 开发所需要的两大软件依赖（NINA 芯片需要的 ESP-IDF，GAP8 芯片需要的 GAP8-SDK）</p>
-<h2 id="Step-2-安装-ESP-IDF-并烧录-NINA-芯片"><a href="#Step-2-安装-ESP-IDF-并烧录-NINA-芯片" class="headerlink" title="Step 2: 安装 ESP-IDF 并烧录 NINA 芯片"></a>Step 2: 安装 ESP-IDF 并烧录 NINA 芯片</h2><ol>
-<li>下载 Docker 镜像</li>
-</ol>
-<blockquote>
-<p>工作目录：AIdeck_examples/NINA/firmware/</p>
-</blockquote>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker build --tag espidf:3.3.1 .</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>烧录</li>
-</ol>
-<blockquote>
-<p>工作目录：AIdeck_examples/NINA/firmware/</p>
-<p>接线连接：Debugger 连上 AI-deck 上 NINA 芯片对应的 JTAG 接口</p>
-</blockquote>
-<blockquote>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo docker run --rm -it -v $PWD:/module/ --device /dev/ttyUSB0 --privileged -P espidf:3.3.1 /bin/bash -c &quot;make menuconfig; make clean; make all; /openocd-esp32/bin/openocd -f interface/ftdi/olimex-arm-usb-tiny-h.cfg -f board/esp-wroom-32.cfg -c &#x27;program_esp32 build/partitions_singleapp.bin 0x8000 verify&#x27; -c &#x27;program_esp32 build/bootloader/bootloader.bin 0x1000 verify&#x27; -c &#x27;program_esp32 build/ai-deck-jpeg-streamer-demo.bin 0x10000 verify reset exit&#x27;&quot;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h2 id="Step-3-安装-GAP8"><a href="#Step-3-安装-GAP8" class="headerlink" title="Step 3: 安装 GAP8"></a>Step 3: 安装 GAP8</h2><ol>
-<li>获取 Docker</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export GAP_SDK_VERSION=3.5</span><br><span class="line">echo &#x27;export GAP_SDK_VERSION=3.5&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">docker build --tag gapsdk:$&#123;GAP_SDK_VERSION&#125; --build-arg GAP_SDK_VERSION .</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>安装 autotiler</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run --rm -it gapsdk:$&#123;GAP_SDK_VERSION&#125; /bin/bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="keyword">in</span> the container write</span></span><br><span class="line">cd /gap_sdk</span><br><span class="line">source configs/ai_deck.sh</span><br><span class="line">make autotiler</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>这里会让填个邮箱，输一个 URL <a href="https://greenwaves-technologies.com/autotiler/">https://greenwaves-technologies.com/autotiler/</a></p>
-</blockquote>
-<ol start="3">
-<li>提交修改</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export GAP_SDK_VERSION=3.5</span><br><span class="line">docker commit &lt;container id&gt; gapsdk:$&#123;GAP_SDK_VERSION&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Step-4-更新-Crazyflie-自身固件"><a href="#Step-4-更新-Crazyflie-自身固件" class="headerlink" title="Step 4: 更新 Crazyflie 自身固件"></a>Step 4: 更新 Crazyflie 自身固件</h2><blockquote>
-<p>以下操作在 <a href="https://github.com/bitcraze/crazyflie-firmware">crazyflie-firmware</a> 项目中完成（我们所使用的虚拟机里已经有该项目）</p>
-</blockquote>
-<ol>
-<li>更新项目</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>激活 AI-deck</li>
-</ol>
-<ul>
-<li>进入 <code>/firmware/tools/make/</code></li>
-<li>创建新文件 config.mk</li>
-<li>新增一行</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CFLAGS += -DDECK_FORCE=bcAIDeck</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>无人机进入 bootloader 模式，烧录程序</li>
-</ol>
-<ul>
-<li>按无人机启动按钮 2s 进入 bootloader 状态</li>
-<li>使用 Flash using radio 烧录新固件</li>
-</ul>
-<img src="flash_using_radio.png" style="zoom:50%;" />
-
-<blockquote>
-<p>了解更多有关虚拟机使用以及烧录硬件的内容可以参考 <a href="https://www.bitcraze.io/documentation/tutorials/getting-started-with-development/">Programming the Crazyflie</a></p>
-</blockquote>
-<h2 id="Step-5-烧录人脸检测程序"><a href="#Step-5-烧录人脸检测程序" class="headerlink" title="Step 5: 烧录人脸检测程序"></a>Step 5: 烧录人脸检测程序</h2><ol>
-<li><p>进入<code>AIdeck_examples/GAP8/image_processing_examples/FaceDetection/</code></p>
-</li>
-<li><p>编辑 Makefile，取消注释 <code>USE_STREAMER</code>，<code>USE_CAMERA</code></p>
-</li>
-<li><p>执行烧录命令</p>
-</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo docker run --rm -it -v $PWD:/module/data/ --device /dev/ttyUSB0 --privileged -P gapsdk:$&#123;GAP_SDK_VERSION&#125; /bin/bash -c &#x27;export GAPY_OPENOCD_CABLE=interface/ftdi/olimex-arm-usb-tiny-h.cfg; source /gap_sdk/configs/ai_deck.sh; cd /module/data/; make clean all image flash&#x27;</span><br></pre></td></tr></table></figure>
-
-<img src="gap8_success.png" alt="Crazyflie 2.1" style="zoom:60%;" />
-
-<h2 id="Step-6-大功告成"><a href="#Step-6-大功告成" class="headerlink" title="Step 6: 大功告成"></a>Step 6: 大功告成</h2><p>此时我们已经完成了全部的软件准备工作，可以运行查看结果啦！</p>
-<ol>
-<li><p>启动无人机，会有一个 WiFi 热点叫 <em>Bitcraze AI-deck example</em></p>
-</li>
-<li><p>PC 连接该热点</p>
-</li>
-<li><p>进入<code>AIdeck_examples/NINA/</code></p>
-</li>
-<li><p>执行 <code>python3 viewer.py</code></p>
-</li>
-<li><p>程序启动一个图形界面，成功看到 AI-deck 上的摄像头回传的画面</p>
-</li>
-</ol>
-<img src="result.png" style="zoom:50%;" />
-
-<blockquote>
-<p>成功啦！会有一个黑色框框圈中人脸</p>
-</blockquote>
-<h1 id="有用的链接"><a href="#有用的链接" class="headerlink" title="有用的链接"></a>有用的链接</h1><ol>
-<li><a href="https://github.com/bitcraze/AIdeck_examples">AIdeck_examples - Github</a>：AIdeck 项目的官方仓库，里面有更详细的 doc 来介绍每一个步骤，包括在引入 Docker 之前是如何一步步手动安装软件环境的。我也为这个项目的文档贡献了一些改进内容！嘿嘿~😜</li>
-<li><a href="https://zhuanlan.zhihu.com/p/275774748">Olimex Debugger User’s Manual</a>：我的一个学习笔记，对 Debugger 官方手册内容的一个中文版的翻译与总结。</li>
-<li><a href="https://store.bitcraze.io/collections/decks/products/ai-deck">AI-deck - Bitcraze Store</a>：官方商城里的 AI-deck 介绍页，更多细节可以在此找到。</li>
-<li><a href="https://www.bitcraze.io/category/ai-deck/">AI-deck - Bitcraze Blog</a>：官方博客有关 AI-deck 的内容，可以了解到 AI-deck 诞生前后的故事。</li>
-<li><a href="https://forum.bitcraze.io/viewforum.php?f=21&sid=0685cced2e47581fceb923f480272380">AI-deck - Bitcraze Forum</a>：官方论坛的 AI-deck 板块，<a href="https://forum.bitcraze.io/memberlist.php?mode=viewprofile&u=4094">我</a>也在这里问过不少问题。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>科研分享</category>
-      </categories>
-      <tags>
-        <tag>Crazyflie</tag>
-        <tag>AI-deck</tag>
-        <tag>边缘计算</tag>
-        <tag>无人机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在无人机自组网中引入计算卸载技术</title>
-    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E5%9C%A8%E6%97%A0%E4%BA%BA%E6%9C%BA%E8%87%AA%E7%BB%84%E7%BD%91%E4%B8%AD%E5%BC%95%E5%85%A5%E8%AE%A1%E7%AE%97%E5%8D%B8%E8%BD%BD%E6%8A%80%E6%9C%AF/</url>
-    <content><![CDATA[<h1 id="边缘计算与计算卸载"><a href="#边缘计算与计算卸载" class="headerlink" title="边缘计算与计算卸载"></a>边缘计算与计算卸载</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>为了应对终端设备处理能力不足、资源有限等问题，业界在移动边缘计算（MEC）中引入了计算卸载概念 。边缘计算卸载即用户终端（UE）将计算任务卸载到MEC网络中，主要解决设备在资源存储、计算性能以及能效等方面的不足。</p>
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>随着科技的快速发展，移动设备流量急剧增长。但是由于自身资源及计算性能有限，智能移动设备在处理计算密集型和时间敏感型应用时可能面临着能力不足的情况。为此，使用网络边缘节点来处理分析数据的边缘计算模式应运而生，并与传统云计算模式形成互补。然而，边缘设备往往具有轻量化的特点，如何合理利用边缘有限的计算资源便成为边缘计算亟需解决的重要问题。</p>
-<p>边缘计算针对传统云计算能力不足，在移动用户附近的无线接入网络边缘提供云计算功能，满足快速交互响应的需求，提供普遍且灵活的计算服务。为使用边缘网络提供的服务，移动设备如何将所承担的任务卸载到边缘服务器，进行高效合理的卸载决策，已经成为目前边缘计算问题的主要研究方向。</p>
-<blockquote>
-<p>类比到无人机集群中，我们会将普通无人机上计算机较大的计算任务卸载到无人机集群网络中具有较强计算能力的计算节点上（搭载了 AI-Deck 的无人机）。</p>
-</blockquote>
-<p>计算卸载是边缘计算的一个关键技术，可以为资源受限设备运行计算密集型应用提供计算资源，加快计算速度，节省能源。更详细的说，边缘计算中的计算卸载是将移动终端的计算任务卸载到边缘云环境中，解决了设备在资源存储、计算性能以及能效等方面存在的不足。</p>
-]]></content>
-      <categories>
-        <category>科研分享</category>
-      </categories>
-      <tags>
-        <tag>边缘计算</tag>
-        <tag>无人机自组网</tag>
-        <tag>计算卸载</tag>
       </tags>
   </entry>
   <entry>
@@ -2396,63 +1835,6 @@
       </tags>
   </entry>
   <entry>
-    <title>数据结构与算法分析学习笔记</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>迎来了本学期的重头专业课——数据结构与算法分析。<br>这次我们的老师是来自英国威尔士亚伯大学（Aberystwyth University）的<a href="http://users.aber.ac.uk/fwl/">Fred Long</a>教授！！！老师曾以访问学者的身份来到CMU！！！！！！有<a href="https://www.amazon.com/Fred-Long/e/B005IYW98Y">六本著作</a>！！</p>
-<span id="more"></span>
-
-<h2 id="知识点随笔"><a href="#知识点随笔" class="headerlink" title="知识点随笔"></a>知识点随笔</h2><ul>
-<li><p>【新思想】<br><br>java中操作的都是引用！！！<br><br>即便是实例化，其实也是新建了一个引用！<br><br>操作引用很方便，很少直接操作本体！<br></p>
-</li>
-<li><p>【LinkedList的AddToFront方法传递的变量】<br><br>应该是传递对象，而不是节点。传对象好一些。<br></p>
-</li>
-<li><p>【上下层之间没有大小关系】<br></p>
-</li>
-<li><p>【AVL是实现平衡树的一种原则，另外还有红黑树等等】<br></p>
-</li>
-<li><p>【平衡树的目的：避免因为不规则的插入，没有及时调整，导致二叉树的时间复杂度急剧上升】<br></p>
-</li>
-<li><p>【AVL的目的：原本的绝对平衡二叉树过于严格，应用价值不大，AVL树允许左右深度相差1】<br></p>
-</li>
-<li><p>【平衡因素的改变仅限于新节点到根节点的路径上】<br></p>
-</li>
-<li><p>【泛型】可能就是增强代码的重用性<br></p>
-</li>
-<li><p>【在格式基础上可以实现固定任意的T类】<br></p>
-</li>
-<li><p>【如何理解泛型的作用】<br></p>
-<ol>
-<li>多用于集合，便于控制集合内的元素类型固定唯一</li>
-<li>另，可以当做参数来理解，即一套体系可以让不同的类适用</li>
-</ol>
-</li>
-<li><p>【B树】<br><br>牢记各个树的性质！<br><br>·对于任给的一串数字，有可能有多种B树<br></p>
-</li>
-<li><p>【对java泛型的补充理解】<br><br>泛型的操作对象是集合！Collection<br><br>为什么不规定泛型时输出需要强制转化~<br><br>因为不规定泛型时，编译器默认泛型是Object<br></p>
-<ol>
-<li>泛型的类型参数只能是类类型（包括自定义类），不能是简单类型。</li>
-<li>同一种泛型可以对应多个版本（因为参数类型是不确定的），不同版本的泛型类实例是不兼容的。</li>
-<li>泛型的类型参数可以有多个。</li>
-<li>泛型的参数类型可以使用extends语句，例如<T extends superclass>。习惯上成为“有界类型”。</li>
-<li>泛型的参数类型还可以是通配符类型。例如Class&lt;?&gt; classType = Class.forName(Java.lang.String);</li>
-</ol>
-</li>
-</ul>
-<h2 id="基础数据结构实现"><a href="#基础数据结构实现" class="headerlink" title="基础数据结构实现"></a>基础数据结构实现</h2><h3 id="1-栈stack"><a href="#1-栈stack" class="headerlink" title="1.栈stack"></a>1.栈stack</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">public class BoundedStack &#123;</span><br><span class="line">	private Person[] list;</span><br><span class="line">	private int firstFree = 0;</span><br><span class="line">	private static final int DEFAULT_MAXIMUM = 10;</span><br><span class="line"></span><br><span class="line">	// 2 Constructors</span><br><span class="line">	public BoundedStack() &#123;</span><br><span class="line">		list = new Person[DEFAULT_MAXIMUM];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public BoundedStack(int size) &#123;</span><br><span class="line">		list = new Person[size];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// push method, which can add a new element at the end</span><br><span class="line">	public void push(Person element) &#123;</span><br><span class="line"></span><br><span class="line">		if (firstFree == list.length) &#123;</span><br><span class="line">			throw new StackOverflowError();</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		list[firstFree] = element;</span><br><span class="line">		firstFree++;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// pop method to peek and delete the top item</span><br><span class="line">	public Person pop() &#123;</span><br><span class="line">		Person temp;</span><br><span class="line">		temp = peek();</span><br><span class="line"></span><br><span class="line">		this.list[firstFree - 1] = null;</span><br><span class="line">		this.firstFree--;</span><br><span class="line"></span><br><span class="line">		return temp;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// isEmpty method to determine whether the stack is empty</span><br><span class="line">	public boolean isEmpty() &#123;</span><br><span class="line">		return firstFree == 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// peek method to return the top item</span><br><span class="line">	public Person peek() &#123;</span><br><span class="line">		return this.list[firstFree - 1];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// depth method to get the number of the items in the stack</span><br><span class="line">	public int depth() &#123;</span><br><span class="line">		return this.firstFree;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// overwrite toString</span><br><span class="line">	public String toString(Person[] list) &#123;</span><br><span class="line">		String tempString = &quot;&quot;;</span><br><span class="line">		for (int i = 0; i &lt; this.firstFree; i++)</span><br><span class="line">			tempString += (&quot;Name: &quot; + list[i].getName() + &quot; Number: &quot; + list[i].getNum());</span><br><span class="line">		return tempString;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// compare two stacks</span><br><span class="line">	public boolean equals(BoundedStack comparedStack) &#123;</span><br><span class="line">		if (this.firstFree != comparedStack.firstFree)</span><br><span class="line">			return false;</span><br><span class="line">		else &#123;</span><br><span class="line">			for (int i = 0; i &lt; this.firstFree; i++) &#123;</span><br><span class="line">				if (this.list[i] != comparedStack.list[i])</span><br><span class="line">					return false;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		return true;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// main method to test BoundedStack class</span><br><span class="line">	public static void main(String args[]) &#123;</span><br><span class="line">		Person raven = new Person(&quot;Raven&quot;, 1);//Problem: using the same constructor</span><br><span class="line">		Person messi = new Person(&quot;Messi&quot;, 2);</span><br><span class="line">		Person neymar = new Person(&quot;Neymar&quot;, 3);</span><br><span class="line">		Person mars = new Person(&quot;Mars&quot;, 4);</span><br><span class="line"></span><br><span class="line">		BoundedStack myStack = new BoundedStack();</span><br><span class="line">		myStack.push(raven);</span><br><span class="line">		myStack.push(messi);</span><br><span class="line">		myStack.push(neymar);</span><br><span class="line">		myStack.push(mars);</span><br><span class="line"></span><br><span class="line">		System.out.println(myStack.toString(myStack.list));</span><br><span class="line">		System.out.println(&quot;The depth is: &quot; + myStack.depth());</span><br><span class="line">		System.out.println(&quot;The top element is: &quot; + myStack.peek().getName());</span><br><span class="line">		myStack.pop();</span><br><span class="line"></span><br><span class="line">		System.out.println(myStack.toString(myStack.list));</span><br><span class="line">		System.out.println(&quot;Now, the depth is: &quot; + myStack.depth());</span><br><span class="line">		System.out.println(&quot;Now, The top element is: &quot; + myStack.peek().getName());</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;Equal Test&quot;);</span><br><span class="line">		BoundedStack testStack=new BoundedStack();</span><br><span class="line">		System.out.println(myStack.equals(testStack));</span><br><span class="line">		testStack=myStack;</span><br><span class="line">		System.out.println(myStack.equals(testStack));</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;Over&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// Other classes</span><br><span class="line">/*class Person &#123;</span><br><span class="line">	private String name;</span><br><span class="line">	private int num;</span><br><span class="line"></span><br><span class="line">	public Person(String name, int num) &#123;</span><br><span class="line">		this.name = name;</span><br><span class="line">		this.num = num;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public String getName() &#123;</span><br><span class="line">		return this.name;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public int getNum() &#123;</span><br><span class="line">		return this.num;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
-<h3 id="2-队列"><a href="#2-队列" class="headerlink" title="2.队列"></a>2.队列</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">@SuppressWarnings(&quot;hiding&quot;)</span><br><span class="line">public class BoundedQueue&lt;Person&gt; &#123;</span><br><span class="line">	private Person[] list;</span><br><span class="line">	private static final int DEFAULT_MAXIMUM = 10;</span><br><span class="line">	private int front = 0;</span><br><span class="line">	private int back = -1;</span><br><span class="line">	private int length = 0;</span><br><span class="line"></span><br><span class="line">	public BoundedQueue() &#123;</span><br><span class="line">		this(DEFAULT_MAXIMUM);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	@SuppressWarnings(&quot;unchecked&quot;)</span><br><span class="line">	public BoundedQueue(int size) &#123;</span><br><span class="line">		list = (Person[]) new Object[size];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void insert(Person tempPerson) throws Exception &#123;</span><br><span class="line">		if (this.length &gt; list.length)</span><br><span class="line">			throw new Exception(&quot;Queue is full!&quot;);</span><br><span class="line">		if (back == list.length - 1)</span><br><span class="line">			back = -1;</span><br><span class="line">		list[++back] = tempPerson;</span><br><span class="line">		length++;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public Person remove() throws Exception &#123;</span><br><span class="line">		if (this.length == 0)</span><br><span class="line">			throw new Exception(&quot;Queue is empty!&quot;);</span><br><span class="line">		Person tmp = list[front++];</span><br><span class="line">		if (front == list.length)</span><br><span class="line">			front = 0;</span><br><span class="line">		length--;</span><br><span class="line">		return tmp;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public Person getFront() throws Exception &#123;</span><br><span class="line">		if (this.length == 0)</span><br><span class="line">			throw new Exception(&quot;Queue is empty!&quot;);</span><br><span class="line">		return list[front];</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	/*public boolean equals() &#123;</span><br><span class="line">		</span><br><span class="line">	&#125;*/</span><br><span class="line"></span><br><span class="line">	public int length() &#123;</span><br><span class="line">		return this.length;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public boolean isEmpty() &#123;</span><br><span class="line">		return (length == 0);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public boolean isFull() &#123;</span><br><span class="line">		return (length == list.length);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="3-单向链表"><a href="#3-单向链表" class="headerlink" title="3.单向链表"></a>3.单向链表</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @author Raven Xu</span><br><span class="line"> *</span><br><span class="line"> */</span><br><span class="line">public class MyLinkedList&lt;E&gt; &#123;</span><br><span class="line">	private Node&lt;E&gt; first = new Node&lt;E&gt;();</span><br><span class="line">	//private int length;</span><br><span class="line"></span><br><span class="line">	public boolean isEmpty() &#123;</span><br><span class="line">		return first.getNext() == null;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void addToFront(E temp) &#123;</span><br><span class="line">		Node&lt;E&gt; addedNode = new Node&lt;E&gt;();</span><br><span class="line">		addedNode.setData(temp);</span><br><span class="line">		addedNode.setNext(first.getNext());</span><br><span class="line">		first.setNext(addedNode);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void removeFromFront() &#123;</span><br><span class="line">		try &#123;</span><br><span class="line">			first.setNext(first.getNext().getNext());</span><br><span class="line">		&#125; catch (NullPointerException e) &#123;</span><br><span class="line">			throw e;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public String toString() &#123;</span><br><span class="line">		StringBuilder tempString = new StringBuilder();</span><br><span class="line">		for (Node&lt;E&gt; current = first.getNext(); current != null; current = current.getNext()) &#123;</span><br><span class="line">			tempString.append(current.getData() + &quot;\n&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">		return tempString.toString();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public int length() &#123;</span><br><span class="line">		int tempLength = 0;</span><br><span class="line">		for (Node&lt;E&gt; current = first.getNext(); current != null; current = current.getNext()) &#123;</span><br><span class="line">			tempLength++;</span><br><span class="line">		&#125;</span><br><span class="line">		return tempLength;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void addToBack(E temp) &#123;</span><br><span class="line">		Node&lt;E&gt; addedNode = new Node&lt;E&gt;(temp);</span><br><span class="line">		Node&lt;E&gt; tempNode = new Node&lt;E&gt;();</span><br><span class="line">		tempNode.setNext(first.getNext());</span><br><span class="line">		while (tempNode.getNext() != null)</span><br><span class="line">			tempNode=tempNode.getNext();</span><br><span class="line">		tempNode.setNext(addedNode);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void removeFromBack() &#123;</span><br><span class="line">		Node&lt;E&gt; tempNode = new Node&lt;E&gt;();</span><br><span class="line">		tempNode.setNext(first.getNext());</span><br><span class="line">		while (tempNode.getNext().getNext() != null)</span><br><span class="line">			tempNode=tempNode.getNext();</span><br><span class="line">		tempNode.setNext(null);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public Node&lt;E&gt; find(E element) &#123;</span><br><span class="line">		Node&lt;E&gt; current = first.getNext();</span><br><span class="line">		while ((current != null) &amp;&amp; !current.getData().equals(element)) &#123;</span><br><span class="line">			current = current.getNext();</span><br><span class="line">		&#125;</span><br><span class="line">		return current;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public boolean equals(Object obj) &#123;</span><br><span class="line">		// Deal with the &quot;obvious&quot; cases</span><br><span class="line">		if (obj == null)</span><br><span class="line">			return false;</span><br><span class="line">		if (obj == this)</span><br><span class="line">			return true;</span><br><span class="line">		if (!(obj instanceof MyLinkedList))</span><br><span class="line">			return false;</span><br><span class="line">		@SuppressWarnings(&quot;unchecked&quot;)</span><br><span class="line">		MyLinkedList&lt;E&gt; otherList = (MyLinkedList&lt;E&gt;) obj;</span><br><span class="line">		if (this.length() != otherList.length())</span><br><span class="line">			return false;</span><br><span class="line">		Node&lt;E&gt; current1 = this.getFront(); // the front node of this list</span><br><span class="line">		Node&lt;E&gt; current2 = otherList.getFront();</span><br><span class="line">		while (current1 != null) &#123;</span><br><span class="line">			if (!(current1.getData().equals(current2.getData()))) // assume equals</span><br><span class="line">				return false; // is defined</span><br><span class="line">			current1 = current1.getNext(); // method in Node class</span><br><span class="line">			current2 = current2.getNext(); // method in Node class</span><br><span class="line">		&#125;</span><br><span class="line">		return true;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public Node&lt;E&gt; getFront() &#123;</span><br><span class="line">		return first.getNext();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public Node&lt;E&gt; getBack() &#123;</span><br><span class="line">		Node&lt;E&gt; tempNode = new Node&lt;E&gt;();</span><br><span class="line">		tempNode.setNext(first.getNext());</span><br><span class="line">		while (tempNode.getNext() != null)</span><br><span class="line">			tempNode=tempNode.getNext();</span><br><span class="line">		return tempNode;</span><br><span class="line">	&#125;</span><br><span class="line">	@SuppressWarnings(&quot;hiding&quot;)</span><br><span class="line">	private class Node&lt;E&gt; &#123;</span><br><span class="line">		private E data;</span><br><span class="line">		private Node&lt;E&gt; next;</span><br><span class="line"></span><br><span class="line">		public Node() &#123;</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		public Node(E theData) &#123;</span><br><span class="line">			data=theData;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		// @return the data</span><br><span class="line">		public E getData() &#123;</span><br><span class="line">			return data;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		// @param data the data to set</span><br><span class="line">		public void setData(E data) &#123;</span><br><span class="line">			this.data = data;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		// @return the next</span><br><span class="line">		public Node&lt;E&gt; getNext() &#123;</span><br><span class="line">			return next;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		// @param next the next to set</span><br><span class="line">		public void setNext(Node&lt;E&gt; next) &#123;</span><br><span class="line">			this.next = next;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		public String toString() &#123;</span><br><span class="line">			return data.toString();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	//Test my LinkedList</span><br><span class="line">	public static void main(String args[]) &#123;</span><br><span class="line">		MyLinkedList&lt;Person&gt; personList = new MyLinkedList&lt;Person&gt;();</span><br><span class="line">		Person raven = new Person(&quot;Raven&quot;, 1);</span><br><span class="line">		Person messi = new Person(&quot;Messi&quot;, 2);</span><br><span class="line">		Person neymar = new Person(&quot;Neymar&quot;, 3);</span><br><span class="line">		Person mars = new Person(&quot;Mars&quot;, 4);</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;*****addtoFront Test*****&quot;);</span><br><span class="line">		personList.addToFront(raven);</span><br><span class="line">		personList.addToFront(messi);</span><br><span class="line">		System.out.println(personList);</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;*****addtoBack Test*****&quot;);</span><br><span class="line">		personList.addToBack(neymar);</span><br><span class="line">		personList.addToBack(mars);</span><br><span class="line">		System.out.println(personList);</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;*****getFront and getBack Test*****&quot;);</span><br><span class="line">		System.out.println(&quot;Front: &quot;+personList.getFront().toString()+&quot;\n&quot;+&quot;Back: &quot;+personList.getBack().toString());</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;*****equals Test*****&quot;);</span><br><span class="line">		MyLinkedList&lt;Person&gt; list = personList;</span><br><span class="line">		System.out.println(list.equals(personList));</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;*****length Test*****&quot;);</span><br><span class="line">		System.out.println(&quot;List length: &quot;+personList.length());</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;*****find Test*****&quot;);</span><br><span class="line">		System.out.println(personList.find(raven));</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;*****removeFromFront and removeFromBack Test*****&quot;);</span><br><span class="line">		personList.removeFromFront();</span><br><span class="line">		personList.removeFromBack();</span><br><span class="line">		System.out.println(personList);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">/*class LinkedListItr&lt;E&gt; implements java.util.Iterator&lt;E&gt; &#123;</span><br><span class="line">	private Node&lt;E&gt; currentPosition;</span><br><span class="line"></span><br><span class="line">	public LinkedListItr(Node&lt;E&gt; firstNode) &#123;</span><br><span class="line">		currentPosition = firstNode.getNext();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public boolean hasNext() &#123;</span><br><span class="line">		return currentPosition != null;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	public E next() &#123;</span><br><span class="line">		E returnedObject = currentPosition.getData();</span><br><span class="line">		currentPosition = currentPosition.getNext();</span><br><span class="line">		return returnedObject;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void remove() &#123;</span><br><span class="line">		throw new UnsupportedOperationException(&quot;The linked list has no remove method.&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
-<h3 id="4-双向链表"><a href="#4-双向链表" class="headerlink" title="4.双向链表"></a>4.双向链表</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">/*</span><br><span class="line"> * @author Raven</span><br><span class="line"> *</span><br><span class="line"> */</span><br><span class="line">public class DoubleLinkedList&lt;E&gt; &#123;</span><br><span class="line">	private Node&lt;E&gt; first = new Node&lt;E&gt;();</span><br><span class="line">	private Node&lt;E&gt; end = new Node&lt;E&gt;();</span><br><span class="line">	private int theSize;</span><br><span class="line">	private int modCount = 0;</span><br><span class="line"></span><br><span class="line">	public DoubleLinkedList() &#123;</span><br><span class="line">		doClear();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void Clear() &#123;</span><br><span class="line">		doClear();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	private void doClear() &#123;</span><br><span class="line">		first = new Node&lt;E&gt;(null, null, null);</span><br><span class="line">		end = new Node&lt;E&gt;(null, first, null);</span><br><span class="line">		first.next = end;</span><br><span class="line"></span><br><span class="line">		theSize = 0;</span><br><span class="line">		modCount++;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public int size() &#123;</span><br><span class="line">		return theSize;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public boolean isEmpty() &#123;</span><br><span class="line">		return size()==0;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public boolean add(E x) &#123;</span><br><span class="line">		add(size(), x);</span><br><span class="line">		return true;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public void add(int idx, E x) &#123;</span><br><span class="line">		addBefore(getNode(idx, 0, size()),x);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public E get(int idx) &#123;</span><br><span class="line">		return getNode(idx).data;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public E set(int idx, E newVal) &#123;</span><br><span class="line">		Node&lt;E&gt; p = getNode(idx);</span><br><span class="line">		E oldVal= p.data;</span><br><span class="line">		p.data=newVal;</span><br><span class="line">		return oldVal;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public E remove(int idx) &#123;</span><br><span class="line">		return remove(getNode(idx));</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	private void addBefore(Node&lt;E&gt; p, E x) &#123;</span><br><span class="line">		Node&lt;E&gt; newNode = new Node&lt;&gt;(x, p.prev, p);</span><br><span class="line">		newNode.prev.next = newNode;</span><br><span class="line">		p.prev=newNode;</span><br><span class="line">		theSize++;</span><br><span class="line">		modCount++;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	private E remove(Node&lt;E&gt; p) &#123;</span><br><span class="line">		p.next.prev=p.prev;</span><br><span class="line">		p.prev.next=p.next;</span><br><span class="line">		theSize--;</span><br><span class="line">		modCount++;</span><br><span class="line">		</span><br><span class="line">		return p.data;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	private Node&lt;E&gt; getNode(int idx)&#123;</span><br><span class="line">		return getNode(idx, 0 ,size()-1);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	private Node&lt;E&gt; getNode(int idx, int lower, int upper)&#123;</span><br><span class="line">		Node&lt;E&gt; p;</span><br><span class="line">		</span><br><span class="line">		if(idx&lt;lower||idx&gt;upper)</span><br><span class="line">			throw new IndexOutOfBoundsException();</span><br><span class="line">		</span><br><span class="line">		if(idx&lt;size()/2) &#123;</span><br><span class="line">			p=first.next;</span><br><span class="line">			for(int i=0;i&lt;idx;i++)</span><br><span class="line">				p=p.next;</span><br><span class="line">		&#125;</span><br><span class="line">		else &#123;</span><br><span class="line">			p=end;</span><br><span class="line">			for(int i=size();i&gt;idx;i--)</span><br><span class="line">				p=p.prev;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		return p;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public String toString() &#123;</span><br><span class="line">		StringBuilder tempString = new StringBuilder();</span><br><span class="line">		for (Node&lt;E&gt; current = first.getNext(); current != null; current = current.getNext()) &#123;</span><br><span class="line">			tempString.append(current.getData() + &quot;\n&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">		return tempString.toString();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	private static class Node&lt;E&gt; &#123;</span><br><span class="line">		private E data;</span><br><span class="line">		private Node&lt;E&gt; prev;</span><br><span class="line">		private Node&lt;E&gt; next;</span><br><span class="line"></span><br><span class="line">		public Node() &#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		@SuppressWarnings(&quot;unused&quot;)</span><br><span class="line">		public Node(E theData) &#123;</span><br><span class="line">			data = theData;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		public Node(E theData, Node&lt;E&gt; thePrev, Node&lt;E&gt; theNext) &#123;</span><br><span class="line">			data = theData;</span><br><span class="line">			prev = thePrev;</span><br><span class="line">			next = theNext;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		// @return the data</span><br><span class="line">		public E getData() &#123;</span><br><span class="line">			return data;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		// @param data the data to set</span><br><span class="line">		@SuppressWarnings(&quot;unused&quot;)</span><br><span class="line">		public void setData(E data) &#123;</span><br><span class="line">			this.data = data;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		// @return the next</span><br><span class="line">		public Node&lt;E&gt; getNext() &#123;</span><br><span class="line">			return next;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		// @param next the next to set</span><br><span class="line">		@SuppressWarnings(&quot;unused&quot;)</span><br><span class="line">		public void setNext(Node&lt;E&gt; next) &#123;</span><br><span class="line">			this.next = next;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		// @return the previous node</span><br><span class="line">		@SuppressWarnings(&quot;unused&quot;)</span><br><span class="line">		public Node&lt;E&gt; getPrev() &#123;</span><br><span class="line">			return prev;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		// @param next the next to set</span><br><span class="line">		@SuppressWarnings(&quot;unused&quot;)</span><br><span class="line">		public void setPrev(Node&lt;E&gt; prev) &#123;</span><br><span class="line">			this.prev = prev;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		public String toString() &#123;</span><br><span class="line">			return data.toString();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public static void main(String args[]) &#123;</span><br><span class="line">		DoubleLinkedList&lt;Person&gt; personList2 = new DoubleLinkedList&lt;Person&gt;();</span><br><span class="line">		Person raven = new Person(&quot;Raven&quot;, 1);</span><br><span class="line">		Person messi = new Person(&quot;Messi&quot;, 2);</span><br><span class="line">		Person neymar = new Person(&quot;Neymar&quot;, 3);</span><br><span class="line">		Person mars = new Person(&quot;Mars&quot;, 4);</span><br><span class="line">		</span><br><span class="line">		personList2.add(raven);</span><br><span class="line">		personList2.add(messi);</span><br><span class="line">		personList2.add(neymar);</span><br><span class="line">		personList2.add(mars);</span><br><span class="line">		System.out.println(&quot;Add Test&quot;);</span><br><span class="line">		System.out.println(personList2.toString());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="5-二叉搜索树"><a href="#5-二叉搜索树" class="headerlink" title="5.二叉搜索树"></a>5.二叉搜索树</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @author Raven</span><br><span class="line"> *</span><br><span class="line"> */</span><br><span class="line">public class BinarySearchTree&lt;E extends Comparable&lt;E&gt;&gt; &#123;</span><br><span class="line">	/** The Binary root */</span><br><span class="line">	private BinaryNode&lt;E&gt; root = null;</span><br><span class="line"></span><br><span class="line">	// interfaces</span><br><span class="line">	public BinarySearchTree() &#123;</span><br><span class="line">		root = null;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void makeEmpty() &#123;</span><br><span class="line">		root = null;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public boolean isEmpty() &#123;</span><br><span class="line">		return root == null;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public boolean contains(E x) &#123;</span><br><span class="line">		return contains(x, root);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/*public E findMin() &#123;</span><br><span class="line">		if (isEmpty())</span><br><span class="line">			throw new UnderflowException();</span><br><span class="line">		return findMin(root).element;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public E findMax() &#123;</span><br><span class="line">		if (isEmpty())</span><br><span class="line">			throw new UnderflowException();</span><br><span class="line">		return findMax(root).element;</span><br><span class="line">	&#125;*/</span><br><span class="line"></span><br><span class="line">	public void insert(E x) &#123;</span><br><span class="line">		root = insert(x, root);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void remove(E x) &#123;</span><br><span class="line">		root = remove(x, root);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// real methods</span><br><span class="line">	public void printTree() &#123;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	private boolean contains(E x, BinaryNode&lt;E&gt; t) &#123;</span><br><span class="line">		if (t == null)</span><br><span class="line">			return false;</span><br><span class="line">		int compareResult = x.compareTo(t.element);</span><br><span class="line"></span><br><span class="line">		if (compareResult &lt; 0)</span><br><span class="line">			return contains(x, t.left);</span><br><span class="line">		else if (compareResult &gt; 0)</span><br><span class="line">			return contains(x, t.right);</span><br><span class="line">		else</span><br><span class="line">			return true; // Match</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 * Internal method to find the smallest item in a subtree.(We use two methods to implement findMin and findMax)</span><br><span class="line">	 * @param t the node that roots the subtree.</span><br><span class="line">	 * @return node containing the smallest item.</span><br><span class="line">	 */</span><br><span class="line">	public BinaryNode&lt;E&gt; findMin(BinaryNode&lt;E&gt; t) &#123;</span><br><span class="line">		if (t == null)</span><br><span class="line">			return null;</span><br><span class="line">		else if (t.left==null) //it means that t has a left subtree, and there are some nodes are smaller than it.</span><br><span class="line">			return t;</span><br><span class="line">		return findMin(t.left);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	/**</span><br><span class="line">	 * Internal method to find the largest item in a subtree.(We use two methods to implement findMin and findMax)</span><br><span class="line">	 * @param t the node that roots the subtree.</span><br><span class="line">	 * @return node containing the largest item.</span><br><span class="line">	 */</span><br><span class="line">	public BinaryNode&lt;E&gt; findMax(BinaryNode&lt;E&gt; t) &#123;</span><br><span class="line">		if (t != null)</span><br><span class="line">			while (t.getRight() != null)</span><br><span class="line">				t = t.getRight();</span><br><span class="line">		return t;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 * Internal method to insert a subtree.</span><br><span class="line">	 * @param x the item to insert.</span><br><span class="line">	 * @param t the node that roots the subtree.</span><br><span class="line">	 * @return the new root of the subtree.</span><br><span class="line">	 */</span><br><span class="line">	private BinaryNode&lt;E&gt; insert(E x, BinaryNode&lt;E&gt; t) &#123;</span><br><span class="line">		if (t == null)</span><br><span class="line">			return new BinaryNode&lt;&gt;(x, null, null);</span><br><span class="line"></span><br><span class="line">		int compareResult = x.compareTo(t.getElement());</span><br><span class="line"></span><br><span class="line">		if (compareResult &lt; 0)</span><br><span class="line">			t.left = insert(x, t.left);</span><br><span class="line">		else if (compareResult &gt; 0)</span><br><span class="line">			t.right = insert(x, t.right);</span><br><span class="line">		else</span><br><span class="line">			;</span><br><span class="line">		return t;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 * Internal method to remove from a subtree.</span><br><span class="line">	 * @param x the item to remove.</span><br><span class="line">	 * @param t the node that roots the subtree.</span><br><span class="line">	 * @return the new root of the subtree.</span><br><span class="line">	 */</span><br><span class="line">	private BinaryNode&lt;E&gt; remove(E x, BinaryNode&lt;E&gt; t) &#123;</span><br><span class="line">		if (t == null)</span><br><span class="line">			return t; // Item not found; do nothing</span><br><span class="line"></span><br><span class="line">		int compareResult = x.compareTo(t.getElement());</span><br><span class="line"></span><br><span class="line">		if (compareResult &lt; 0)</span><br><span class="line">			t.left = remove(x, t.left);</span><br><span class="line">		else if (compareResult &gt; 0)</span><br><span class="line">			t.right = remove(x, t.right);</span><br><span class="line">		else if (t.left != null &amp;&amp; t.right != null) &#123;</span><br><span class="line">			t.element = findMin(t.right).element;</span><br><span class="line">			t.right = remove(t.element, t.right);</span><br><span class="line">		&#125; else</span><br><span class="line">			t = (t.left != null) ? t.left : t.right;</span><br><span class="line">		return t;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	private static class BinaryNode&lt;E&gt; &#123;</span><br><span class="line">		private E element;</span><br><span class="line">		private BinaryNode&lt;E&gt; left;</span><br><span class="line">		private BinaryNode&lt;E&gt; right;</span><br><span class="line"></span><br><span class="line">		// Constructors</span><br><span class="line">		@SuppressWarnings(&quot;unused&quot;)</span><br><span class="line">		public BinaryNode(E theElement) &#123;</span><br><span class="line">			this(theElement, null, null);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		public BinaryNode(E theElement, BinaryNode&lt;E&gt; lt, BinaryNode&lt;E&gt; rt) &#123;</span><br><span class="line">			element = theElement;</span><br><span class="line">			left = lt;</span><br><span class="line">			right = rt;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		public E getElement() &#123;</span><br><span class="line">			return element;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		@SuppressWarnings(&quot;unused&quot;)</span><br><span class="line">		public BinaryNode&lt;E&gt; getLeft() &#123;</span><br><span class="line">			return left;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		public BinaryNode&lt;E&gt; getRight() &#123;</span><br><span class="line">			return right;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public static void main(String args[]) &#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>NEU</tag>
-        <tag>算法</tag>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>云服务器入门</title>
     <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%85%A5%E9%97%A8/</url>
     <content><![CDATA[<h1 id="（一）我的第一台服务器"><a href="#（一）我的第一台服务器" class="headerlink" title="（一）我的第一台服务器"></a>（一）我的第一台服务器</h1><h2 id="1-背景"><a href="#1-背景" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>本学期选修了“Linux操作系统”课程。课上老师教大家利用传统的VMware + OS镜像方式在本机上体验Linux系统，但为了获得更优体验我选用了云服务器来学习Linux。</p>
@@ -3287,31 +2669,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CrazyFlie 基础调研与学习</title>
-    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/CrazyFlie-%E5%9F%BA%E7%A1%80%E8%B0%83%E7%A0%94%E4%B8%8E%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>Crazyflie 微型四轴飞行器的硬件设计得非常优秀，不管是 PCB 机械层的轮廓设计、信号层上元器件的布局还是整个电路板的走线都非常合理，而且最重要的是 Bitcraze 团队将模块化的理念带入到 Crazyflie产品的设计之中，这使得 Crazyflie 微型四轴除了基本的飞行功能之外，还可以通过堆叠不同扩展坞的方式来实现不同功能的扩展。</p>
-]]></content>
-      <categories>
-        <category>科研分享</category>
-      </categories>
-      <tags>
-        <tag>Crazyflie</tag>
-        <tag>无人机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于软件定义网络的智能无人机集群系统的设计与实现</title>
-    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E5%9F%BA%E4%BA%8E%E8%BD%AF%E4%BB%B6%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9C%E7%9A%84%E6%99%BA%E8%83%BD%E6%97%A0%E4%BA%BA%E6%9C%BA%E9%9B%86%E7%BE%A4%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>科研分享</category>
-      </categories>
-      <tags>
-        <tag>无人机</tag>
-        <tag>SDN</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数据结构与算法之美 - 王争 - 极客时间</title>
     <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E-%E7%8E%8B%E4%BA%89-%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4/</url>
     <content><![CDATA[]]></content>
@@ -3323,19 +2680,6 @@
         <tag>数据结构</tag>
         <tag>极客时间</tag>
         <tag>王争</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Multi-Robot Active Sensing and Environmental Model Learning With Distributed Gaussian Process</title>
-    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/Multi-Robot-Active-Sensing-and-Environmental-Model-Learning-With-Distributed-Gaussian-Process/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>科研分享</category>
-      </categories>
-      <tags>
-        <tag>集群协作</tag>
-        <tag>机器人</tag>
-        <tag>高斯过程</tag>
       </tags>
   </entry>
   <entry>
@@ -3366,34 +2710,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Google Network</title>
-    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/Google-Network/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>科研分享</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
-        <tag>数据中心网络</tag>
-        <tag>Google</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>How to read a paper?</title>
-    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/How-to-read-a-paper/</url>
-    <content><![CDATA[<p>Researchers spend a great deal of time reading research papers. However, this skill is rarely taught, leading to much wasted effort. This article outlines a practical and efficient three-pass method for reading research papers. I also describe how to use this method to do a literature survey.</p>
-]]></content>
-      <categories>
-        <category>科研分享</category>
-      </categories>
-      <tags>
-        <tag>转载</tag>
-        <tag>方法论</tag>
-        <tag>论文</tag>
-        <tag>阅读</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>飞书在高校先进科研协作中的实践</title>
     <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E9%A3%9E%E4%B9%A6%E5%9C%A8%E9%AB%98%E6%A0%A1%E5%85%88%E8%BF%9B%E7%A7%91%E7%A0%94%E5%8D%8F%E4%BD%9C%E4%B8%AD%E7%9A%84%E5%AE%9E%E8%B7%B5/</url>
     <content><![CDATA[<p>高校之中尤其是计算机学科相关的科研团队其实与互联网公司在工作内容、工作方式、组织结构上有着高度的相似性，但一个科研团队之中几乎人人都是“研发人员”，缺少了“行政、产品、运营、效率、HRBP”等各职能同学的支持。<br>但还好，我们有飞书。<br>飞书是一款理念先进、贴合用户需求的 all in one 办公套件，这些特点帮助我们在飞书上高效开展科研项目协作。</p>
@@ -3406,75 +2722,6 @@
         <tag>效率</tag>
         <tag>协作</tag>
         <tag>科研</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Dubbo 3 知识结构梳理</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Dubbo-3-%E7%9F%A5%E8%AF%86%E7%BB%93%E6%9E%84%E6%A2%B3%E7%90%86/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Dubbo</tag>
-        <tag>服务发现</tag>
-        <tag>RPC</tag>
-        <tag>云原生</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>云计算常见软件概念梳理</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E4%BA%91%E8%AE%A1%E7%AE%97%E5%B8%B8%E8%A7%81%E8%BD%AF%E4%BB%B6%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<p>IT软件技术架构进入云化时代后，新概念、新技术大量涌现。从几年前热火的Openstack、计算存储网络三大虚拟化技术、Iaas平台，到近几年更火热的容器和云原生的相关技术，在云计算这一领域新技术可谓是层出不穷。<br>我们经常会听到的这些概念，比如容器、docker、kubernetes、微服务架构、PaaS平台、服务中台、Devops、云原生等等。这些技术和概念彼此之间感觉是独立的，我们很容易从其中某一个角度学习入手并应用；但是，很多时候，我们会发现这些技术彼此之间又有密切的关联，从文章也好、技术落地应用的场景也好，它们往往又出现在同一个地方。它们之间究竟有什么联系，彼此之间有什么依赖，让人十分的困惑。<br>在本文中，从这些技术彼此之间的依赖和关系入手，讲述它们在当今软件云化和微服务化时代中的作用，希望读者从这些总结对比入手，对微服务相关的技术体系建立全局性的视野和理解。  </p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>云原生</tag>
-        <tag>云计算</tag>
-        <tag>微服务</tag>
-        <tag>Docker</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>东南大学止于至善学术风 PPT 模板（英文）</title>
-    <url>/f.%E6%94%B6%E8%97%8F%E6%95%B4%E7%90%86/%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%AD%A2%E4%BA%8E%E8%87%B3%E5%96%84%E5%AD%A6%E6%9C%AF%E9%A3%8E-PPT-%E6%A8%A1%E6%9D%BF%EF%BC%88%E8%8B%B1%E6%96%87%EF%BC%89/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>收藏整理</category>
-      </categories>
-      <tags>
-        <tag>PPT</tag>
-        <tag>东南大学</tag>
-        <tag>模板</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>东南大学止于至善学术风 PPT 模板（中文）</title>
-    <url>/f.%E6%94%B6%E8%97%8F%E6%95%B4%E7%90%86/%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%AD%A2%E4%BA%8E%E8%87%B3%E5%96%84%E5%AD%A6%E6%9C%AF%E9%A3%8E-PPT-%E6%A8%A1%E6%9D%BF%EF%BC%88%E4%B8%AD%E6%96%87%EF%BC%89/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>收藏整理</category>
-      </categories>
-      <tags>
-        <tag>PPT</tag>
-        <tag>东南大学</tag>
-        <tag>模板</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>科学上网原理</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<p>科学上网本质上是对从本机到目的服务器间的网络通信方式进行加密，使流量不能被防火墙检测到，进而绕开访问限制。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>网络</tag>
-        <tag>ssh</tag>
-        <tag>科学上网</tag>
       </tags>
   </entry>
   <entry>
@@ -3516,6 +2763,522 @@
         <tag>运营</tag>
         <tag>产品</tag>
         <tag>管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dubbo 3 知识结构梳理</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/Dubbo-3-%E7%9F%A5%E8%AF%86%E7%BB%93%E6%9E%84%E6%A2%B3%E7%90%86/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Dubbo</tag>
+        <tag>服务发现</tag>
+        <tag>RPC</tag>
+        <tag>云原生</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>云计算常见软件概念梳理</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/%E4%BA%91%E8%AE%A1%E7%AE%97%E5%B8%B8%E8%A7%81%E8%BD%AF%E4%BB%B6%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<p>IT软件技术架构进入云化时代后，新概念、新技术大量涌现。从几年前热火的Openstack、计算存储网络三大虚拟化技术、Iaas平台，到近几年更火热的容器和云原生的相关技术，在云计算这一领域新技术可谓是层出不穷。<br>我们经常会听到的这些概念，比如容器、docker、kubernetes、微服务架构、PaaS平台、服务中台、Devops、云原生等等。这些技术和概念彼此之间感觉是独立的，我们很容易从其中某一个角度学习入手并应用；但是，很多时候，我们会发现这些技术彼此之间又有密切的关联，从文章也好、技术落地应用的场景也好，它们往往又出现在同一个地方。它们之间究竟有什么联系，彼此之间有什么依赖，让人十分的困惑。<br>在本文中，从这些技术彼此之间的依赖和关系入手，讲述它们在当今软件云化和微服务化时代中的作用，希望读者从这些总结对比入手，对微服务相关的技术体系建立全局性的视野和理解。  </p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>云原生</tag>
+        <tag>云计算</tag>
+        <tag>微服务</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用InfluxDB和Telegraf为服务器搭建基础监控</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/%E4%BD%BF%E7%94%A8InfluxDB%E5%92%8CTelegraf%E4%B8%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%9B%91%E6%8E%A7/</url>
+    <content><![CDATA[<p>想要监控服务器性能我们自然需要采集其性能数据并存储，InfluxDB 搭配 Telegraf 是目前最主流的服务器监控方案之一。<br>Telegraf 是一个插件驱动的服务端代理用于采集并发送服务器上软件系统性能 metrics。<br>InfluxDB 是一个知名的时序数据库，它和 Telegraf 都是 InfluxData 公司的产品。</p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>监控</tag>
+        <tag>运维</tag>
+        <tag>服务器</tag>
+        <tag>InfluxDB</tag>
+        <tag>Telegraf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机学科生涯漫谈</title>
+    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E7%A7%91%E7%94%9F%E6%B6%AF%E6%BC%AB%E8%B0%88/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>杂文随笔</category>
+      </categories>
+      <tags>
+        <tag>经验</tag>
+        <tag>计算机</tag>
+        <tag>大学</tag>
+        <tag>保研</tag>
+        <tag>工作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to read a paper?</title>
+    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/How%20to%20read%20a%20paper?/</url>
+    <content><![CDATA[<p>Researchers spend a great deal of time reading research papers. However, this skill is rarely taught, leading to much wasted effort. This article outlines a practical and efficient three-pass method for reading research papers. I also describe how to use this method to do a literature survey.</p>
+]]></content>
+      <categories>
+        <category>科研分享</category>
+      </categories>
+      <tags>
+        <tag>转载</tag>
+        <tag>方法论</tag>
+        <tag>论文</tag>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「Crazyflie开源无人机」AI-deck - 低功耗边缘计算实战</title>
+    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E3%80%8CCrazyflie%E5%BC%80%E6%BA%90%E6%97%A0%E4%BA%BA%E6%9C%BA%E3%80%8DAI-deck%20-%20%E4%BD%8E%E5%8A%9F%E8%80%97%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97%E5%AE%9E%E6%88%98/</url>
+    <content><![CDATA[<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>边缘计算：边缘计算（Edge Computing）指将数据的处理、应用程序的运行甚至一些功能服务的实现，由网络中心下放到网络边缘的节点上。</p>
+<p>我们今天要介绍的是 <strong>低功耗</strong>的边缘计算，这允许我们在更轻量级的物联网设备上完成更复杂的计算任务，实现更灵活的功能。</p>
+<p>我们选择的平台是开源的微型无人机 Crazyflie，基于 Crazyflie 背后团队最新推出的低功耗边缘计算扩展板 AI-deck 来运行我们的边缘计算实例。</p>
+<span id="more"></span>
+
+<h1 id="Crazyflie"><a href="#Crazyflie" class="headerlink" title="Crazyflie"></a>Crazyflie</h1><p>Crazyflie 是来自瑞典的 Bitcraze 公司开发并生产的重量仅有 <strong>30g</strong> 的 <strong>微型无人机</strong>，项目完全开源并且提供软硬件工具给用户来建构其生态。</p>
+<img src="crazyflie_2.1.png" alt="Crazyflie 2.1" style="zoom:50%;" />
+
+<h3 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h3><p>Crazyflie 微型四轴飞行器的硬件设计得非常优秀，不管是 PCB 机械层的轮廓设计、信号层上元器件的布局还是整个电路板的走线都非常合理，而且最重要的是 Bitcraze 团队将模块化的理念带入到 Crazyflie产品的设计之中，这使得 Crazyflie 微型四轴除了基本的飞行功能之外，还可以通过堆叠不同<strong>扩展板</strong>的方式来实现不同功能的扩展。</p>
+<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><p>Crazyflie 微型四轴飞行器的软件开发全部基于 Linux 开发环境，并使用已有开源且强大的软件工具（比如 ARM-GCC，Make、PyQt 等）进行开发。除此之外，Crazyflie 微型四轴飞行器的软件源码还被托管在 GitHub 上，非常方便世界各地的爱好者、研究者对其进行二次开发。</p>
+<h3 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h3><p>除了以上两点有关技术层面的优势，Crazyflie 微型四轴飞行器项目还有一个非常优秀的地方——丰富的文档。作为一家不以盈利为主要目的团队任然可以将自己的开源项目文档写得如此详细，他们这种乐于分享的精神实在是值得我们学习。</p>
+<h1 id="AI-deck"><a href="#AI-deck" class="headerlink" title="AI-deck"></a>AI-deck</h1><h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><ul>
+<li><p>用途：边缘计算</p>
+</li>
+<li><p>重量：只有 30g</p>
+</li>
+<li><p>组成：</p>
+<ul>
+<li>GAP8 Ultra-low power 8+1 core RISC-V IoT Application Processor</li>
+<li>Himax HM01B0 – Ultra low power 320×320 Bayer RGB camera.</li>
+<li>512 Mbit HyperFlash and 64 Mbit HyperRAM</li>
+<li>ESP32 for WiFi and more (NINA-W102)</li>
+<li>2 x Cortex-M 10-pin JTAG for GAP8 and ESP32</li>
+<li>Button connected to ESP32 for UART bootloader or other action</li>
+<li>1 x green LED connected to GAP8 (A2)</li>
+<li>1 x green LED connected to ESP32 (GPIO_24)</li>
+<li>Can work stand alone. Power board on VCOM</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>板子上有GAP8和NINA两块芯片，以及分别的调试接口。<br>GAP8是一款基于RISC-V的物联网处理器芯片，用于完成AI计算任务。<br>NINA是一款以ESP32芯片为核心的WiFi模组，用于完成图像传输。</p>
+</blockquote>
+<ul>
+<li>存在的主要问题：AI-deck尚处早期研发，挑战与机遇并存</li>
+</ul>
+<img src="ai-deck.png" alt="Crazyflie 2.1" style="zoom:80%;" />
+
+<h2 id="PULP-DroNet"><a href="#PULP-DroNet" class="headerlink" title="PULP-DroNet"></a>PULP-DroNet</h2><p>AI-deck 来自于一个叫 PULP-DroNet 的项目。AI-deck 基于 PULP-DroNet 项目开发的 PULP-Shield 开发板，进行了适当的改进。</p>
+<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><strong>PULP-DroNet</strong> 是一个由深度学习驱动的 <strong>视觉导航引擎</strong>，帮助微型无人机在未知的环境中进行自主导航。得益于 PULP-DroNet，微型无人机可以完全自主地探索环境，避免与移动障碍物发生碰撞。<strong>无需人工操作，无需临时外部信号，也无需远程笔记本电脑！</strong>这意味着所有复杂的计算都可以直接在飞机上快速完成。</p>
+<ul>
+<li><p>PULP-DroNet：PULP-Shield + DroNet</p>
+<ul>
+<li><p>Software</p>
+<ul>
+<li>Based on DroNet: a shallow convolutional neural network developed by <a href="http://rpg.ifi.uzh.ch/">RPG</a></li>
+</ul>
+</li>
+<li><p>Hardware</p>
+<ul>
+<li>Based on PULP (Parallel Ultra-Low-Power) GAP8 SoC (System on Chip) from <a href="https://greenwaves-technologies.com/">GreenWaves Technologies</a></li>
+<li>an ultra-low power HiMax HBM01 camera</li>
+<li>off-chip Flash/DRAM memory</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>缩写</p>
+<ul>
+<li>PULP：Parallel Ultra-Low-Power 并行超低功耗</li>
+<li>GWT：GreenWaves Technologies 一家芯片公司，生产了 GAP8 这款 PULP 的 SoC</li>
+</ul>
+</li>
+<li><p>术语</p>
+<ul>
+<li>PULP-Shield：与 Crazyflie 兼容的可插拔的 PCB，上面搭载 PULP GAP8 SoC 或 PULP Mr.Wolf SoC</li>
+<li>PULP Virtual Platform：一个软件模拟环境，在自己的电脑上运行程序，模拟程序运行在 PULP SoC 上的效果</li>
+<li>Autotiler：一个软件工具，作为lib.a发布。它会生成一些为了编译PULP-DroNet所需要的 c 文件。</li>
+<li>GAPuino board：GWT Arduino 兼容的开发板，其中包括 PULP GAP8 SoC。</li>
+</ul>
+</li>
+</ul>
+<h3 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h3><p><img src="pulp-shield.png"></p>
+<ul>
+<li><p>PULP-DroNet 基于 ETHZürich 和博洛尼亚大学设想的 <a href="https://www.pulp-platform.org/">并行超低功耗</a>（PULP）项目。</p>
+<ul>
+<li>功率低至几毫瓦</li>
+<li>应用在先进 IoT 节点，智能传感器，当然还有 微型无人机</li>
+<li>对诸如相机之类的传感器生成的数据流进行灵活，高级的处理，而这超出了典型微控制器的能力</li>
+<li>硬件基于 RISC-V 架构，可替代同为 RISC 的 ARM，开源</li>
+</ul>
+</li>
+<li><p>第一步是开发 PULP-Shield（可以认为是 AI-Deck 早期的原型产品）</p>
+<ul>
+<li><p>使用的是 PULP GAP8 SoC （GAP8 是 PULP 项目的第一个商用版本）</p>
+<ul>
+<li><p>9 RISC-V-based cores</p>
+<ul>
+<li>an on-chip microcontroller (1 core, called <em>Fabric Ctrl)</em></li>
+<li>a <em>cluster</em> accelerator of 8 cores</li>
+</ul>
+</li>
+<li><p>64 kB L1 memory</p>
+</li>
+<li><p>512kB L2 memory</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>接下来选择基于DroNet的高级人工智能算法作为自主导航引擎的算法核心</p>
+<ul>
+<li>因为资源受限，对 DroNet 进行了一些改进，输出碰撞概率和转向角两条信息，最后转换成 <strong>前进速度</strong> 和 <strong>转角率</strong> (angular yaw rate) 用于控制无人机。</li>
+</ul>
+</li>
+</ul>
+<p><img src="pulp-dronet.png"></p>
+<h3 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h3><ul>
+<li><a href="https://github.com/pulp-platform/pulp-dronet">Github - PULP-DroNet</a></li>
+<li><a href="https://arxiv.org/abs/1805.01831">A 64mW DNN-based Visual Navigation Engine for Autonomous Nano-Drones</a>（arxiv文章关于上面提到的如何将 DroNet 移植到功率受限的 CF 上）</li>
+<li><a href="https://www.pulp-platform.org/">PULP Platform</a>，<a href="https://www.youtube.com/channel/UCpad_lwSfoMZkb6X7FdjU0g">Youtube</a></li>
+</ul>
+<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><h2 id="硬件配置"><a href="#硬件配置" class="headerlink" title="硬件配置"></a>硬件配置</h2><ol>
+<li><p>微型无人机：<a href="https://store.bitcraze.io/collections/kits/products/crazyflie-2-1">Crazyflie 2.1</a></p>
+</li>
+<li><p>边缘计算扩展板：<a href="https://store.bitcraze.io/collections/decks/products/ai-deck">AI-deck</a></p>
+</li>
+<li><p>与扩展板 AI-deck 进行通信/程序烧录的 Debugger：<a href="https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY-H/">Olimex ARM-USB-TINY-H JTAG</a></p>
+</li>
+<li><p>用于连接 Debugger 与 AI-deck 的转接器：<a href="https://www.olimex.com/Products/ARM/JTAG/ARM-JTAG-20-10/">ARM JTAG 20 to 10 pin adapter</a></p>
+</li>
+<li><p>用于连接 Debugger 与 PC 的 USB 线：<a href="https://www.olimex.com/Products/Components/Cables/CABLE-USB-A-B-1.8M/">CABLE USB A-B 1.8M</a></p>
+</li>
+<li><p>与 Crazyflie 进行通信/程序烧录的 USB Dongle：<a href="https://store.bitcraze.io/collections/kits/products/crazyradio-pa">Crazyradio PA 2.4 GHz USB dongle</a></p>
+</li>
+</ol>
+<blockquote>
+<p>设备 3 提到的 debugger 有多种选择，但官方示例选用的是 olimex 的这款，为了避免不必要的麻烦，推荐在设备选择方面 follow 成功案例，从而专心软件开发。</p>
+</blockquote>
+<p><img src="cable_connection.png" alt="接线方式"></p>
+<blockquote>
+<p>接线方式即烧录方式有两种选择。</p>
+<ul>
+<li><em><strong>① Flash based on JTAG (wired)</strong></em>: 使用设备 3-5 以有线方式通过 OpenOCD 基于 JTAG 与 AI-deck 进行通信。  </li>
+<li><em><strong>② Flash using Crazyradio PA (wireless)</strong></em>: 使用设备 6 以无线方式基于蓝牙与 Crazyflie 进行通信。</li>
+</ul>
+</blockquote>
+<h2 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h2><h3 id="Virtual-Machine"><a href="#Virtual-Machine" class="headerlink" title="Virtual Machine"></a>Virtual Machine</h3><ul>
+<li>AI-deck 需要用到 GAP8 SDK，该 SDK 只提供了 Ubuntu 版本</li>
+<li>所以这里推荐安装 <a href="https://wiki.bitcraze.io/projects:virtualmachine:index#download">Bitcraze Virtual Machine</a></li>
+<li>需要预先安装 <a href="https://www.virtualbox.org/">Oracle VirtualBox</a></li>
+</ul>
+<h3 id="GAP8-amp-NINA"><a href="#GAP8-amp-NINA" class="headerlink" title="GAP8 &amp; NINA"></a>GAP8 &amp; NINA</h3><blockquote>
+<p>从官方商店购买的设备应该是已经烧录好了相应的firmware，但是我们从第三方购买的没有烧录，需要自行烧录。下面的实践环节会详细介绍。</p>
+</blockquote>
+<h1 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h1><h2 id="Step-1-下载官方示例项目"><a href="#Step-1-下载官方示例项目" class="headerlink" title="Step 1: 下载官方示例项目"></a>Step 1: 下载官方示例项目</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/bitcraze/AIdeck_examples.git</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://github.com/bitcraze/AIdeck_examples">AIdeck_examples</a> 项目为我们准备的几个示例程序的固件源码，以及使用 Docker 以最便捷的方式安装 AI-deck 开发所需要的两大软件依赖（NINA 芯片需要的 ESP-IDF，GAP8 芯片需要的 GAP8-SDK）</p>
+<h2 id="Step-2-安装-ESP-IDF-并烧录-NINA-芯片"><a href="#Step-2-安装-ESP-IDF-并烧录-NINA-芯片" class="headerlink" title="Step 2: 安装 ESP-IDF 并烧录 NINA 芯片"></a>Step 2: 安装 ESP-IDF 并烧录 NINA 芯片</h2><ol>
+<li>下载 Docker 镜像</li>
+</ol>
+<blockquote>
+<p>工作目录：AIdeck_examples/NINA/firmware/</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker build --tag espidf:3.3.1 .</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>烧录</li>
+</ol>
+<blockquote>
+<p>工作目录：AIdeck_examples/NINA/firmware/</p>
+<p>接线连接：Debugger 连上 AI-deck 上 NINA 芯片对应的 JTAG 接口</p>
+</blockquote>
+<blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo docker run --rm -it -v $PWD:/module/ --device /dev/ttyUSB0 --privileged -P espidf:3.3.1 /bin/bash -c &quot;make menuconfig; make clean; make all; /openocd-esp32/bin/openocd -f interface/ftdi/olimex-arm-usb-tiny-h.cfg -f board/esp-wroom-32.cfg -c &#x27;program_esp32 build/partitions_singleapp.bin 0x8000 verify&#x27; -c &#x27;program_esp32 build/bootloader/bootloader.bin 0x1000 verify&#x27; -c &#x27;program_esp32 build/ai-deck-jpeg-streamer-demo.bin 0x10000 verify reset exit&#x27;&quot;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="Step-3-安装-GAP8"><a href="#Step-3-安装-GAP8" class="headerlink" title="Step 3: 安装 GAP8"></a>Step 3: 安装 GAP8</h2><ol>
+<li>获取 Docker</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export GAP_SDK_VERSION=3.5</span><br><span class="line">echo &#x27;export GAP_SDK_VERSION=3.5&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">docker build --tag gapsdk:$&#123;GAP_SDK_VERSION&#125; --build-arg GAP_SDK_VERSION .</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>安装 autotiler</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run --rm -it gapsdk:$&#123;GAP_SDK_VERSION&#125; /bin/bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="keyword">in</span> the container write</span></span><br><span class="line">cd /gap_sdk</span><br><span class="line">source configs/ai_deck.sh</span><br><span class="line">make autotiler</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这里会让填个邮箱，输一个 URL <a href="https://greenwaves-technologies.com/autotiler/">https://greenwaves-technologies.com/autotiler/</a></p>
+</blockquote>
+<ol start="3">
+<li>提交修改</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export GAP_SDK_VERSION=3.5</span><br><span class="line">docker commit &lt;container id&gt; gapsdk:$&#123;GAP_SDK_VERSION&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Step-4-更新-Crazyflie-自身固件"><a href="#Step-4-更新-Crazyflie-自身固件" class="headerlink" title="Step 4: 更新 Crazyflie 自身固件"></a>Step 4: 更新 Crazyflie 自身固件</h2><blockquote>
+<p>以下操作在 <a href="https://github.com/bitcraze/crazyflie-firmware">crazyflie-firmware</a> 项目中完成（我们所使用的虚拟机里已经有该项目）</p>
+</blockquote>
+<ol>
+<li>更新项目</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>激活 AI-deck</li>
+</ol>
+<ul>
+<li>进入 <code>/firmware/tools/make/</code></li>
+<li>创建新文件 config.mk</li>
+<li>新增一行</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CFLAGS += -DDECK_FORCE=bcAIDeck</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>无人机进入 bootloader 模式，烧录程序</li>
+</ol>
+<ul>
+<li>按无人机启动按钮 2s 进入 bootloader 状态</li>
+<li>使用 Flash using radio 烧录新固件</li>
+</ul>
+<img src="flash_using_radio.png" style="zoom:50%;" />
+
+<blockquote>
+<p>了解更多有关虚拟机使用以及烧录硬件的内容可以参考 <a href="https://www.bitcraze.io/documentation/tutorials/getting-started-with-development/">Programming the Crazyflie</a></p>
+</blockquote>
+<h2 id="Step-5-烧录人脸检测程序"><a href="#Step-5-烧录人脸检测程序" class="headerlink" title="Step 5: 烧录人脸检测程序"></a>Step 5: 烧录人脸检测程序</h2><ol>
+<li><p>进入<code>AIdeck_examples/GAP8/image_processing_examples/FaceDetection/</code></p>
+</li>
+<li><p>编辑 Makefile，取消注释 <code>USE_STREAMER</code>，<code>USE_CAMERA</code></p>
+</li>
+<li><p>执行烧录命令</p>
+</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo docker run --rm -it -v $PWD:/module/data/ --device /dev/ttyUSB0 --privileged -P gapsdk:$&#123;GAP_SDK_VERSION&#125; /bin/bash -c &#x27;export GAPY_OPENOCD_CABLE=interface/ftdi/olimex-arm-usb-tiny-h.cfg; source /gap_sdk/configs/ai_deck.sh; cd /module/data/; make clean all image flash&#x27;</span><br></pre></td></tr></table></figure>
+
+<img src="gap8_success.png" alt="Crazyflie 2.1" style="zoom:60%;" />
+
+<h2 id="Step-6-大功告成"><a href="#Step-6-大功告成" class="headerlink" title="Step 6: 大功告成"></a>Step 6: 大功告成</h2><p>此时我们已经完成了全部的软件准备工作，可以运行查看结果啦！</p>
+<ol>
+<li><p>启动无人机，会有一个 WiFi 热点叫 <em>Bitcraze AI-deck example</em></p>
+</li>
+<li><p>PC 连接该热点</p>
+</li>
+<li><p>进入<code>AIdeck_examples/NINA/</code></p>
+</li>
+<li><p>执行 <code>python3 viewer.py</code></p>
+</li>
+<li><p>程序启动一个图形界面，成功看到 AI-deck 上的摄像头回传的画面</p>
+</li>
+</ol>
+<img src="result.png" style="zoom:50%;" />
+
+<blockquote>
+<p>成功啦！会有一个黑色框框圈中人脸</p>
+</blockquote>
+<h1 id="有用的链接"><a href="#有用的链接" class="headerlink" title="有用的链接"></a>有用的链接</h1><ol>
+<li><a href="https://github.com/bitcraze/AIdeck_examples">AIdeck_examples - Github</a>：AIdeck 项目的官方仓库，里面有更详细的 doc 来介绍每一个步骤，包括在引入 Docker 之前是如何一步步手动安装软件环境的。我也为这个项目的文档贡献了一些改进内容！嘿嘿~😜</li>
+<li><a href="https://zhuanlan.zhihu.com/p/275774748">Olimex Debugger User’s Manual</a>：我的一个学习笔记，对 Debugger 官方手册内容的一个中文版的翻译与总结。</li>
+<li><a href="https://store.bitcraze.io/collections/decks/products/ai-deck">AI-deck - Bitcraze Store</a>：官方商城里的 AI-deck 介绍页，更多细节可以在此找到。</li>
+<li><a href="https://www.bitcraze.io/category/ai-deck/">AI-deck - Bitcraze Blog</a>：官方博客有关 AI-deck 的内容，可以了解到 AI-deck 诞生前后的故事。</li>
+<li><a href="https://forum.bitcraze.io/viewforum.php?f=21&sid=0685cced2e47581fceb923f480272380">AI-deck - Bitcraze Forum</a>：官方论坛的 AI-deck 板块，<a href="https://forum.bitcraze.io/memberlist.php?mode=viewprofile&u=4094">我</a>也在这里问过不少问题。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>科研分享</category>
+      </categories>
+      <tags>
+        <tag>Crazyflie</tag>
+        <tag>AI-deck</tag>
+        <tag>边缘计算</tag>
+        <tag>无人机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「Crazyflie开源无人机」Multi-ranger扩展板入门</title>
+    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E3%80%8CCrazyflie%E5%BC%80%E6%BA%90%E6%97%A0%E4%BA%BA%E6%9C%BA%E3%80%8DMulti-ranger%E6%89%A9%E5%B1%95%E6%9D%BF%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<p>Multi-ranger deck 允许 Crazyflie 探测它周围的物体，可以测量在 4 米范围内到达物体的 5 个方向的毫米精度距离（前后左右，上）。</p>
+]]></content>
+      <categories>
+        <category>科研分享</category>
+      </categories>
+      <tags>
+        <tag>Crazyflie</tag>
+        <tag>无人机</tag>
+        <tag>LiDar</tag>
+        <tag>Multi-ranger</tag>
+        <tag>VL53L1x</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「Crazyflie开源无人机」基础入门</title>
+    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E3%80%8CCrazyflie%E5%BC%80%E6%BA%90%E6%97%A0%E4%BA%BA%E6%9C%BA%E3%80%8D%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<p>Crazyflie 微型四轴飞行器的硬件设计得非常优秀，不管是 PCB 机械层的轮廓设计、信号层上元器件的布局还是整个电路板的走线都非常合理，而且最重要的是 Bitcraze 团队将模块化的理念带入到 Crazyflie产品的设计之中，这使得 Crazyflie 微型四轴除了基本的飞行功能之外，还可以通过堆叠不同扩展坞的方式来实现不同功能的扩展。</p>
+]]></content>
+      <categories>
+        <category>科研分享</category>
+      </categories>
+      <tags>
+        <tag>Crazyflie</tag>
+        <tag>无人机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「调研汇报」Google Network</title>
+    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E3%80%8C%E8%B0%83%E7%A0%94%E6%B1%87%E6%8A%A5%E3%80%8DGoogle%20Network/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>科研分享</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
+        <tag>数据中心网络</tag>
+        <tag>Google</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「调研汇报」Multi-Robot Active Sensing and Environmental Model Learning With Distributed Gaussian Process</title>
+    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E3%80%8C%E8%B0%83%E7%A0%94%E6%B1%87%E6%8A%A5%E3%80%8DMulti-Robot-Active-Sensing-and-Environmental-Model-Learning-With-Distributed-Gaussian-Process/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>科研分享</category>
+      </categories>
+      <tags>
+        <tag>集群协作</tag>
+        <tag>机器人</tag>
+        <tag>高斯过程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「调研汇报」在无人机自组网中引入计算卸载技术</title>
+    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E3%80%8C%E8%B0%83%E7%A0%94%E6%B1%87%E6%8A%A5%E3%80%8D%E5%9C%A8%E6%97%A0%E4%BA%BA%E6%9C%BA%E8%87%AA%E7%BB%84%E7%BD%91%E4%B8%AD%E5%BC%95%E5%85%A5%E8%AE%A1%E7%AE%97%E5%8D%B8%E8%BD%BD%E6%8A%80%E6%9C%AF/</url>
+    <content><![CDATA[<h1 id="边缘计算与计算卸载"><a href="#边缘计算与计算卸载" class="headerlink" title="边缘计算与计算卸载"></a>边缘计算与计算卸载</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>为了应对终端设备处理能力不足、资源有限等问题，业界在移动边缘计算（MEC）中引入了计算卸载概念 。边缘计算卸载即用户终端（UE）将计算任务卸载到MEC网络中，主要解决设备在资源存储、计算性能以及能效等方面的不足。</p>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>随着科技的快速发展，移动设备流量急剧增长。但是由于自身资源及计算性能有限，智能移动设备在处理计算密集型和时间敏感型应用时可能面临着能力不足的情况。为此，使用网络边缘节点来处理分析数据的边缘计算模式应运而生，并与传统云计算模式形成互补。然而，边缘设备往往具有轻量化的特点，如何合理利用边缘有限的计算资源便成为边缘计算亟需解决的重要问题。</p>
+<p>边缘计算针对传统云计算能力不足，在移动用户附近的无线接入网络边缘提供云计算功能，满足快速交互响应的需求，提供普遍且灵活的计算服务。为使用边缘网络提供的服务，移动设备如何将所承担的任务卸载到边缘服务器，进行高效合理的卸载决策，已经成为目前边缘计算问题的主要研究方向。</p>
+<blockquote>
+<p>类比到无人机集群中，我们会将普通无人机上计算机较大的计算任务卸载到无人机集群网络中具有较强计算能力的计算节点上（搭载了 AI-Deck 的无人机）。</p>
+</blockquote>
+<p>计算卸载是边缘计算的一个关键技术，可以为资源受限设备运行计算密集型应用提供计算资源，加快计算速度，节省能源。更详细的说，边缘计算中的计算卸载是将移动终端的计算任务卸载到边缘云环境中，解决了设备在资源存储、计算性能以及能效等方面存在的不足。</p>
+]]></content>
+      <categories>
+        <category>科研分享</category>
+      </categories>
+      <tags>
+        <tag>边缘计算</tag>
+        <tag>无人机自组网</tag>
+        <tag>计算卸载</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>东南大学止于至善学术风 PPT 模板（中文）</title>
+    <url>/f.%E6%94%B6%E8%97%8F%E6%95%B4%E7%90%86/History/%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%AD%A2%E4%BA%8E%E8%87%B3%E5%96%84%E5%AD%A6%E6%9C%AF%E9%A3%8E-PPT-%E6%A8%A1%E6%9D%BF%EF%BC%88%E4%B8%AD%E6%96%87%EF%BC%89/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>收藏整理</category>
+      </categories>
+      <tags>
+        <tag>PPT</tag>
+        <tag>东南大学</tag>
+        <tag>模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「调研汇报」基于软件定义网络的智能无人机集群系统的设计与实现</title>
+    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E3%80%8C%E8%B0%83%E7%A0%94%E6%B1%87%E6%8A%A5%E3%80%8D%E5%9F%BA%E4%BA%8E%E8%BD%AF%E4%BB%B6%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9C%E7%9A%84%E6%99%BA%E8%83%BD%E6%97%A0%E4%BA%BA%E6%9C%BA%E9%9B%86%E7%BE%A4%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>科研分享</category>
+      </categories>
+      <tags>
+        <tag>无人机</tag>
+        <tag>SDN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>东南大学止于至善学术风 PPT 模板（英文）</title>
+    <url>/f.%E6%94%B6%E8%97%8F%E6%95%B4%E7%90%86/History/%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%AD%A2%E4%BA%8E%E8%87%B3%E5%96%84%E5%AD%A6%E6%9C%AF%E9%A3%8E-PPT-%E6%A8%A1%E6%9D%BF%EF%BC%88%E8%8B%B1%E6%96%87%EF%BC%89/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>收藏整理</category>
+      </categories>
+      <tags>
+        <tag>PPT</tag>
+        <tag>东南大学</tag>
+        <tag>模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修改motd，使用字符画生成工具，配置一个实用有趣的服务器登录脚本</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/%E4%BF%AE%E6%94%B9motd%EF%BC%8C%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7%EF%BC%8C%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%AE%9E%E7%94%A8%E6%9C%89%E8%B6%A3%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%99%BB%E5%BD%95%E8%84%9A%E6%9C%AC/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>运维</tag>
+        <tag>服务器</tag>
+        <tag>motd</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科学上网原理</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<p>科学上网本质上是对从本机到目的服务器间的网络通信方式进行加密，使流量不能被防火墙检测到，进而绕开访问限制。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>网络</tag>
+        <tag>ssh</tag>
+        <tag>科学上网</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序调试必须使用调试工具吗？</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/%E7%A8%8B%E5%BA%8F%E8%B0%83%E8%AF%95%E5%BF%85%E9%A1%BB%E4%BD%BF%E7%94%A8%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%90%97%EF%BC%9F/</url>
+    <content><![CDATA[<p>一直以来，我都更习惯于通过直接 print 内容来调试，只有在 print 无法满足需求或过于繁琐的时候才会不情不愿地去用 gdb 或 IDE 提供的调试工具来打断点等等。。。</p>
+<p>之所以我会这样我想主要有两个因素，一是我一直没有认真学习过 gdb 工具的使用，二是很多场景直接 print 很方便，不需要太动脑思考断点位置等等。</p>
+<p>实际上，程序调试也并非必须用调试工具，针对不同场景选择合适的方法我认为是最合理的。下面摘录几位知乎答主在问题 输出语句，例如print，cout ，是最好的调试方法吗? - 知乎 下的回答作为参考。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>调试</tag>
+        <tag>debug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自动驾驶技术简介</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E6%8A%80%E6%9C%AF%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<blockquote>
+<p>本文写于19年4月智能驾驶技术课程<br>参考书籍</p>
+<ul>
+<li>第一本无人驾驶技术书, 2017</li>
+<li>Creating Autonomous Vehicle Systems, 2018</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>NEU</tag>
+        <tag>人工智能</tag>
+        <tag>自动驾驶</tag>
       </tags>
   </entry>
 </search>
