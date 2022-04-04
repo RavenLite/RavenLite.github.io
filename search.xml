@@ -3316,7 +3316,7 @@
   </entry>
   <entry>
     <title>Linux安装软件的几种方式</title>
-    <url>/220311-Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</url>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220311-Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</url>
     <content><![CDATA[<p>Linux 提供了各种不同的软件包安装与管理方式，我们可以根据系统差异、实际情况以及使用需求选择不同的方式来安装。</p>
 ]]></content>
       <categories>
@@ -3330,6 +3330,19 @@
         <tag>包管理</tag>
         <tag>apt</tag>
         <tag>yum</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git commit message 规范</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/Git-commit-message-%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>风格</tag>
+        <tag>规范化</tag>
       </tags>
   </entry>
 </search>
