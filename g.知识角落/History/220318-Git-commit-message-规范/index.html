@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Linux,shell,信号量," />
+  <meta name="keywords" content="Git,风格,规范化," />
 
 
 
@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="Internet, News and Football">
+<meta name="description" content="Git commit 的 message 是 git 提交关键的描述信息，很多人出于习惯或是想尽快 git push 然后合上电脑休息往往忽略了 message 的重要性，一份好的 message 可以展现出你良好的开发习惯。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ctrl-C，Ctrl-Z，Ctrl-D 的区别">
-<meta property="og:url" content="https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/Ctrl-C%EF%BC%8CCtrl-Z%EF%BC%8CCtrl-D-%E7%9A%84%E5%8C%BA%E5%88%AB/index.html">
+<meta property="og:title" content="Git commit message 规范">
+<meta property="og:url" content="https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220318-Git-commit-message-%E8%A7%84%E8%8C%83/index.html">
 <meta property="og:site_name" content="Blog | Raven Xu">
-<meta property="og:description" content="Internet, News and Football">
+<meta property="og:description" content="Git commit 的 message 是 git 提交关键的描述信息，很多人出于习惯或是想尽快 git push 然后合上电脑休息往往忽略了 message 的重要性，一份好的 message 可以展现出你良好的开发习惯。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-04-07T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-15T15:06:45.563Z">
+<meta property="article:published_time" content="2022-03-17T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-04-04T09:05:52.897Z">
 <meta property="article:author" content="Raven Xu">
-<meta property="article:tag" content="Linux">
-<meta property="article:tag" content="shell">
-<meta property="article:tag" content="信号量">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="风格">
+<meta property="article:tag" content="规范化">
 <meta name="twitter:card" content="summary">
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://ravenxu.top/g.知识角落/Ctrl-C，Ctrl-Z，Ctrl-D-的区别/"/>
+  <link rel="canonical" href="https://ravenxu.top/g.知识角落/History/220318-Git-commit-message-规范/"/>
 
 
 
 
 
-  <title>Ctrl-C，Ctrl-Z，Ctrl-D 的区别 | Blog | Raven Xu</title>
+  <title>Git commit message 规范 | Blog | Raven Xu</title>
   
 
 
@@ -256,7 +256,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ravenxu.tophttps://raven.feishu.cn/docs/doccnKEVNPFH9uRc2wXLhzd8nfd">
+    <link itemprop="mainEntityOfPage" href="https://ravenxu.tophttps://raven.feishu.cn/docs/doccnGAJEw2KSs6XYodAcmouSnh">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -275,8 +275,8 @@
         
           <h1 class="post-title" itemprop="name headline">
               
-              <a class="post-title-link post-title-link-external" target="_blank" href="https://raven.feishu.cn/docs/doccnKEVNPFH9uRc2wXLhzd8nfd" itemprop="url">
-                Ctrl-C，Ctrl-Z，Ctrl-D 的区别
+              <a class="post-title-link post-title-link-external" target="_blank" href="https://raven.feishu.cn/docs/doccnGAJEw2KSs6XYodAcmouSnh" itemprop="url">
+                Git commit message 规范
                 <i class="fa fa-external-link"></i>
               </a>
             </h1>
@@ -291,8 +291,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-04-08T00:00:00+08:00">
-                2022-04-08
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-03-18T00:00:00+08:00">
+                2022-03-18
               </time>
             
 
@@ -332,8 +332,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a target="_blank" rel="noopener" href="https://raven.feishu.cn/docs/doccnKEVNPFH9uRc2wXLhzd8nfd#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="https://raven.feishu.cn/docs/doccnKEVNPFH9uRc2wXLhzd8nfd" itemprop="commentsCount"></span>
+                <a target="_blank" rel="noopener" href="https://raven.feishu.cn/docs/doccnGAJEw2KSs6XYodAcmouSnh#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="https://raven.feishu.cn/docs/doccnGAJEw2KSs6XYodAcmouSnh" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -369,7 +369,8 @@
       
 
       
-        
+        <p>Git commit 的 message 是 git 提交关键的描述信息，很多人出于习惯或是想尽快 git push 然后合上电脑休息往往忽略了 message 的重要性，一份好的 message 可以展现出你良好的开发习惯。</p>
+
       
     </div>
     
@@ -386,11 +387,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
+            <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"></i> Git</a>
           
-            <a href="/tags/shell/" rel="tag"><i class="fa fa-tag"></i> shell</a>
+            <a href="/tags/%E9%A3%8E%E6%A0%BC/" rel="tag"><i class="fa fa-tag"></i> 风格</a>
           
-            <a href="/tags/%E4%BF%A1%E5%8F%B7%E9%87%8F/" rel="tag"><i class="fa fa-tag"></i> 信号量</a>
+            <a href="/tags/%E8%A7%84%E8%8C%83%E5%8C%96/" rel="tag"><i class="fa fa-tag"></i> 规范化</a>
           
         </div>
       
@@ -403,8 +404,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/Git-commit-message-%E8%A7%84%E8%8C%83/" rel="next" title="Git commit message 规范">
-                <i class="fa fa-chevron-left"></i> Git commit message 规范
+              <a href="/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220311-Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" rel="next" title="Linux安装软件的几种方式">
+                <i class="fa fa-chevron-left"></i> Linux安装软件的几种方式
               </a>
             
           </div>
@@ -413,8 +414,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/e.%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%EF%BC%9F/" rel="prev" title="如何写好技术博客？">
-                如何写好技术博客？ <i class="fa fa-chevron-right"></i>
+              <a href="/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220401-%E4%BD%BF%E7%94%A8-docker-%E5%AE%B9%E5%99%A8%E6%90%AD%E5%BB%BA-docker-%E6%9C%8D%E5%8A%A1%E7%9B%91%E6%8E%A7/" rel="prev" title="使用 Docker 容器搭建 Docker 服务监控">
+                使用 Docker 容器搭建 Docker 服务监控 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -494,7 +495,7 @@
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">58</span>
+                  <span class="site-state-item-count">60</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -516,7 +517,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">129</span>
+                  <span class="site-state-item-count">133</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>

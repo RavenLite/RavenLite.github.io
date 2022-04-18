@@ -1725,21 +1725,6 @@
       </tags>
   </entry>
   <entry>
-    <title>程序调试必须使用调试工具吗？</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/%E7%A8%8B%E5%BA%8F%E8%B0%83%E8%AF%95%E5%BF%85%E9%A1%BB%E4%BD%BF%E7%94%A8%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%90%97%EF%BC%9F/</url>
-    <content><![CDATA[<p>一直以来，我都更习惯于通过直接 print 内容来调试，只有在 print 无法满足需求或过于繁琐的时候才会不情不愿地去用 gdb 或 IDE 提供的调试工具来打断点等等。。。</p>
-<p>之所以我会这样我想主要有两个因素，一是我一直没有认真学习过 gdb 工具的使用，二是很多场景直接 print 很方便，不需要太动脑思考断点位置等等。</p>
-<p>实际上，程序调试也并非必须用调试工具，针对不同场景选择合适的方法我认为是最合理的。下面摘录几位知乎答主在问题 输出语句，例如print，cout ，是最好的调试方法吗? - 知乎 下的回答作为参考。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>调试</tag>
-        <tag>debug</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>自动驾驶技术简介</title>
     <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E6%8A%80%E6%9C%AF%E7%AE%80%E4%BB%8B/</url>
     <content><![CDATA[<blockquote>
@@ -3333,8 +3318,40 @@
       </tags>
   </entry>
   <entry>
+    <title>程序调试必须使用调试工具吗？</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220107-%E7%A8%8B%E5%BA%8F%E8%B0%83%E8%AF%95%E5%BF%85%E9%A1%BB%E4%BD%BF%E7%94%A8%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%90%97%EF%BC%9F/</url>
+    <content><![CDATA[<p>一直以来，我都更习惯于通过直接 print 内容来调试，只有在 print 无法满足需求或过于繁琐的时候才会不情不愿地去用 gdb 或 IDE 提供的调试工具来打断点等等。。。</p>
+<p>之所以我会这样我想主要有两个因素，一是我一直没有认真学习过 gdb 工具的使用，二是很多场景直接 print 很方便，不需要太动脑思考断点位置等等。</p>
+<p>实际上，程序调试也并非必须用调试工具，针对不同场景选择合适的方法我认为是最合理的。下面摘录几位知乎答主在问题 输出语句，例如print，cout ，是最好的调试方法吗? - 知乎 下的回答作为参考。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>调试</tag>
+        <tag>debug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python 性能分析入门 —— cProfile与可视化</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/220325-Python-%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E5%85%A5%E9%97%A8-%E2%80%94%E2%80%94-cProfile%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/</url>
+    <content><![CDATA[<p>最近在使用 Python 的 matplotlib 绘图库来进行三维空间地图的可视化，但是发现实际绘制速度特别慢，画图大概需要 90s 左右。之前有听说 matplotlib 因为绘图质量很高达到了出版级别所以速度上不是很快，但是直觉告诉我，也该也不至于这么慢……，猜测是在代码逻辑上应该有提升空间。</p>
+<p>最开始想着简单打印一下程序时间，自己计算看看在哪里耗时比较长，但是感觉不太优雅，于是去搜寻有没有很好用的性能分析工具。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>cProfile</tag>
+        <tag>性能分析</tag>
+        <tag>matplotlib</tag>
+        <tag>SnakeViz</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git commit message 规范</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/Git-commit-message-%E8%A7%84%E8%8C%83/</url>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220318-Git-commit-message-%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<p>Git commit 的 message 是 git 提交关键的描述信息，很多人出于习惯或是想尽快 git push 然后合上电脑休息往往忽略了 message 的重要性，一份好的 message 可以展现出你良好的开发习惯。</p>
 ]]></content>
       <categories>
@@ -3347,8 +3364,26 @@
       </tags>
   </entry>
   <entry>
+    <title>使用 Docker 容器搭建 Docker 服务监控</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220401-%E4%BD%BF%E7%94%A8-docker-%E5%AE%B9%E5%99%A8%E6%90%AD%E5%BB%BA-docker-%E6%9C%8D%E5%8A%A1%E7%9B%91%E6%8E%A7/</url>
+    <content><![CDATA[<ul>
+<li>在之前的文章<a href="https://raven.feishu.cn/docs/doccnT7U46wPIOuHxf7vHI4Nspz">使用InfluxDB和Telegraf为服务器搭建基础监控</a>中介绍过使用 InfluxDB 和 Telegraf 技术栈来为服务器搭建基本监控，其中，InfluxDB 和 Telegraf 都是运行在 Docker 容器中的，通过共享容器网络进行通信。</li>
+<li>在这篇文章中，将要介绍如何使用 docker 容器为 docker 本身进行监控。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>监控</tag>
+        <tag>InfluxDB</tag>
+        <tag>Telegraf</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Ctrl-C，Ctrl-Z，Ctrl-D 的区别</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/Ctrl-C%EF%BC%8CCtrl-Z%EF%BC%8CCtrl-D-%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220408-Ctrl-C%EF%BC%8CCtrl-Z%EF%BC%8CCtrl-D-%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>知识角落</category>
@@ -3361,7 +3396,7 @@
   </entry>
   <entry>
     <title>如何写好技术博客？</title>
-    <url>/e.%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%EF%BC%9F/</url>
+    <url>/e.%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/History/220415-%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%EF%BC%9F/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>观察思考</category>
