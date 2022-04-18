@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Python,cProfile,性能分析,matplotlib,SnakeViz," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,21 +79,14 @@
 
 
 
-<meta name="description" content="最近在使用 Python 的 matplotlib 绘图库来进行三维空间地图的可视化，但是发现实际绘制速度特别慢，画图大概需要 90s 左右。之前有听说 matplotlib 因为绘图质量很高达到了出版级别所以速度上不是很快，但是直觉告诉我，也该也不至于这么慢……，猜测是在代码逻辑上应该有提升空间。 最开始想着简单打印一下程序时间，自己计算看看在哪里耗时比较长，但是感觉不太优雅，于是去搜寻有没有很">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Python 性能分析入门 —— cProfile与可视化">
-<meta property="og:url" content="https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/220325-Python-%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E5%85%A5%E9%97%A8-%E2%80%94%E2%80%94-cProfile%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/index.html">
+<meta name="description" content="Internet, News and Football">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog | Raven Xu">
+<meta property="og:url" content="https://ravenxu.top/archives/page/7/index.html">
 <meta property="og:site_name" content="Blog | Raven Xu">
-<meta property="og:description" content="最近在使用 Python 的 matplotlib 绘图库来进行三维空间地图的可视化，但是发现实际绘制速度特别慢，画图大概需要 90s 左右。之前有听说 matplotlib 因为绘图质量很高达到了出版级别所以速度上不是很快，但是直觉告诉我，也该也不至于这么慢……，猜测是在代码逻辑上应该有提升空间。 最开始想着简单打印一下程序时间，自己计算看看在哪里耗时比较长，但是感觉不太优雅，于是去搜寻有没有很">
+<meta property="og:description" content="Internet, News and Football">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-04-18T06:17:35.000Z">
-<meta property="article:modified_time" content="2022-04-18T06:23:23.104Z">
 <meta property="article:author" content="Raven Xu">
-<meta property="article:tag" content="Python">
-<meta property="article:tag" content="cProfile">
-<meta property="article:tag" content="性能分析">
-<meta property="article:tag" content="matplotlib">
-<meta property="article:tag" content="SnakeViz">
 <meta name="twitter:card" content="summary">
 
 
@@ -124,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="https://ravenxu.top/g.知识角落/220325-Python-性能分析入门-——-cProfile与可视化/"/>
+  <link rel="canonical" href="https://ravenxu.top/archives/page/7/"/>
 
 
 
 
 
-  <title>Python 性能分析入门 —— cProfile与可视化 | Blog | Raven Xu</title>
+  <title>Archive | Blog | Raven Xu</title>
   
 
 
@@ -149,7 +142,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 		<a target="_blank" rel="noopener" href="https://github.com/Raven98/Raven98.github.io" class="github-corner" aria-label="View source on Github">
 		<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -244,202 +237,74 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-  
+      <span class="archive-page-counter">
+        
+        
+         
+          
+        Nice! 61 posts in total. Keep on posting.
+      </span>
 
-  
-  
-  
+      
+
+        
+        
+        
+
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2017">2017</h1>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ravenxu.tophttps://raven.feishu.cn/docs/doccnuuxD5wgCWup2aD2HwEi4Fd">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog | Raven Xu">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+          <a class="post-title-link post-title-link-external" target="_blank" href="https://raven.feishu.cn/docs/doccnTbtv9MgBv1G23h0AKWozFh?from=from_copylink" itemprop="url">
+            计算机网络学习预备知识
+            <i class="fa fa-external-link"></i>
+          </a>
         
-          <h1 class="post-title" itemprop="name headline">
-              
-              <a class="post-title-link post-title-link-external" target="_blank" href="https://raven.feishu.cn/docs/doccnuuxD5wgCWup2aD2HwEi4Fd" itemprop="url">
-                Python 性能分析入门 —— cProfile与可视化
-                <i class="fa fa-external-link"></i>
-              </a>
-            </h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-04-18T14:17:35+08:00">
-                2022-04-18
-              </time>
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-08-30T18:15:18+08:00"
+              content="2017-08-30" >
+          08-30
+        </time>
+      </div>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/" itemprop="url" rel="index">
-                    <span itemprop="name">知识角落</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a target="_blank" rel="noopener" href="https://raven.feishu.cn/docs/doccnuuxD5wgCWup2aD2HwEi4Fd#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="https://raven.feishu.cn/docs/doccnuuxD5wgCWup2aD2HwEi4Fd" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <span class="post-meta-divider">|</span>
-            <span class="post-meta-item-icon">
-              <i class="fa fa-files-o"></i>
-            </span>
-            <span id="busuanzi_value_page_pv"></span>次阅读
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>最近在使用 Python 的 matplotlib 绘图库来进行三维空间地图的可视化，但是发现实际绘制速度特别慢，画图大概需要 90s 左右。之前有听说 matplotlib 因为绘图质量很高达到了出版级别所以速度上不是很快，但是直觉告诉我，也该也不至于这么慢……，猜测是在代码逻辑上应该有提升空间。</p>
-<p>最开始想着简单打印一下程序时间，自己计算看看在哪里耗时比较长，但是感觉不太优雅，于是去搜寻有没有很好用的性能分析工具。</p>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
-          
-            <a href="/tags/cProfile/" rel="tag"><i class="fa fa-tag"></i> cProfile</a>
-          
-            <a href="/tags/%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90/" rel="tag"><i class="fa fa-tag"></i> 性能分析</a>
-          
-            <a href="/tags/matplotlib/" rel="tag"><i class="fa fa-tag"></i> matplotlib</a>
-          
-            <a href="/tags/SnakeViz/" rel="tag"><i class="fa fa-tag"></i> SnakeViz</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/e.%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/History/220415-%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%EF%BC%9F/" rel="next" title="如何写好技术博客？">
-                <i class="fa fa-chevron-left"></i> 如何写好技术博客？
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
 
-    <div class="post-spread">
       
+
     </div>
   </div>
+  
+  
+  
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/archives/page/6/"><i class="fa fa-angle-left" aria-label="accessibility.prev_page"></i></a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/6/">6</a><span class="page-number current">7</span>
+  </nav>
 
 
           </div>
@@ -447,17 +312,6 @@
 
 
           
-
-  
-    <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
-    </div>
-
-  
-
-
 
         </div>
         
@@ -498,7 +352,7 @@
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">60</span>
+                  <span class="site-state-item-count">61</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -520,7 +374,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">133</span>
+                  <span class="site-state-item-count">137</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -717,10 +571,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
@@ -772,30 +622,6 @@
       </style>
     
 
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'RavenLite',
-            repo: 'RavenLite.github.io',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: 'e9cb1d86ff72f87ce95bd5b8a3b68385ca9021ee',
-            
-                client_id: 'c7e19c2c115361e6bb8b'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
     
 
 
