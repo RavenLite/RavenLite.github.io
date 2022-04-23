@@ -3422,4 +3422,18 @@
         <tag>SnakeViz</tag>
       </tags>
   </entry>
+  <entry>
+    <title>深入理解 C++ 的左值和右值</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220422-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3-C-%E7%9A%84%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/</url>
+    <content><![CDATA[<p>C++ 的左值（lvalue）和右值（rvalue）的概念在 C++11 后变得越来越重要，作为一个不是很容易理解的概念，一旦我们搞清楚了他们的含义，将有助于我们进一步理解一些高级的 C++ 特性，例如 move/forward 的新语义及右值引用（rvalue references）。</p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>左值引用</tag>
+        <tag>右值引用</tag>
+      </tags>
+  </entry>
 </search>
