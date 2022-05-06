@@ -3241,20 +3241,6 @@
       </tags>
   </entry>
   <entry>
-    <title>科学上网原理</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/210611-/</url>
-    <content><![CDATA[<p>科学上网本质上是对从本机到目的服务器间的网络通信方式进行加密，使流量不能被防火墙检测到，进而绕开访问限制。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>网络</tag>
-        <tag>ssh</tag>
-        <tag>科学上网</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>编程语言中，取余和取模的区别是什么？</title>
     <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/211210-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E4%B8%AD%EF%BC%8C%E5%8F%96%E4%BD%99%E5%92%8C%E5%8F%96%E6%A8%A1%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
     <content><![CDATA[<p>最近在复习C++的知识，观察到了在某些情况下，即便程序没有按预期执行出现了较大偏差，但也不会报错，会变成一个奇怪的很大的值，这其实是C++对超出变量取值范围的值的处理，即对其取余。  </p>
@@ -3365,19 +3351,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Ctrl-C，Ctrl-Z，Ctrl-D 的区别</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220408-Ctrl-C%EF%BC%8CCtrl-Z%EF%BC%8CCtrl-D-%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>shell</tag>
-        <tag>信号量</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何写好技术博客？</title>
     <url>/e.%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/History/220415-%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%EF%BC%9F/</url>
     <content><![CDATA[]]></content>
@@ -3388,21 +3361,6 @@
         <tag>博客</tag>
         <tag>经验</tag>
         <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GCC 中 gcc 和 g++ 的区别</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/220304-GCC-%E4%B8%AD-gcc-%E5%92%8C-g-%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<p>之前写的 C++ 大部分都是来自在 LeetCode 上的算法题，很久没亲自动手编译 C++ 程序，今天写了一段 C++ 想编译一下，习惯性地使用了gcc，其中用到了vector，但是编译器报了错。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>编译</tag>
-        <tag>gcc</tag>
-        <tag>g++</tag>
       </tags>
   </entry>
   <entry>
@@ -3474,8 +3432,77 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux 绑定程序到特定 CPU 上运行</title>
+    <url>/Linux-%E7%BB%91%E5%AE%9A%E7%A8%8B%E5%BA%8F%E5%88%B0%E7%89%B9%E5%AE%9A-CPU-%E4%B8%8A%E8%BF%90%E8%A1%8C/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>技术研究</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>技术研究</tag>
+        <tag>调度</tag>
+        <tag>CPU</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>浅试一下 pytest</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220211-%E6%B5%85%E8%AF%95%E4%B8%80%E4%B8%8B%20pytest/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>单元测试</tag>
+        <tag>pytest</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ctrl-C，Ctrl-Z，Ctrl-D 的区别</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220211-Ctrl-C%EF%BC%8CCtrl-Z%EF%BC%8CCtrl-D-%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>shell</tag>
+        <tag>信号量</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GCC 中 gcc 和 g++ 的区别</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220304-GCC-%E4%B8%AD-gcc-%E5%92%8C-g-%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<p>之前写的 C++ 大部分都是来自在 LeetCode 上的算法题，很久没亲自动手编译 C++ 程序，今天写了一段 C++ 想编译一下，习惯性地使用了gcc，其中用到了vector，但是编译器报了错。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>编译</tag>
+        <tag>gcc</tag>
+        <tag>g++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科学上网原理</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/210611-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<p>科学上网本质上是对从本机到目的服务器间的网络通信方式进行加密，使流量不能被防火墙检测到，进而绕开访问限制。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>网络</tag>
+        <tag>ssh</tag>
+        <tag>科学上网</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>记忆化搜索到底是不是动态规划？</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/220506-%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%8D%E6%98%AF%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%9F/</url>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220408-%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%8D%E6%98%AF%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%9F/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>知识角落</category>
