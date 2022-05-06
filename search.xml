@@ -3286,24 +3286,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux安装软件的几种方式</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220311-Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<p>Linux 提供了各种不同的软件包安装与管理方式，我们可以根据系统差异、实际情况以及使用需求选择不同的方式来安装。</p>
-]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>服务器</tag>
-        <tag>Linux</tag>
-        <tag>Ubuntu</tag>
-        <tag>环境</tag>
-        <tag>包管理</tag>
-        <tag>apt</tag>
-        <tag>yum</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>程序调试必须使用调试工具吗？</title>
     <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220107-%E7%A8%8B%E5%BA%8F%E8%B0%83%E8%AF%95%E5%BF%85%E9%A1%BB%E4%BD%BF%E7%94%A8%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%90%97%EF%BC%9F/</url>
     <content><![CDATA[<p>一直以来，我都更习惯于通过直接 print 内容来调试，只有在 print 无法满足需求或过于繁琐的时候才会不情不愿地去用 gdb 或 IDE 提供的调试工具来打断点等等。。。</p>
@@ -3381,71 +3363,6 @@
       </tags>
   </entry>
   <entry>
-    <title>深入理解 C++ 的左值和右值</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220422-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3-C-%E7%9A%84%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/</url>
-    <content><![CDATA[<p>C++ 的左值（lvalue）和右值（rvalue）的概念在 C++11 后变得越来越重要，作为一个不是很容易理解的概念，一旦我们搞清楚了他们的含义，将有助于我们进一步理解一些高级的 C++ 特性，例如 move/forward 的新语义及右值引用（rvalue references）。</p>
-]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>左值引用</tag>
-        <tag>右值引用</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一文总结常用排序算法及面试考点</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/220429-%E4%B8%80%E6%96%87%E6%80%BB%E7%BB%93%E5%B8%B8%E7%94%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%8F%8A%E9%9D%A2%E8%AF%95%E8%80%83%E7%82%B9/</url>
-    <content><![CDATA[<ul>
-<li>排序算法经常作为CS算法课程中的入门算法来引入，因为各种各样的排序算法中包含了很多的计算机科学思想，例如：<ul>
-<li>基于比较（Comparision）和不基于比较的策略；</li>
-<li>迭代（Iterative）或递归（Recursive）的实现</li>
-<li>分支（Divide-and-Conquer）的机制（例如归并排序与快速排序）</li>
-<li>最好/最差/平均 时间复杂度分析</li>
-<li>随机算法（Randomized Algorithm）</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>面试</tag>
-        <tag>排序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>还是想夸夸「东大信息化」</title>
-    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/220218-%E8%BF%98%E6%98%AF%E6%83%B3%E5%A4%B8%E5%A4%B8%E3%80%8C%E4%B8%9C%E5%A4%A7%E4%BF%A1%E6%81%AF%E5%8C%96%E3%80%8D/</url>
-    <content><![CDATA[<p>最近因为疫情管控，很多老师都不方便进学校，东大信息化即时推出了线上电子签的功能，对于忙于硕士开题的我来说解决了很多问题。</p>
-<p>可能对于很多本科生同学来说已经习惯了东大的校园信息服务，但是作为本科毕业于另一所985高校的我，在本硕的实际对比下，还是想夸夸咱们“东大信息化”！</p>
-]]></content>
-      <categories>
-        <category>杂文随笔</category>
-      </categories>
-      <tags>
-        <tag>SEU</tag>
-        <tag>信息化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux 绑定程序到特定 CPU 上运行</title>
-    <url>/Linux-%E7%BB%91%E5%AE%9A%E7%A8%8B%E5%BA%8F%E5%88%B0%E7%89%B9%E5%AE%9A-CPU-%E4%B8%8A%E8%BF%90%E8%A1%8C/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>技术研究</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>技术研究</tag>
-        <tag>调度</tag>
-        <tag>CPU</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>浅试一下 pytest</title>
     <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220211-%E6%B5%85%E8%AF%95%E4%B8%80%E4%B8%8B%20pytest/</url>
     <content><![CDATA[]]></content>
@@ -3510,6 +3427,89 @@
       <tags>
         <tag>算法</tag>
         <tag>动态规划</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 绑定程序到特定 CPU 上运行</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220506-Linux-%E7%BB%91%E5%AE%9A%E7%A8%8B%E5%BA%8F%E5%88%B0%E7%89%B9%E5%AE%9A-CPU-%E4%B8%8A%E8%BF%90%E8%A1%8C/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>技术研究</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>技术研究</tag>
+        <tag>调度</tag>
+        <tag>CPU</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入理解 C++ 的左值和右值</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220422-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3-C-%E7%9A%84%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/</url>
+    <content><![CDATA[<p>C++ 的左值（lvalue）和右值（rvalue）的概念在 C++11 后变得越来越重要，作为一个不是很容易理解的概念，一旦我们搞清楚了他们的含义，将有助于我们进一步理解一些高级的 C++ 特性，例如 move/forward 的新语义及右值引用（rvalue references）。</p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>左值引用</tag>
+        <tag>右值引用</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux安装软件的几种方式</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220311-Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<p>Linux 提供了各种不同的软件包安装与管理方式，我们可以根据系统差异、实际情况以及使用需求选择不同的方式来安装。</p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
+        <tag>Linux</tag>
+        <tag>Ubuntu</tag>
+        <tag>环境</tag>
+        <tag>包管理</tag>
+        <tag>apt</tag>
+        <tag>yum</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一文总结常用排序算法及面试考点</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/220429-%E4%B8%80%E6%96%87%E6%80%BB%E7%BB%93%E5%B8%B8%E7%94%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%8F%8A%E9%9D%A2%E8%AF%95%E8%80%83%E7%82%B9/</url>
+    <content><![CDATA[<ul>
+<li>排序算法经常作为CS算法课程中的入门算法来引入，因为各种各样的排序算法中包含了很多的计算机科学思想，例如：<ul>
+<li>基于比较（Comparision）和不基于比较的策略；</li>
+<li>迭代（Iterative）或递归（Recursive）的实现</li>
+<li>分支（Divide-and-Conquer）的机制（例如归并排序与快速排序）</li>
+<li>最好/最差/平均 时间复杂度分析</li>
+<li>随机算法（Randomized Algorithm）</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>面试</tag>
+        <tag>排序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>还是想夸夸「东大信息化」</title>
+    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/220218-%E8%BF%98%E6%98%AF%E6%83%B3%E5%A4%B8%E5%A4%B8%E3%80%8C%E4%B8%9C%E5%A4%A7%E4%BF%A1%E6%81%AF%E5%8C%96%E3%80%8D/</url>
+    <content><![CDATA[<p>最近因为疫情管控，很多老师都不方便进学校，东大信息化即时推出了线上电子签的功能，对于忙于硕士开题的我来说解决了很多问题。</p>
+<p>可能对于很多本科生同学来说已经习惯了东大的校园信息服务，但是作为本科毕业于另一所985高校的我，在本硕的实际对比下，还是想夸夸咱们“东大信息化”！</p>
+]]></content>
+      <categories>
+        <category>杂文随笔</category>
+      </categories>
+      <tags>
+        <tag>SEU</tag>
+        <tag>信息化</tag>
       </tags>
   </entry>
 </search>
