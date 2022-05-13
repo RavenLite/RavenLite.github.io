@@ -6,7 +6,7 @@
   <link href="https://ravenxu.top/atom.xml" rel="self"/>
   
   <link href="https://ravenxu.top/"/>
-  <updated>2022-05-06T14:30:05.225Z</updated>
+  <updated>2022-05-13T15:20:04.249Z</updated>
   <id>https://ravenxu.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux 内核空间和用户空间</title>
+    <link href="https://ravenxu.top/Linux-%E5%86%85%E6%A0%B8%E7%A9%BA%E9%97%B4%E5%92%8C%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4/"/>
+    <id>https://ravenxu.top/Linux-%E5%86%85%E6%A0%B8%E7%A9%BA%E9%97%B4%E5%92%8C%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4/</id>
+    <published>2022-05-12T16:00:00.000Z</published>
+    <updated>2022-05-13T15:20:04.249Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Linux 为了提高操作系统的稳定性和可用性将内存地址空间划分为内核空间（kernel space）和用户空间（user space），本文以 32 位系统为例介绍 Linux</summary>
+        
+      
+    
+    
+    
+    <category term="知识角落" scheme="https://ravenxu.top/categories/%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/"/>
+    
+    
+    <category term="Linux" scheme="https://ravenxu.top/tags/Linux/"/>
+    
+    <category term="操作系统" scheme="https://ravenxu.top/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="内核" scheme="https://ravenxu.top/tags/%E5%86%85%E6%A0%B8/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux 绑定程序到特定 CPU 上运行</title>
@@ -587,38 +616,6 @@
     <category term="取模" scheme="https://ravenxu.top/tags/%E5%8F%96%E6%A8%A1/"/>
     
     <category term="取余" scheme="https://ravenxu.top/tags/%E5%8F%96%E4%BD%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>无人机 SLAM 建图常用地图类型及八叉树地图</title>
-    <link href="https://ravenxu.top/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/210924-%E6%97%A0%E4%BA%BA%E6%9C%BA-SLAM-%E5%BB%BA%E5%9B%BE%E5%B8%B8%E7%94%A8%E5%9C%B0%E5%9B%BE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%85%AB%E5%8F%89%E6%A0%91%E5%9C%B0%E5%9B%BE/"/>
-    <id>https://ravenxu.top/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/210924-%E6%97%A0%E4%BA%BA%E6%9C%BA-SLAM-%E5%BB%BA%E5%9B%BE%E5%B8%B8%E7%94%A8%E5%9C%B0%E5%9B%BE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%85%AB%E5%8F%89%E6%A0%91%E5%9C%B0%E5%9B%BE/</id>
-    <published>2021-09-23T16:00:00.000Z</published>
-    <updated>2022-05-06T14:29:19.382Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;无人机在进行路径规划之前要通过传感器对周围环境的感知建立空间模型，特别是在陌生的三维环境中，无人机要能够快速的进行环境信息的采集和建立合适的空间模型来提高路径规划的效率。&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="科研分享" scheme="https://ravenxu.top/categories/%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/"/>
-    
-    
-    <category term="无人机" scheme="https://ravenxu.top/tags/%E6%97%A0%E4%BA%BA%E6%9C%BA/"/>
-    
-    <category term="SLAM" scheme="https://ravenxu.top/tags/SLAM/"/>
-    
-    <category term="自主导航" scheme="https://ravenxu.top/tags/%E8%87%AA%E4%B8%BB%E5%AF%BC%E8%88%AA/"/>
-    
-    <category term="八叉树" scheme="https://ravenxu.top/tags/%E5%85%AB%E5%8F%89%E6%A0%91/"/>
     
   </entry>
   

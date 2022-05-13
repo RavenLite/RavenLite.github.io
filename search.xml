@@ -3532,4 +3532,18 @@
         <tag>信号量</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Linux 内核空间和用户空间</title>
+    <url>/Linux-%E5%86%85%E6%A0%B8%E7%A9%BA%E9%97%B4%E5%92%8C%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4/</url>
+    <content><![CDATA[<p>Linux 为了提高操作系统的稳定性和可用性将内存地址空间划分为内核空间（kernel space）和用户空间（user space），本文以 32 位系统为例介绍 Linux 系统的内核空间和用户空间。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>操作系统</tag>
+        <tag>内核</tag>
+      </tags>
+  </entry>
 </search>
