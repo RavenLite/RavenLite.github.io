@@ -3209,20 +3209,6 @@
       </tags>
   </entry>
   <entry>
-    <title>如何写好技术博客？</title>
-    <url>/e.%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/History/220415-%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%EF%BC%9F/</url>
-    <content><![CDATA[<p>写技术博客是所有程序员都绕不开的一个话题，这有助于整理平常的思考，梳理一个复杂难懂的技术细节，也可以满足分享与传播的欲望。为了能长久地坚持写博客，不让写博客成为一件麻烦事而丧失了写作的动力，在排版与内容方面做规范化是必要的，这将帮助我这种强迫症患者不必纠结具体的格式，不必要苦恼内容的来源与分类。</p>
-]]></content>
-      <categories>
-        <category>观察思考</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>经验</tag>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python 性能分析入门 —— cProfile与可视化</title>
     <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220325-Python-%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E5%85%A5%E9%97%A8-%E2%80%94%E2%80%94-cProfile%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/</url>
     <content><![CDATA[<p>最近在使用 Python 的 matplotlib 绘图库来进行三维空间地图的可视化，但是发现实际绘制速度特别慢，画图大概需要 90s 左右。之前有听说 matplotlib 因为绘图质量很高达到了出版级别所以速度上不是很快，但是直觉告诉我，也该也不至于这么慢……，猜测是在代码逻辑上应该有提升空间。</p>
@@ -3544,6 +3530,35 @@
         <tag>Linux</tag>
         <tag>操作系统</tag>
         <tag>内核</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多核处理器可以并行运行多个进程吗？</title>
+    <url>/%E5%A4%9A%E6%A0%B8%E5%A4%84%E7%90%86%E5%99%A8%E5%8F%AF%E4%BB%A5%E5%B9%B6%E8%A1%8C%E8%BF%90%E8%A1%8C%E5%A4%9A%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%90%97%EF%BC%9F/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>CPU</tag>
+        <tag>进程</tag>
+        <tag>线程</tag>
+        <tag>并行</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何写好技术博客？</title>
+    <url>/e.%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/History/220415-%E5%A6%82%E4%BD%95%E5%9D%9A%E6%8C%81%E5%86%99%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%EF%BC%9F/</url>
+    <content><![CDATA[<p>写技术博客是大部分程序员都很想坚持却又总是断断续续的一件事。大家愿意写技术博客是因为有很多好处，例如写博客有助于整理平常的思考、梳理一个复杂难懂的技术细节；同时也可以满足分享与传播的欲望，幸运的话还能提升自己的 impact。</p>
+]]></content>
+      <categories>
+        <category>观察思考</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>经验</tag>
+        <tag>blog</tag>
       </tags>
   </entry>
 </search>
