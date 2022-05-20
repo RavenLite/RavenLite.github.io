@@ -3282,22 +3282,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 绑定程序到特定 CPU 上运行</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220506-Linux-%E7%BB%91%E5%AE%9A%E7%A8%8B%E5%BA%8F%E5%88%B0%E7%89%B9%E5%AE%9A-CPU-%E4%B8%8A%E8%BF%90%E8%A1%8C/</url>
-    <content><![CDATA[<p>现在我们日程使用的手机、电脑、服务器使用的基本上都是多核 CPU，多核 CPU 允许我们并行地运行多个程序。我们的程序（进程/线程）跑在哪一个核心上是由操作系统内核来调度的，内核会将我们的程序调度到不同的核心上来运行，那有没有方法能让我们的程序一直在同一个 CPU 上运行呢？</p>
-<p>答案当然是有的，Linux 提供了 CPU 亲和性（CPU affinity）的设置来允许我们控制程序使其在同一块 CPU 上完成。</p>
-]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>技术研究</tag>
-        <tag>调度</tag>
-        <tag>CPU</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>深入理解 C++ 的左值和右值</title>
     <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220422-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3-C-%E7%9A%84%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/</url>
     <content><![CDATA[<p>C++ 的左值（lvalue）和右值（rvalue）的概念在 C++11 后变得越来越重要，作为一个不是很容易理解的概念，一旦我们搞清楚了他们的含义，将有助于我们进一步理解一些高级的 C++ 特性，例如 move/forward 的新语义及右值引用（rvalue references）。</p>
@@ -3491,21 +3475,6 @@
       </tags>
   </entry>
   <entry>
-    <title>无人机 SLAM 建图常用地图类型及八叉树地图</title>
-    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/210924-%E6%97%A0%E4%BA%BA%E6%9C%BA-SLAM-%E5%BB%BA%E5%9B%BE%E5%B8%B8%E7%94%A8%E5%9C%B0%E5%9B%BE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%85%AB%E5%8F%89%E6%A0%91%E5%9C%B0%E5%9B%BE/</url>
-    <content><![CDATA[<p>无人机在进行路径规划之前要通过传感器对周围环境的感知建立空间模型，特别是在陌生的三维环境中，无人机要能够快速的进行环境信息的采集和建立合适的空间模型来提高路径规划的效率。</p>
-]]></content>
-      <categories>
-        <category>科研分享</category>
-      </categories>
-      <tags>
-        <tag>无人机</tag>
-        <tag>SLAM</tag>
-        <tag>自主导航</tag>
-        <tag>八叉树</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Ctrl-C，Ctrl-Z，Ctrl-D 的区别</title>
     <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220204-Ctrl-C%EF%BC%8CCtrl-Z%EF%BC%8CCtrl-D-%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
     <content><![CDATA[]]></content>
@@ -3516,35 +3485,6 @@
         <tag>Linux</tag>
         <tag>shell</tag>
         <tag>信号量</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux 内核空间和用户空间</title>
-    <url>/Linux-%E5%86%85%E6%A0%B8%E7%A9%BA%E9%97%B4%E5%92%8C%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4/</url>
-    <content><![CDATA[<p>Linux 为了提高操作系统的稳定性和可用性将内存地址空间划分为内核空间（kernel space）和用户空间（user space），本文以 32 位系统为例介绍 Linux 系统的内核空间和用户空间。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>操作系统</tag>
-        <tag>内核</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>多核处理器可以并行运行多个进程吗？</title>
-    <url>/%E5%A4%9A%E6%A0%B8%E5%A4%84%E7%90%86%E5%99%A8%E5%8F%AF%E4%BB%A5%E5%B9%B6%E8%A1%8C%E8%BF%90%E8%A1%8C%E5%A4%9A%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%90%97%EF%BC%9F/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>CPU</tag>
-        <tag>进程</tag>
-        <tag>线程</tag>
-        <tag>并行</tag>
       </tags>
   </entry>
   <entry>
@@ -3559,6 +3499,66 @@
         <tag>博客</tag>
         <tag>经验</tag>
         <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 绑定程序到特定 CPU 上运行</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220506-Linux-%E7%BB%91%E5%AE%9A%E7%A8%8B%E5%BA%8F%E5%88%B0%E7%89%B9%E5%AE%9A-CPU-%E4%B8%8A%E8%BF%90%E8%A1%8C/</url>
+    <content><![CDATA[<p>现在我们日程使用的手机、电脑、服务器使用的基本上都是多核 CPU，多核 CPU 允许我们并行地运行多个程序。我们的程序（进程/线程）跑在哪一个核心上是由操作系统内核来调度的，内核会将我们的程序调度到不同的核心上来运行，那有没有方法能让我们的程序一直在同一个 CPU 上运行呢？</p>
+<p>答案当然是有的，Linux 提供了 CPU 亲和性（CPU affinity）的设置来允许我们控制程序使其在同一块 CPU 上完成。</p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>技术研究</tag>
+        <tag>调度</tag>
+        <tag>CPU</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多核处理器可以并行运行多个进程吗？</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220520-%E5%A4%9A%E6%A0%B8%E5%A4%84%E7%90%86%E5%99%A8%E5%8F%AF%E4%BB%A5%E5%B9%B6%E8%A1%8C%E8%BF%90%E8%A1%8C%E5%A4%9A%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%90%97%EF%BC%9F/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>CPU</tag>
+        <tag>进程</tag>
+        <tag>线程</tag>
+        <tag>并行</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>无人机 SLAM 建图常用地图类型及八叉树地图</title>
+    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/210924-%E6%97%A0%E4%BA%BA%E6%9C%BA-SLAM-%E5%BB%BA%E5%9B%BE%E5%B8%B8%E7%94%A8%E5%9C%B0%E5%9B%BE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%85%AB%E5%8F%89%E6%A0%91%E5%9C%B0%E5%9B%BE/</url>
+    <content><![CDATA[<p>无人机在进行路径规划之前要通过传感器对周围环境的感知建立空间模型，特别是在陌生的三维环境中，无人机要能够快速的进行环境信息的采集和建立合适的空间模型来提高路径规划的效率。</p>
+]]></content>
+      <categories>
+        <category>科研分享</category>
+      </categories>
+      <tags>
+        <tag>无人机</tag>
+        <tag>SLAM</tag>
+        <tag>自主导航</tag>
+        <tag>八叉树</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 内核空间和用户空间</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220513-Linux-%E5%86%85%E6%A0%B8%E7%A9%BA%E9%97%B4%E5%92%8C%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4/</url>
+    <content><![CDATA[<p>Linux 为了提高操作系统的稳定性和可用性将内存地址空间划分为内核空间（kernel space）和用户空间（user space），本文以 32 位系统为例介绍 Linux 系统的内核空间和用户空间。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>操作系统</tag>
+        <tag>内核</tag>
       </tags>
   </entry>
 </search>

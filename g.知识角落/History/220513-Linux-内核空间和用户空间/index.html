@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Linux,技术研究,调度,CPU," />
+  <meta name="keywords" content="Linux,操作系统,内核," />
 
 
 
@@ -81,20 +81,19 @@
 
 
 
-<meta name="description" content="现在我们日程使用的手机、电脑、服务器使用的基本上都是多核 CPU，多核 CPU 允许我们并行地运行多个程序。我们的程序（进程&#x2F;线程）跑在哪一个核心上是由操作系统内核来调度的，内核会将我们的程序调度到不同的核心上来运行，那有没有方法能让我们的程序一直在同一个 CPU 上运行呢？ 答案当然是有的，Linux 提供了 CPU 亲和性（CPU affinity）的设置来允许我们控制程序使其在同一块 CPU">
+<meta name="description" content="Linux 为了提高操作系统的稳定性和可用性将内存地址空间划分为内核空间（kernel space）和用户空间（user space），本文以 32 位系统为例介绍 Linux 系统的内核空间和用户空间。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux 绑定程序到特定 CPU 上运行">
-<meta property="og:url" content="https://ravenxu.top/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220506-Linux-%E7%BB%91%E5%AE%9A%E7%A8%8B%E5%BA%8F%E5%88%B0%E7%89%B9%E5%AE%9A-CPU-%E4%B8%8A%E8%BF%90%E8%A1%8C/index.html">
+<meta property="og:title" content="Linux 内核空间和用户空间">
+<meta property="og:url" content="https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220513-Linux-%E5%86%85%E6%A0%B8%E7%A9%BA%E9%97%B4%E5%92%8C%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4/index.html">
 <meta property="og:site_name" content="Blog | Raven Xu">
-<meta property="og:description" content="现在我们日程使用的手机、电脑、服务器使用的基本上都是多核 CPU，多核 CPU 允许我们并行地运行多个程序。我们的程序（进程&#x2F;线程）跑在哪一个核心上是由操作系统内核来调度的，内核会将我们的程序调度到不同的核心上来运行，那有没有方法能让我们的程序一直在同一个 CPU 上运行呢？ 答案当然是有的，Linux 提供了 CPU 亲和性（CPU affinity）的设置来允许我们控制程序使其在同一块 CPU">
+<meta property="og:description" content="Linux 为了提高操作系统的稳定性和可用性将内存地址空间划分为内核空间（kernel space）和用户空间（user space），本文以 32 位系统为例介绍 Linux 系统的内核空间和用户空间。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-05-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-06T14:30:05.225Z">
+<meta property="article:published_time" content="2022-05-12T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-13T15:20:04.249Z">
 <meta property="article:author" content="Raven Xu">
 <meta property="article:tag" content="Linux">
-<meta property="article:tag" content="技术研究">
-<meta property="article:tag" content="调度">
-<meta property="article:tag" content="CPU">
+<meta property="article:tag" content="操作系统">
+<meta property="article:tag" content="内核">
 <meta name="twitter:card" content="summary">
 
 
@@ -125,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://ravenxu.top/a.技术探究/220506-Linux-绑定程序到特定-CPU-上运行/"/>
+  <link rel="canonical" href="https://ravenxu.top/g.知识角落/History/220513-Linux-内核空间和用户空间/"/>
 
 
 
 
 
-  <title>Linux 绑定程序到特定 CPU 上运行 | Blog | Raven Xu</title>
+  <title>Linux 内核空间和用户空间 | Blog | Raven Xu</title>
   
 
 
@@ -259,7 +258,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ravenxu.tophttps://raven.feishu.cn/docs/doccnqe2WJzfMuOouc1WU1bQw7a">
+    <link itemprop="mainEntityOfPage" href="https://ravenxu.tophttps://raven.feishu.cn/docs/doccnDDWw57quVyJulMJZEKfYZb#">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -278,8 +277,8 @@
         
           <h1 class="post-title" itemprop="name headline">
               
-              <a class="post-title-link post-title-link-external" target="_blank" href="https://raven.feishu.cn/docs/doccnqe2WJzfMuOouc1WU1bQw7a" itemprop="url">
-                Linux 绑定程序到特定 CPU 上运行
+              <a class="post-title-link post-title-link-external" target="_blank" href="https://raven.feishu.cn/docs/doccnDDWw57quVyJulMJZEKfYZb#" itemprop="url">
+                Linux 内核空间和用户空间
                 <i class="fa fa-external-link"></i>
               </a>
             </h1>
@@ -294,8 +293,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-05-06T00:00:00+08:00">
-                2022-05-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-05-13T00:00:00+08:00">
+                2022-05-13
               </time>
             
 
@@ -317,8 +316,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/" itemprop="url" rel="index">
-                    <span itemprop="name">技术探究</span>
+                  <a href="/categories/%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/" itemprop="url" rel="index">
+                    <span itemprop="name">知识角落</span>
                   </a>
                 </span>
 
@@ -335,8 +334,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a target="_blank" rel="noopener" href="https://raven.feishu.cn/docs/doccnqe2WJzfMuOouc1WU1bQw7a#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="https://raven.feishu.cn/docs/doccnqe2WJzfMuOouc1WU1bQw7a" itemprop="commentsCount"></span>
+                <a target="_blank" rel="noopener" href="https://raven.feishu.cn/docs/doccnDDWw57quVyJulMJZEKfYZb##comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="https://raven.feishu.cn/docs/doccnDDWw57quVyJulMJZEKfYZb#" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -372,8 +371,7 @@
       
 
       
-        <p>现在我们日程使用的手机、电脑、服务器使用的基本上都是多核 CPU，多核 CPU 允许我们并行地运行多个程序。我们的程序（进程/线程）跑在哪一个核心上是由操作系统内核来调度的，内核会将我们的程序调度到不同的核心上来运行，那有没有方法能让我们的程序一直在同一个 CPU 上运行呢？</p>
-<p>答案当然是有的，Linux 提供了 CPU 亲和性（CPU affinity）的设置来允许我们控制程序使其在同一块 CPU 上完成。</p>
+        <p>Linux 为了提高操作系统的稳定性和可用性将内存地址空间划分为内核空间（kernel space）和用户空间（user space），本文以 32 位系统为例介绍 Linux 系统的内核空间和用户空间。</p>
 
       
     </div>
@@ -393,11 +391,9 @@
           
             <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
           
-            <a href="/tags/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/" rel="tag"><i class="fa fa-tag"></i> 技术研究</a>
+            <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag"><i class="fa fa-tag"></i> 操作系统</a>
           
-            <a href="/tags/%E8%B0%83%E5%BA%A6/" rel="tag"><i class="fa fa-tag"></i> 调度</a>
-          
-            <a href="/tags/CPU/" rel="tag"><i class="fa fa-tag"></i> CPU</a>
+            <a href="/tags/%E5%86%85%E6%A0%B8/" rel="tag"><i class="fa fa-tag"></i> 内核</a>
           
         </div>
       
@@ -410,8 +406,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/220429-%E4%B8%80%E6%96%87%E6%80%BB%E7%BB%93%E5%B8%B8%E7%94%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%8F%8A%E9%9D%A2%E8%AF%95%E8%80%83%E7%82%B9/" rel="next" title="一文总结常用排序算法及面试考点">
-                <i class="fa fa-chevron-left"></i> 一文总结常用排序算法及面试考点
+              <a href="/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220506-Linux-%E7%BB%91%E5%AE%9A%E7%A8%8B%E5%BA%8F%E5%88%B0%E7%89%B9%E5%AE%9A-CPU-%E4%B8%8A%E8%BF%90%E8%A1%8C/" rel="next" title="Linux 绑定程序到特定 CPU 上运行">
+                <i class="fa fa-chevron-left"></i> Linux 绑定程序到特定 CPU 上运行
               </a>
             
           </div>
@@ -420,8 +416,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/Linux-%E5%86%85%E6%A0%B8%E7%A9%BA%E9%97%B4%E5%92%8C%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4/" rel="prev" title="Linux 内核空间和用户空间">
-                Linux 内核空间和用户空间 <i class="fa fa-chevron-right"></i>
+              <a href="/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220520-%E5%A4%9A%E6%A0%B8%E5%A4%84%E7%90%86%E5%99%A8%E5%8F%AF%E4%BB%A5%E5%B9%B6%E8%A1%8C%E8%BF%90%E8%A1%8C%E5%A4%9A%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%90%97%EF%BC%9F/" rel="prev" title="多核处理器可以并行运行多个进程吗？">
+                多核处理器可以并行运行多个进程吗？ <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
