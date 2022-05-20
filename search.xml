@@ -1,436 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-<<<<<<< HEAD
-=======
-    <title>Github 使用经典问题：如何同步 fork 项目原仓库的更新</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/Github%20%E4%BD%BF%E7%94%A8%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98%EF%BC%9A%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%20fork%20%E9%A1%B9%E7%9B%AE%E5%8E%9F%E4%BB%93%E5%BA%93%E7%9A%84%E6%9B%B4%E6%96%B0/</url>
-    <content><![CDATA[<p>Github 我们经常会通过 fork 开源项目在自己的仓库中更新，然后提交 Pull Request (Merge Request) 为开源项目做贡献。</p>
-<p>不过我们经常会遇到原仓库更新，重新 fork 显然是不优雅的，那我我们该怎么同步更新呢？</p>
-<span id="more"></span>
-
-<p><img src="pic1.jpg"></p>
-<h1 id="如何在-Github-网页端同步更新？"><a href="#如何在-Github-网页端同步更新？" class="headerlink" title="如何在 Github 网页端同步更新？"></a>如何在 Github 网页端同步更新？</h1><ol>
-<li>进入你自己的 fork 过来的仓库。</li>
-<li>点击 “Pull requests” ，如何点击右侧绿色的 “New pull request”。</li>
-<li>Github 首先会比较源仓库与你 fork 后的仓库，如果你没有做任何更改，则找不到要 PR 的内容。所以，我们需要点击 “switching the base”，会将我们的仓库作为基础版本，原仓库作为 head 版本，现在我们会看到我们的需要需要 “catch up” 的更新。</li>
-<li>点击 “Create pull request”，起一个名字，然后点击 “Create pull request”。</li>
-<li>点击 “Merge pull request”，然后点击 “Confirm merge”。</li>
-<li>如果我们没提交什么新代码，merge 过程将自动完成。</li>
-</ol>
-<h1 id="如何通过本地命令行同步更新？"><a href="#如何通过本地命令行同步更新？" class="headerlink" title="如何通过本地命令行同步更新？"></a>如何通过本地命令行同步更新？</h1><ol>
-<li>验证远程分支可以 fetch 或 push<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
-<li>指明我们需要同步的仓库<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote add upstream https://github.com/OriginalRepo/OriginalProject.git</span><br></pre></td></tr></table></figure></li>
-<li>验证<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
-<li>拉取更新的 branches 和 commits<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git fetch upstream</span><br></pre></td></tr></table></figure></li>
-<li>Checkout 本地分支<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout master</span><br></pre></td></tr></table></figure></li>
-<li>合并<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git merge upstream/master</span><br></pre></td></tr></table></figure></li>
-<li>提交<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure></li>
-</ol>
+    <title>「Crazyflie开源无人机」Multi-ranger扩展板入门</title>
+    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/211217-%E3%80%8CCrazyflie%E5%BC%80%E6%BA%90%E6%97%A0%E4%BA%BA%E6%9C%BA%E3%80%8DMulti-ranger%E6%89%A9%E5%B1%95%E6%9D%BF%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<p>Multi-ranger 是与 Crazyflie 无人机配套使用的一块扩展板，提供了测量周围（前后左右上五个方向）4米范围内障碍物距离的能力，其采用LiDar技术，测距误差较小，可以用在无人机的自主飞行导航等应用。</p>
 ]]></content>
       <categories>
-        <category>技术探究</category>
+        <category>科研分享</category>
       </categories>
       <tags>
-        <tag>Git</tag>
-        <tag>Github</tag>
-        <tag>版本管理</tag>
+        <tag>Crazyflie</tag>
+        <tag>无人机</tag>
+        <tag>LiDar</tag>
+        <tag>Multi-ranger</tag>
+        <tag>VL53L1x</tag>
       </tags>
   </entry>
   <entry>
->>>>>>> 57a6f90f7f4c21913847238dd47dcb12af6ffd75
-    <title>初探数据库连接池</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/%E5%88%9D%E6%8E%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0/</url>
-    <content><![CDATA[<p>参考资料</p>
-<ul>
-<li><a href="https://blog.csdn.net/crankz/article/details/82874158">数据库连接池学习笔记（一）：原理介绍+常用连接池介绍</a></li>
-<li><a href="https://blog.csdn.net/frightingforambition/article/details/25464129">java数据库连接池实现原理</a></li>
-<li><a href="https://juejin.im/entry/58fb03220ce4630061233c98">高性能数据库连接池的内幕</a></li>
-</ul>
-<h1 id="为什么要使用连接池"><a href="#为什么要使用连接池" class="headerlink" title="为什么要使用连接池"></a>为什么要使用连接池</h1><p>数据库连接是一种关键的有限的昂贵的资源，这一点在多用户的网页应用程序中体现得尤为突出。  一个数据库连接对象均对应一个物理数据库连接，每次操作都打开一个物理连接，使用完都关闭连接，这样造成系统的 性能低下。 数据库连接池的解决方案是在应用程序启动时建立足够的数据库连接，并讲这些连接组成一个连接池(简单说：在一个“池”里放了好多半成品的数据库联接对象)，由应用程序动态地对池中的连接进行申请、使用和释放。对于多于连接池中连接数的并发请求，应该在请求队列中排队等待。并且应用程序可以根据池中连接的使用率，动态增加或减少池中的连接数。 连接池技术尽可能多地重用了消耗内存地资源，大大节省了内存，提高了服务器地服务效率，能够支持更多的客户服务。通过使用连接池，将大大提高程序运行效率，同时，我们可以通过其自身的管理机制来监视数据库连接的数量、使用情况等。 </p>
-<span id="more"></span>
-
-<h1 id="传统的连接机制与数据库连接池的运行机制区别"><a href="#传统的连接机制与数据库连接池的运行机制区别" class="headerlink" title="传统的连接机制与数据库连接池的运行机制区别"></a>传统的连接机制与数据库连接池的运行机制区别</h1><h2 id="不使用连接池流程"><a href="#不使用连接池流程" class="headerlink" title="不使用连接池流程"></a>不使用连接池流程</h2><p>下面以访问MySQL为例，执行一个SQL命令，如果不使用连接池，需要经过哪些流程。<br><img src="https://ws3.sinaimg.cn/large/006tNc79ly1g3116moxfaj30d40dgdgt.jpg" width="400px" /></p>
-<ul>
-<li><p>步骤</p>
-<ol>
-<li>TCP建立连接的三次握手（JDBC与MySQL的连接基于TCP协议）</li>
-<li>MySQL认证的三次握手</li>
-<li>真正的SQL执行</li>
-<li>MySQL的关闭</li>
-<li>TCP的四次握手关闭<br>可以看到，为了执行一条SQL，却多了非常多我们不关心的网络交互。</li>
-</ol>
-</li>
-<li><p>优点</p>
-<ul>
-<li>实现简单</li>
-</ul>
-</li>
-<li><p>缺点</p>
-<ol>
-<li>网络IO较多</li>
-<li>数据库的负载较高</li>
-<li>响应时间较长及QPS较低（每秒查询率QPS是对一个特定的查询服务器在规定时间内所处理流量多少的衡量标准）</li>
-<li>应用频繁的创建连接和关闭连接，导致临时对象较多，GC频繁</li>
-<li>在关闭连接后，会出现大量TIME_WAIT的TCP状态（在2个MSL之后关闭，这个是TCP/IP的设计者规定的<a href="https://www.cnblogs.com/sunxucool/p/3449068.html">详情</a>）</li>
-</ol>
-</li>
-</ul>
-<h2 id="使用数据库连接池"><a href="#使用数据库连接池" class="headerlink" title="使用数据库连接池"></a>使用数据库连接池</h2><img src="https://ws4.sinaimg.cn/large/006tNc79ly1g311fkf2cqj30f80fdtb5.jpg" width="400px" />
-
-<ul>
-<li><p>步骤</p>
-<ul>
-<li>第一次访问的时候，需要建立连接。 但是之后的访问，均会复用之前创建的连接，直接执行SQL语句。</li>
-</ul>
-</li>
-<li><p>优点</p>
-<ol>
-<li>较少了网络开销</li>
-<li>系统的性能会有一个实质的提升</li>
-<li>没了麻烦的TIME_WAIT状态</li>
-</ol>
-</li>
-</ul>
-<h1 id="数据库连接池的工作原理"><a href="#数据库连接池的工作原理" class="headerlink" title="数据库连接池的工作原理"></a>数据库连接池的工作原理</h1><p>连接池的工作原理主要由三部分组成，分别为</p>
-<ol>
-<li>连接池的建立</li>
-<li>连接池中连接的使用管理</li>
-<li>连接池的关闭</li>
-</ol>
-<p>第一、连接池的建立。一般在系统初始化时，连接池会根据系统配置建立，并在池中创建了几个连接对象，以便使用时能从连接池中获取。连接池中的连接不能随意创建和关闭，这样避免了连接随意建立和关闭造成的系统开销。Java中提供了很多容器类可以方便的构建连接池，例如Vector、Stack等。</p>
-<p>第二、连接池的管理。连接池管理策略是连接池机制的核心，连接池内连接的分配和释放对系统的性能有很大的影响。其管理策略是：<br>当客户请求数据库连接时，首先查看连接池中是否有空闲连接，如果存在空闲连接，则将连接分配给客户使用；如果没有空闲连接，则查看当前所开的连接数是否已经达到最大连接数，如果没达到就重新创建一个连接给请求的客户；如果达到就按设定的最大等待时间进行等待，如果超出最大等待时间，则抛出异常给客户。<br>当客户释放数据库连接时，先判断该连接的引用次数是否超过了规定值，如果超过就从连接池中删除该连接，否则保留为其他客户服务。<br>该策略保证了数据库连接的有效复用，避免频繁的建立、释放连接所带来的系统资源开销。</p>
-<p>第三、连接池的关闭。当应用程序退出时，关闭连接池中所有的连接，释放连接池相关的资源，该过程正好与创建相反。</p>
-<h1 id="连接池主要参数"><a href="#连接池主要参数" class="headerlink" title="连接池主要参数"></a>连接池主要参数</h1><p><strong>使用连接池时，要配置一下参数</strong></p>
-<ol>
-<li>最小连接数：是连接池一直保持的数据库连接,所以如果应用程序对数据库连接的使用量不大,将会有大量的数据库连接资源被浪费.</li>
-<li>最大连接数：是连接池能申请的最大连接数,如果数据库连接请求超过次数,后面的数据库连接请求将被加入到等待队列中,这会影响以后的数据库操作</li>
-<li>最大空闲时间</li>
-<li>获取连接超时时间</li>
-<li>超时重试连接次数</li>
-</ol>
-<h1 id="连接池需要注意的点"><a href="#连接池需要注意的点" class="headerlink" title="连接池需要注意的点"></a>连接池需要注意的点</h1><h2 id="并发问题"><a href="#并发问题" class="headerlink" title="并发问题"></a>并发问题</h2><p>为了使连接管理服务具有最大的通用性，必须考虑多线程环境，即并发问题。这个问题相对比较好解决，因为各个语言自身提供了对并发管理的支持像java,c#等等，使用synchronized(java)lock(C#)关键字即可确保线程是同步的。</p>
-<h2 id="事务处理"><a href="#事务处理" class="headerlink" title="事务处理"></a>事务处理</h2><p>我们知道，事务具有原子性，此时要求对数据库的操作符合“ALL-OR-NOTHING”原则,即对于一组SQL语句要么全做，要么全不做。<br>我们知道当2个线程共用一个连接Connection对象，而且各自都有自己的事务要处理时候，对于连接池是一个很头疼的问题，因为即使Connection类提供了相应的事务支持，可是我们仍然不能确定那个数据库操作是对应那个事务的，这是由于我们有２个线程都在进行事务操作而引起的。为此我们可以使用每一个事务独占一个连接来实现，虽然这种方法有点浪费连接池资源但是可以大大降低事务管理的复杂性。 </p>
-<h2 id="连接池的分配与释放"><a href="#连接池的分配与释放" class="headerlink" title="连接池的分配与释放"></a>连接池的分配与释放</h2><p>连接池的分配与释放，对系统的性能有很大的影响。合理的分配与释放，可以提高连接的复用度，从而降低建立新连接的开销，同时还可以加快用户的访问速度。<br>对于连接的管理可使用一个List。即把已经创建的连接都放入List中去统一管理。每当用户请求一个连接时，系统检查这个List中有没有可以分配的连接。如果有就把那个最合适的连接分配给他；如果没有就抛出一个异常给用户，List中连接是否可以被分配由一个线程来专门管理捎后我会介绍这个线程的具体实现。</p>
-<h2 id="连接池的配置与维护"><a href="#连接池的配置与维护" class="headerlink" title="连接池的配置与维护"></a>连接池的配置与维护</h2><p>连接池中到底应该放置多少连接，才能使系统的性能最佳？系统可采取设置最小连接数（minConnection）和最大连接数（maxConnection）等参数来控制连接池中的连接。比方说，最小连接数是系统启动时连接池所创建的连接数。如果创建过多，则系统启动就慢，但创建后系统的响应速度会很快；如果创建过少，则系统启动的很快，响应起来却慢。这样，可以在开发时，设置较小的最小连接数，开发起来会快，而在系统实际使用时设置较大的，因为这样对访问客户来说速度会快些。最大连接数是连接池中允许连接的最大数目，具体设置多少，要看系统的访问量，可通过软件需求上得到。 <br>如何确保连接池中的最小连接数呢？有动态和静态两种策略。动态即每隔一定时间就对连接池进行检测，如果发现连接数量大于最小连接数，则补充相应数量的新连接,以保证连接池的正常运转。静态是发现空闲连接不够时再去检查。</p>
-<h1 id="数据库对比"><a href="#数据库对比" class="headerlink" title="数据库对比"></a>数据库对比</h1><h2 id="第一、二代连接池"><a href="#第一、二代连接池" class="headerlink" title="第一、二代连接池"></a>第一、二代连接池</h2><p>区分一个数据库连接池是属于第一代产品还是代二代产品有一个最重要的特征就是看它在架构和设计时采用的线程模型，因为这直接影响的是并发环境下存取数据库连接的性能。</p>
-<p>一般来讲采用单线程同步的架构设计都属于第一代连接池，二采用多线程异步架构的则属于第二代。比较有代表性的就是Apache Commons DBCP，在1.x版本中，一直延续着单线程设计模式，到2.x才采用多线程模型。</p>
-<p>二代产品对一代产品的超越是颠覆性的，除了一些“历史原因”，你很难再找到第二条理由说服自己不选择二代产品，但任何成功都不是偶然的，二代产品的成功很大程度上得益于前代产品们打下的基础，站在巨人的肩膀上，新一代的连接池的设计师们将这一项“工具化”的产品，推向了极致。其中，最具代表性的两款产品是：</p>
-<ul>
-<li>HikariCP</li>
-<li>Druid</li>
-</ul>
-<p>下面更多介绍请参考<a href="https://blog.csdn.net/crankz/article/details/82874158">数据库连接池对比</a></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>时至今日，虽然每个应用（需要RDBMS的）都离不开连接池，但在实际使用的时候，连接池已经可以做到“<strong>隐形</strong>”了。也就是说在通常情况下，连接池完成项目初始化配置之后，就再不需要再做任何改动了。不论你是选择Druid或是HikariCP，甚至是DBCP，它们都足够稳定且高效！之前讨论了很多关于连接池的性能的问题，但这些性能上的差异，是相较于其他连接池而言的，对整个系统应用来说，第二代连接池在使用过程中体会到的差别是微乎其微的，基本上不存在因为连接池的自身的配饰和使用导致系统性能下降的情况，除非是在单点应用的数据库负载足够高的时候（压力测试的时候），但即便是如此，通用的优化的方式也是单点改集群，而不是在单点的连接池上死扣。</p>
+    <title>无人机 SLAM 建图常用地图类型及八叉树地图</title>
+    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/210924-%E6%97%A0%E4%BA%BA%E6%9C%BA-SLAM-%E5%BB%BA%E5%9B%BE%E5%B8%B8%E7%94%A8%E5%9C%B0%E5%9B%BE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%85%AB%E5%8F%89%E6%A0%91%E5%9C%B0%E5%9B%BE/</url>
+    <content><![CDATA[<p>无人机在进行路径规划之前要通过传感器对周围环境的感知建立空间模型，特别是在陌生的三维环境中，无人机要能够快速的进行环境信息的采集和建立合适的空间模型来提高路径规划的效率。</p>
 ]]></content>
       <categories>
-        <category>技术探究</category>
+        <category>科研分享</category>
       </categories>
       <tags>
-        <tag>数据库</tag>
-        <tag>连接池</tag>
-        <tag>MySQL</tag>
-        <tag>dbcp2</tag>
-        <tag>转载</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>动手实现一个 Python 版本的 MysqlClient</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%20Python%20%E7%89%88%E6%9C%AC%E7%9A%84%20MysqlClient/</url>
-    <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>在实际项目中我们会在项目的各个角落进行数据库访问操作，显然我们需要将对数据库的访问做一定的封装，在统一管理的基础上也可以做一些额外的优化。<br>所以我们打算实现一个叫做<code>MysqlClient</code>的类对数据库访问做统一管理，我们期待它的作用有：</p>
-<ul>
-<li>统一管理数据库访问凭证</li>
-<li>对<code>query</code>和<code>execute</code>两类操作进行封装</li>
-<li>预处理sql以防 SQL注入</li>
-<li>引入数据库连接池</li>
-<li>合适的错误检查与记录</li>
-<li>以及如何正确使用</li>
-</ul>
-<p>在百度上随便一搜就能搜到类似的实现，不过他们大部分都是只实现了对<code>query</code>，<code>execute</code>的封装，少部分加上了预处理sql，我希望提供一个更完整的<code>MysqlClient</code>实现。</p>
-<blockquote>
-<p>我最初也是在百度上复制了一个封装了query、execute两个操作的MysqlClient，后来被公司安全部门提示有sql注入风险，所幸将平常遇到的对数据库访问对象的需求一次考虑清楚设计一个比较完善的实现。</p>
-</blockquote>
-<h1 id="上代码"><a href="#上代码" class="headerlink" title="上代码"></a>上代码</h1><blockquote>
-<p>Python 3.7，遵循 PEP8 代码风格</p>
-</blockquote>
-<span id="more"></span>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># encoding: utf-8</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">@desc: MySQL client. Manage the access evidence, wrap the common action, improve the performance, keep the security.</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"><span class="keyword">import</span> glog</span><br><span class="line"><span class="keyword">from</span> DBUtils.PooledDB <span class="keyword">import</span> PooledDB</span><br><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> create_engine</span><br><span class="line"><span class="keyword">from</span> sqlalchemy.orm <span class="keyword">import</span> sessionmaker</span><br><span class="line"></span><br><span class="line"><span class="comment"># database configuration</span></span><br><span class="line">__DATABASE_HOST = <span class="string">&quot;127.0.0.1&quot;</span></span><br><span class="line">__DATABASE_PORT = <span class="string">&quot;3306&quot;</span></span><br><span class="line">__DATABASE_USER = <span class="string">&quot;root&quot;</span></span><br><span class="line">__DATABASE_PASSWORD = <span class="string">&quot;password&quot;</span></span><br><span class="line">__DATABASE_NAME = <span class="string">&quot;demo&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># database connection pool configuration</span></span><br><span class="line">__NUM_DEFAULT_CONNECTION = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_mysql_connection_pool</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Database connection to the server using the connection pool.</span></span><br><span class="line"><span class="string">    :return: database connection</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    db_host = __DATABASE_HOST</span><br><span class="line">    db_port = __DATABASE_PORT</span><br><span class="line">    db_user = __DATABASE_USER</span><br><span class="line">    db_password = __DATABASE_PASSWORD</span><br><span class="line">    db_name = __DATABASE_NAME</span><br><span class="line"></span><br><span class="line">    num_connection = __NUM_DEFAULT_CONNECTION</span><br><span class="line"></span><br><span class="line">    connection_pool = PooledDB(MySQLdb, num_connection,</span><br><span class="line">                               host=db_host, port=db_port, user=db_user, passwd=db_password, db=db_name)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> connection_pool</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_session</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Used by ORM framework.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    db_host = __DATABASE_HOST</span><br><span class="line">    db_port = __DATABASE_PORT</span><br><span class="line">    db_user = __DATABASE_USER</span><br><span class="line">    db_password = __DATABASE_PASSWORD</span><br><span class="line">    db_name = __DATABASE_NAME</span><br><span class="line"></span><br><span class="line">    engine = create_engine(<span class="string">&#x27;mysql+mysqlconnector://&#x27;</span></span><br><span class="line">                           + db_user + <span class="string">&#x27;:&#x27;</span> + db_password + <span class="string">&#x27;@&#x27;</span> + db_host + <span class="string">&#x27;:&#x27;</span> + db_port + <span class="string">&#x27;/&#x27;</span> + db_name)</span><br><span class="line">    da_session = sessionmaker(bind=engine)</span><br><span class="line">    session = da_session()</span><br><span class="line">    <span class="keyword">return</span> session</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">watch_prepared_statement</span>(<span class="params">sql, params</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    When we use prepared sql statement, the program doesn&#x27;t the real sql neither in the python program or</span></span><br><span class="line"><span class="string">    database process. This function will parse the expected sql statement for debugging.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    expected_sql = sql % <span class="built_in">tuple</span>(params)</span><br><span class="line">    <span class="keyword">return</span> expected_sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MysqlClient</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Package actions about the database.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.connection_pool = get_mysql_connection_pool()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">query</span>(<span class="params">self, sql, params=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Query action.</span></span><br><span class="line"><span class="string">        :param sql: being executed sql statement</span></span><br><span class="line"><span class="string">        :param params: sql param, to avoid the sql injection</span></span><br><span class="line"><span class="string">        :return: Query Result</span></span><br><span class="line"><span class="string">        :rtype: list</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        connection = self.connection_pool.connection()</span><br><span class="line">        cursor = connection.cursor()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> params <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            params = []</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            cursor.execute(<span class="built_in">str</span>(sql), params)</span><br><span class="line">            result = cursor.fetchall()</span><br><span class="line">            <span class="keyword">return</span> result</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            expected_sql = watch_prepared_statement(sql, params)</span><br><span class="line">            glog.error(<span class="string">&quot;[&quot;</span> + <span class="built_in">str</span>(e) + <span class="string">&quot;]&quot;</span> + expected_sql)</span><br><span class="line">            result = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="comment"># release the connection to the pooled</span></span><br><span class="line">            cursor.close()</span><br><span class="line">            connection.close()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">update</span>(<span class="params">self, sql, params=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Update action.</span></span><br><span class="line"><span class="string">        :param sql: being executed sql statement</span></span><br><span class="line"><span class="string">        :param params: sql param, to avoid the sql injection</span></span><br><span class="line"><span class="string">        :return: affected rows count and the last row id</span></span><br><span class="line"><span class="string">        :rtype: tuple</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        connection = self.connection_pool.connection()</span><br><span class="line">        cursor = connection.cursor()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> params <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            params = []</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            cursor.execute(<span class="built_in">str</span>(sql), params)</span><br><span class="line">            row_count = cursor.rowcount</span><br><span class="line">            row_id = cursor.lastrowid</span><br><span class="line">            connection.commit()</span><br><span class="line">            result = row_count, row_id</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            expected_sql = watch_prepared_statement(sql, params)</span><br><span class="line">            glog.error(<span class="string">&quot;[&quot;</span> + <span class="built_in">str</span>(e) + <span class="string">&quot;]&quot;</span> + expected_sql)</span><br><span class="line">            result = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="comment"># release the connection to the pooled</span></span><br><span class="line">            cursor.close()</span><br><span class="line">            connection.close()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_connection</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Other actions. Return the connection to finish other operations, such as executemany and so on.</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">return</span> self.connection_pool.connection()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">__mysql_client = MysqlClient()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_mysql_client</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Initialize the singleton object.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">return</span> __mysql_client</span><br></pre></td></tr></table></figure>
-
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ul>
-<li><p>外部访问时通过调用<code>get_mysql_client()</code>函数来获得单例的 MysqlClient。</p>
-<blockquote>
-<p>实现单例模式最简单的方法：在模块内定义变量，模块被import时被初始化</p>
-</blockquote>
-</li>
-<li><p><code>watch_prepared_statement()</code>函数用于观察预处理后的sql语句</p>
-<blockquote>
-<p>通俗地说，预处理就是把 <strong>%</strong> 变为 <strong>,</strong></p>
-</blockquote>
-</li>
-<li><p><code>get_session()</code>是相对独立的一部分，在使用如 SQLAlchemy 这样的ORM框架时会用到。</p>
-</li>
-<li><p>提供了<code>get_connection()</code>用于完成不常用的数据库操作，当然如果在项目层面常用也可以增加额外的封装方法。</p>
-</li>
-<li><p>数据库连接池部分还可以对cache，连接数做额外的配置，这个可以根据项目实际需求做改动。</p>
-</li>
-<li><p>对配置信息部分，还可以引入<code>ConfigParser</code>对其进行统一管理在配置文件。 </p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-        <tag>数据库连接池</tag>
-        <tag>代码风格</tag>
-        <tag>安全</tag>
-        <tag>SQL注入</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用字符编码整理</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>这两天在预习人工智能课要用的的python语言，循着廖雪峰老师的博客在学习。<br>发现教程里再次提到了关于各种编码的事情，我想有必要单独写一篇文章也算是一种总结。</p>
-<h2 id="字符编码"><a href="#字符编码" class="headerlink" title="字符编码"></a>字符编码</h2><p>因为计算机只能处理数字，如果要处理文本，就必须先把文本转换为数字才能处理。最早的计算机在设计时采用8个比特（bit）作为一个字节（byte），所以，一个字节能表示的最大的整数就是255（二进制11111111=十进制255），如果要表示更大的整数，就必须用更多的字节。比如两个字节可以表示的最大整数是65535，4个字节可以表示的最大整数是4294967295。</p>
-<span id="more"></span>   
-<h2 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII"></a>ASCII</h2><p>American Standard Code for Information Interchange，美国信息交换标准代码<br>由于计算机是美国人发明的，因此，最早只有127个字符被编码到计算机里，也就是大小写英文字母、数字和一些符号，这个编码表被称为ASCII编码，比如大写字母A的编码是65，小写字母z的编码是122。<br>最后一次更新是在1986年，至今为止共定义了128个子元。主要用于显示英语。</p>
-<h2 id="ANSI"><a href="#ANSI" class="headerlink" title="ANSI"></a>ANSI</h2><p>ANSI编码是一种对ASCII码的拓展：ANSI编码用0x00<del>0x7f 范围的1 个字节来表示 1 个英文字符，超出一个字节的 0x80</del>0xFFFF 范围来表示其他语言的其他字符。也就是说，ANSI码仅在前126个与ASCII码相同，之后的字符全是某个国家语言的所有字符。值得注意的是，两个字节最多可以存储的字符数目是2的16次方，即65536个字符，这对于一个语言的字符来说，绝对够了。还有ANSI编码其实包括很多编码：中国制定了GB2312编码，用来把中文编进去另外，日本把日文编到Shift_JIS里，韩国把韩文编到Euc-kr里，各国有各国的标准。受制于当时的条件，不同语言之间的ANSI码之间不能互相转换，这就会导致在多语言混合的文本中会有乱码。  </p>
-<blockquote>
-<p>其实ANSI并不是某一种特定的字符编码，而是在不同的系统中，ANSI表示不同的编码。（也可以说是ANSI包含许多种编码，都是对ASCII的扩展）你的美国同事Bob的系统中ANSI编码其实是ASCII编码（ASCII编码不能表示汉字，所以汉字为乱码），而你的系统中（“汉字”正常显示）ANSI编码其实是GBK编码，而韩文系统中（“한국어”正常显示）ANSI编码其实是EUC-KR编码。  </p>
-<p>话说计算机是由美国佬搞出来的嘛，他们觉得一个字节（可以表示256个编码）表示英语世界里所有的字母、数字和常用特殊符号已经绰绰有余了（其实ASCII只用了前127个编码）。后来欧洲人不干了，法国人说：我需要在小写字母加上变音符号（如：é），德国人说：我也要加几个字母（Ä ä、Ö ö、Ü ü、ß）。于是，欧洲人就将ASCII没用完的编码（128-255）为自己特有的符号编码（后来称之为“扩展字符集”）。等到我们中国人开始使用计算机的时候，尼玛，256个编码哪够？我泱泱大中华，汉字起码也得N多万吧，就连小学生都得要求掌握两三千字。国标局最后拍板：一个字节不够，那我们就用多个字节来为汉字编码吧，但是，国情那么穷，字节那么贵，三个字节伤不起，那就用俩字节吧，先给常用的几千汉字编个码，等以后国家强盛了人民富裕了，咱再扩展呗—于是GB2312就产生了。台湾同胞一看，尼玛，全是简体字，还让不让我们写繁体字的活了，于是台湾同胞也自己弄了个繁体字编码—大五码（Big-5）。同时，其它国家也在为自己的文字编码。最后，微软苦逼了：顾客就是上帝啊，你们的编码我都得满足啊，这样吧，卖给美国国内的系统默认就用ASCII编码吧，卖给中国人的系统默认就用GBK编码吧，卖给韩国人的系统默认就用EUC-KR编码，…但是为了避免你们误会我卖给你们的系统功能有差异，我就统一把你们的默认编码都显示成ANSI吧。—本故事纯属虚构，但“ANSI编码”确实只存在于Windows系统。</p>
-</blockquote>
-<h2 id="Unicode"><a href="#Unicode" class="headerlink" title="Unicode"></a>Unicode</h2><p>为了解决不同国家ANSI编码的冲突问题，Unicode应运而生。Unicode把所有语言都统一到一套编码里，这样就不会再有乱码问题了。<br>Unicode标准也在不断发展，但最常用的是用两个字节表示一个字符（如果要用到非常偏僻的字符，就需要4个字节）。现代操作系统和大多数编程语言都直接支持Unicode。<br>但是问题在于，原本可以用一个字节存储的英文字母在Unicode里面必须存两个字节（规则就是在原来英文字母对应ASCII码前面补0），这就产生了浪费。那么有没有一种既能消除乱码，又能避免浪费的编码方式呢？答案就是UTF-8！ </p>
-<h2 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h2><p>所以，本着节约的精神，又出现了把Unicode编码转化为“可变长编码”的UTF-8编码。UTF-8编码把一个Unicode字符根据不同的数字大小编码成1-6个字节，常用的英文字母被编码成1个字节，汉字通常是3个字节，只有很生僻的字符才会被编码成4-6个字节。如果你要传输的文本包含大量英文字符，用UTF-8编码就能节省空间：<br>UTF-8编码有一个额外的好处，就是ASCII编码实际上可以被看成是UTF-8编码的一部分，所以，大量只支持ASCII编码的历史遗留软件可以在UTF-8编码下继续工作。</p>
-<blockquote>
-<p>这是一种变长的编码方式：它可以使用1~4个字节表示一个符号，根据不同的符号而变化字节长度，当字符在ASCII码的范围时，就用一个字节表示，保留了ASCII字符一个字节的编码做为它的一部分，如此一来UTF-8编码也可以是为视为一种对ASCII码的拓展。值得注意的是unicode编码中一个中文字符占2个字节，而UTF-8一个中文字符占3个字节。从unicode到uft-8并不是直接的对应，而是要过一些算法和规则来转换。   </p>
-</blockquote>
-<p>在计算机内存中，统一使用Unicode编码，当需要保存到硬盘或者需要传输的时候，就转换为UTF-8编码。<br>用记事本编辑的时候，从文件读取的UTF-8字符被转换为Unicode字符到内存里，编辑完成后，保存的时候再把Unicode转换为UTF-8保存到文件。<br><img src="https://cdn.liaoxuefeng.com/cdn/files/attachments/001387245992536e2ba28125cf04f5c8985dbc94a02245e000/0"><br>浏览网页的时候，服务器会把动态生成的Unicode内容转换为UTF-8再传输到浏览器：<br><img src="https://cdn.liaoxuefeng.com/cdn/files/attachments/001387245979827634fd6204f9346a1ae6358d9ed051666000/0"><br>所以你看到很多网页的源码上会有类似<code>&lt;meta charset=&quot;UTF-8&quot; /&gt;</code>的信息，表示该网页正是用的UTF-8编码。</p>
-<h2 id="变长解码与UTF-16"><a href="#变长解码与UTF-16" class="headerlink" title="变长解码与UTF-16"></a>变长解码与UTF-16</h2><p>我们可能会想到，UTF-8这种不定数目字节表示一个字符的编码方式如何去解码呢。<br>实际上，UTF-8编码的每个编码开头会有一些符号位用来表示当前是以几个字节表示一个字符的。这就导致UTF-8要花费额外的比特。  </p>
-<blockquote>
-<p>UTF-16比较好理解,就是任何字符对应的数字都用两个字节来保存.我们通常对Unicode的误解就是把Unicode与UTF-16等同了.但是很显然如果都是英文字母这做有点浪费.明明用一个字节能表示一个字符为啥整两个啊.<br>于是又有个UTF-8,这里的8非常容易误导人,8不是指一个字节,难道一个字节表示一个字符?实际上不是.当用UTF-8时表示一个字符是可变的,有可能是用一个字节表示一个字符,也可能是两个,三个..反正是根据字符对应的数字大小来确定.<br>于是UTF-8和UTF-16的优劣很容易就看出来了.如果全部英文或英文与其他文字混合,但英文占绝大部分,用UTF-8就比UTF-16节省了很多空间.而如果全部是中文这样类似的字符或者混合字符中中文占绝大多数.UTF-16就占优势了,可以节省很多空间.另外还有个容错问题.</p>
-<h3 id="用UTF-16表示”汉”"><a href="#用UTF-16表示”汉”" class="headerlink" title="用UTF-16表示”汉”"></a>用UTF-16表示”汉”</h3><p>假如用UTF-16表示的话就是01101100   01001001(共16 bit,两个字节).程序解析的时候知道是UTF-16就把两个字节当成一个单元来解析.这个很简单.</p>
-<h3 id="用UTF-8表示”汉”"><a href="#用UTF-8表示”汉”" class="headerlink" title="用UTF-8表示”汉”"></a>用UTF-8表示”汉”</h3><p>用UTF-8就有复杂点.因为此时程序是把一个字节一个字节的来读取,然后再根据字节中开头的bit标志来识别是该把1个还是两个或三个字节做为一个单元来处理.<br>0xxxxxxx,如果是这样的01串,也就是以0开头后面是啥就不用管了XX代表任意bit.就表示把一个字节做为一个单元.就跟ASCII完全一样.<br>110xxxxx 10xxxxxx.如果是这样的格式,则把两个字节当一个单元<br>1110xxxx 10xxxxxx 10xxxxxx 如果是这种格式则是三个字节当一个单元.<br>这是约定的规则.你用UTF-8来表示时必须遵守这样的规则.我们知道UTF-16不需要用啥字符来做标志,所以两字节也就是2的16次能表示65536个字符.<br>而UTF-8由于里面有额外的标志信息,所有一个字节只能表示2的7次方128个字符,两个字节只能表示2的11次方2048个字符.而三个字节能表示2的16次方,65536个字符.</p>
-</blockquote>
-<p>由上面我们可以看出UTF-8在局部的字节错误（丢失、增加、改变）不会导致连锁性的错误，因为 UTF-8 的字符边界很容易检测出来，所以容错性较高。</p>
-<h2 id="编码选择"><a href="#编码选择" class="headerlink" title="编码选择"></a>编码选择</h2><p>因为无论是 UTF-8 和 UTF-16/32 都各有优缺点，因此选择的时候应当立足于实际的应用场景。例如在我的习惯中，存储在磁盘上或进行网络交换时都会采用 UTF-8，而在程序内部进行处理时则转换为 UTF-16/32。对于大多数简单的程序来说，这样做既可以保证信息交换时容易实现相互兼容，同时在内部处理时会比较简单，性能也还算不错。</p>
-<blockquote>
-<p>（基本上只要你的程序不是 I/O 密集型的都可以这么干，当然这只是我粗浅的认识范围内的经验，很可能会被无情的反驳）</p>
-</blockquote>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://www.cnblogs.com/malecrab/p/5300486.html">ANSI是什么编码？</a><br><a href="https://blog.csdn.net/xiangxianghehe/article/details/77574965">字符编码ANSI和ASCII区别、Unicode和UTF-8区别</a><br><a href="https://www.cnblogs.com/fnlingnzb-learner/p/6163205.html">Unicode(UTF-8, UTF-16)令人混淆的概念</a></p>
-]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>编码</tag>
-        <tag>UTF-8</tag>
-        <tag>GBK</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SDN 入门</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/SDN-%E5%85%A5%E9%97%A8/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>SDN</tag>
-        <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数值分析学习笔记</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>本学期开设了<em><strong>数值分析</strong></em>课程。这是我本科期间最后一门数学课了。<br>认真学习之余，整理了很多解题套路。虽然直接上套路解题不好，但我认为如果能先把题解出来，我们也可以更好地反思解题的原理。<br><em>另外，想了很久还是决定用手写到白纸上，这样更容易表达我的想法。</em><br><strong>希望这学期的数值分析会有好结果！加油！</strong>  </p>
-<span id="more"></span>
-
-<h2 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h2><h3 id="走进数值分析及误差"><a href="#走进数值分析及误差" class="headerlink" title="走进数值分析及误差"></a>走进数值分析及误差</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_1.jpg?raw=true" align=center>
-
-<h3 id="避免误差的5种方法"><a href="#避免误差的5种方法" class="headerlink" title="避免误差的5种方法"></a>避免误差的5种方法</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_2.jpg?raw=true" align=center>
-
-<h2 id="第二章-解线性方程组的直接方法"><a href="#第二章-解线性方程组的直接方法" class="headerlink" title="第二章 解线性方程组的直接方法"></a>第二章 解线性方程组的直接方法</h2><h3 id="3种矩阵分解的分解形式及求解方法"><a href="#3种矩阵分解的分解形式及求解方法" class="headerlink" title="3种矩阵分解的分解形式及求解方法"></a>3种矩阵分解的分解形式及求解方法</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_3.jpg?raw=true" align=center>
-
-<h3 id="范数、条件数、谱半径（评估矩阵的工具）"><a href="#范数、条件数、谱半径（评估矩阵的工具）" class="headerlink" title="范数、条件数、谱半径（评估矩阵的工具）"></a>范数、条件数、谱半径（评估矩阵的工具）</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_4.jpg?raw=true" align=center>
-
-<h2 id="第三章-解线性方程组的迭代法"><a href="#第三章-解线性方程组的迭代法" class="headerlink" title="第三章 解线性方程组的迭代法"></a>第三章 解线性方程组的迭代法</h2><h3 id="3种迭代法解题步骤"><a href="#3种迭代法解题步骤" class="headerlink" title="3种迭代法解题步骤"></a>3种迭代法解题步骤</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_5.jpg?raw=true" align=center>
-
-<h2 id="第四章-非线性方程求根"><a href="#第四章-非线性方程求根" class="headerlink" title="第四章 非线性方程求根"></a>第四章 非线性方程求根</h2><h3 id="3种迭代法"><a href="#3种迭代法" class="headerlink" title="3种迭代法"></a>3种迭代法</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_6.jpg?raw=true" align=center>
-
-<h2 id="期中复习"><a href="#期中复习" class="headerlink" title="期中复习"></a>期中复习</h2><h3 id="知识框架"><a href="#知识框架" class="headerlink" title="知识框架"></a>知识框架</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_12.jpg?raw=true" align=center>
-
-<h2 id="第六章-插值与逼近"><a href="#第六章-插值与逼近" class="headerlink" title="第六章 插值与逼近"></a>第六章 插值与逼近</h2><h3 id="3种基本插值方法"><a href="#3种基本插值方法" class="headerlink" title="3种基本插值方法"></a>3种基本插值方法</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_7.jpg?raw=true" align=center>
-
-<h2 id="第六章-插值与逼近-1"><a href="#第六章-插值与逼近-1" class="headerlink" title="第六章 插值与逼近"></a>第六章 插值与逼近</h2><h3 id="分段插值、正交多项式、拟合"><a href="#分段插值、正交多项式、拟合" class="headerlink" title="分段插值、正交多项式、拟合"></a>分段插值、正交多项式、拟合</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_8.jpg?raw=true" align=center>
-
-<h2 id="第七章-数值积分与数值微分"><a href="#第七章-数值积分与数值微分" class="headerlink" title="第七章 数值积分与数值微分"></a>第七章 数值积分与数值微分</h2><h3 id="数值积分概述"><a href="#数值积分概述" class="headerlink" title="数值积分概述"></a>数值积分概述</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_9.jpg?raw=true" align=center>
-
-<h2 id="第七章-数值积分与数值微分-1"><a href="#第七章-数值积分与数值微分-1" class="headerlink" title="第七章 数值积分与数值微分"></a>第七章 数值积分与数值微分</h2><h3 id="复化求积公式、Gauss型求积公式"><a href="#复化求积公式、Gauss型求积公式" class="headerlink" title="复化求积公式、Gauss型求积公式"></a>复化求积公式、Gauss型求积公式</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_10.jpg?raw=true" align=center>
-
-<h2 id="第八章-常微分方程数值解法"><a href="#第八章-常微分方程数值解法" class="headerlink" title="第八章 常微分方程数值解法"></a>第八章 常微分方程数值解法</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_11.jpg?raw=true" align=center>
-### 必考题型
-<img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_15.jpg?raw=true" align=center>
-
-<h2 id="期末复习"><a href="#期末复习" class="headerlink" title="期末复习"></a>期末复习</h2><h3 id="知识框架-1"><a href="#知识框架-1" class="headerlink" title="知识框架"></a>知识框架</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_13.jpg?raw=true" align=center>
-### 长难公式
-<img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_14.jpg?raw=true" align=center>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>我校（NEU）数值分析考试历年来都是各种套路题目（然鹅我还是习惯性数学掉链子），多刷题就好，另外注意老师透露的任何信息，比如今年老师让我们<br>着重看一下MOOC上的课后题，结果真的考到了。</p>
-<h3 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h3><h3 id="全书知识框架（与NEU所用教材不完全一致，不够很具代表性）"><a href="#全书知识框架（与NEU所用教材不完全一致，不够很具代表性）" class="headerlink" title="全书知识框架（与NEU所用教材不完全一致，不够很具代表性）"></a>全书知识框架（与NEU所用教材不完全一致，不够很具代表性）</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_16.jpg?raw=true" align=center>]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-        <tag>数值分析</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据结构与算法之美 - 王争 - 极客时间</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E-%E7%8E%8B%E4%BA%89-%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-        <tag>算法</tag>
-        <tag>极客时间</tag>
-        <tag>王争</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo-NexT-Index - 使用飞书享受博客写作乐趣</title>
-    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/Hexo-NexT-Index-%E4%BD%BF%E7%94%A8%E9%A3%9E%E4%B9%A6%E4%BA%AB%E5%8F%97%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C%E4%B9%90%E8%B6%A3/</url>
-    <content><![CDATA[<blockquote>
-<p>📓如果你在寻找一个简单优雅的博文写作方式？如果你也和我一样懒想自建博客但又不愿为维护投入太多精力？如果你喜欢简洁追求效率？我相信，你一定会喜欢 Hexo-NexT-Index 😉<br>这也是本博客搭建的方式</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>杂文随笔</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>飞书</tag>
-        <tag>效率</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我在字节跳动的十个月</title>
-    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E6%88%91%E5%9C%A8%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E7%9A%84%E5%8D%81%E4%B8%AA%E6%9C%88/</url>
-    <content><![CDATA[<p>很荣幸在大四得到了字节网络组的实习机会，没想到这一待就是十个月。<br>虽然赶上了新冠疫情这一黑天鹅，但还是在这段时间学到了很多东西，除了技术上的学习，对未来工作内容，对大公司运作模式，对网络开发完整流程的体验以及伴随而来的方法论也学到了很多，也在不断寻找自己的定位与目标。<br>感谢非常非常厉害的 mentor，感谢各位优秀的同事，第一次有机会和这么多优秀的人一起做有挑战的事，提出的每个想法都得到了积极的倾听与反馈并给予足够的机会与鼓励去尝试，作为网络小菜鸡真的感受到了足够的平等与尊重。<br>Last day 赶上了最后一次团建，被灌了最多的酒也愈发舍不得离开。祝愿字节在成为全球顶级科技公司的道路上永远保持活力，祝愿各位 ByteDancers 永远年轻，永远快乐。<br>即将开始研究生的新征程，期待与字节的下一次邂逅！  </p>
-]]></content>
-      <categories>
-        <category>杂文随笔</category>
-      </categories>
-      <tags>
-        <tag>实习</tag>
-        <tag>字节跳动</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>0328-校招面试初体验&amp;这一年</title>
-    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E6%A0%A1%E6%8B%9B%E9%9D%A2%E8%AF%95%E5%88%9D%E4%BD%93%E9%AA%8C/</url>
-    <content><![CDATA[<h1 id="试试看"><a href="#试试看" class="headerlink" title="试试看"></a>试试看</h1><p>前些日子腾讯来我校开暑期实习宣讲会，现场人多到爆<del>因为腾讯有年头没来我们学校开宣讲会了，今年能来实属不易，也感谢学院老师们背后的默默付出还有在腾讯工作的学姐学长们的努力。<br>因为是要读研，所以一直也没太准备找工作方面的事情，但感觉可以试试看，看看自己有没有能力通过第一关</del>索性投了WXG微信事业群的后台开发岗位。</p>
-<span id="more"></span>
-<h1 id="视频面试"><a href="#视频面试" class="headerlink" title="视频面试"></a>视频面试</h1><p>昨天下午收到了视频面试的短信，忐忑不安的刷了一天基础知识，发现之前学过的很多都忘了，连哈希冲突解决方法都记不住了。<br>五点面试准时开始，面试官首先问了我简历上写的实习经历，我讲了一下在葫芦那边做的小程序和服务号。<br>另外还问了我一些是不是动态爬虫，怎么解析网页的问题。</p>
-<h2 id="第一题-手写代码"><a href="#第一题-手写代码" class="headerlink" title="第一题 手写代码"></a>第一题 手写代码</h2><h3 id="最长子序列"><a href="#最长子序列" class="headerlink" title="最长子序列"></a>最长子序列</h3><p>小Q定义A(i,j)(i &lt;= j且都是数组A的合法下标)表示数组A中下标从i到j的这段子序列,即A(i,j) = {A[i],A[i+1]….A[j]}。<br>如果对于A(i, j), 能找到一个正整数v(v &gt; 1), 使得v可以整除A(i, j)中不低于一半的元素, 小Q就认为A(i, j)是一段很酷的子序列。<br>例如A(i, j) = {3, 3, 7, 9, 1, 10}, 六个元素中有三个元素可以被v = 3整除, 所以A(i, j)是酷的。<br>小Q现在给出一个数组A, 让你找出最长的酷的子序列。</p>
-<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入包括两行。<br>第一行包括一个正整数n(1 &lt;= n &lt;= 50), 表示数组的长度。<br>第二行包括n个正整数A_i,(1 &lt;= A_i &lt;= 1000), 表示数组中的每个元素。</p>
-<h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h3><p>输出一个整数, 表示最长的酷的子序列的长度, 如果没有解, 输出0。</p>
-<h3 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h3><ul>
-<li>输入<ul>
-<li>5</li>
-<li>8 8 5 5 4</li>
-</ul>
-</li>
-<li>输出<ul>
-<li>5</li>
-</ul>
-</li>
-</ul>
-<h2 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h2><p>Java顶层的集合类有哪些？常用哪些？</p>
-<h2 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h2><p>有没有写过多线程程序？讲讲多线程。</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>面试官出的几个问题都很简单，不过第一题因为是第一次面试很紧张也没什么经验我以为还要运行一下程序，还在想import的语句是什么。但其实并不需要，只要逻辑ok就行。读题不仔细，有两个地方理解错了在面试官的告知下才该对。应该是凉了，不过权当一次经历吧。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>从去年3月到今年3月这一年自己其实过得挺痛苦的，感觉目前的自己各方面都和目标差太远，无论是技术、学习能力还是各方面交际能力、为人处事都很一般。<br>不过这一年也算是大学两年半以来过得最充实的一段时间吧，学习方面两个学期拿到了90的均分，绩点提到了3.7；竞赛水了5个小奖，还有幸公费去了次哈尔滨；有了一段创业公司的实习经历，认识了很多与我同年级但情商智商碾压的大佬；通过大创接触到了一点点科研，虽然目前还没发出paper；陆陆续续做了自己喜欢的weNEU，寄托了自己对产品的价值理念等等~  </p>
-<h2 id="痛苦着"><a href="#痛苦着" class="headerlink" title="痛苦着"></a>痛苦着</h2><p>痛苦在于这一年意识到了自己和最优秀的同学们差距实在太大，而且这种差距还在不断拉大。我觉得人生的目标是不能做一个平凡的人，如果只是一个普普通通的人，天天被割韭菜活着也没什么意义。可是这一年我意识到自己越来越普通，和很多人一样为读研挤破头，参加竞赛顶多拿小奖，学习知识要花很长时间才能学懂；<br>另外的痛苦在于对未来选择的迷茫，从读研方向来看我甚至不知道自己该报考什么方向，对人工智能不感兴趣，对云计算大数据也不是很了解，密码学网络安全有些跨专业~对于未来的就业而言我其实觉得自己比较适合产品岗位，我自认自己的一些商业嗅觉比较灵敏，对用户体验的把控也有自己的见解，在做weNEU的期间真的对产品抱有极大的热情，看到有新用户增长会开心好久。但如果决定做产品似乎也没必要读研了，而且也挺喜欢敲代码不太想天天去做PPT。<br>痛苦了一年，也磨磨唧唧讲了一年。是时候不再总去想这些事情了，认识到差距就好。</p>
-<h2 id="读研"><a href="#读研" class="headerlink" title="读研"></a>读研</h2><p>目前来看我认为我读研的原因是：</p>
-<ul>
-<li>增加知识的深度：之前过于注重知识的广度，UI/UE、前端开发、后端开发、运维、产品运营、推广我都有或多或少的接触但并不精，读研我需要提升自己在某一方面的知识的深度，目前来看我应该会选择软件工程专硕，具体方向待定。</li>
-<li>我还年轻：不想太早离开象牙塔，我认为我不适合过早就业（应该不是逃避）；细想如果我2020开始工作，未来至少30年左右都会一直在工作~很难再回到现在这样大学校园中，珍惜读书的时光</li>
-<li>对学历的私心：本科只是一所末流985，研究生希望能到中九级别的学校吧，不然会很遗憾的。</li>
-</ul>
-<h2 id="学到的"><a href="#学到的" class="headerlink" title="学到的"></a>学到的</h2><ul>
-<li>告别舒适区：少刷已经学会的算法题；少做重复性工作；少写业务代码</li>
-<li>信息不对称：遇到机会要鼓起勇气，认识更多的人，获取更多的信息</li>
-<li>保持善良，不忘初心：之前总觉得这些假大空的形容词很无趣，但到头来才发现这其实都是最优秀的品质</li>
-</ul>
-<h2 id="拒绝平凡"><a href="#拒绝平凡" class="headerlink" title="拒绝平凡"></a>拒绝平凡</h2><p>引用很喜欢的毛不易的《像我这样的人》——像我这样不甘平凡的人~句句扎心，不认为“平凡可贵”</p>
-<h2 id="贵在坚持"><a href="#贵在坚持" class="headerlink" title="贵在坚持"></a>贵在坚持</h2><p>无论何时，贵在坚持都是最需要的。<br>如果我不能坚持的话，那么一切的向往，一切的为自己加油打气，一切的计划都是空谈。  </p>
-]]></content>
-      <categories>
-        <category>杂文随笔</category>
-      </categories>
-      <tags>
-        <tag>实习</tag>
-        <tag>腾讯</tag>
-        <tag>思考</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>1125-记在字节实习的第一个月</title>
-    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E8%AE%B0%E5%9C%A8%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%AE%9E%E4%B9%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%9C%88/</url>
-    <content><![CDATA[<p>至今仍然感到很幸运，对于本想轻轻松松潇潇洒洒度过大四的我，在几乎完全没准备招聘面试的情况下，竟然通过了字节跳动的面试，转眼间已经入职一个月了，也来简单写写这一个月的一些心得与感悟。<br>简简单单的流水账~  </p>
-<h3 id="紧张与庆幸"><a href="#紧张与庆幸" class="headerlink" title="紧张与庆幸"></a>紧张与庆幸</h3><p>开篇提到了，我几乎完全没准备招聘面试的内容，面经刷题什么的基本上啥都没看，因为本来就是抱着随缘的心态投的简历，没想到运气这么好hh<br>可是我知道自己很菜，而且岗位还是和计算机网络深度相关的，作为软件工程专业的学生（非网络工程专业），本科就只上过“计算机网络”一门网络相关课程，感觉亚历山大，这种压力，在我收到offer通知电话那一刻就开始了，一直到入职前夜的失眠，到入驻当天的忐忑，到入驻后看着纷乱复杂的各种名词，直到现在，我依然很紧张<br>但是我也很庆幸，非常庆幸我能在大四上学期，在读研之前意识到我在计算机网络方面的知识储备很少，意识到计算机网络的体系是如此庞大，我能做的只有抓紧时间，利用字节跳动提供的这么好的机会打好计算机网络基础，为研究生的学习与科研做准备  </p>
-<img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9asxzyam2j31400u04qr.jpg" align=center>
-
-<span id="more"></span>
-
-<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><p>感觉自己九月份以来的运气真的特别好，顺利地拿到了保研资格，顺利地确定了自己心心念念的计算机网络就是我最想攻读的方向，顺利的发现拿到offer的东南大学计算机恰好计算机网络是其最强的方向，顺利地被年轻有为帅气的S老师收下（老师看过我博客，先吹一下老师hhh），顺利地找到一份计算机网络相关的实习，顺利地遇到了如此优秀非常佩服的Ian担任我的mentor~<br>当然最幸运的就是上面我所说的，意识到<strong>自己还有更大的理想和目标！一定要把握好每一个机会利用好每一段时光</strong><br>还想谈谈自己为什么选择了计算机网络，原因有2吧  </p>
-<ul>
-<li>想避开人工智能的热潮。保研期间看到很多同学直奔人工智能那些方向，竞争激烈而且我对人工智能没有太大的兴趣，本科有几门课接触过人工智能，我觉得我还是更喜欢“计算机网络”，“操作系统”这些学完后感觉学到了知识心里踏实的课哈哈。尤其是计算机网络，在本科四门主要专业课中是我最喜欢也是分数最高的一门课~~</li>
-<li>贴近产品思维。当然，计算机网络分很多分支，我最初想选择的是 物联网 或 产业互联网 这两个方向，因为在调研之后我发现这两个方向的应用落地都做的还不错，都是现在国家和大厂纷纷押宝的风口，最重要的是这些领域的研究很多都是面向用户的，面向用户的C端产品自然需要很强的产品思维，我觉得我在产品运营方面还是有一定的独到见解，因而选择了这两个细分领域。</li>
-</ul>
-<h3 id="在做的工作"><a href="#在做的工作" class="headerlink" title="在做的工作"></a>在做的工作</h3><p>我所在的部门是系统部的网络工程组，最初来到这里很惊讶只有大概20人左右其中主管运维建设的不足10人就能建设起公司如此巨大的网络架构。<br>目前在做的项目是网络告警平台，后来经组会讨论升级为网络数据平台，主要工作是升级目前系统内分散部分未聚合展现形式落户的告警平台，同时利用采集的数据搭建一套数据平台，为SDN等项目提供低时延高可靠的数据支撑。<br>完整的数据平台预计在十二月中旬就能初步成型，之后可能会同时参与到SDN项目的开发之中，考虑到研究生的方向，后续会尝试多接触与算法设计分析相关的工作，另外SDN的设计思想（大规模服务器集群数据中心的必然产物）和多无人机协同的管理平台也有异曲同工之处。</p>
-<h3 id="最大的挑战"><a href="#最大的挑战" class="headerlink" title="最大的挑战"></a>最大的挑战</h3><p>于我而言，最大的挑战还是人际关系。我每次到一个新的环境中都比较内向<br>然而熟了之后就完全放得开了。不过实习可能是全新的一种环境，人与人之间是同事关系，而且年龄差，工作内容，知识量上的差距还是让我和大家的融入不是那么地顺利，不过我相信我会努力让大家看到我的闪光点。<br>努力哦~</p>
-]]></content>
-      <categories>
-        <category>杂文随笔</category>
-      </categories>
-      <tags>
-        <tag>实习</tag>
-        <tag>字节跳动</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>0327-记在葫芦实习的六个月</title>
-    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E8%AE%B0%E5%9C%A8%E8%91%AB%E8%8A%A6%E5%AE%9E%E4%B9%A0%E7%9A%84%E5%85%AD%E4%B8%AA%E6%9C%88/</url>
-    <content><![CDATA[<h1 id="葫芦"><a href="#葫芦" class="headerlink" title="葫芦"></a>葫芦</h1><p>和葫芦科技的第一次接触是在18年9月，当时有幸在林根大佬的带领下接触到葫芦科技。葫芦科技是一家创业公司，挂靠在东北大学东创空间旗下。<br>短短六个月来持续开发维护运营了“weNEU小程序”、“东大葫芦服务号”、“享问3.0”等有趣的应用，也参与策划了“东大锦鲤”、“东大女生节”、“元旦晚会游戏”、“年终总结”等活动~六个月来认识了很多小伙伴，才发现有这么多和我同届但早已在创业方面做出很多成果的同学。</p>
-<h1 id="再见"><a href="#再见" class="headerlink" title="再见"></a>再见</h1><p>因为四月开始要忙于准备读研相关的事情，可能要暂时离开葫芦了，感谢大家一直以来的帮助，有缘再见~<br><img src="http://ws4.sinaimg.cn/large/006tKfTcly1g1ify2z9ahj31400u0qva.jpg" align=center></p>
-]]></content>
-      <categories>
-        <category>杂文随笔</category>
-      </categories>
-      <tags>
-        <tag>实习</tag>
-        <tag>葫芦科技</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>飞书在高校先进科研协作中的实践</title>
-    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E9%A3%9E%E4%B9%A6%E5%9C%A8%E9%AB%98%E6%A0%A1%E5%85%88%E8%BF%9B%E7%A7%91%E7%A0%94%E5%8D%8F%E4%BD%9C%E4%B8%AD%E7%9A%84%E5%AE%9E%E8%B7%B5/</url>
-    <content><![CDATA[<p>高校之中尤其是计算机学科相关的科研团队其实与互联网公司在工作内容、工作方式、组织结构上有着高度的相似性，但一个科研团队之中几乎人人都是“研发人员”，缺少了“行政、产品、运营、效率、HRBP”等各职能同学的支持。<br>但还好，我们有飞书。<br>飞书是一款理念先进、贴合用户需求的 all in one 办公套件，这些特点帮助我们在飞书上高效开展科研项目协作。</p>
-]]></content>
-      <categories>
-        <category>杂文随笔</category>
-      </categories>
-      <tags>
-        <tag>飞书</tag>
-        <tag>效率</tag>
-        <tag>协作</tag>
-        <tag>科研</tag>
+        <tag>无人机</tag>
+        <tag>SLAM</tag>
+        <tag>自主导航</tag>
+        <tag>八叉树</tag>
       </tags>
   </entry>
   <entry>
@@ -446,6 +44,21 @@
         <tag>论文</tag>
         <tag>阅读</tag>
         <tag>方法论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用 Github Actions 自动编译、发布 LaTeX 文档</title>
+    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/220225-%E4%BD%BF%E7%94%A8-Github-Actions-%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91%E3%80%81%E5%8F%91%E5%B8%83-LaTeX-%E6%96%87%E6%A1%A3/</url>
+    <content><![CDATA[<p>Github Actions 是 Github 推出的持续化集成工具，进一步加快软件开发的编译、部署、发布流程。基于 Github 进行多人协作编辑 Latex 文档是非常先进的科研文档写作方式，如今可以利用 Github Actions 进一步完善协作流程。</p>
+]]></content>
+      <categories>
+        <category>科研分享</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>Github</tag>
+        <tag>Github Actions</tag>
+        <tag>自动化流程</tag>
       </tags>
   </entry>
   <entry>
@@ -764,9 +377,9 @@
       </categories>
       <tags>
         <tag>Crazyflie</tag>
+        <tag>无人机</tag>
         <tag>AI-deck</tag>
         <tag>边缘计算</tag>
-        <tag>无人机</tag>
       </tags>
   </entry>
   <entry>
@@ -1029,9 +642,9 @@
       </categories>
       <tags>
         <tag>Crazyflie</tag>
+        <tag>无人机</tag>
         <tag>AI-deck</tag>
         <tag>边缘计算</tag>
-        <tag>无人机</tag>
       </tags>
   </entry>
   <entry>
@@ -1055,9 +668,9 @@
         <category>科研分享</category>
       </categories>
       <tags>
-        <tag>SDN</tag>
-        <tag>字节跳动</tag>
         <tag>论文</tag>
+        <tag>字节跳动</tag>
+        <tag>SDN</tag>
         <tag>数据中心</tag>
         <tag>数据中心网络</tag>
       </tags>
@@ -1070,9 +683,9 @@
         <category>科研分享</category>
       </categories>
       <tags>
-        <tag>计算机网络</tag>
         <tag>数据中心网络</tag>
         <tag>Google</tag>
+        <tag>计算机网络</tag>
       </tags>
   </entry>
   <entry>
@@ -1116,8 +729,8 @@
         <category>科研分享</category>
       </categories>
       <tags>
-        <tag>SDN</tag>
         <tag>无人机</tag>
+        <tag>SDN</tag>
       </tags>
   </entry>
   <entry>
@@ -1282,6 +895,613 @@
       </tags>
   </entry>
   <entry>
+    <title>计算机学科生涯漫谈</title>
+    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/210706-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E7%A7%91%E7%94%9F%E6%B6%AF%E6%BC%AB%E8%B0%88/</url>
+    <content><![CDATA[<p>很开心实现了一直以来的一个小心愿，就是能有机会和学弟学妹们分享一下我大学期间的一些经验、心得与体会！<br>本分享进行于单老师在2021年暑期期间开设的《专业阅读与写作》课程，线上线下大概有150人左右，感谢老师给我这个机会！</p>
+]]></content>
+      <categories>
+        <category>杂文随笔</category>
+      </categories>
+      <tags>
+        <tag>经验</tag>
+        <tag>计算机</tag>
+        <tag>大学</tag>
+        <tag>保研</tag>
+        <tag>工作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>还是想夸夸「东大信息化」</title>
+    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/220218-%E8%BF%98%E6%98%AF%E6%83%B3%E5%A4%B8%E5%A4%B8%E3%80%8C%E4%B8%9C%E5%A4%A7%E4%BF%A1%E6%81%AF%E5%8C%96%E3%80%8D/</url>
+    <content><![CDATA[<p>最近因为疫情管控，很多老师都不方便进学校，东大信息化即时推出了线上电子签的功能，对于忙于硕士开题的我来说解决了很多问题。</p>
+<p>可能对于很多本科生同学来说已经习惯了东大的校园信息服务，但是作为本科毕业于另一所985高校的我，在本硕的实际对比下，还是想夸夸咱们“东大信息化”！</p>
+]]></content>
+      <categories>
+        <category>杂文随笔</category>
+      </categories>
+      <tags>
+        <tag>SEU</tag>
+        <tag>信息化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo-NexT-Index - 使用飞书享受博客写作乐趣</title>
+    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/Hexo-NexT-Index-%E4%BD%BF%E7%94%A8%E9%A3%9E%E4%B9%A6%E4%BA%AB%E5%8F%97%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C%E4%B9%90%E8%B6%A3/</url>
+    <content><![CDATA[<blockquote>
+<p>📓如果你在寻找一个简单优雅的博文写作方式？如果你也和我一样懒想自建博客但又不愿为维护投入太多精力？如果你喜欢简洁追求效率？我相信，你一定会喜欢 Hexo-NexT-Index 😉<br>这也是本博客搭建的方式</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>杂文随笔</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>飞书</tag>
+        <tag>效率</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我在字节跳动的十个月</title>
+    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E6%88%91%E5%9C%A8%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E7%9A%84%E5%8D%81%E4%B8%AA%E6%9C%88/</url>
+    <content><![CDATA[<p>很荣幸在大四得到了字节网络组的实习机会，没想到这一待就是十个月。<br>虽然赶上了新冠疫情这一黑天鹅，但还是在这段时间学到了很多东西，除了技术上的学习，对未来工作内容，对大公司运作模式，对网络开发完整流程的体验以及伴随而来的方法论也学到了很多，也在不断寻找自己的定位与目标。<br>感谢非常非常厉害的 mentor，感谢各位优秀的同事，第一次有机会和这么多优秀的人一起做有挑战的事，提出的每个想法都得到了积极的倾听与反馈并给予足够的机会与鼓励去尝试，作为网络小菜鸡真的感受到了足够的平等与尊重。<br>Last day 赶上了最后一次团建，被灌了最多的酒也愈发舍不得离开。祝愿字节在成为全球顶级科技公司的道路上永远保持活力，祝愿各位 ByteDancers 永远年轻，永远快乐。<br>即将开始研究生的新征程，期待与字节的下一次邂逅！  </p>
+]]></content>
+      <categories>
+        <category>杂文随笔</category>
+      </categories>
+      <tags>
+        <tag>字节跳动</tag>
+        <tag>实习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>0328-校招面试初体验&amp;这一年</title>
+    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E6%A0%A1%E6%8B%9B%E9%9D%A2%E8%AF%95%E5%88%9D%E4%BD%93%E9%AA%8C/</url>
+    <content><![CDATA[<h1 id="试试看"><a href="#试试看" class="headerlink" title="试试看"></a>试试看</h1><p>前些日子腾讯来我校开暑期实习宣讲会，现场人多到爆<del>因为腾讯有年头没来我们学校开宣讲会了，今年能来实属不易，也感谢学院老师们背后的默默付出还有在腾讯工作的学姐学长们的努力。<br>因为是要读研，所以一直也没太准备找工作方面的事情，但感觉可以试试看，看看自己有没有能力通过第一关</del>索性投了WXG微信事业群的后台开发岗位。</p>
+<span id="more"></span>
+<h1 id="视频面试"><a href="#视频面试" class="headerlink" title="视频面试"></a>视频面试</h1><p>昨天下午收到了视频面试的短信，忐忑不安的刷了一天基础知识，发现之前学过的很多都忘了，连哈希冲突解决方法都记不住了。<br>五点面试准时开始，面试官首先问了我简历上写的实习经历，我讲了一下在葫芦那边做的小程序和服务号。<br>另外还问了我一些是不是动态爬虫，怎么解析网页的问题。</p>
+<h2 id="第一题-手写代码"><a href="#第一题-手写代码" class="headerlink" title="第一题 手写代码"></a>第一题 手写代码</h2><h3 id="最长子序列"><a href="#最长子序列" class="headerlink" title="最长子序列"></a>最长子序列</h3><p>小Q定义A(i,j)(i &lt;= j且都是数组A的合法下标)表示数组A中下标从i到j的这段子序列,即A(i,j) = {A[i],A[i+1]….A[j]}。<br>如果对于A(i, j), 能找到一个正整数v(v &gt; 1), 使得v可以整除A(i, j)中不低于一半的元素, 小Q就认为A(i, j)是一段很酷的子序列。<br>例如A(i, j) = {3, 3, 7, 9, 1, 10}, 六个元素中有三个元素可以被v = 3整除, 所以A(i, j)是酷的。<br>小Q现在给出一个数组A, 让你找出最长的酷的子序列。</p>
+<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入包括两行。<br>第一行包括一个正整数n(1 &lt;= n &lt;= 50), 表示数组的长度。<br>第二行包括n个正整数A_i,(1 &lt;= A_i &lt;= 1000), 表示数组中的每个元素。</p>
+<h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h3><p>输出一个整数, 表示最长的酷的子序列的长度, 如果没有解, 输出0。</p>
+<h3 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h3><ul>
+<li>输入<ul>
+<li>5</li>
+<li>8 8 5 5 4</li>
+</ul>
+</li>
+<li>输出<ul>
+<li>5</li>
+</ul>
+</li>
+</ul>
+<h2 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h2><p>Java顶层的集合类有哪些？常用哪些？</p>
+<h2 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h2><p>有没有写过多线程程序？讲讲多线程。</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>面试官出的几个问题都很简单，不过第一题因为是第一次面试很紧张也没什么经验我以为还要运行一下程序，还在想import的语句是什么。但其实并不需要，只要逻辑ok就行。读题不仔细，有两个地方理解错了在面试官的告知下才该对。应该是凉了，不过权当一次经历吧。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>从去年3月到今年3月这一年自己其实过得挺痛苦的，感觉目前的自己各方面都和目标差太远，无论是技术、学习能力还是各方面交际能力、为人处事都很一般。<br>不过这一年也算是大学两年半以来过得最充实的一段时间吧，学习方面两个学期拿到了90的均分，绩点提到了3.7；竞赛水了5个小奖，还有幸公费去了次哈尔滨；有了一段创业公司的实习经历，认识了很多与我同年级但情商智商碾压的大佬；通过大创接触到了一点点科研，虽然目前还没发出paper；陆陆续续做了自己喜欢的weNEU，寄托了自己对产品的价值理念等等~  </p>
+<h2 id="痛苦着"><a href="#痛苦着" class="headerlink" title="痛苦着"></a>痛苦着</h2><p>痛苦在于这一年意识到了自己和最优秀的同学们差距实在太大，而且这种差距还在不断拉大。我觉得人生的目标是不能做一个平凡的人，如果只是一个普普通通的人，天天被割韭菜活着也没什么意义。可是这一年我意识到自己越来越普通，和很多人一样为读研挤破头，参加竞赛顶多拿小奖，学习知识要花很长时间才能学懂；<br>另外的痛苦在于对未来选择的迷茫，从读研方向来看我甚至不知道自己该报考什么方向，对人工智能不感兴趣，对云计算大数据也不是很了解，密码学网络安全有些跨专业~对于未来的就业而言我其实觉得自己比较适合产品岗位，我自认自己的一些商业嗅觉比较灵敏，对用户体验的把控也有自己的见解，在做weNEU的期间真的对产品抱有极大的热情，看到有新用户增长会开心好久。但如果决定做产品似乎也没必要读研了，而且也挺喜欢敲代码不太想天天去做PPT。<br>痛苦了一年，也磨磨唧唧讲了一年。是时候不再总去想这些事情了，认识到差距就好。</p>
+<h2 id="读研"><a href="#读研" class="headerlink" title="读研"></a>读研</h2><p>目前来看我认为我读研的原因是：</p>
+<ul>
+<li>增加知识的深度：之前过于注重知识的广度，UI/UE、前端开发、后端开发、运维、产品运营、推广我都有或多或少的接触但并不精，读研我需要提升自己在某一方面的知识的深度，目前来看我应该会选择软件工程专硕，具体方向待定。</li>
+<li>我还年轻：不想太早离开象牙塔，我认为我不适合过早就业（应该不是逃避）；细想如果我2020开始工作，未来至少30年左右都会一直在工作~很难再回到现在这样大学校园中，珍惜读书的时光</li>
+<li>对学历的私心：本科只是一所末流985，研究生希望能到中九级别的学校吧，不然会很遗憾的。</li>
+</ul>
+<h2 id="学到的"><a href="#学到的" class="headerlink" title="学到的"></a>学到的</h2><ul>
+<li>告别舒适区：少刷已经学会的算法题；少做重复性工作；少写业务代码</li>
+<li>信息不对称：遇到机会要鼓起勇气，认识更多的人，获取更多的信息</li>
+<li>保持善良，不忘初心：之前总觉得这些假大空的形容词很无趣，但到头来才发现这其实都是最优秀的品质</li>
+</ul>
+<h2 id="拒绝平凡"><a href="#拒绝平凡" class="headerlink" title="拒绝平凡"></a>拒绝平凡</h2><p>引用很喜欢的毛不易的《像我这样的人》——像我这样不甘平凡的人~句句扎心，不认为“平凡可贵”</p>
+<h2 id="贵在坚持"><a href="#贵在坚持" class="headerlink" title="贵在坚持"></a>贵在坚持</h2><p>无论何时，贵在坚持都是最需要的。<br>如果我不能坚持的话，那么一切的向往，一切的为自己加油打气，一切的计划都是空谈。  </p>
+]]></content>
+      <categories>
+        <category>杂文随笔</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+        <tag>腾讯</tag>
+        <tag>思考</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>0327-记在葫芦实习的六个月</title>
+    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E8%AE%B0%E5%9C%A8%E8%91%AB%E8%8A%A6%E5%AE%9E%E4%B9%A0%E7%9A%84%E5%85%AD%E4%B8%AA%E6%9C%88/</url>
+    <content><![CDATA[<h1 id="葫芦"><a href="#葫芦" class="headerlink" title="葫芦"></a>葫芦</h1><p>和葫芦科技的第一次接触是在18年9月，当时有幸在林根大佬的带领下接触到葫芦科技。葫芦科技是一家创业公司，挂靠在东北大学东创空间旗下。<br>短短六个月来持续开发维护运营了“weNEU小程序”、“东大葫芦服务号”、“享问3.0”等有趣的应用，也参与策划了“东大锦鲤”、“东大女生节”、“元旦晚会游戏”、“年终总结”等活动~六个月来认识了很多小伙伴，才发现有这么多和我同届但早已在创业方面做出很多成果的同学。</p>
+<h1 id="再见"><a href="#再见" class="headerlink" title="再见"></a>再见</h1><p>因为四月开始要忙于准备读研相关的事情，可能要暂时离开葫芦了，感谢大家一直以来的帮助，有缘再见~<br><img src="http://ws4.sinaimg.cn/large/006tKfTcly1g1ify2z9ahj31400u0qva.jpg" align=center></p>
+]]></content>
+      <categories>
+        <category>杂文随笔</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+        <tag>葫芦科技</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1125-记在字节实习的第一个月</title>
+    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E8%AE%B0%E5%9C%A8%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%AE%9E%E4%B9%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%9C%88/</url>
+    <content><![CDATA[<p>至今仍然感到很幸运，对于本想轻轻松松潇潇洒洒度过大四的我，在几乎完全没准备招聘面试的情况下，竟然通过了字节跳动的面试，转眼间已经入职一个月了，也来简单写写这一个月的一些心得与感悟。<br>简简单单的流水账~  </p>
+<h3 id="紧张与庆幸"><a href="#紧张与庆幸" class="headerlink" title="紧张与庆幸"></a>紧张与庆幸</h3><p>开篇提到了，我几乎完全没准备招聘面试的内容，面经刷题什么的基本上啥都没看，因为本来就是抱着随缘的心态投的简历，没想到运气这么好hh<br>可是我知道自己很菜，而且岗位还是和计算机网络深度相关的，作为软件工程专业的学生（非网络工程专业），本科就只上过“计算机网络”一门网络相关课程，感觉亚历山大，这种压力，在我收到offer通知电话那一刻就开始了，一直到入职前夜的失眠，到入驻当天的忐忑，到入驻后看着纷乱复杂的各种名词，直到现在，我依然很紧张<br>但是我也很庆幸，非常庆幸我能在大四上学期，在读研之前意识到我在计算机网络方面的知识储备很少，意识到计算机网络的体系是如此庞大，我能做的只有抓紧时间，利用字节跳动提供的这么好的机会打好计算机网络基础，为研究生的学习与科研做准备  </p>
+<img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9asxzyam2j31400u04qr.jpg" align=center>
+
+<span id="more"></span>
+
+<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><p>感觉自己九月份以来的运气真的特别好，顺利地拿到了保研资格，顺利地确定了自己心心念念的计算机网络就是我最想攻读的方向，顺利的发现拿到offer的东南大学计算机恰好计算机网络是其最强的方向，顺利地被年轻有为帅气的S老师收下（老师看过我博客，先吹一下老师hhh），顺利地找到一份计算机网络相关的实习，顺利地遇到了如此优秀非常佩服的Ian担任我的mentor~<br>当然最幸运的就是上面我所说的，意识到<strong>自己还有更大的理想和目标！一定要把握好每一个机会利用好每一段时光</strong><br>还想谈谈自己为什么选择了计算机网络，原因有2吧  </p>
+<ul>
+<li>想避开人工智能的热潮。保研期间看到很多同学直奔人工智能那些方向，竞争激烈而且我对人工智能没有太大的兴趣，本科有几门课接触过人工智能，我觉得我还是更喜欢“计算机网络”，“操作系统”这些学完后感觉学到了知识心里踏实的课哈哈。尤其是计算机网络，在本科四门主要专业课中是我最喜欢也是分数最高的一门课~~</li>
+<li>贴近产品思维。当然，计算机网络分很多分支，我最初想选择的是 物联网 或 产业互联网 这两个方向，因为在调研之后我发现这两个方向的应用落地都做的还不错，都是现在国家和大厂纷纷押宝的风口，最重要的是这些领域的研究很多都是面向用户的，面向用户的C端产品自然需要很强的产品思维，我觉得我在产品运营方面还是有一定的独到见解，因而选择了这两个细分领域。</li>
+</ul>
+<h3 id="在做的工作"><a href="#在做的工作" class="headerlink" title="在做的工作"></a>在做的工作</h3><p>我所在的部门是系统部的网络工程组，最初来到这里很惊讶只有大概20人左右其中主管运维建设的不足10人就能建设起公司如此巨大的网络架构。<br>目前在做的项目是网络告警平台，后来经组会讨论升级为网络数据平台，主要工作是升级目前系统内分散部分未聚合展现形式落户的告警平台，同时利用采集的数据搭建一套数据平台，为SDN等项目提供低时延高可靠的数据支撑。<br>完整的数据平台预计在十二月中旬就能初步成型，之后可能会同时参与到SDN项目的开发之中，考虑到研究生的方向，后续会尝试多接触与算法设计分析相关的工作，另外SDN的设计思想（大规模服务器集群数据中心的必然产物）和多无人机协同的管理平台也有异曲同工之处。</p>
+<h3 id="最大的挑战"><a href="#最大的挑战" class="headerlink" title="最大的挑战"></a>最大的挑战</h3><p>于我而言，最大的挑战还是人际关系。我每次到一个新的环境中都比较内向<br>然而熟了之后就完全放得开了。不过实习可能是全新的一种环境，人与人之间是同事关系，而且年龄差，工作内容，知识量上的差距还是让我和大家的融入不是那么地顺利，不过我相信我会努力让大家看到我的闪光点。<br>努力哦~</p>
+]]></content>
+      <categories>
+        <category>杂文随笔</category>
+      </categories>
+      <tags>
+        <tag>字节跳动</tag>
+        <tag>实习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>飞书在高校先进科研协作中的实践</title>
+    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E9%A3%9E%E4%B9%A6%E5%9C%A8%E9%AB%98%E6%A0%A1%E5%85%88%E8%BF%9B%E7%A7%91%E7%A0%94%E5%8D%8F%E4%BD%9C%E4%B8%AD%E7%9A%84%E5%AE%9E%E8%B7%B5/</url>
+    <content><![CDATA[<p>高校之中尤其是计算机学科相关的科研团队其实与互联网公司在工作内容、工作方式、组织结构上有着高度的相似性，但一个科研团队之中几乎人人都是“研发人员”，缺少了“行政、产品、运营、效率、HRBP”等各职能同学的支持。<br>但还好，我们有飞书。<br>飞书是一款理念先进、贴合用户需求的 all in one 办公套件，这些特点帮助我们在飞书上高效开展科研项目协作。</p>
+]]></content>
+      <categories>
+        <category>杂文随笔</category>
+      </categories>
+      <tags>
+        <tag>飞书</tag>
+        <tag>效率</tag>
+        <tag>协作</tag>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>云计算常见软件概念梳理</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/210604-%E4%BA%91%E8%AE%A1%E7%AE%97%E5%B8%B8%E8%A7%81%E8%BD%AF%E4%BB%B6%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<p>IT软件技术架构进入云化时代后，新概念、新技术大量涌现。从几年前热火的Openstack、计算存储网络三大虚拟化技术、Iaas平台，到近几年更火热的容器和云原生的相关技术，在云计算这一领域新技术可谓是层出不穷。<br>我们经常会听到的这些概念，比如容器、docker、kubernetes、微服务架构、PaaS平台、服务中台、Devops、云原生等等。这些技术和概念彼此之间感觉是独立的，我们很容易从其中某一个角度学习入手并应用；但是，很多时候，我们会发现这些技术彼此之间又有密切的关联，从文章也好、技术落地应用的场景也好，它们往往又出现在同一个地方。它们之间究竟有什么联系，彼此之间有什么依赖，让人十分的困惑。<br>在本文中，从这些技术彼此之间的依赖和关系入手，讲述它们在当今软件云化和微服务化时代中的作用，希望读者从这些总结对比入手，对微服务相关的技术体系建立全局性的视野和理解。  </p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+        <tag>微服务</tag>
+        <tag>云原生</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dubbo 3 知识结构梳理</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/210916-Dubbo-3-%E7%9F%A5%E8%AF%86%E7%BB%93%E6%9E%84%E6%A2%B3%E7%90%86/</url>
+    <content><![CDATA[<p>最近在参加阿里云举办的云原生挑战赛，其开发是基于Dubbo的。久仰Dubbo大名，知道它是一个集微服务领域众多技术于一体的大而全的框架，借此机会系统性地学习一下。<br>本篇梳理基于Dubbo3的官方文档整理。</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>云原生</tag>
+        <tag>Dubbo</tag>
+        <tag>服务发现</tag>
+        <tag>RPC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一文总结常用排序算法及面试考点</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/220429-%E4%B8%80%E6%96%87%E6%80%BB%E7%BB%93%E5%B8%B8%E7%94%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%8F%8A%E9%9D%A2%E8%AF%95%E8%80%83%E7%82%B9/</url>
+    <content><![CDATA[<ul>
+<li>排序算法经常作为CS算法课程中的入门算法来引入，因为各种各样的排序算法中包含了很多的计算机科学思想，例如：<ul>
+<li>基于比较（Comparision）和不基于比较的策略；</li>
+<li>迭代（Iterative）或递归（Recursive）的实现</li>
+<li>分支（Divide-and-Conquer）的机制（例如归并排序与快速排序）</li>
+<li>最好/最差/平均 时间复杂度分析</li>
+<li>随机算法（Randomized Algorithm）</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>面试</tag>
+        <tag>排序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDN 入门</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/SDN-%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>SDN</tag>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数值分析学习笔记</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>本学期开设了<em><strong>数值分析</strong></em>课程。这是我本科期间最后一门数学课了。<br>认真学习之余，整理了很多解题套路。虽然直接上套路解题不好，但我认为如果能先把题解出来，我们也可以更好地反思解题的原理。<br><em>另外，想了很久还是决定用手写到白纸上，这样更容易表达我的想法。</em><br><strong>希望这学期的数值分析会有好结果！加油！</strong>  </p>
+<span id="more"></span>
+
+<h2 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h2><h3 id="走进数值分析及误差"><a href="#走进数值分析及误差" class="headerlink" title="走进数值分析及误差"></a>走进数值分析及误差</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_1.jpg?raw=true" align=center>
+
+<h3 id="避免误差的5种方法"><a href="#避免误差的5种方法" class="headerlink" title="避免误差的5种方法"></a>避免误差的5种方法</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_2.jpg?raw=true" align=center>
+
+<h2 id="第二章-解线性方程组的直接方法"><a href="#第二章-解线性方程组的直接方法" class="headerlink" title="第二章 解线性方程组的直接方法"></a>第二章 解线性方程组的直接方法</h2><h3 id="3种矩阵分解的分解形式及求解方法"><a href="#3种矩阵分解的分解形式及求解方法" class="headerlink" title="3种矩阵分解的分解形式及求解方法"></a>3种矩阵分解的分解形式及求解方法</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_3.jpg?raw=true" align=center>
+
+<h3 id="范数、条件数、谱半径（评估矩阵的工具）"><a href="#范数、条件数、谱半径（评估矩阵的工具）" class="headerlink" title="范数、条件数、谱半径（评估矩阵的工具）"></a>范数、条件数、谱半径（评估矩阵的工具）</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_4.jpg?raw=true" align=center>
+
+<h2 id="第三章-解线性方程组的迭代法"><a href="#第三章-解线性方程组的迭代法" class="headerlink" title="第三章 解线性方程组的迭代法"></a>第三章 解线性方程组的迭代法</h2><h3 id="3种迭代法解题步骤"><a href="#3种迭代法解题步骤" class="headerlink" title="3种迭代法解题步骤"></a>3种迭代法解题步骤</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_5.jpg?raw=true" align=center>
+
+<h2 id="第四章-非线性方程求根"><a href="#第四章-非线性方程求根" class="headerlink" title="第四章 非线性方程求根"></a>第四章 非线性方程求根</h2><h3 id="3种迭代法"><a href="#3种迭代法" class="headerlink" title="3种迭代法"></a>3种迭代法</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_6.jpg?raw=true" align=center>
+
+<h2 id="期中复习"><a href="#期中复习" class="headerlink" title="期中复习"></a>期中复习</h2><h3 id="知识框架"><a href="#知识框架" class="headerlink" title="知识框架"></a>知识框架</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_12.jpg?raw=true" align=center>
+
+<h2 id="第六章-插值与逼近"><a href="#第六章-插值与逼近" class="headerlink" title="第六章 插值与逼近"></a>第六章 插值与逼近</h2><h3 id="3种基本插值方法"><a href="#3种基本插值方法" class="headerlink" title="3种基本插值方法"></a>3种基本插值方法</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_7.jpg?raw=true" align=center>
+
+<h2 id="第六章-插值与逼近-1"><a href="#第六章-插值与逼近-1" class="headerlink" title="第六章 插值与逼近"></a>第六章 插值与逼近</h2><h3 id="分段插值、正交多项式、拟合"><a href="#分段插值、正交多项式、拟合" class="headerlink" title="分段插值、正交多项式、拟合"></a>分段插值、正交多项式、拟合</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_8.jpg?raw=true" align=center>
+
+<h2 id="第七章-数值积分与数值微分"><a href="#第七章-数值积分与数值微分" class="headerlink" title="第七章 数值积分与数值微分"></a>第七章 数值积分与数值微分</h2><h3 id="数值积分概述"><a href="#数值积分概述" class="headerlink" title="数值积分概述"></a>数值积分概述</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_9.jpg?raw=true" align=center>
+
+<h2 id="第七章-数值积分与数值微分-1"><a href="#第七章-数值积分与数值微分-1" class="headerlink" title="第七章 数值积分与数值微分"></a>第七章 数值积分与数值微分</h2><h3 id="复化求积公式、Gauss型求积公式"><a href="#复化求积公式、Gauss型求积公式" class="headerlink" title="复化求积公式、Gauss型求积公式"></a>复化求积公式、Gauss型求积公式</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_10.jpg?raw=true" align=center>
+
+<h2 id="第八章-常微分方程数值解法"><a href="#第八章-常微分方程数值解法" class="headerlink" title="第八章 常微分方程数值解法"></a>第八章 常微分方程数值解法</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_11.jpg?raw=true" align=center>
+### 必考题型
+<img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_15.jpg?raw=true" align=center>
+
+<h2 id="期末复习"><a href="#期末复习" class="headerlink" title="期末复习"></a>期末复习</h2><h3 id="知识框架-1"><a href="#知识框架-1" class="headerlink" title="知识框架"></a>知识框架</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_13.jpg?raw=true" align=center>
+### 长难公式
+<img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_14.jpg?raw=true" align=center>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>我校（NEU）数值分析考试历年来都是各种套路题目（然鹅我还是习惯性数学掉链子），多刷题就好，另外注意老师透露的任何信息，比如今年老师让我们<br>着重看一下MOOC上的课后题，结果真的考到了。</p>
+<h3 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h3><h3 id="全书知识框架（与NEU所用教材不完全一致，不够很具代表性）"><a href="#全书知识框架（与NEU所用教材不完全一致，不够很具代表性）" class="headerlink" title="全书知识框架（与NEU所用教材不完全一致，不够很具代表性）"></a>全书知识框架（与NEU所用教材不完全一致，不够很具代表性）</h3><img src="https://github.com/Raven98/Raven98.github.io/blob/master/uploads/mathanalysis/New%20Doc%202018-06-14_16.jpg?raw=true" align=center>]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+        <tag>数值分析</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Github 使用经典问题：如何同步 fork 项目原仓库的更新</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/200407-Github%20%E4%BD%BF%E7%94%A8%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98%EF%BC%9A%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%20fork%20%E9%A1%B9%E7%9B%AE%E5%8E%9F%E4%BB%93%E5%BA%93%E7%9A%84%E6%9B%B4%E6%96%B0/</url>
+    <content><![CDATA[<p>Github 我们经常会通过 fork 开源项目在自己的仓库中更新，然后提交 Pull Request (Merge Request) 为开源项目做贡献。</p>
+<p>不过我们经常会遇到原仓库更新，重新 fork 显然是不优雅的，那我我们该怎么同步更新呢？</p>
+<span id="more"></span>
+
+<p><img src="pic1.jpg"></p>
+<h1 id="如何在-Github-网页端同步更新？"><a href="#如何在-Github-网页端同步更新？" class="headerlink" title="如何在 Github 网页端同步更新？"></a>如何在 Github 网页端同步更新？</h1><ol>
+<li>进入你自己的 fork 过来的仓库。</li>
+<li>点击 “Pull requests” ，如何点击右侧绿色的 “New pull request”。</li>
+<li>Github 首先会比较源仓库与你 fork 后的仓库，如果你没有做任何更改，则找不到要 PR 的内容。所以，我们需要点击 “switching the base”，会将我们的仓库作为基础版本，原仓库作为 head 版本，现在我们会看到我们的需要需要 “catch up” 的更新。</li>
+<li>点击 “Create pull request”，起一个名字，然后点击 “Create pull request”。</li>
+<li>点击 “Merge pull request”，然后点击 “Confirm merge”。</li>
+<li>如果我们没提交什么新代码，merge 过程将自动完成。</li>
+</ol>
+<h1 id="如何通过本地命令行同步更新？"><a href="#如何通过本地命令行同步更新？" class="headerlink" title="如何通过本地命令行同步更新？"></a>如何通过本地命令行同步更新？</h1><ol>
+<li>验证远程分支可以 fetch 或 push<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
+<li>指明我们需要同步的仓库<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote add upstream https://github.com/OriginalRepo/OriginalProject.git</span><br></pre></td></tr></table></figure></li>
+<li>验证<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
+<li>拉取更新的 branches 和 commits<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git fetch upstream</span><br></pre></td></tr></table></figure></li>
+<li>Checkout 本地分支<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout master</span><br></pre></td></tr></table></figure></li>
+<li>合并<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git merge upstream/master</span><br></pre></td></tr></table></figure></li>
+<li>提交<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Git</tag>
+        <tag>版本管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构与算法之美 - 王争 - 极客时间</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E-%E7%8E%8B%E4%BA%89-%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>数据结构</tag>
+        <tag>极客时间</tag>
+        <tag>王争</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用InfluxDB和Telegraf为服务器搭建基础监控</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/211231-%E4%BD%BF%E7%94%A8InfluxDB%E5%92%8CTelegraf%E4%B8%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%9B%91%E6%8E%A7/</url>
+    <content><![CDATA[<p>想要监控服务器性能我们自然需要采集其性能数据并存储，InfluxDB 搭配 Telegraf 是目前最主流的服务器监控方案之一<br>Telegraf 是一个插件驱动的服务端代理用于采集并发送服务器上软件系统性能 metrics。<br>InfluxDB 是一个知名的时序数据库，它和 Telegraf 都是 InfluxData 公司的产品。</p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>监控</tag>
+        <tag>运维</tag>
+        <tag>服务器</tag>
+        <tag>InfluxDB</tag>
+        <tag>Telegraf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux安装软件的几种方式</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220311-Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<p>Linux 提供了各种不同的软件包安装与管理方式，我们可以根据系统差异、实际情况以及使用需求选择不同的方式来安装。</p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
+        <tag>Linux</tag>
+        <tag>Ubuntu</tag>
+        <tag>环境</tag>
+        <tag>包管理</tag>
+        <tag>apt</tag>
+        <tag>yum</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入理解 C++ 的左值和右值</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220422-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3-C-%E7%9A%84%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/</url>
+    <content><![CDATA[<p>C++ 的左值（lvalue）和右值（rvalue）的概念在 C++11 后变得越来越重要，作为一个不是很容易理解的概念，一旦我们搞清楚了他们的含义，将有助于我们进一步理解一些高级的 C++ 特性，例如 move/forward 的新语义及右值引用（rvalue references）。</p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>左值引用</tag>
+        <tag>右值引用</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 绑定程序到特定 CPU 上运行</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220506-Linux-%E7%BB%91%E5%AE%9A%E7%A8%8B%E5%BA%8F%E5%88%B0%E7%89%B9%E5%AE%9A-CPU-%E4%B8%8A%E8%BF%90%E8%A1%8C/</url>
+    <content><![CDATA[<p>现在我们日程使用的手机、电脑、服务器使用的基本上都是多核 CPU，多核 CPU 允许我们并行地运行多个程序。我们的程序（进程/线程）跑在哪一个核心上是由操作系统内核来调度的，内核会将我们的程序调度到不同的核心上来运行，那有没有方法能让我们的程序一直在同一个 CPU 上运行呢？</p>
+<p>答案当然是有的，Linux 提供了 CPU 亲和性（CPU affinity）的设置来允许我们控制程序使其在同一块 CPU 上完成。</p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>技术研究</tag>
+        <tag>调度</tag>
+        <tag>CPU</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多核处理器可以并行运行多个进程吗？</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220520-%E5%A4%9A%E6%A0%B8%E5%A4%84%E7%90%86%E5%99%A8%E5%8F%AF%E4%BB%A5%E5%B9%B6%E8%A1%8C%E8%BF%90%E8%A1%8C%E5%A4%9A%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%90%97%EF%BC%9F/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>CPU</tag>
+        <tag>进程</tag>
+        <tag>线程</tag>
+        <tag>并行</tag>
+        <tag>并发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初探数据库连接池</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/%E5%88%9D%E6%8E%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0/</url>
+    <content><![CDATA[<p>参考资料</p>
+<ul>
+<li><a href="https://blog.csdn.net/crankz/article/details/82874158">数据库连接池学习笔记（一）：原理介绍+常用连接池介绍</a></li>
+<li><a href="https://blog.csdn.net/frightingforambition/article/details/25464129">java数据库连接池实现原理</a></li>
+<li><a href="https://juejin.im/entry/58fb03220ce4630061233c98">高性能数据库连接池的内幕</a></li>
+</ul>
+<h1 id="为什么要使用连接池"><a href="#为什么要使用连接池" class="headerlink" title="为什么要使用连接池"></a>为什么要使用连接池</h1><p>数据库连接是一种关键的有限的昂贵的资源，这一点在多用户的网页应用程序中体现得尤为突出。  一个数据库连接对象均对应一个物理数据库连接，每次操作都打开一个物理连接，使用完都关闭连接，这样造成系统的 性能低下。 数据库连接池的解决方案是在应用程序启动时建立足够的数据库连接，并讲这些连接组成一个连接池(简单说：在一个“池”里放了好多半成品的数据库联接对象)，由应用程序动态地对池中的连接进行申请、使用和释放。对于多于连接池中连接数的并发请求，应该在请求队列中排队等待。并且应用程序可以根据池中连接的使用率，动态增加或减少池中的连接数。 连接池技术尽可能多地重用了消耗内存地资源，大大节省了内存，提高了服务器地服务效率，能够支持更多的客户服务。通过使用连接池，将大大提高程序运行效率，同时，我们可以通过其自身的管理机制来监视数据库连接的数量、使用情况等。 </p>
+<span id="more"></span>
+
+<h1 id="传统的连接机制与数据库连接池的运行机制区别"><a href="#传统的连接机制与数据库连接池的运行机制区别" class="headerlink" title="传统的连接机制与数据库连接池的运行机制区别"></a>传统的连接机制与数据库连接池的运行机制区别</h1><h2 id="不使用连接池流程"><a href="#不使用连接池流程" class="headerlink" title="不使用连接池流程"></a>不使用连接池流程</h2><p>下面以访问MySQL为例，执行一个SQL命令，如果不使用连接池，需要经过哪些流程。<br><img src="https://ws3.sinaimg.cn/large/006tNc79ly1g3116moxfaj30d40dgdgt.jpg" width="400px" /></p>
+<ul>
+<li><p>步骤</p>
+<ol>
+<li>TCP建立连接的三次握手（JDBC与MySQL的连接基于TCP协议）</li>
+<li>MySQL认证的三次握手</li>
+<li>真正的SQL执行</li>
+<li>MySQL的关闭</li>
+<li>TCP的四次握手关闭<br>可以看到，为了执行一条SQL，却多了非常多我们不关心的网络交互。</li>
+</ol>
+</li>
+<li><p>优点</p>
+<ul>
+<li>实现简单</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ol>
+<li>网络IO较多</li>
+<li>数据库的负载较高</li>
+<li>响应时间较长及QPS较低（每秒查询率QPS是对一个特定的查询服务器在规定时间内所处理流量多少的衡量标准）</li>
+<li>应用频繁的创建连接和关闭连接，导致临时对象较多，GC频繁</li>
+<li>在关闭连接后，会出现大量TIME_WAIT的TCP状态（在2个MSL之后关闭，这个是TCP/IP的设计者规定的<a href="https://www.cnblogs.com/sunxucool/p/3449068.html">详情</a>）</li>
+</ol>
+</li>
+</ul>
+<h2 id="使用数据库连接池"><a href="#使用数据库连接池" class="headerlink" title="使用数据库连接池"></a>使用数据库连接池</h2><img src="https://ws4.sinaimg.cn/large/006tNc79ly1g311fkf2cqj30f80fdtb5.jpg" width="400px" />
+
+<ul>
+<li><p>步骤</p>
+<ul>
+<li>第一次访问的时候，需要建立连接。 但是之后的访问，均会复用之前创建的连接，直接执行SQL语句。</li>
+</ul>
+</li>
+<li><p>优点</p>
+<ol>
+<li>较少了网络开销</li>
+<li>系统的性能会有一个实质的提升</li>
+<li>没了麻烦的TIME_WAIT状态</li>
+</ol>
+</li>
+</ul>
+<h1 id="数据库连接池的工作原理"><a href="#数据库连接池的工作原理" class="headerlink" title="数据库连接池的工作原理"></a>数据库连接池的工作原理</h1><p>连接池的工作原理主要由三部分组成，分别为</p>
+<ol>
+<li>连接池的建立</li>
+<li>连接池中连接的使用管理</li>
+<li>连接池的关闭</li>
+</ol>
+<p>第一、连接池的建立。一般在系统初始化时，连接池会根据系统配置建立，并在池中创建了几个连接对象，以便使用时能从连接池中获取。连接池中的连接不能随意创建和关闭，这样避免了连接随意建立和关闭造成的系统开销。Java中提供了很多容器类可以方便的构建连接池，例如Vector、Stack等。</p>
+<p>第二、连接池的管理。连接池管理策略是连接池机制的核心，连接池内连接的分配和释放对系统的性能有很大的影响。其管理策略是：<br>当客户请求数据库连接时，首先查看连接池中是否有空闲连接，如果存在空闲连接，则将连接分配给客户使用；如果没有空闲连接，则查看当前所开的连接数是否已经达到最大连接数，如果没达到就重新创建一个连接给请求的客户；如果达到就按设定的最大等待时间进行等待，如果超出最大等待时间，则抛出异常给客户。<br>当客户释放数据库连接时，先判断该连接的引用次数是否超过了规定值，如果超过就从连接池中删除该连接，否则保留为其他客户服务。<br>该策略保证了数据库连接的有效复用，避免频繁的建立、释放连接所带来的系统资源开销。</p>
+<p>第三、连接池的关闭。当应用程序退出时，关闭连接池中所有的连接，释放连接池相关的资源，该过程正好与创建相反。</p>
+<h1 id="连接池主要参数"><a href="#连接池主要参数" class="headerlink" title="连接池主要参数"></a>连接池主要参数</h1><p><strong>使用连接池时，要配置一下参数</strong></p>
+<ol>
+<li>最小连接数：是连接池一直保持的数据库连接,所以如果应用程序对数据库连接的使用量不大,将会有大量的数据库连接资源被浪费.</li>
+<li>最大连接数：是连接池能申请的最大连接数,如果数据库连接请求超过次数,后面的数据库连接请求将被加入到等待队列中,这会影响以后的数据库操作</li>
+<li>最大空闲时间</li>
+<li>获取连接超时时间</li>
+<li>超时重试连接次数</li>
+</ol>
+<h1 id="连接池需要注意的点"><a href="#连接池需要注意的点" class="headerlink" title="连接池需要注意的点"></a>连接池需要注意的点</h1><h2 id="并发问题"><a href="#并发问题" class="headerlink" title="并发问题"></a>并发问题</h2><p>为了使连接管理服务具有最大的通用性，必须考虑多线程环境，即并发问题。这个问题相对比较好解决，因为各个语言自身提供了对并发管理的支持像java,c#等等，使用synchronized(java)lock(C#)关键字即可确保线程是同步的。</p>
+<h2 id="事务处理"><a href="#事务处理" class="headerlink" title="事务处理"></a>事务处理</h2><p>我们知道，事务具有原子性，此时要求对数据库的操作符合“ALL-OR-NOTHING”原则,即对于一组SQL语句要么全做，要么全不做。<br>我们知道当2个线程共用一个连接Connection对象，而且各自都有自己的事务要处理时候，对于连接池是一个很头疼的问题，因为即使Connection类提供了相应的事务支持，可是我们仍然不能确定那个数据库操作是对应那个事务的，这是由于我们有２个线程都在进行事务操作而引起的。为此我们可以使用每一个事务独占一个连接来实现，虽然这种方法有点浪费连接池资源但是可以大大降低事务管理的复杂性。 </p>
+<h2 id="连接池的分配与释放"><a href="#连接池的分配与释放" class="headerlink" title="连接池的分配与释放"></a>连接池的分配与释放</h2><p>连接池的分配与释放，对系统的性能有很大的影响。合理的分配与释放，可以提高连接的复用度，从而降低建立新连接的开销，同时还可以加快用户的访问速度。<br>对于连接的管理可使用一个List。即把已经创建的连接都放入List中去统一管理。每当用户请求一个连接时，系统检查这个List中有没有可以分配的连接。如果有就把那个最合适的连接分配给他；如果没有就抛出一个异常给用户，List中连接是否可以被分配由一个线程来专门管理捎后我会介绍这个线程的具体实现。</p>
+<h2 id="连接池的配置与维护"><a href="#连接池的配置与维护" class="headerlink" title="连接池的配置与维护"></a>连接池的配置与维护</h2><p>连接池中到底应该放置多少连接，才能使系统的性能最佳？系统可采取设置最小连接数（minConnection）和最大连接数（maxConnection）等参数来控制连接池中的连接。比方说，最小连接数是系统启动时连接池所创建的连接数。如果创建过多，则系统启动就慢，但创建后系统的响应速度会很快；如果创建过少，则系统启动的很快，响应起来却慢。这样，可以在开发时，设置较小的最小连接数，开发起来会快，而在系统实际使用时设置较大的，因为这样对访问客户来说速度会快些。最大连接数是连接池中允许连接的最大数目，具体设置多少，要看系统的访问量，可通过软件需求上得到。 <br>如何确保连接池中的最小连接数呢？有动态和静态两种策略。动态即每隔一定时间就对连接池进行检测，如果发现连接数量大于最小连接数，则补充相应数量的新连接,以保证连接池的正常运转。静态是发现空闲连接不够时再去检查。</p>
+<h1 id="数据库对比"><a href="#数据库对比" class="headerlink" title="数据库对比"></a>数据库对比</h1><h2 id="第一、二代连接池"><a href="#第一、二代连接池" class="headerlink" title="第一、二代连接池"></a>第一、二代连接池</h2><p>区分一个数据库连接池是属于第一代产品还是代二代产品有一个最重要的特征就是看它在架构和设计时采用的线程模型，因为这直接影响的是并发环境下存取数据库连接的性能。</p>
+<p>一般来讲采用单线程同步的架构设计都属于第一代连接池，二采用多线程异步架构的则属于第二代。比较有代表性的就是Apache Commons DBCP，在1.x版本中，一直延续着单线程设计模式，到2.x才采用多线程模型。</p>
+<p>二代产品对一代产品的超越是颠覆性的，除了一些“历史原因”，你很难再找到第二条理由说服自己不选择二代产品，但任何成功都不是偶然的，二代产品的成功很大程度上得益于前代产品们打下的基础，站在巨人的肩膀上，新一代的连接池的设计师们将这一项“工具化”的产品，推向了极致。其中，最具代表性的两款产品是：</p>
+<ul>
+<li>HikariCP</li>
+<li>Druid</li>
+</ul>
+<p>下面更多介绍请参考<a href="https://blog.csdn.net/crankz/article/details/82874158">数据库连接池对比</a></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>时至今日，虽然每个应用（需要RDBMS的）都离不开连接池，但在实际使用的时候，连接池已经可以做到“<strong>隐形</strong>”了。也就是说在通常情况下，连接池完成项目初始化配置之后，就再不需要再做任何改动了。不论你是选择Druid或是HikariCP，甚至是DBCP，它们都足够稳定且高效！之前讨论了很多关于连接池的性能的问题，但这些性能上的差异，是相较于其他连接池而言的，对整个系统应用来说，第二代连接池在使用过程中体会到的差别是微乎其微的，基本上不存在因为连接池的自身的配饰和使用导致系统性能下降的情况，除非是在单点应用的数据库负载足够高的时候（压力测试的时候），但即便是如此，通用的优化的方式也是单点改集群，而不是在单点的连接池上死扣。</p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>转载</tag>
+        <tag>数据库</tag>
+        <tag>连接池</tag>
+        <tag>MySQL</tag>
+        <tag>dbcp2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>动手实现一个 Python 版本的 MysqlClient</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%20Python%20%E7%89%88%E6%9C%AC%E7%9A%84%20MysqlClient/</url>
+    <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>在实际项目中我们会在项目的各个角落进行数据库访问操作，显然我们需要将对数据库的访问做一定的封装，在统一管理的基础上也可以做一些额外的优化。<br>所以我们打算实现一个叫做<code>MysqlClient</code>的类对数据库访问做统一管理，我们期待它的作用有：</p>
+<ul>
+<li>统一管理数据库访问凭证</li>
+<li>对<code>query</code>和<code>execute</code>两类操作进行封装</li>
+<li>预处理sql以防 SQL注入</li>
+<li>引入数据库连接池</li>
+<li>合适的错误检查与记录</li>
+<li>以及如何正确使用</li>
+</ul>
+<p>在百度上随便一搜就能搜到类似的实现，不过他们大部分都是只实现了对<code>query</code>，<code>execute</code>的封装，少部分加上了预处理sql，我希望提供一个更完整的<code>MysqlClient</code>实现。</p>
+<blockquote>
+<p>我最初也是在百度上复制了一个封装了query、execute两个操作的MysqlClient，后来被公司安全部门提示有sql注入风险，所幸将平常遇到的对数据库访问对象的需求一次考虑清楚设计一个比较完善的实现。</p>
+</blockquote>
+<h1 id="上代码"><a href="#上代码" class="headerlink" title="上代码"></a>上代码</h1><blockquote>
+<p>Python 3.7，遵循 PEP8 代码风格</p>
+</blockquote>
+<span id="more"></span>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># encoding: utf-8</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">@desc: MySQL client. Manage the access evidence, wrap the common action, improve the performance, keep the security.</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"><span class="keyword">import</span> glog</span><br><span class="line"><span class="keyword">from</span> DBUtils.PooledDB <span class="keyword">import</span> PooledDB</span><br><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> create_engine</span><br><span class="line"><span class="keyword">from</span> sqlalchemy.orm <span class="keyword">import</span> sessionmaker</span><br><span class="line"></span><br><span class="line"><span class="comment"># database configuration</span></span><br><span class="line">__DATABASE_HOST = <span class="string">&quot;127.0.0.1&quot;</span></span><br><span class="line">__DATABASE_PORT = <span class="string">&quot;3306&quot;</span></span><br><span class="line">__DATABASE_USER = <span class="string">&quot;root&quot;</span></span><br><span class="line">__DATABASE_PASSWORD = <span class="string">&quot;password&quot;</span></span><br><span class="line">__DATABASE_NAME = <span class="string">&quot;demo&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># database connection pool configuration</span></span><br><span class="line">__NUM_DEFAULT_CONNECTION = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_mysql_connection_pool</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Database connection to the server using the connection pool.</span></span><br><span class="line"><span class="string">    :return: database connection</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    db_host = __DATABASE_HOST</span><br><span class="line">    db_port = __DATABASE_PORT</span><br><span class="line">    db_user = __DATABASE_USER</span><br><span class="line">    db_password = __DATABASE_PASSWORD</span><br><span class="line">    db_name = __DATABASE_NAME</span><br><span class="line"></span><br><span class="line">    num_connection = __NUM_DEFAULT_CONNECTION</span><br><span class="line"></span><br><span class="line">    connection_pool = PooledDB(MySQLdb, num_connection,</span><br><span class="line">                               host=db_host, port=db_port, user=db_user, passwd=db_password, db=db_name)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> connection_pool</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_session</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Used by ORM framework.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    db_host = __DATABASE_HOST</span><br><span class="line">    db_port = __DATABASE_PORT</span><br><span class="line">    db_user = __DATABASE_USER</span><br><span class="line">    db_password = __DATABASE_PASSWORD</span><br><span class="line">    db_name = __DATABASE_NAME</span><br><span class="line"></span><br><span class="line">    engine = create_engine(<span class="string">&#x27;mysql+mysqlconnector://&#x27;</span></span><br><span class="line">                           + db_user + <span class="string">&#x27;:&#x27;</span> + db_password + <span class="string">&#x27;@&#x27;</span> + db_host + <span class="string">&#x27;:&#x27;</span> + db_port + <span class="string">&#x27;/&#x27;</span> + db_name)</span><br><span class="line">    da_session = sessionmaker(bind=engine)</span><br><span class="line">    session = da_session()</span><br><span class="line">    <span class="keyword">return</span> session</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">watch_prepared_statement</span>(<span class="params">sql, params</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    When we use prepared sql statement, the program doesn&#x27;t the real sql neither in the python program or</span></span><br><span class="line"><span class="string">    database process. This function will parse the expected sql statement for debugging.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    expected_sql = sql % <span class="built_in">tuple</span>(params)</span><br><span class="line">    <span class="keyword">return</span> expected_sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MysqlClient</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Package actions about the database.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.connection_pool = get_mysql_connection_pool()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">query</span>(<span class="params">self, sql, params=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Query action.</span></span><br><span class="line"><span class="string">        :param sql: being executed sql statement</span></span><br><span class="line"><span class="string">        :param params: sql param, to avoid the sql injection</span></span><br><span class="line"><span class="string">        :return: Query Result</span></span><br><span class="line"><span class="string">        :rtype: list</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        connection = self.connection_pool.connection()</span><br><span class="line">        cursor = connection.cursor()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> params <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            params = []</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            cursor.execute(<span class="built_in">str</span>(sql), params)</span><br><span class="line">            result = cursor.fetchall()</span><br><span class="line">            <span class="keyword">return</span> result</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            expected_sql = watch_prepared_statement(sql, params)</span><br><span class="line">            glog.error(<span class="string">&quot;[&quot;</span> + <span class="built_in">str</span>(e) + <span class="string">&quot;]&quot;</span> + expected_sql)</span><br><span class="line">            result = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="comment"># release the connection to the pooled</span></span><br><span class="line">            cursor.close()</span><br><span class="line">            connection.close()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">update</span>(<span class="params">self, sql, params=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Update action.</span></span><br><span class="line"><span class="string">        :param sql: being executed sql statement</span></span><br><span class="line"><span class="string">        :param params: sql param, to avoid the sql injection</span></span><br><span class="line"><span class="string">        :return: affected rows count and the last row id</span></span><br><span class="line"><span class="string">        :rtype: tuple</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        connection = self.connection_pool.connection()</span><br><span class="line">        cursor = connection.cursor()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> params <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            params = []</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            cursor.execute(<span class="built_in">str</span>(sql), params)</span><br><span class="line">            row_count = cursor.rowcount</span><br><span class="line">            row_id = cursor.lastrowid</span><br><span class="line">            connection.commit()</span><br><span class="line">            result = row_count, row_id</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            expected_sql = watch_prepared_statement(sql, params)</span><br><span class="line">            glog.error(<span class="string">&quot;[&quot;</span> + <span class="built_in">str</span>(e) + <span class="string">&quot;]&quot;</span> + expected_sql)</span><br><span class="line">            result = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="comment"># release the connection to the pooled</span></span><br><span class="line">            cursor.close()</span><br><span class="line">            connection.close()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_connection</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Other actions. Return the connection to finish other operations, such as executemany and so on.</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">return</span> self.connection_pool.connection()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">__mysql_client = MysqlClient()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_mysql_client</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Initialize the singleton object.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">return</span> __mysql_client</span><br></pre></td></tr></table></figure>
+
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ul>
+<li><p>外部访问时通过调用<code>get_mysql_client()</code>函数来获得单例的 MysqlClient。</p>
+<blockquote>
+<p>实现单例模式最简单的方法：在模块内定义变量，模块被import时被初始化</p>
+</blockquote>
+</li>
+<li><p><code>watch_prepared_statement()</code>函数用于观察预处理后的sql语句</p>
+<blockquote>
+<p>通俗地说，预处理就是把 <strong>%</strong> 变为 <strong>,</strong></p>
+</blockquote>
+</li>
+<li><p><code>get_session()</code>是相对独立的一部分，在使用如 SQLAlchemy 这样的ORM框架时会用到。</p>
+</li>
+<li><p>提供了<code>get_connection()</code>用于完成不常用的数据库操作，当然如果在项目层面常用也可以增加额外的封装方法。</p>
+</li>
+<li><p>数据库连接池部分还可以对cache，连接数做额外的配置，这个可以根据项目实际需求做改动。</p>
+</li>
+<li><p>对配置信息部分，还可以引入<code>ConfigParser</code>对其进行统一管理在配置文件。 </p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+        <tag>数据库连接池</tag>
+        <tag>代码风格</tag>
+        <tag>安全</tag>
+        <tag>SQL注入</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用字符编码整理</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%E6%95%B4%E7%90%86/</url>
+    <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>这两天在预习人工智能课要用的的python语言，循着廖雪峰老师的博客在学习。<br>发现教程里再次提到了关于各种编码的事情，我想有必要单独写一篇文章也算是一种总结。</p>
+<h2 id="字符编码"><a href="#字符编码" class="headerlink" title="字符编码"></a>字符编码</h2><p>因为计算机只能处理数字，如果要处理文本，就必须先把文本转换为数字才能处理。最早的计算机在设计时采用8个比特（bit）作为一个字节（byte），所以，一个字节能表示的最大的整数就是255（二进制11111111=十进制255），如果要表示更大的整数，就必须用更多的字节。比如两个字节可以表示的最大整数是65535，4个字节可以表示的最大整数是4294967295。</p>
+<span id="more"></span>   
+<h2 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII"></a>ASCII</h2><p>American Standard Code for Information Interchange，美国信息交换标准代码<br>由于计算机是美国人发明的，因此，最早只有127个字符被编码到计算机里，也就是大小写英文字母、数字和一些符号，这个编码表被称为ASCII编码，比如大写字母A的编码是65，小写字母z的编码是122。<br>最后一次更新是在1986年，至今为止共定义了128个子元。主要用于显示英语。</p>
+<h2 id="ANSI"><a href="#ANSI" class="headerlink" title="ANSI"></a>ANSI</h2><p>ANSI编码是一种对ASCII码的拓展：ANSI编码用0x00<del>0x7f 范围的1 个字节来表示 1 个英文字符，超出一个字节的 0x80</del>0xFFFF 范围来表示其他语言的其他字符。也就是说，ANSI码仅在前126个与ASCII码相同，之后的字符全是某个国家语言的所有字符。值得注意的是，两个字节最多可以存储的字符数目是2的16次方，即65536个字符，这对于一个语言的字符来说，绝对够了。还有ANSI编码其实包括很多编码：中国制定了GB2312编码，用来把中文编进去另外，日本把日文编到Shift_JIS里，韩国把韩文编到Euc-kr里，各国有各国的标准。受制于当时的条件，不同语言之间的ANSI码之间不能互相转换，这就会导致在多语言混合的文本中会有乱码。  </p>
+<blockquote>
+<p>其实ANSI并不是某一种特定的字符编码，而是在不同的系统中，ANSI表示不同的编码。（也可以说是ANSI包含许多种编码，都是对ASCII的扩展）你的美国同事Bob的系统中ANSI编码其实是ASCII编码（ASCII编码不能表示汉字，所以汉字为乱码），而你的系统中（“汉字”正常显示）ANSI编码其实是GBK编码，而韩文系统中（“한국어”正常显示）ANSI编码其实是EUC-KR编码。  </p>
+<p>话说计算机是由美国佬搞出来的嘛，他们觉得一个字节（可以表示256个编码）表示英语世界里所有的字母、数字和常用特殊符号已经绰绰有余了（其实ASCII只用了前127个编码）。后来欧洲人不干了，法国人说：我需要在小写字母加上变音符号（如：é），德国人说：我也要加几个字母（Ä ä、Ö ö、Ü ü、ß）。于是，欧洲人就将ASCII没用完的编码（128-255）为自己特有的符号编码（后来称之为“扩展字符集”）。等到我们中国人开始使用计算机的时候，尼玛，256个编码哪够？我泱泱大中华，汉字起码也得N多万吧，就连小学生都得要求掌握两三千字。国标局最后拍板：一个字节不够，那我们就用多个字节来为汉字编码吧，但是，国情那么穷，字节那么贵，三个字节伤不起，那就用俩字节吧，先给常用的几千汉字编个码，等以后国家强盛了人民富裕了，咱再扩展呗—于是GB2312就产生了。台湾同胞一看，尼玛，全是简体字，还让不让我们写繁体字的活了，于是台湾同胞也自己弄了个繁体字编码—大五码（Big-5）。同时，其它国家也在为自己的文字编码。最后，微软苦逼了：顾客就是上帝啊，你们的编码我都得满足啊，这样吧，卖给美国国内的系统默认就用ASCII编码吧，卖给中国人的系统默认就用GBK编码吧，卖给韩国人的系统默认就用EUC-KR编码，…但是为了避免你们误会我卖给你们的系统功能有差异，我就统一把你们的默认编码都显示成ANSI吧。—本故事纯属虚构，但“ANSI编码”确实只存在于Windows系统。</p>
+</blockquote>
+<h2 id="Unicode"><a href="#Unicode" class="headerlink" title="Unicode"></a>Unicode</h2><p>为了解决不同国家ANSI编码的冲突问题，Unicode应运而生。Unicode把所有语言都统一到一套编码里，这样就不会再有乱码问题了。<br>Unicode标准也在不断发展，但最常用的是用两个字节表示一个字符（如果要用到非常偏僻的字符，就需要4个字节）。现代操作系统和大多数编程语言都直接支持Unicode。<br>但是问题在于，原本可以用一个字节存储的英文字母在Unicode里面必须存两个字节（规则就是在原来英文字母对应ASCII码前面补0），这就产生了浪费。那么有没有一种既能消除乱码，又能避免浪费的编码方式呢？答案就是UTF-8！ </p>
+<h2 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h2><p>所以，本着节约的精神，又出现了把Unicode编码转化为“可变长编码”的UTF-8编码。UTF-8编码把一个Unicode字符根据不同的数字大小编码成1-6个字节，常用的英文字母被编码成1个字节，汉字通常是3个字节，只有很生僻的字符才会被编码成4-6个字节。如果你要传输的文本包含大量英文字符，用UTF-8编码就能节省空间：<br>UTF-8编码有一个额外的好处，就是ASCII编码实际上可以被看成是UTF-8编码的一部分，所以，大量只支持ASCII编码的历史遗留软件可以在UTF-8编码下继续工作。</p>
+<blockquote>
+<p>这是一种变长的编码方式：它可以使用1~4个字节表示一个符号，根据不同的符号而变化字节长度，当字符在ASCII码的范围时，就用一个字节表示，保留了ASCII字符一个字节的编码做为它的一部分，如此一来UTF-8编码也可以是为视为一种对ASCII码的拓展。值得注意的是unicode编码中一个中文字符占2个字节，而UTF-8一个中文字符占3个字节。从unicode到uft-8并不是直接的对应，而是要过一些算法和规则来转换。   </p>
+</blockquote>
+<p>在计算机内存中，统一使用Unicode编码，当需要保存到硬盘或者需要传输的时候，就转换为UTF-8编码。<br>用记事本编辑的时候，从文件读取的UTF-8字符被转换为Unicode字符到内存里，编辑完成后，保存的时候再把Unicode转换为UTF-8保存到文件。<br><img src="https://cdn.liaoxuefeng.com/cdn/files/attachments/001387245992536e2ba28125cf04f5c8985dbc94a02245e000/0"><br>浏览网页的时候，服务器会把动态生成的Unicode内容转换为UTF-8再传输到浏览器：<br><img src="https://cdn.liaoxuefeng.com/cdn/files/attachments/001387245979827634fd6204f9346a1ae6358d9ed051666000/0"><br>所以你看到很多网页的源码上会有类似<code>&lt;meta charset=&quot;UTF-8&quot; /&gt;</code>的信息，表示该网页正是用的UTF-8编码。</p>
+<h2 id="变长解码与UTF-16"><a href="#变长解码与UTF-16" class="headerlink" title="变长解码与UTF-16"></a>变长解码与UTF-16</h2><p>我们可能会想到，UTF-8这种不定数目字节表示一个字符的编码方式如何去解码呢。<br>实际上，UTF-8编码的每个编码开头会有一些符号位用来表示当前是以几个字节表示一个字符的。这就导致UTF-8要花费额外的比特。  </p>
+<blockquote>
+<p>UTF-16比较好理解,就是任何字符对应的数字都用两个字节来保存.我们通常对Unicode的误解就是把Unicode与UTF-16等同了.但是很显然如果都是英文字母这做有点浪费.明明用一个字节能表示一个字符为啥整两个啊.<br>于是又有个UTF-8,这里的8非常容易误导人,8不是指一个字节,难道一个字节表示一个字符?实际上不是.当用UTF-8时表示一个字符是可变的,有可能是用一个字节表示一个字符,也可能是两个,三个..反正是根据字符对应的数字大小来确定.<br>于是UTF-8和UTF-16的优劣很容易就看出来了.如果全部英文或英文与其他文字混合,但英文占绝大部分,用UTF-8就比UTF-16节省了很多空间.而如果全部是中文这样类似的字符或者混合字符中中文占绝大多数.UTF-16就占优势了,可以节省很多空间.另外还有个容错问题.</p>
+<h3 id="用UTF-16表示”汉”"><a href="#用UTF-16表示”汉”" class="headerlink" title="用UTF-16表示”汉”"></a>用UTF-16表示”汉”</h3><p>假如用UTF-16表示的话就是01101100   01001001(共16 bit,两个字节).程序解析的时候知道是UTF-16就把两个字节当成一个单元来解析.这个很简单.</p>
+<h3 id="用UTF-8表示”汉”"><a href="#用UTF-8表示”汉”" class="headerlink" title="用UTF-8表示”汉”"></a>用UTF-8表示”汉”</h3><p>用UTF-8就有复杂点.因为此时程序是把一个字节一个字节的来读取,然后再根据字节中开头的bit标志来识别是该把1个还是两个或三个字节做为一个单元来处理.<br>0xxxxxxx,如果是这样的01串,也就是以0开头后面是啥就不用管了XX代表任意bit.就表示把一个字节做为一个单元.就跟ASCII完全一样.<br>110xxxxx 10xxxxxx.如果是这样的格式,则把两个字节当一个单元<br>1110xxxx 10xxxxxx 10xxxxxx 如果是这种格式则是三个字节当一个单元.<br>这是约定的规则.你用UTF-8来表示时必须遵守这样的规则.我们知道UTF-16不需要用啥字符来做标志,所以两字节也就是2的16次能表示65536个字符.<br>而UTF-8由于里面有额外的标志信息,所有一个字节只能表示2的7次方128个字符,两个字节只能表示2的11次方2048个字符.而三个字节能表示2的16次方,65536个字符.</p>
+</blockquote>
+<p>由上面我们可以看出UTF-8在局部的字节错误（丢失、增加、改变）不会导致连锁性的错误，因为 UTF-8 的字符边界很容易检测出来，所以容错性较高。</p>
+<h2 id="编码选择"><a href="#编码选择" class="headerlink" title="编码选择"></a>编码选择</h2><p>因为无论是 UTF-8 和 UTF-16/32 都各有优缺点，因此选择的时候应当立足于实际的应用场景。例如在我的习惯中，存储在磁盘上或进行网络交换时都会采用 UTF-8，而在程序内部进行处理时则转换为 UTF-16/32。对于大多数简单的程序来说，这样做既可以保证信息交换时容易实现相互兼容，同时在内部处理时会比较简单，性能也还算不错。</p>
+<blockquote>
+<p>（基本上只要你的程序不是 I/O 密集型的都可以这么干，当然这只是我粗浅的认识范围内的经验，很可能会被无情的反驳）</p>
+</blockquote>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://www.cnblogs.com/malecrab/p/5300486.html">ANSI是什么编码？</a><br><a href="https://blog.csdn.net/xiangxianghehe/article/details/77574965">字符编码ANSI和ASCII区别、Unicode和UTF-8区别</a><br><a href="https://www.cnblogs.com/fnlingnzb-learner/p/6163205.html">Unicode(UTF-8, UTF-16)令人混淆的概念</a></p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>编码</tag>
+        <tag>UTF-8</tag>
+        <tag>GBK</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何写好技术博客？</title>
+    <url>/e.%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/History/220415-%E5%A6%82%E4%BD%95%E5%9D%9A%E6%8C%81%E5%86%99%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%EF%BC%9F/</url>
+    <content><![CDATA[<p>写技术博客是大部分程序员都很想坚持却又总是断断续续的一件事。大家愿意写技术博客是因为有很多好处，例如写博客有助于整理平常的思考、梳理一个复杂难懂的技术细节；同时也可以满足分享与传播的欲望，幸运的话还能提升自己的 impact。</p>
+]]></content>
+      <categories>
+        <category>观察思考</category>
+      </categories>
+      <tags>
+        <tag>经验</tag>
+        <tag>博客</tag>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>通用的产品与运营思维</title>
     <url>/e.%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/History/%E9%80%9A%E7%94%A8%E7%9A%84%E4%BA%A7%E5%93%81%E4%B8%8E%E8%BF%90%E8%90%A5%E6%80%9D%E7%BB%B4/</url>
     <content><![CDATA[<p>现代互联网企业尤其是国内互联网企业除了开发外还有 产品 和 运营 两个所谓的“文职岗位”，即开放给不想写代码的计算机专业学生和想转互联网行业的其他专业学生的岗位。<br>不过我认为产品和运营两个领域的能力对于像我这样技术一般般的同学来说还是很重要的，用产品思维去设计软件或服务，哪怕是一个对外的 API 接口；用运营能力去在合适的位置推广软件或服务，获得持续的反馈。</p>
@@ -1294,6 +1514,130 @@
         <tag>运营</tag>
         <tag>产品</tag>
         <tag>管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端工具收藏</title>
+    <url>/f.%E6%94%B6%E8%97%8F%E6%95%B4%E7%90%86/History/200720-%E5%89%8D%E7%AB%AF%E5%B7%A5%E5%85%B7%E6%94%B6%E8%97%8F/</url>
+    <content><![CDATA[<blockquote>
+<p>之前做过一些前端开发工作，收藏了一些不错的框架和工具，对于内部平台/性能要求不高的展示页面，使用现成的框架删删改改是足够的。<br>尤其是在一个研发大佬云集的项目组/实验室，会一点前端技能会带给你意想不到的收获。（别误会，大佬们只是不想浪费时间在这种杂活上hh）</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="基础框架"><a href="#基础框架" class="headerlink" title="基础框架"></a>基础框架</h2><ul>
+<li><a href="https://cn.vuejs.org/">Vue.js</a><ul>
+<li>最容易上手</li>
+</ul>
+</li>
+<li><a href="https://react.docschina.org/">React</a> <ul>
+<li>Facebook出品</li>
+</ul>
+</li>
+<li><a href="https://angular.cn/">Angular</a><ul>
+<li>Google出品</li>
+</ul>
+</li>
+</ul>
+<h2 id="UI框架"><a href="#UI框架" class="headerlink" title="UI框架"></a>UI框架</h2><ul>
+<li><a href="https://ant.design/index-cn">Ant Design React</a>, <a href="https://www.antdv.com/docs/vue/introduce-cn/">Ant Design Vue</a><ul>
+<li>蚂蚁金服出品，一直在推陈出新，设计，视觉都非常优秀！</li>
+</ul>
+</li>
+<li><a href="https://element.eleme.io/#/">Element UI</a><ul>
+<li>饿了么出品（基于Vue，非常成熟，非常稳定，但是一直不更新视觉上不fashion了）</li>
+</ul>
+</li>
+<li><a href="https://www.bootcss.com/">Bootstrap</a><ul>
+<li>Twitter出品（基于jQuery，曾经的入门框架，现在用得少）</li>
+</ul>
+</li>
+<li><a href="https://material.io/design/">Material Design</a>, <a href="https://vuematerial.io/">Vue Material</a><ul>
+<li>Google出品，Google网站的风格</li>
+</ul>
+</li>
+</ul>
+<h2 id="开箱即用的中后台前端解决方案"><a href="#开箱即用的中后台前端解决方案" class="headerlink" title="开箱即用的中后台前端解决方案"></a>开箱即用的中后台前端解决方案</h2><blockquote>
+<p>上手容易，推荐使用</p>
+</blockquote>
+<ul>
+<li><a href="https://panjiachen.github.io/vue-element-admin-site/zh/">vue-element-admin</a><ul>
+<li>原net_platform_fe项目使用的框架，非常成熟</li>
+</ul>
+</li>
+<li><a href="https://pro.ant.design/index-cn">Ant Design Pro</a><ul>
+<li>好看，Antd官方团队出品，企业级中后台前端/设计解决方案</li>
+</ul>
+</li>
+</ul>
+<h2 id="小程序"><a href="#小程序" class="headerlink" title="小程序"></a>小程序</h2><ul>
+<li><a href="https://github.com/weilanwl/ColorUI">ColorUI</a><ul>
+<li>鲜亮的高饱和色彩，专注视觉的小程序组件库。</li>
+</ul>
+</li>
+<li><a href="https://github.com/youzan/vant-weapp">Vant</a><ul>
+<li>最成熟的小程序 UI 组件库。</li>
+</ul>
+</li>
+</ul>
+<h2 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h2><h3 id="图标资源"><a href="#图标资源" class="headerlink" title="图标资源"></a>图标资源</h3><ul>
+<li><a href="https://www.iconfont.cn/">Iconfont</a><ul>
+<li>阿里巴巴出品，国内最流行！</li>
+</ul>
+</li>
+<li><a href="https://fontawesome.com/v4.7.0/icons/">Font Awesome Icons</a><ul>
+<li>经典系列~</li>
+</ul>
+</li>
+<li><a href="https://www.flaticon.com/">flaticon</a><ul>
+<li>彩色矢量图~</li>
+</ul>
+</li>
+</ul>
+<h3 id="图片资源"><a href="#图片资源" class="headerlink" title="图片资源"></a>图片资源</h3><ul>
+<li><a href="https://undraw.co/illustrations">unDraw</a><ul>
+<li>2.5D插画风格</li>
+</ul>
+</li>
+</ul>
+<h3 id="绘图工具"><a href="#绘图工具" class="headerlink" title="绘图工具"></a>绘图工具</h3><ul>
+<li><a href="https://echarts.apache.org/zh/index.html">ECharts</a><ul>
+<li>百度出品，全球最主流</li>
+</ul>
+</li>
+<li><a href="https://chartjs.bootcss.com/">Chart.js</a><ul>
+<li>更简单</li>
+</ul>
+</li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li><a href="https://docschina.org/">印记中文</a><ul>
+<li>前端文档库</li>
+</ul>
+</li>
+<li><a href="https://landing.ant.design/index-cn">Antd Landing</a><ul>
+<li>无需代码为项目创建一个专属首页</li>
+</ul>
+</li>
+<li><a href="https://coverr.co/">coverr</a><ul>
+<li>为前端界面使用视频作为背景图</li>
+</ul>
+</li>
+<li><a href="https://www.sketch.com/">Sketch</a><ul>
+<li>轻量级的矢量图片处理工具（轻量级的Photoshop）</li>
+</ul>
+</li>
+<li><a href="https://hoppscotch.io/">hoppscotch</a><ul>
+<li>前 Postwoman，免费快速的 Web 端 API 请求构造器</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>收藏整理</category>
+      </categories>
+      <tags>
+        <tag>经验</tag>
+        <tag>前端</tag>
+        <tag>前端框架</tag>
       </tags>
   </entry>
   <entry>
@@ -1320,6 +1664,196 @@
         <tag>PPT</tag>
         <tag>模板</tag>
         <tag>东南大学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>嵌入式开发常用通信协议</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/210528-%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
+    <content><![CDATA[<p>在嵌入式系统中，板上通信接口是指用于将各种集成电路与其他外围设备交互连接的通信通路或总线。<br>以下内容为常用板上通信接口：包括 I2C、SPI、UART、1-Wire。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+        <tag>通信协议</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科学上网原理</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/210611-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<p>科学上网本质上是对从本机到目的服务器间的网络通信方式进行加密，使流量不能被防火墙检测到，进而绕开访问限制。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>网络</tag>
+        <tag>ssh</tag>
+        <tag>科学上网</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编程语言中，取余和取模的区别是什么？</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/211210-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E4%B8%AD%EF%BC%8C%E5%8F%96%E4%BD%99%E5%92%8C%E5%8F%96%E6%A8%A1%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
+    <content><![CDATA[<p>最近在复习C++的知识，观察到了在某些情况下，即便程序没有按预期执行出现了较大偏差，但也不会报错，会变成一个奇怪的很大的值，这其实是C++对超出变量取值范围的值的处理，即对其取余。  </p>
+<p>取模倒是很常见，那取余又是什么呢？</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
+        <tag>取模</tag>
+        <tag>取余</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修改motd，使用字符画生成工具，配置一个实用有趣的服务器登录脚本</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/211224-%E4%BF%AE%E6%94%B9motd%EF%BC%8C%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7%EF%BC%8C%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%AE%9E%E7%94%A8%E6%9C%89%E8%B6%A3%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%99%BB%E5%BD%95%E8%84%9A%E6%9C%AC/</url>
+    <content><![CDATA[<p>使用终端登录远程服务器时会有欢迎信息，那如何对这个欢迎信息进行修改并做一定的个性化呢？一起来看看吧。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>运维</tag>
+        <tag>服务器</tag>
+        <tag>Linux</tag>
+        <tag>motd</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序调试必须使用调试工具吗？</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220107-%E7%A8%8B%E5%BA%8F%E8%B0%83%E8%AF%95%E5%BF%85%E9%A1%BB%E4%BD%BF%E7%94%A8%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%90%97%EF%BC%9F/</url>
+    <content><![CDATA[<p>一直以来，我都更习惯于通过直接 print 内容来调试，只有在 print 无法满足需求或过于繁琐的时候才会不情不愿地去用 gdb 或 IDE 提供的调试工具来打断点等等。。。</p>
+<p>之所以我会这样我想主要有两个因素，一是我一直没有认真学习过 gdb 工具的使用，二是很多场景直接 print 很方便，不需要太动脑思考断点位置等等。</p>
+<p>实际上，程序调试也并非必须用调试工具，针对不同场景选择合适的方法我认为是最合理的。下面摘录几位知乎答主在问题 输出语句，例如print，cout ，是最好的调试方法吗? - 知乎 下的回答作为参考。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>调试</tag>
+        <tag>debug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ctrl-C，Ctrl-Z，Ctrl-D 的区别</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220204-Ctrl-C%EF%BC%8CCtrl-Z%EF%BC%8CCtrl-D-%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>shell</tag>
+        <tag>信号量</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>浅试一下 pytest</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220211-%E6%B5%85%E8%AF%95%E4%B8%80%E4%B8%8B%20pytest/</url>
+    <content><![CDATA[<p>Python 自带的默认测试框架是 unittest，但是目前更主流被使用的第三方单元测试框架是 pytest，它提供了更易使用的测试接口，可以很好地与各种第三方自动化流程工具配套使用。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>单元测试</tag>
+        <tag>pytest</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GCC 中 gcc 和 g++ 的区别</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220304-GCC-%E4%B8%AD-gcc-%E5%92%8C-g-%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<p>之前写的 C++ 大部分都是来自在 LeetCode 上的算法题，很久没亲自动手编译 C++ 程序，今天写了一段 C++ 想编译一下，习惯性地使用了gcc，其中用到了vector，但是编译器报了错。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>编译</tag>
+        <tag>gcc</tag>
+        <tag>g++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git commit message 规范</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220318-Git-commit-message-%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[<p>Git commit 的 message 是 git 提交关键的描述信息，很多人出于习惯或是想尽快 git push 然后合上电脑休息往往忽略了 message 的重要性，一份好的 message 可以展现出你良好的开发习惯。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>风格</tag>
+        <tag>规范化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python 性能分析入门 —— cProfile与可视化</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220325-Python-%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E5%85%A5%E9%97%A8-%E2%80%94%E2%80%94-cProfile%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/</url>
+    <content><![CDATA[<p>最近在使用 Python 的 matplotlib 绘图库来进行三维空间地图的可视化，但是发现实际绘制速度特别慢，画图大概需要 90s 左右。之前有听说 matplotlib 因为绘图质量很高达到了出版级别所以速度上不是很快，但是直觉告诉我，也该也不至于这么慢……，猜测是在代码逻辑上应该有提升空间。</p>
+<p>最开始想着简单打印一下程序时间，自己计算看看在哪里耗时比较长，但是感觉不太优雅，于是去搜寻有没有很好用的性能分析工具。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>cProfile</tag>
+        <tag>性能分析</tag>
+        <tag>matplotlib</tag>
+        <tag>SnakeViz</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用 Docker 容器搭建 Docker 服务监控</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220401-%E4%BD%BF%E7%94%A8-docker-%E5%AE%B9%E5%99%A8%E6%90%AD%E5%BB%BA-docker-%E6%9C%8D%E5%8A%A1%E7%9B%91%E6%8E%A7/</url>
+    <content><![CDATA[<ul>
+<li>在之前的文章<a href="https://raven.feishu.cn/docs/doccnT7U46wPIOuHxf7vHI4Nspz">使用InfluxDB和Telegraf为服务器搭建基础监控</a>中介绍过使用 InfluxDB 和 Telegraf 技术栈来为服务器搭建基本监控，其中，InfluxDB 和 Telegraf 都是运行在 Docker 容器中的，通过共享容器网络进行通信。</li>
+<li>在这篇文章中，将要介绍如何使用 docker 容器为 docker 本身进行监控。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+        <tag>监控</tag>
+        <tag>InfluxDB</tag>
+        <tag>Telegraf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记忆化搜索到底是不是动态规划？</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220408-%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%8D%E6%98%AF%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%9F/</url>
+    <content><![CDATA[<p>有一个问题一直困扰着我，就是使用备忘录进行记忆化搜索的方式到底算不算动态规划？有此疑惑是因为我常常发现，在 LeetCode 上使用记忆化搜索求解往往效率很差，时间复杂度排在后 20%，而使用 DP table 进行递推的效率则好很多；以及看到很多题解中将动态规划与记忆化搜索（备忘录）并列介绍。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>动态规划</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 内核空间和用户空间</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220513-Linux-%E5%86%85%E6%A0%B8%E7%A9%BA%E9%97%B4%E5%92%8C%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4/</url>
+    <content><![CDATA[<p>Linux 为了提高操作系统的稳定性和可用性将内存地址空间划分为内核空间（kernel space）和用户空间（user space），本文以 32 位系统为例介绍 Linux 系统的内核空间和用户空间。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>操作系统</tag>
+        <tag>内核</tag>
       </tags>
   </entry>
   <entry>
@@ -1800,263 +2334,6 @@
       </tags>
   </entry>
   <entry>
-    <title>云服务器入门</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%85%A5%E9%97%A8/</url>
-    <content><![CDATA[<h1 id="（一）我的第一台服务器"><a href="#（一）我的第一台服务器" class="headerlink" title="（一）我的第一台服务器"></a>（一）我的第一台服务器</h1><h2 id="1-背景"><a href="#1-背景" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>本学期选修了“Linux操作系统”课程。课上老师教大家利用传统的VMware + OS镜像方式在本机上体验Linux系统，但为了获得更优体验我选用了云服务器来学习Linux。</p>
-<p>使用云服务器对这门课的学习也有几点好处：</p>
-<ul>
-<li><p>最终的大作业可以搭建在线的服务器，真正投入生产环境</p>
-</li>
-<li><p>再也不用开虚拟机了，拯救电脑那点可怜的内存</p>
-</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="2-什么是云服务器？"><a href="#2-什么是云服务器？" class="headerlink" title="2. 什么是云服务器？"></a>2. 什么是云服务器？</h2><blockquote>
-<p>云服务器 Elastic Compute Service（ECS）是云服务器提供商提供的一种基础云计算服务。使用云服务器 ECS 就像使用水、电、煤气等资源一样便捷、高效。我们无需提前采购硬件设备，而是根据业务需要，随时创建所需数量的云服务器实例，并在使用过程中，随着业务的扩展，对云服务器进行扩容磁盘、增加带宽。如果不再需要云服务器，也可以方便的释放资源，节省费用。       </p>
-</blockquote>
-<blockquote>
-<p>云服务器 ECS 实例是一个虚拟的计算环境，包含了 CPU、内存、操作系统、磁盘、带宽等最基础的服务器组件，是 ECS 提供给每个用户的操作实体。一个实例就等同于一台虚拟机，您对所创建的实例拥有管理员权限，可以随时登录进行使用和管理。您可以在实例上进行基本操作，如挂载磁盘、创建快照、创建镜像、部署环境等。  </p>
-</blockquote>
-<blockquote>
-<p>正如马云所言，未来的云服务器就是社会的基础设施，就像我们打开水龙头就可以用水一样，我们也可以随时根据我们的需求使用我们的服务器。</p>
-</blockquote>
-<h2 id="3-云服务器的选择"><a href="#3-云服务器的选择" class="headerlink" title="3. 云服务器的选择"></a>3. 云服务器的选择</h2><p>前几日，一篇<a href="https://zhuanlan.zhihu.com/p/46884081">《阿里云的这群疯子》</a>迅速在网络上传播开来，这篇文章有血有肉，有真实历史中的困难，也有克服困难后的信心重建。是近年来非常出色的一篇关于阿里云发展的报道。阿里云是目前国内最大的云服务器提供商，市场份额近50%，同时也是全球第三大云服务器提供商，仅次于亚马逊和微软。那么我们就选择比较让我们国内的程序员感到自豪的阿里云吧！</p>
-<h2 id="4-云服务器的购买"><a href="#4-云服务器的购买" class="headerlink" title="4. 云服务器的购买"></a>4. 云服务器的购买</h2><p>阿里云、腾讯云等国内大公司都提供了学生优惠的价格。  </p>
-<p><a href="https://promotion.aliyun.com/ntms/act/campus2018.html?utm_content=se_1000442290">点击进入阿里云“云翼计划”学生优惠界面</a>  </p>
-<p>过程还比较简单啦，前三步是进行验证，第四部步进入如下所示的界面，终于要开始买我们的服务器啦！  </p>
-<img src="https://s1.ax1x.com/2018/10/19/iwOPWn.jpg" align=center width=500 alt="https://s1.ax1x.com/2018/10/19/iwOPWn.jpg"/>
-
-<p>在这一页我们有几个选择，我用标号标记出来了。  </p>
-<ol>
-<li><p>我们选择<strong>云服务器ECS</strong>。“轻量应用服务器”预装了一些工具，比如搭建博客的WordPress，写PHP的LAMP套件组合等等。我们想要一个全新的服务器，所以选择云服务器ECS就好，我们自己来安装。</p>
-</li>
-<li><p>选择比较主流的CentOS啦~用Ubuntu的同学也不用担心，云服务器一般就只有命令行啦，是没有图形界面的，选择CentOS没有什么过渡，可能默认下载工具命令会有所不同。</p>
-</li>
-<li><p>我们是东北，看起来华北和华东离我们都比较近，随便选一个吧，选华北。</p>
-</li>
-<li><p>先买一个月的吧。只要9.5哎！真的是很便宜的价格了。阿里云有学生认证可以买多次，腾讯云则是有次数限制的。</p>
-</li>
-<li><p>点击立即购买去付款就好啦~</p>
-</li>
-</ol>
-<h2 id="5-云上初体验"><a href="#5-云上初体验" class="headerlink" title="5. 云上初体验"></a>5. 云上初体验</h2><p>购买成功后我们进入控制台页面，如下图</p>
-<p><img src="https://s1.ax1x.com/2018/10/19/iwO0SI.png" alt="阿里云控制台"></p>
-<p>我们主要关注的就是我用箭头标注出来的那个公网IP，接下来，我们就要远程登录到这个IP地址啦！</p>
-<h1 id="（二）Windows用户上云"><a href="#（二）Windows用户上云" class="headerlink" title="（二）Windows用户上云"></a>（二）Windows用户上云</h1><h2 id="1-背景-1"><a href="#1-背景-1" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>恭喜你已经成功购买了阿里云服务器！</p>
-<p>众所周知，Windows的命令行功能不多和Unix完全不一样，这也就决定了我们Windows用户不能直接通过CMD来SSH远程连接到云服务器。在此向使用Windows的同学推荐Windows下的上云利器“putty+winscp”的组合方案。   </p>
-<p>另外，VSCode也有大量的辅助我们与云服务器交互的插件，感兴趣的同学也可以看一下「云服务器入门（三）Mac用户上云」，里面所提到的VSCode插件在Windows下也可以使用！</p>
-<h2 id="2-putty"><a href="#2-putty" class="headerlink" title="2. putty"></a>2. putty</h2><h3 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h3><blockquote>
-<p>PuTTY是一个Telnet、SSH、rlogin、纯TCP以及串行接口连接软件。较早的版本仅支持Windows平台，在最近的版本中开始支持各类Unix平台，并打算移植至Mac OS X上。除了官方版本外，有许多第三方的团体或个人将PuTTY移植到其他平台上，像是以Symbian为基础的移动电话。PuTTY为一开放源代码软件，主要由Simon Tatham维护，使用MIT licence授权。随着Linux在服务器端应用的普及，Linux系统管理越来越依赖于远程。在各种远程登录工具中，Putty是出色的工具之一。Putty是一个免费的、Windows x86平台下的Telnet、SSH和rlogin客户端，但是功能丝毫不逊色于商业的Telnet类工具。 ——《百度百科》  </p>
-</blockquote>
-<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><blockquote>
-<p><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">putty下载链接</a>  </p>
-</blockquote>
-<blockquote>
-<p>根据电脑实际选择32/64位下载就ok啦~</p>
-</blockquote>
-<blockquote>
-<p><img src="https://s1.ax1x.com/2018/10/19/iwOqk4.png" alt="putty下载界面"></p>
-</blockquote>
-<blockquote>
-<p>安装过程不赘述。</p>
-</blockquote>
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>见「云服务器入门（四）」</p>
-<h2 id="3-WinSCP"><a href="#3-WinSCP" class="headerlink" title="3. WinSCP"></a>3. WinSCP</h2><blockquote>
-<p>WinSCP是一个Windows环境下使用SSH的开源图形化SFTP客户端。同时支持SCP协议。它的主要功能就是在本地与远程计算机间安全的复制文件。winscp也可以链接其他系统,比如linux系统。WinSCP可以执行所有基本的文件操作，例如下载和上传。同时允许为文件和目录重命名、改变属性、建立符号链接和快捷方式。甚至还可以在线编辑文件内容。</p>
-</blockquote>
-<h3 id="下载安装-1"><a href="#下载安装-1" class="headerlink" title="下载安装"></a>下载安装</h3><blockquote>
-<p><a href="https://winscp.net/eng/download.php">WinSCP下载链接</a>  </p>
-</blockquote>
-<blockquote>
-<p>这个进去后直接下载就行。</p>
-</blockquote>
-<blockquote>
-<p><img src="https://s1.ax1x.com/2018/10/19/iwXUBT.png" alt="WinSCP下载界面"></p>
-</blockquote>
-<blockquote>
-<p>安装过程不赘述。</p>
-</blockquote>
-<h3 id="使用方法-1"><a href="#使用方法-1" class="headerlink" title="使用方法"></a>使用方法</h3><ol>
-<li><p>打开WinSCP</p>
-</li>
-<li><p>输入主机名(IP)和用户名及密码，WinSCP会帮你记住，下次就可以直接登录啦。   <img src="https://s1.ax1x.com/2018/10/19/i0ZeiR.png" alt="WinSCP配置"></p>
-</li>
-<li><p>进入操作界面。界面分为两部分，左侧是Windows的文件资源管理器，右侧是服务器的目录。<br><img src="https://s1.ax1x.com/2018/10/19/i0Zuz6.png" alt="WinSCP界面"></p>
-</li>
-</ol>
-<p>这样我们就可以愉快地拖拽文件上传到服务器啦~当然也可以从服务器上下载文件；</p>
-<p>另外，我们还可以直接右键点击服务器上的文件选择编辑，对于vim使用不熟练的我来说可以这样编辑文件真是太爽了~~</p>
-<h1 id="（三）Mac用户上云"><a href="#（三）Mac用户上云" class="headerlink" title="（三）Mac用户上云"></a>（三）Mac用户上云</h1><h2 id="1-背景-2"><a href="#1-背景-2" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>恭喜你已经成功购买了阿里云服务器！  </p>
-<p>众所周知，macOS是基于Unix开发的，所以mac自带的命令行已经能满足我们大部分的使用需求啦。今天我们来探讨一下如何更优雅的在Mac上连接远程服务器。</p>
-<p>macOS系统下普遍吐槽没有很好用的SCP应用（也有可能是我还没发现）。用推荐比较多的FileZilla后发现也不如Windows下强大的WinSCP。  </p>
-<p>说起WinSCP，最让我怀念它的倒不是极其方便的上传文件功能，毕竟scp命令也没多长，不用工具也可以解决，而是它可以右键服务器上的文件进行在线编辑，感觉比较方便。（对于vim掌握不熟练的我来说）</p>
-<p><img src="https://s1.ax1x.com/2018/11/12/iLQWDO.png" alt="image-20181021165826871"></p>
-<p>突发奇想，想看看我们越来越流行，越来越强大的VSCode有没有好的解决方案，还真的搜到了~~~在美国简书Medium上找到了一篇（原文作者和我有很相似的历程hh）：</p>
-<p><a href="https://medium.com/@prtdomingo/editing-files-in-your-linux-virtual-machine-made-a-lot-easier-with-remote-vscode-6bb98d0639a4">Editing files in your Linux Virtual Machine made a lot easier with Remote VSCode</a></p>
-<h2 id="2-Remote-VSCode"><a href="#2-Remote-VSCode" class="headerlink" title="2. Remote VSCode"></a>2. Remote VSCode</h2><h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><ul>
-<li><p>本地：macOS+VSCode</p>
-</li>
-<li><p>服务器：CentOS 7.3</p>
-</li>
-</ul>
-<h3 id="VSCode内安装插件"><a href="#VSCode内安装插件" class="headerlink" title="VSCode内安装插件"></a>VSCode内安装插件</h3><ol>
-<li><p>打开VSCode<a href="https://code.visualstudio.com/">VSCode下载</a></p>
-</li>
-<li><p>进入插件页，搜索“Remote VSCode”  </p>
-</li>
-</ol>
-<p><img src="https://s1.ax1x.com/2018/11/12/iLQRKK.png" alt="image-20181021165629137"></p>
-<ol start="3">
-<li>安装插件并重启VSCode</li>
-</ol>
-<h3 id="服务器上安装rmate组件"><a href="#服务器上安装rmate组件" class="headerlink" title="服务器上安装rmate组件"></a>服务器上安装rmate组件</h3><ol>
-<li><p>打开服务器，并执行以下命令</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo wget -O /usr/<span class="built_in">local</span>/bin/rmate https://raw.github.com/aurora/rmate/master/rmate</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo chmod a+x /usr/<span class="built_in">local</span>/bin/rmate</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="VSCode内使用这一插件"><a href="#VSCode内使用这一插件" class="headerlink" title="VSCode内使用这一插件"></a>VSCode内使用这一插件</h3><ol>
-<li>回到VSCode打开命令窗<code>Command + Shift + P</code>并执行 <code>Remote: Start Server</code></li>
-</ol>
-<blockquote>
-<p>（这一步是开启macOS的52698端口，保持TCP连接，等待请求）</p>
-</blockquote>
-<ol start="2">
-<li><p>OK之后，在VSCode内打开一个新的终端输入以下命令连接到你的Linux服务器：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh -R 52698:localhost:52698 VIRTUAL_MACHINE_IP_ADDRESS</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> （VIRTUAL_MACHINE_IP_ADDRESS 就是你的服务器IP地址）</span></span><br></pre></td></tr></table></figure></li>
-<li><p>在你的VSCode终端内，执行rmate命令来编辑你想编辑的文件。会看到服务器上的文件内容会在VSCode里面自动就显示出来啦<del>这时你再保存也是同步保存到服务器上的。你也同样可以在VSCode的终端里执行命令比如 python test.py 之类。也就是说只需要一个VSCode就可以完成连接、编辑、保存、执行操作。（就差一个SFTP上传了</del>，SFTP上传插件也找到了，这个暂时没需求，下次再试一下嘿嘿）<br><img src="https://s1.ax1x.com/2018/11/12/iLQcgx.png" alt="image-20181021170337024"></p>
-</li>
-</ol>
-<h3 id="为什么是52698"><a href="#为什么是52698" class="headerlink" title="为什么是52698?"></a>为什么是52698?</h3><p>52698是Remote VSCode插件的默认端口，你可以在“User Preference”页面内搜索”Remote VSCode configuration”来改变它。</p>
-<p><img src="https://s1.ax1x.com/2018/11/12/iLQ681.png" alt="image-20181021170055557"></p>
-<h2 id="3-iTerm2"><a href="#3-iTerm2" class="headerlink" title="3. iTerm2"></a>3. iTerm2</h2><p>另外再推荐一款命令行软件“<strong>iTerm2</strong>”。iTerm甚至可以说是Mac下开发的必备软件~</p>
-<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote>
-<p>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with macOS 10.10 or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted.</p>
-</blockquote>
-<blockquote>
-<p>iTerm 2 有很多能够提升效率的实用功能。比如说窗口分割、热键窗口、智能搜索、自动完成、快速复制等等。</p>
-</blockquote>
-<h3 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h3><h4 id="下载安装-2"><a href="#下载安装-2" class="headerlink" title="下载安装"></a>下载安装</h4><p><a href="https://www.iterm2.com/">iTerm2下载链接</a></p>
-<h4 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h4><p>推荐最多的一款主题叫Solarized。这款主题有它自己的官网，同时支持主流的editor和IDE。主题配置步骤如下： </p>
-<ol>
-<li><p>官网下载主题压缩包，<a href="http://ethanschoonover.com/solarized/files/solarized.zip">下载链接</a>。 </p>
-</li>
-<li><p>下载后解压，然后按 <code>⌘，</code>，打开iTerm2的Preferences，接着<code>Profiles -&gt; Colors -&gt; Color Presets -&gt; Import</code>，选择刚解压的文件夹<code>solarized/iterm2-colors-solarized</code>下的<code>Solarized Dark.itermcolors</code>文件。 </p>
-</li>
-<li><p>在Color Presets 下拉菜单中选中 Solarized Dark 主题，大功告成。 </p>
-</li>
-<li><p>配置截图如下：<br><img src="https://s1.ax1x.com/2018/10/19/iwvlSs.png" alt="配置截图"></p>
-</li>
-<li><p>成功后是这样的：<br><img src="https://s1.ax1x.com/2018/10/19/iwvMWj.png" alt="最终效果"></p>
-</li>
-<li><p>当然啦，现在的字体还不够美观。我们在GitHub或者Google上能搜到无数其他的外观配置方案，就留给大家去探索啦~</p>
-</li>
-</ol>
-<h4 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h4><ol>
-<li><p><code>⌘+T</code> 打开一个新的标签页</p>
-</li>
-<li><p><code>⌘+;</code> 弹出自动补齐窗口</p>
-</li>
-<li><p><code>⌘+Shift+;</code> 弹出历史命令记录窗口</p>
-</li>
-<li><p><code>⌘+Shift+H</code> 弹出历史粘贴记录窗口</p>
-</li>
-<li><p><code>⌘+←</code>、<code>⌘+→</code>、 <code>⌘+&#123;, ⌘+&#125;</code>、<code>⌘+&lt;number&gt;</code> 切换标签页</p>
-</li>
-<li><p><code>⌘+F</code> 智能查找，支持正则查找</p>
-</li>
-<li><p><code>⌘+[</code>、<code>⌘+]</code>、<code>⌘+Option+方向键</code> 切换 pane</p>
-</li>
-<li><p><code>⌘+D</code> 水平切分屏幕，<code>⌘+Shift+D</code> 垂直切分屏幕</p>
-</li>
-<li><p><code>⌘+Enter</code> 进入与返回全屏模式</p>
-</li>
-</ol>
-<h1 id="（四）云服务器基本使用"><a href="#（四）云服务器基本使用" class="headerlink" title="（四）云服务器基本使用"></a>（四）云服务器基本使用</h1><h2 id="1-背景-3"><a href="#1-背景-3" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>先总结一下（二）和（三）的目的：</p>
-<blockquote>
-<p>因为我们要远程访问我们的服务器，所以我们需要一些工具(shell)去和它进行交互。</p>
-<p>Windows下因为Windows的CMD或者说powershell不支持Unix/Linux系统的那些bash命令，所以我们需要一款支持这些命令的软件“putty”去帮助我们。  </p>
-</blockquote>
-<blockquote>
-<p>同时，因为我们经常会有向服务器上传/下载文件的需求，所以我们用WinSCP这款工具去帮助我们。  </p>
-</blockquote>
-<blockquote>
-<p>对于Mac用户来讲呢，因为macOS就是基于Unix开发的，所以在Mac自带的终端内直接ssh就可以连接到云服务器啦。但是自带的终端略丑且功能称不上强大，所以我们用最流行的Mac下的终端软件“iTerm”去帮助我们获得更好的体验。  </p>
-</blockquote>
-<blockquote>
-<p>同时对于喜爱VSCode的同学，我们还介绍了一款插件去让我们所有的工作全部在VSCode完成。</p>
-</blockquote>
-<h2 id="2-登录"><a href="#2-登录" class="headerlink" title="2. 登录"></a>2. 登录</h2><ol>
-<li><p>开启终端（iTerm2/putty，本文使用的是iTerm2）<br>​    <img src="https://s1.ax1x.com/2018/10/19/iwxaHf.png" alt="终端界面"></p>
-</li>
-<li><p>SSH远程连接</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh Your_Server_IP_Address</span><br></pre></td></tr></table></figure></li>
-<li><p>输入用户名和密码</p>
-</li>
-<li><p>成功登陆啦！看到了阿里云的欢迎语。<br><img src="https://s1.ax1x.com/2018/10/19/i0Sj9e.png" alt="阿里云登录界面"></p>
-</li>
-</ol>
-<h2 id="3-随便干点什么"><a href="#3-随便干点什么" class="headerlink" title="3. 随便干点什么"></a>3. 随便干点什么</h2><p>大家可以看到，这和我们之前使用的虚拟机是完全一样的~<br>​    <img src="https://s1.ax1x.com/2018/10/19/i0SMfe.png"></p>
-<p>大家应该想到一点了，就是我们也可以用 <strong>putty/WinSCP/iTerm</strong> 这些工具去访问我们的虚拟机。</p>
-<p>在虚拟机内通过<code>ifconfig</code>命令就可以看到虚拟机的IP地址啦~</p>
-<h2 id="4-退出"><a href="#4-退出" class="headerlink" title="4. 退出"></a>4. 退出</h2><p>断开与服务器的连接也是一门学问。可能很多同学会直接点击窗口的红叉就关掉了，不过有时候如果我们保持了长连接，访问可能没被关闭。所以最正确的方法当然是在命令行里关闭：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure>
-<p><img src="https://s1.ax1x.com/2018/10/19/i0pwE6.png" alt="阿里云退出界面"></p>
-<h2 id="5-保持连接"><a href="#5-保持连接" class="headerlink" title="5. 保持连接"></a>5. 保持连接</h2><p>刚开始使用这些远程shell都会遇到一个问题就是如果隔一段时间没有输入新的命令，连接就会被自动断开。这是因为我们没有保持连接，下面介绍一下保持连接的办法。  </p>
-<p>两款软件保持连接的原理基本一致，都是每隔一段时间自动向服务器发送一条指令帮助我们保持连接。</p>
-<h3 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h3><blockquote>
-<p>Preferences -&gt; Profile -&gt; Session -&gt; When idle, send ASCII code…</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2018/10/19/i09Ea6.png" alt="保持连接1"></p>
-<h3 id="putty"><a href="#putty" class="headerlink" title="putty"></a>putty</h3><blockquote>
-<p>Putty Configuration -&gt; Connection -&gt; Seconds between keepalives (0 to turn off), 默认为0, 改为30(介于30至150就ok)。  </p>
-</blockquote>
-<p><img src="http://ww4.sinaimg.cn/large/006tNc79ly1g40ui3p81vj30cx0cfwfy.jpg" alt="保持连接2"></p>
-<h1 id="（五）C-S实战"><a href="#（五）C-S实战" class="headerlink" title="（五）C/S实战"></a>（五）C/S实战</h1><h2 id="1-背景-4"><a href="#1-背景-4" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>这是云服务器入门系列的最后一节啦~很开心你能看到这里。五节内容都是我对云服务器日常使用的一些拙见，如有错误，还请包含！  </p>
-<p>我个人一直在用阿里云，本着“每台服务器只做一件事”的思想，用起来真的很爽！阿里云对学生的优惠真的蛮大的，我一直用￥9.5的学生机作为我开发的一款小程序的后端。￥9.5的配置还是能满足比较初级的需求的，我的后端大概每天有5000次左右的请求，服务器的负荷在高峰时(100次请求/s)也不过30%。  </p>
-<p>希望你能喜欢！</p>
-<p>最后一节我们来进行一个简单的实战，我们借助Linux下很好用的网络调试探测工具netcat(nc)来进行一个简单的服务器与客户端的连接。</p>
-<h2 id="2-安装nc"><a href="#2-安装nc" class="headerlink" title="2. 安装nc"></a>2. 安装nc</h2><p>服务器和本地虚拟机上都要安装一下nc客户端哦。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum install nc # for centos</span><br><span class="line">sudo apt install netcat # for ubuntu</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-开启服务器端监听"><a href="#3-开启服务器端监听" class="headerlink" title="3. 开启服务器端监听"></a>3. 开启服务器端监听</h2><p>服务器在某个端口上侦听，使用<code>nc -l 主机ip地址 端口号</code>。</p>
-<p>我们可以加上-v来显示这个过程，如果不指定ip地址的话就默认是0.0.0.0，相当于INADDR_ANY。</p>
-<p>在我们的云服务器上执行如下命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nc -l -v 12345</span><br></pre></td></tr></table></figure>
-
-<p>显示如下：</p>
-<p><img src="https://s1.ax1x.com/2018/11/12/iLQyCR.png" alt="image-20181021204156047"></p>
-<h2 id="4-客户端发送请求"><a href="#4-客户端发送请求" class="headerlink" title="4. 客户端发送请求"></a>4. 客户端发送请求</h2><p>客户端通过 <code>nc 主机ip地址 端口号</code> 连接服务器，连接成功后，可以在任何一终端来相互发送数据了。</p>
-<p>在我们的本地虚拟机上执行如下指令（注意，<strong>YOUR_SERVER_IP_ADDRESS</strong>是你的服务器的数字地址哦）</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nc -v YOUR_SERVER_IP_ADDRESS </span><br></pre></td></tr></table></figure>
-
-<p>连接成功后，客户端输入任意字符都会自动发送到服务器上啦。</p>
-<p><img src="https://s1.ax1x.com/2018/11/12/iLQgv6.png" alt="image-20181021212256452"></p>
-<p>下面我们可以在服务器上运行我们自己的server代码啦。比如实验四提供给我们的web server代码，我们在服务器上开启它后就可以通过客户端访问了。</p>
-<h2 id="5-在服务器上部署Java项目"><a href="#5-在服务器上部署Java项目" class="headerlink" title="5. 在服务器上部署Java项目"></a>5. 在服务器上部署Java项目</h2><p>执行如下步骤</p>
-<ol>
-<li>将Java项目打包成jar包/war包等压缩包</li>
-<li>利用WinSCP/FileZilla等FTP工具将压缩包上传至服务器（记住上传位置）</li>
-<li>利用命令行工具登录到服务器进入压缩包所在位置</li>
-<li>运行<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nohup java -jar yourprojectname.jar &amp; </span><br></pre></td></tr></table></figure>
-<ul>
-<li>nohup: 进程后台运行，将日志输出到文件</li>
-<li>&amp;: 回到命令行</li>
-</ul>
-</li>
-<li>部署成功，如果是前后端分离项目就可以用postman访问服务器地址测试啦<br>另外为了部署方便推荐使用jenkins，一键即可从github仓库拉取代码、maven打包、执行shell命令完成部署</li>
-</ol>
-<h2 id="6-总结"><a href="#6-总结" class="headerlink" title="6. 总结"></a>6. 总结</h2><p>以上五篇就是我所整理的一些「云服务器」从购买选择到初步使用的入门知识啦。感谢你能看到这里，如有错误还请包含。<br><a href="https://zhuanlan.zhihu.com/p/47181746">留言板</a></p>
-]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>云服务器</tag>
-        <tag>阿里云</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>准大学生，如何预习计算机专业？</title>
     <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E5%87%86%E5%A4%A7%E5%AD%A6%E7%94%9F%EF%BC%8C%E5%A6%82%E4%BD%95%E9%A2%84%E4%B9%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%EF%BC%9F/</url>
     <content><![CDATA[<blockquote>
@@ -2466,6 +2743,263 @@
       <tags>
         <tag>经验</tag>
         <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>云服务器入门</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<h1 id="（一）我的第一台服务器"><a href="#（一）我的第一台服务器" class="headerlink" title="（一）我的第一台服务器"></a>（一）我的第一台服务器</h1><h2 id="1-背景"><a href="#1-背景" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>本学期选修了“Linux操作系统”课程。课上老师教大家利用传统的VMware + OS镜像方式在本机上体验Linux系统，但为了获得更优体验我选用了云服务器来学习Linux。</p>
+<p>使用云服务器对这门课的学习也有几点好处：</p>
+<ul>
+<li><p>最终的大作业可以搭建在线的服务器，真正投入生产环境</p>
+</li>
+<li><p>再也不用开虚拟机了，拯救电脑那点可怜的内存</p>
+</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="2-什么是云服务器？"><a href="#2-什么是云服务器？" class="headerlink" title="2. 什么是云服务器？"></a>2. 什么是云服务器？</h2><blockquote>
+<p>云服务器 Elastic Compute Service（ECS）是云服务器提供商提供的一种基础云计算服务。使用云服务器 ECS 就像使用水、电、煤气等资源一样便捷、高效。我们无需提前采购硬件设备，而是根据业务需要，随时创建所需数量的云服务器实例，并在使用过程中，随着业务的扩展，对云服务器进行扩容磁盘、增加带宽。如果不再需要云服务器，也可以方便的释放资源，节省费用。       </p>
+</blockquote>
+<blockquote>
+<p>云服务器 ECS 实例是一个虚拟的计算环境，包含了 CPU、内存、操作系统、磁盘、带宽等最基础的服务器组件，是 ECS 提供给每个用户的操作实体。一个实例就等同于一台虚拟机，您对所创建的实例拥有管理员权限，可以随时登录进行使用和管理。您可以在实例上进行基本操作，如挂载磁盘、创建快照、创建镜像、部署环境等。  </p>
+</blockquote>
+<blockquote>
+<p>正如马云所言，未来的云服务器就是社会的基础设施，就像我们打开水龙头就可以用水一样，我们也可以随时根据我们的需求使用我们的服务器。</p>
+</blockquote>
+<h2 id="3-云服务器的选择"><a href="#3-云服务器的选择" class="headerlink" title="3. 云服务器的选择"></a>3. 云服务器的选择</h2><p>前几日，一篇<a href="https://zhuanlan.zhihu.com/p/46884081">《阿里云的这群疯子》</a>迅速在网络上传播开来，这篇文章有血有肉，有真实历史中的困难，也有克服困难后的信心重建。是近年来非常出色的一篇关于阿里云发展的报道。阿里云是目前国内最大的云服务器提供商，市场份额近50%，同时也是全球第三大云服务器提供商，仅次于亚马逊和微软。那么我们就选择比较让我们国内的程序员感到自豪的阿里云吧！</p>
+<h2 id="4-云服务器的购买"><a href="#4-云服务器的购买" class="headerlink" title="4. 云服务器的购买"></a>4. 云服务器的购买</h2><p>阿里云、腾讯云等国内大公司都提供了学生优惠的价格。  </p>
+<p><a href="https://promotion.aliyun.com/ntms/act/campus2018.html?utm_content=se_1000442290">点击进入阿里云“云翼计划”学生优惠界面</a>  </p>
+<p>过程还比较简单啦，前三步是进行验证，第四部步进入如下所示的界面，终于要开始买我们的服务器啦！  </p>
+<img src="https://s1.ax1x.com/2018/10/19/iwOPWn.jpg" align=center width=500 alt="https://s1.ax1x.com/2018/10/19/iwOPWn.jpg"/>
+
+<p>在这一页我们有几个选择，我用标号标记出来了。  </p>
+<ol>
+<li><p>我们选择<strong>云服务器ECS</strong>。“轻量应用服务器”预装了一些工具，比如搭建博客的WordPress，写PHP的LAMP套件组合等等。我们想要一个全新的服务器，所以选择云服务器ECS就好，我们自己来安装。</p>
+</li>
+<li><p>选择比较主流的CentOS啦~用Ubuntu的同学也不用担心，云服务器一般就只有命令行啦，是没有图形界面的，选择CentOS没有什么过渡，可能默认下载工具命令会有所不同。</p>
+</li>
+<li><p>我们是东北，看起来华北和华东离我们都比较近，随便选一个吧，选华北。</p>
+</li>
+<li><p>先买一个月的吧。只要9.5哎！真的是很便宜的价格了。阿里云有学生认证可以买多次，腾讯云则是有次数限制的。</p>
+</li>
+<li><p>点击立即购买去付款就好啦~</p>
+</li>
+</ol>
+<h2 id="5-云上初体验"><a href="#5-云上初体验" class="headerlink" title="5. 云上初体验"></a>5. 云上初体验</h2><p>购买成功后我们进入控制台页面，如下图</p>
+<p><img src="https://s1.ax1x.com/2018/10/19/iwO0SI.png" alt="阿里云控制台"></p>
+<p>我们主要关注的就是我用箭头标注出来的那个公网IP，接下来，我们就要远程登录到这个IP地址啦！</p>
+<h1 id="（二）Windows用户上云"><a href="#（二）Windows用户上云" class="headerlink" title="（二）Windows用户上云"></a>（二）Windows用户上云</h1><h2 id="1-背景-1"><a href="#1-背景-1" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>恭喜你已经成功购买了阿里云服务器！</p>
+<p>众所周知，Windows的命令行功能不多和Unix完全不一样，这也就决定了我们Windows用户不能直接通过CMD来SSH远程连接到云服务器。在此向使用Windows的同学推荐Windows下的上云利器“putty+winscp”的组合方案。   </p>
+<p>另外，VSCode也有大量的辅助我们与云服务器交互的插件，感兴趣的同学也可以看一下「云服务器入门（三）Mac用户上云」，里面所提到的VSCode插件在Windows下也可以使用！</p>
+<h2 id="2-putty"><a href="#2-putty" class="headerlink" title="2. putty"></a>2. putty</h2><h3 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h3><blockquote>
+<p>PuTTY是一个Telnet、SSH、rlogin、纯TCP以及串行接口连接软件。较早的版本仅支持Windows平台，在最近的版本中开始支持各类Unix平台，并打算移植至Mac OS X上。除了官方版本外，有许多第三方的团体或个人将PuTTY移植到其他平台上，像是以Symbian为基础的移动电话。PuTTY为一开放源代码软件，主要由Simon Tatham维护，使用MIT licence授权。随着Linux在服务器端应用的普及，Linux系统管理越来越依赖于远程。在各种远程登录工具中，Putty是出色的工具之一。Putty是一个免费的、Windows x86平台下的Telnet、SSH和rlogin客户端，但是功能丝毫不逊色于商业的Telnet类工具。 ——《百度百科》  </p>
+</blockquote>
+<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><blockquote>
+<p><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">putty下载链接</a>  </p>
+</blockquote>
+<blockquote>
+<p>根据电脑实际选择32/64位下载就ok啦~</p>
+</blockquote>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2018/10/19/iwOqk4.png" alt="putty下载界面"></p>
+</blockquote>
+<blockquote>
+<p>安装过程不赘述。</p>
+</blockquote>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>见「云服务器入门（四）」</p>
+<h2 id="3-WinSCP"><a href="#3-WinSCP" class="headerlink" title="3. WinSCP"></a>3. WinSCP</h2><blockquote>
+<p>WinSCP是一个Windows环境下使用SSH的开源图形化SFTP客户端。同时支持SCP协议。它的主要功能就是在本地与远程计算机间安全的复制文件。winscp也可以链接其他系统,比如linux系统。WinSCP可以执行所有基本的文件操作，例如下载和上传。同时允许为文件和目录重命名、改变属性、建立符号链接和快捷方式。甚至还可以在线编辑文件内容。</p>
+</blockquote>
+<h3 id="下载安装-1"><a href="#下载安装-1" class="headerlink" title="下载安装"></a>下载安装</h3><blockquote>
+<p><a href="https://winscp.net/eng/download.php">WinSCP下载链接</a>  </p>
+</blockquote>
+<blockquote>
+<p>这个进去后直接下载就行。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2018/10/19/iwXUBT.png" alt="WinSCP下载界面"></p>
+</blockquote>
+<blockquote>
+<p>安装过程不赘述。</p>
+</blockquote>
+<h3 id="使用方法-1"><a href="#使用方法-1" class="headerlink" title="使用方法"></a>使用方法</h3><ol>
+<li><p>打开WinSCP</p>
+</li>
+<li><p>输入主机名(IP)和用户名及密码，WinSCP会帮你记住，下次就可以直接登录啦。   <img src="https://s1.ax1x.com/2018/10/19/i0ZeiR.png" alt="WinSCP配置"></p>
+</li>
+<li><p>进入操作界面。界面分为两部分，左侧是Windows的文件资源管理器，右侧是服务器的目录。<br><img src="https://s1.ax1x.com/2018/10/19/i0Zuz6.png" alt="WinSCP界面"></p>
+</li>
+</ol>
+<p>这样我们就可以愉快地拖拽文件上传到服务器啦~当然也可以从服务器上下载文件；</p>
+<p>另外，我们还可以直接右键点击服务器上的文件选择编辑，对于vim使用不熟练的我来说可以这样编辑文件真是太爽了~~</p>
+<h1 id="（三）Mac用户上云"><a href="#（三）Mac用户上云" class="headerlink" title="（三）Mac用户上云"></a>（三）Mac用户上云</h1><h2 id="1-背景-2"><a href="#1-背景-2" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>恭喜你已经成功购买了阿里云服务器！  </p>
+<p>众所周知，macOS是基于Unix开发的，所以mac自带的命令行已经能满足我们大部分的使用需求啦。今天我们来探讨一下如何更优雅的在Mac上连接远程服务器。</p>
+<p>macOS系统下普遍吐槽没有很好用的SCP应用（也有可能是我还没发现）。用推荐比较多的FileZilla后发现也不如Windows下强大的WinSCP。  </p>
+<p>说起WinSCP，最让我怀念它的倒不是极其方便的上传文件功能，毕竟scp命令也没多长，不用工具也可以解决，而是它可以右键服务器上的文件进行在线编辑，感觉比较方便。（对于vim掌握不熟练的我来说）</p>
+<p><img src="https://s1.ax1x.com/2018/11/12/iLQWDO.png" alt="image-20181021165826871"></p>
+<p>突发奇想，想看看我们越来越流行，越来越强大的VSCode有没有好的解决方案，还真的搜到了~~~在美国简书Medium上找到了一篇（原文作者和我有很相似的历程hh）：</p>
+<p><a href="https://medium.com/@prtdomingo/editing-files-in-your-linux-virtual-machine-made-a-lot-easier-with-remote-vscode-6bb98d0639a4">Editing files in your Linux Virtual Machine made a lot easier with Remote VSCode</a></p>
+<h2 id="2-Remote-VSCode"><a href="#2-Remote-VSCode" class="headerlink" title="2. Remote VSCode"></a>2. Remote VSCode</h2><h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><ul>
+<li><p>本地：macOS+VSCode</p>
+</li>
+<li><p>服务器：CentOS 7.3</p>
+</li>
+</ul>
+<h3 id="VSCode内安装插件"><a href="#VSCode内安装插件" class="headerlink" title="VSCode内安装插件"></a>VSCode内安装插件</h3><ol>
+<li><p>打开VSCode<a href="https://code.visualstudio.com/">VSCode下载</a></p>
+</li>
+<li><p>进入插件页，搜索“Remote VSCode”  </p>
+</li>
+</ol>
+<p><img src="https://s1.ax1x.com/2018/11/12/iLQRKK.png" alt="image-20181021165629137"></p>
+<ol start="3">
+<li>安装插件并重启VSCode</li>
+</ol>
+<h3 id="服务器上安装rmate组件"><a href="#服务器上安装rmate组件" class="headerlink" title="服务器上安装rmate组件"></a>服务器上安装rmate组件</h3><ol>
+<li><p>打开服务器，并执行以下命令</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo wget -O /usr/<span class="built_in">local</span>/bin/rmate https://raw.github.com/aurora/rmate/master/rmate</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo chmod a+x /usr/<span class="built_in">local</span>/bin/rmate</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="VSCode内使用这一插件"><a href="#VSCode内使用这一插件" class="headerlink" title="VSCode内使用这一插件"></a>VSCode内使用这一插件</h3><ol>
+<li>回到VSCode打开命令窗<code>Command + Shift + P</code>并执行 <code>Remote: Start Server</code></li>
+</ol>
+<blockquote>
+<p>（这一步是开启macOS的52698端口，保持TCP连接，等待请求）</p>
+</blockquote>
+<ol start="2">
+<li><p>OK之后，在VSCode内打开一个新的终端输入以下命令连接到你的Linux服务器：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh -R 52698:localhost:52698 VIRTUAL_MACHINE_IP_ADDRESS</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> （VIRTUAL_MACHINE_IP_ADDRESS 就是你的服务器IP地址）</span></span><br></pre></td></tr></table></figure></li>
+<li><p>在你的VSCode终端内，执行rmate命令来编辑你想编辑的文件。会看到服务器上的文件内容会在VSCode里面自动就显示出来啦<del>这时你再保存也是同步保存到服务器上的。你也同样可以在VSCode的终端里执行命令比如 python test.py 之类。也就是说只需要一个VSCode就可以完成连接、编辑、保存、执行操作。（就差一个SFTP上传了</del>，SFTP上传插件也找到了，这个暂时没需求，下次再试一下嘿嘿）<br><img src="https://s1.ax1x.com/2018/11/12/iLQcgx.png" alt="image-20181021170337024"></p>
+</li>
+</ol>
+<h3 id="为什么是52698"><a href="#为什么是52698" class="headerlink" title="为什么是52698?"></a>为什么是52698?</h3><p>52698是Remote VSCode插件的默认端口，你可以在“User Preference”页面内搜索”Remote VSCode configuration”来改变它。</p>
+<p><img src="https://s1.ax1x.com/2018/11/12/iLQ681.png" alt="image-20181021170055557"></p>
+<h2 id="3-iTerm2"><a href="#3-iTerm2" class="headerlink" title="3. iTerm2"></a>3. iTerm2</h2><p>另外再推荐一款命令行软件“<strong>iTerm2</strong>”。iTerm甚至可以说是Mac下开发的必备软件~</p>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote>
+<p>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with macOS 10.10 or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted.</p>
+</blockquote>
+<blockquote>
+<p>iTerm 2 有很多能够提升效率的实用功能。比如说窗口分割、热键窗口、智能搜索、自动完成、快速复制等等。</p>
+</blockquote>
+<h3 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h3><h4 id="下载安装-2"><a href="#下载安装-2" class="headerlink" title="下载安装"></a>下载安装</h4><p><a href="https://www.iterm2.com/">iTerm2下载链接</a></p>
+<h4 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h4><p>推荐最多的一款主题叫Solarized。这款主题有它自己的官网，同时支持主流的editor和IDE。主题配置步骤如下： </p>
+<ol>
+<li><p>官网下载主题压缩包，<a href="http://ethanschoonover.com/solarized/files/solarized.zip">下载链接</a>。 </p>
+</li>
+<li><p>下载后解压，然后按 <code>⌘，</code>，打开iTerm2的Preferences，接着<code>Profiles -&gt; Colors -&gt; Color Presets -&gt; Import</code>，选择刚解压的文件夹<code>solarized/iterm2-colors-solarized</code>下的<code>Solarized Dark.itermcolors</code>文件。 </p>
+</li>
+<li><p>在Color Presets 下拉菜单中选中 Solarized Dark 主题，大功告成。 </p>
+</li>
+<li><p>配置截图如下：<br><img src="https://s1.ax1x.com/2018/10/19/iwvlSs.png" alt="配置截图"></p>
+</li>
+<li><p>成功后是这样的：<br><img src="https://s1.ax1x.com/2018/10/19/iwvMWj.png" alt="最终效果"></p>
+</li>
+<li><p>当然啦，现在的字体还不够美观。我们在GitHub或者Google上能搜到无数其他的外观配置方案，就留给大家去探索啦~</p>
+</li>
+</ol>
+<h4 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h4><ol>
+<li><p><code>⌘+T</code> 打开一个新的标签页</p>
+</li>
+<li><p><code>⌘+;</code> 弹出自动补齐窗口</p>
+</li>
+<li><p><code>⌘+Shift+;</code> 弹出历史命令记录窗口</p>
+</li>
+<li><p><code>⌘+Shift+H</code> 弹出历史粘贴记录窗口</p>
+</li>
+<li><p><code>⌘+←</code>、<code>⌘+→</code>、 <code>⌘+&#123;, ⌘+&#125;</code>、<code>⌘+&lt;number&gt;</code> 切换标签页</p>
+</li>
+<li><p><code>⌘+F</code> 智能查找，支持正则查找</p>
+</li>
+<li><p><code>⌘+[</code>、<code>⌘+]</code>、<code>⌘+Option+方向键</code> 切换 pane</p>
+</li>
+<li><p><code>⌘+D</code> 水平切分屏幕，<code>⌘+Shift+D</code> 垂直切分屏幕</p>
+</li>
+<li><p><code>⌘+Enter</code> 进入与返回全屏模式</p>
+</li>
+</ol>
+<h1 id="（四）云服务器基本使用"><a href="#（四）云服务器基本使用" class="headerlink" title="（四）云服务器基本使用"></a>（四）云服务器基本使用</h1><h2 id="1-背景-3"><a href="#1-背景-3" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>先总结一下（二）和（三）的目的：</p>
+<blockquote>
+<p>因为我们要远程访问我们的服务器，所以我们需要一些工具(shell)去和它进行交互。</p>
+<p>Windows下因为Windows的CMD或者说powershell不支持Unix/Linux系统的那些bash命令，所以我们需要一款支持这些命令的软件“putty”去帮助我们。  </p>
+</blockquote>
+<blockquote>
+<p>同时，因为我们经常会有向服务器上传/下载文件的需求，所以我们用WinSCP这款工具去帮助我们。  </p>
+</blockquote>
+<blockquote>
+<p>对于Mac用户来讲呢，因为macOS就是基于Unix开发的，所以在Mac自带的终端内直接ssh就可以连接到云服务器啦。但是自带的终端略丑且功能称不上强大，所以我们用最流行的Mac下的终端软件“iTerm”去帮助我们获得更好的体验。  </p>
+</blockquote>
+<blockquote>
+<p>同时对于喜爱VSCode的同学，我们还介绍了一款插件去让我们所有的工作全部在VSCode完成。</p>
+</blockquote>
+<h2 id="2-登录"><a href="#2-登录" class="headerlink" title="2. 登录"></a>2. 登录</h2><ol>
+<li><p>开启终端（iTerm2/putty，本文使用的是iTerm2）<br>​    <img src="https://s1.ax1x.com/2018/10/19/iwxaHf.png" alt="终端界面"></p>
+</li>
+<li><p>SSH远程连接</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh Your_Server_IP_Address</span><br></pre></td></tr></table></figure></li>
+<li><p>输入用户名和密码</p>
+</li>
+<li><p>成功登陆啦！看到了阿里云的欢迎语。<br><img src="https://s1.ax1x.com/2018/10/19/i0Sj9e.png" alt="阿里云登录界面"></p>
+</li>
+</ol>
+<h2 id="3-随便干点什么"><a href="#3-随便干点什么" class="headerlink" title="3. 随便干点什么"></a>3. 随便干点什么</h2><p>大家可以看到，这和我们之前使用的虚拟机是完全一样的~<br>​    <img src="https://s1.ax1x.com/2018/10/19/i0SMfe.png"></p>
+<p>大家应该想到一点了，就是我们也可以用 <strong>putty/WinSCP/iTerm</strong> 这些工具去访问我们的虚拟机。</p>
+<p>在虚拟机内通过<code>ifconfig</code>命令就可以看到虚拟机的IP地址啦~</p>
+<h2 id="4-退出"><a href="#4-退出" class="headerlink" title="4. 退出"></a>4. 退出</h2><p>断开与服务器的连接也是一门学问。可能很多同学会直接点击窗口的红叉就关掉了，不过有时候如果我们保持了长连接，访问可能没被关闭。所以最正确的方法当然是在命令行里关闭：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure>
+<p><img src="https://s1.ax1x.com/2018/10/19/i0pwE6.png" alt="阿里云退出界面"></p>
+<h2 id="5-保持连接"><a href="#5-保持连接" class="headerlink" title="5. 保持连接"></a>5. 保持连接</h2><p>刚开始使用这些远程shell都会遇到一个问题就是如果隔一段时间没有输入新的命令，连接就会被自动断开。这是因为我们没有保持连接，下面介绍一下保持连接的办法。  </p>
+<p>两款软件保持连接的原理基本一致，都是每隔一段时间自动向服务器发送一条指令帮助我们保持连接。</p>
+<h3 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h3><blockquote>
+<p>Preferences -&gt; Profile -&gt; Session -&gt; When idle, send ASCII code…</p>
+</blockquote>
+<p><img src="https://s1.ax1x.com/2018/10/19/i09Ea6.png" alt="保持连接1"></p>
+<h3 id="putty"><a href="#putty" class="headerlink" title="putty"></a>putty</h3><blockquote>
+<p>Putty Configuration -&gt; Connection -&gt; Seconds between keepalives (0 to turn off), 默认为0, 改为30(介于30至150就ok)。  </p>
+</blockquote>
+<p><img src="http://ww4.sinaimg.cn/large/006tNc79ly1g40ui3p81vj30cx0cfwfy.jpg" alt="保持连接2"></p>
+<h1 id="（五）C-S实战"><a href="#（五）C-S实战" class="headerlink" title="（五）C/S实战"></a>（五）C/S实战</h1><h2 id="1-背景-4"><a href="#1-背景-4" class="headerlink" title="1. 背景"></a>1. 背景</h2><p>这是云服务器入门系列的最后一节啦~很开心你能看到这里。五节内容都是我对云服务器日常使用的一些拙见，如有错误，还请包含！  </p>
+<p>我个人一直在用阿里云，本着“每台服务器只做一件事”的思想，用起来真的很爽！阿里云对学生的优惠真的蛮大的，我一直用￥9.5的学生机作为我开发的一款小程序的后端。￥9.5的配置还是能满足比较初级的需求的，我的后端大概每天有5000次左右的请求，服务器的负荷在高峰时(100次请求/s)也不过30%。  </p>
+<p>希望你能喜欢！</p>
+<p>最后一节我们来进行一个简单的实战，我们借助Linux下很好用的网络调试探测工具netcat(nc)来进行一个简单的服务器与客户端的连接。</p>
+<h2 id="2-安装nc"><a href="#2-安装nc" class="headerlink" title="2. 安装nc"></a>2. 安装nc</h2><p>服务器和本地虚拟机上都要安装一下nc客户端哦。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum install nc # for centos</span><br><span class="line">sudo apt install netcat # for ubuntu</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-开启服务器端监听"><a href="#3-开启服务器端监听" class="headerlink" title="3. 开启服务器端监听"></a>3. 开启服务器端监听</h2><p>服务器在某个端口上侦听，使用<code>nc -l 主机ip地址 端口号</code>。</p>
+<p>我们可以加上-v来显示这个过程，如果不指定ip地址的话就默认是0.0.0.0，相当于INADDR_ANY。</p>
+<p>在我们的云服务器上执行如下命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nc -l -v 12345</span><br></pre></td></tr></table></figure>
+
+<p>显示如下：</p>
+<p><img src="https://s1.ax1x.com/2018/11/12/iLQyCR.png" alt="image-20181021204156047"></p>
+<h2 id="4-客户端发送请求"><a href="#4-客户端发送请求" class="headerlink" title="4. 客户端发送请求"></a>4. 客户端发送请求</h2><p>客户端通过 <code>nc 主机ip地址 端口号</code> 连接服务器，连接成功后，可以在任何一终端来相互发送数据了。</p>
+<p>在我们的本地虚拟机上执行如下指令（注意，<strong>YOUR_SERVER_IP_ADDRESS</strong>是你的服务器的数字地址哦）</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nc -v YOUR_SERVER_IP_ADDRESS </span><br></pre></td></tr></table></figure>
+
+<p>连接成功后，客户端输入任意字符都会自动发送到服务器上啦。</p>
+<p><img src="https://s1.ax1x.com/2018/11/12/iLQgv6.png" alt="image-20181021212256452"></p>
+<p>下面我们可以在服务器上运行我们自己的server代码啦。比如实验四提供给我们的web server代码，我们在服务器上开启它后就可以通过客户端访问了。</p>
+<h2 id="5-在服务器上部署Java项目"><a href="#5-在服务器上部署Java项目" class="headerlink" title="5. 在服务器上部署Java项目"></a>5. 在服务器上部署Java项目</h2><p>执行如下步骤</p>
+<ol>
+<li>将Java项目打包成jar包/war包等压缩包</li>
+<li>利用WinSCP/FileZilla等FTP工具将压缩包上传至服务器（记住上传位置）</li>
+<li>利用命令行工具登录到服务器进入压缩包所在位置</li>
+<li>运行<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nohup java -jar yourprojectname.jar &amp; </span><br></pre></td></tr></table></figure>
+<ul>
+<li>nohup: 进程后台运行，将日志输出到文件</li>
+<li>&amp;: 回到命令行</li>
+</ul>
+</li>
+<li>部署成功，如果是前后端分离项目就可以用postman访问服务器地址测试啦<br>另外为了部署方便推荐使用jenkins，一键即可从github仓库拉取代码、maven打包、执行shell命令完成部署</li>
+</ol>
+<h2 id="6-总结"><a href="#6-总结" class="headerlink" title="6. 总结"></a>6. 总结</h2><p>以上五篇就是我所整理的一些「云服务器」从购买选择到初步使用的入门知识啦。感谢你能看到这里，如有错误还请包含。<br><a href="https://zhuanlan.zhihu.com/p/47181746">留言板</a></p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>云服务器</tag>
+        <tag>阿里云</tag>
       </tags>
   </entry>
   <entry>
@@ -3028,578 +3562,4 @@
         <tag>Spring AOP</tag>
       </tags>
   </entry>
-  <entry>
-    <title>「Crazyflie开源无人机」Multi-ranger扩展板入门</title>
-    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/211217-%E3%80%8CCrazyflie%E5%BC%80%E6%BA%90%E6%97%A0%E4%BA%BA%E6%9C%BA%E3%80%8DMulti-ranger%E6%89%A9%E5%B1%95%E6%9D%BF%E5%85%A5%E9%97%A8/</url>
-    <content><![CDATA[<p>Multi-ranger 是与 Crazyflie 无人机配套使用的一块扩展板，提供了测量周围（前后左右上五个方向）4米范围内障碍物距离的能力，其采用LiDar技术，测距误差较小，可以用在无人机的自主飞行导航等应用。</p>
-]]></content>
-      <categories>
-        <category>科研分享</category>
-      </categories>
-      <tags>
-        <tag>Crazyflie</tag>
-        <tag>无人机</tag>
-        <tag>LiDar</tag>
-        <tag>Multi-ranger</tag>
-        <tag>VL53L1x</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用InfluxDB和Telegraf为服务器搭建基础监控</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/211231-%E4%BD%BF%E7%94%A8InfluxDB%E5%92%8CTelegraf%E4%B8%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%9B%91%E6%8E%A7/</url>
-    <content><![CDATA[<p>想要监控服务器性能我们自然需要采集其性能数据并存储，InfluxDB 搭配 Telegraf 是目前最主流的服务器监控方案之一<br>Telegraf 是一个插件驱动的服务端代理用于采集并发送服务器上软件系统性能 metrics。<br>InfluxDB 是一个知名的时序数据库，它和 Telegraf 都是 InfluxData 公司的产品。</p>
-]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>监控</tag>
-        <tag>运维</tag>
-        <tag>服务器</tag>
-        <tag>InfluxDB</tag>
-        <tag>Telegraf</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改motd，使用字符画生成工具，配置一个实用有趣的服务器登录脚本</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/211224-%E4%BF%AE%E6%94%B9motd%EF%BC%8C%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7%EF%BC%8C%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%AE%9E%E7%94%A8%E6%9C%89%E8%B6%A3%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%99%BB%E5%BD%95%E8%84%9A%E6%9C%AC/</url>
-    <content><![CDATA[<p>使用终端登录远程服务器时会有欢迎信息，那如何对这个欢迎信息进行修改并做一定的个性化呢？一起来看看吧。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>运维</tag>
-        <tag>服务器</tag>
-        <tag>Linux</tag>
-        <tag>motd</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Dubbo 3 知识结构梳理</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/210916-Dubbo-3-%E7%9F%A5%E8%AF%86%E7%BB%93%E6%9E%84%E6%A2%B3%E7%90%86/</url>
-    <content><![CDATA[<p>最近在参加阿里云举办的云原生挑战赛，其开发是基于Dubbo的。久仰Dubbo大名，知道它是一个集微服务领域众多技术于一体的大而全的框架，借此机会系统性地学习一下。<br>本篇梳理基于Dubbo3的官方文档整理。</p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Dubbo</tag>
-        <tag>服务发现</tag>
-        <tag>RPC</tag>
-        <tag>云原生</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机学科生涯漫谈</title>
-    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/210706-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E7%A7%91%E7%94%9F%E6%B6%AF%E6%BC%AB%E8%B0%88/</url>
-    <content><![CDATA[<p>很开心实现了一直以来的一个小心愿，就是能有机会和学弟学妹们分享一下我大学期间的一些经验、心得与体会！<br>本分享进行于单老师在2021年暑期期间开设的《专业阅读与写作》课程，线上线下大概有150人左右，感谢老师给我这个机会！</p>
-]]></content>
-      <categories>
-        <category>杂文随笔</category>
-      </categories>
-      <tags>
-        <tag>经验</tag>
-        <tag>计算机</tag>
-        <tag>大学</tag>
-        <tag>保研</tag>
-        <tag>工作</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>嵌入式开发常用通信协议</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/210528-%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
-    <content><![CDATA[<p>在嵌入式系统中，板上通信接口是指用于将各种集成电路与其他外围设备交互连接的通信通路或总线。<br>以下内容为常用板上通信接口：包括 I2C、SPI、UART、1-Wire。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>嵌入式</tag>
-        <tag>通信协议</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>编程语言中，取余和取模的区别是什么？</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/211210-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E4%B8%AD%EF%BC%8C%E5%8F%96%E4%BD%99%E5%92%8C%E5%8F%96%E6%A8%A1%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
-    <content><![CDATA[<p>最近在复习C++的知识，观察到了在某些情况下，即便程序没有按预期执行出现了较大偏差，但也不会报错，会变成一个奇怪的很大的值，这其实是C++对超出变量取值范围的值的处理，即对其取余。  </p>
-<p>取模倒是很常见，那取余又是什么呢？</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>编程</tag>
-        <tag>取模</tag>
-        <tag>取余</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>云计算常见软件概念梳理</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/210604-%E4%BA%91%E8%AE%A1%E7%AE%97%E5%B8%B8%E8%A7%81%E8%BD%AF%E4%BB%B6%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<p>IT软件技术架构进入云化时代后，新概念、新技术大量涌现。从几年前热火的Openstack、计算存储网络三大虚拟化技术、Iaas平台，到近几年更火热的容器和云原生的相关技术，在云计算这一领域新技术可谓是层出不穷。<br>我们经常会听到的这些概念，比如容器、docker、kubernetes、微服务架构、PaaS平台、服务中台、Devops、云原生等等。这些技术和概念彼此之间感觉是独立的，我们很容易从其中某一个角度学习入手并应用；但是，很多时候，我们会发现这些技术彼此之间又有密切的关联，从文章也好、技术落地应用的场景也好，它们往往又出现在同一个地方。它们之间究竟有什么联系，彼此之间有什么依赖，让人十分的困惑。<br>在本文中，从这些技术彼此之间的依赖和关系入手，讲述它们在当今软件云化和微服务化时代中的作用，希望读者从这些总结对比入手，对微服务相关的技术体系建立全局性的视野和理解。  </p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>云原生</tag>
-        <tag>云计算</tag>
-        <tag>微服务</tag>
-        <tag>Docker</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用 Github Actions 自动编译、发布 LaTeX 文档</title>
-    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/220225-%E4%BD%BF%E7%94%A8-Github-Actions-%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91%E3%80%81%E5%8F%91%E5%B8%83-LaTeX-%E6%96%87%E6%A1%A3/</url>
-    <content><![CDATA[<p>Github Actions 是 Github 推出的持续化集成工具，进一步加快软件开发的编译、部署、发布流程。基于 Github 进行多人协作编辑 Latex 文档是非常先进的科研文档写作方式，如今可以利用 Github Actions 进一步完善协作流程。</p>
-]]></content>
-      <categories>
-        <category>科研分享</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>LaTeX</tag>
-        <tag>Github Actions</tag>
-        <tag>自动化流程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>程序调试必须使用调试工具吗？</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220107-%E7%A8%8B%E5%BA%8F%E8%B0%83%E8%AF%95%E5%BF%85%E9%A1%BB%E4%BD%BF%E7%94%A8%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%90%97%EF%BC%9F/</url>
-    <content><![CDATA[<p>一直以来，我都更习惯于通过直接 print 内容来调试，只有在 print 无法满足需求或过于繁琐的时候才会不情不愿地去用 gdb 或 IDE 提供的调试工具来打断点等等。。。</p>
-<p>之所以我会这样我想主要有两个因素，一是我一直没有认真学习过 gdb 工具的使用，二是很多场景直接 print 很方便，不需要太动脑思考断点位置等等。</p>
-<p>实际上，程序调试也并非必须用调试工具，针对不同场景选择合适的方法我认为是最合理的。下面摘录几位知乎答主在问题 输出语句，例如print，cout ，是最好的调试方法吗? - 知乎 下的回答作为参考。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>调试</tag>
-        <tag>debug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git commit message 规范</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220318-Git-commit-message-%E8%A7%84%E8%8C%83/</url>
-    <content><![CDATA[<p>Git commit 的 message 是 git 提交关键的描述信息，很多人出于习惯或是想尽快 git push 然后合上电脑休息往往忽略了 message 的重要性，一份好的 message 可以展现出你良好的开发习惯。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>风格</tag>
-        <tag>规范化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用 Docker 容器搭建 Docker 服务监控</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220401-%E4%BD%BF%E7%94%A8-docker-%E5%AE%B9%E5%99%A8%E6%90%AD%E5%BB%BA-docker-%E6%9C%8D%E5%8A%A1%E7%9B%91%E6%8E%A7/</url>
-    <content><![CDATA[<ul>
-<li>在之前的文章<a href="https://raven.feishu.cn/docs/doccnT7U46wPIOuHxf7vHI4Nspz">使用InfluxDB和Telegraf为服务器搭建基础监控</a>中介绍过使用 InfluxDB 和 Telegraf 技术栈来为服务器搭建基本监控，其中，InfluxDB 和 Telegraf 都是运行在 Docker 容器中的，通过共享容器网络进行通信。</li>
-<li>在这篇文章中，将要介绍如何使用 docker 容器为 docker 本身进行监控。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>监控</tag>
-        <tag>InfluxDB</tag>
-        <tag>Telegraf</tag>
-        <tag>Docker</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python 性能分析入门 —— cProfile与可视化</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220325-Python-%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E5%85%A5%E9%97%A8-%E2%80%94%E2%80%94-cProfile%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/</url>
-    <content><![CDATA[<p>最近在使用 Python 的 matplotlib 绘图库来进行三维空间地图的可视化，但是发现实际绘制速度特别慢，画图大概需要 90s 左右。之前有听说 matplotlib 因为绘图质量很高达到了出版级别所以速度上不是很快，但是直觉告诉我，也该也不至于这么慢……，猜测是在代码逻辑上应该有提升空间。</p>
-<p>最开始想着简单打印一下程序时间，自己计算看看在哪里耗时比较长，但是感觉不太优雅，于是去搜寻有没有很好用的性能分析工具。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>cProfile</tag>
-        <tag>性能分析</tag>
-        <tag>matplotlib</tag>
-        <tag>SnakeViz</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>浅试一下 pytest</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220211-%E6%B5%85%E8%AF%95%E4%B8%80%E4%B8%8B%20pytest/</url>
-    <content><![CDATA[<p>Python 自带的默认测试框架是 unittest，但是目前更主流被使用的第三方单元测试框架是 pytest，它提供了更易使用的测试接口，可以很好地与各种第三方自动化流程工具配套使用。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>单元测试</tag>
-        <tag>pytest</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GCC 中 gcc 和 g++ 的区别</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220304-GCC-%E4%B8%AD-gcc-%E5%92%8C-g-%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<p>之前写的 C++ 大部分都是来自在 LeetCode 上的算法题，很久没亲自动手编译 C++ 程序，今天写了一段 C++ 想编译一下，习惯性地使用了gcc，其中用到了vector，但是编译器报了错。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>编译</tag>
-        <tag>gcc</tag>
-        <tag>g++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>科学上网原理</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/210611-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<p>科学上网本质上是对从本机到目的服务器间的网络通信方式进行加密，使流量不能被防火墙检测到，进而绕开访问限制。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>网络</tag>
-        <tag>ssh</tag>
-        <tag>科学上网</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>记忆化搜索到底是不是动态规划？</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220408-%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%8D%E6%98%AF%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%9F/</url>
-    <content><![CDATA[<p>有一个问题一直困扰着我，就是使用备忘录进行记忆化搜索的方式到底算不算动态规划？有此疑惑是因为我常常发现，在 LeetCode 上使用记忆化搜索求解往往效率很差，时间复杂度排在后 20%，而使用 DP table 进行递推的效率则好很多；以及看到很多题解中将动态规划与记忆化搜索（备忘录）并列介绍。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>动态规划</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深入理解 C++ 的左值和右值</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220422-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3-C-%E7%9A%84%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/</url>
-    <content><![CDATA[<p>C++ 的左值（lvalue）和右值（rvalue）的概念在 C++11 后变得越来越重要，作为一个不是很容易理解的概念，一旦我们搞清楚了他们的含义，将有助于我们进一步理解一些高级的 C++ 特性，例如 move/forward 的新语义及右值引用（rvalue references）。</p>
-]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>左值引用</tag>
-        <tag>右值引用</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux安装软件的几种方式</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220311-Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<p>Linux 提供了各种不同的软件包安装与管理方式，我们可以根据系统差异、实际情况以及使用需求选择不同的方式来安装。</p>
-]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>服务器</tag>
-        <tag>Linux</tag>
-        <tag>Ubuntu</tag>
-        <tag>环境</tag>
-        <tag>包管理</tag>
-        <tag>apt</tag>
-        <tag>yum</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一文总结常用排序算法及面试考点</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/220429-%E4%B8%80%E6%96%87%E6%80%BB%E7%BB%93%E5%B8%B8%E7%94%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%8F%8A%E9%9D%A2%E8%AF%95%E8%80%83%E7%82%B9/</url>
-    <content><![CDATA[<ul>
-<li>排序算法经常作为CS算法课程中的入门算法来引入，因为各种各样的排序算法中包含了很多的计算机科学思想，例如：<ul>
-<li>基于比较（Comparision）和不基于比较的策略；</li>
-<li>迭代（Iterative）或递归（Recursive）的实现</li>
-<li>分支（Divide-and-Conquer）的机制（例如归并排序与快速排序）</li>
-<li>最好/最差/平均 时间复杂度分析</li>
-<li>随机算法（Randomized Algorithm）</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>面试</tag>
-        <tag>排序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>还是想夸夸「东大信息化」</title>
-    <url>/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/220218-%E8%BF%98%E6%98%AF%E6%83%B3%E5%A4%B8%E5%A4%B8%E3%80%8C%E4%B8%9C%E5%A4%A7%E4%BF%A1%E6%81%AF%E5%8C%96%E3%80%8D/</url>
-    <content><![CDATA[<p>最近因为疫情管控，很多老师都不方便进学校，东大信息化即时推出了线上电子签的功能，对于忙于硕士开题的我来说解决了很多问题。</p>
-<p>可能对于很多本科生同学来说已经习惯了东大的校园信息服务，但是作为本科毕业于另一所985高校的我，在本硕的实际对比下，还是想夸夸咱们“东大信息化”！</p>
-]]></content>
-      <categories>
-        <category>杂文随笔</category>
-      </categories>
-      <tags>
-        <tag>SEU</tag>
-        <tag>信息化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前端工具收藏</title>
-    <url>/f.%E6%94%B6%E8%97%8F%E6%95%B4%E7%90%86/History/200720-%E5%89%8D%E7%AB%AF%E5%B7%A5%E5%85%B7%E6%94%B6%E8%97%8F/</url>
-    <content><![CDATA[<blockquote>
-<p>之前做过一些前端开发工作，收藏了一些不错的框架和工具，对于内部平台/性能要求不高的展示页面，使用现成的框架删删改改是足够的。<br>尤其是在一个研发大佬云集的项目组/实验室，会一点前端技能会带给你意想不到的收获。（别误会，大佬们只是不想浪费时间在这种杂活上hh）</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="基础框架"><a href="#基础框架" class="headerlink" title="基础框架"></a>基础框架</h2><ul>
-<li><a href="https://cn.vuejs.org/">Vue.js</a><ul>
-<li>最容易上手</li>
-</ul>
-</li>
-<li><a href="https://react.docschina.org/">React</a> <ul>
-<li>Facebook出品</li>
-</ul>
-</li>
-<li><a href="https://angular.cn/">Angular</a><ul>
-<li>Google出品</li>
-</ul>
-</li>
-</ul>
-<h2 id="UI框架"><a href="#UI框架" class="headerlink" title="UI框架"></a>UI框架</h2><ul>
-<li><a href="https://ant.design/index-cn">Ant Design React</a>, <a href="https://www.antdv.com/docs/vue/introduce-cn/">Ant Design Vue</a><ul>
-<li>蚂蚁金服出品，一直在推陈出新，设计，视觉都非常优秀！</li>
-</ul>
-</li>
-<li><a href="https://element.eleme.io/#/">Element UI</a><ul>
-<li>饿了么出品（基于Vue，非常成熟，非常稳定，但是一直不更新视觉上不fashion了）</li>
-</ul>
-</li>
-<li><a href="https://www.bootcss.com/">Bootstrap</a><ul>
-<li>Twitter出品（基于jQuery，曾经的入门框架，现在用得少）</li>
-</ul>
-</li>
-<li><a href="https://material.io/design/">Material Design</a>, <a href="https://vuematerial.io/">Vue Material</a><ul>
-<li>Google出品，Google网站的风格</li>
-</ul>
-</li>
-</ul>
-<h2 id="开箱即用的中后台前端解决方案"><a href="#开箱即用的中后台前端解决方案" class="headerlink" title="开箱即用的中后台前端解决方案"></a>开箱即用的中后台前端解决方案</h2><blockquote>
-<p>上手容易，推荐使用</p>
-</blockquote>
-<ul>
-<li><a href="https://panjiachen.github.io/vue-element-admin-site/zh/">vue-element-admin</a><ul>
-<li>原net_platform_fe项目使用的框架，非常成熟</li>
-</ul>
-</li>
-<li><a href="https://pro.ant.design/index-cn">Ant Design Pro</a><ul>
-<li>好看，Antd官方团队出品，企业级中后台前端/设计解决方案</li>
-</ul>
-</li>
-</ul>
-<h2 id="小程序"><a href="#小程序" class="headerlink" title="小程序"></a>小程序</h2><ul>
-<li><a href="https://github.com/weilanwl/ColorUI">ColorUI</a><ul>
-<li>鲜亮的高饱和色彩，专注视觉的小程序组件库。</li>
-</ul>
-</li>
-<li><a href="https://github.com/youzan/vant-weapp">Vant</a><ul>
-<li>最成熟的小程序 UI 组件库。</li>
-</ul>
-</li>
-</ul>
-<h2 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h2><h3 id="图标资源"><a href="#图标资源" class="headerlink" title="图标资源"></a>图标资源</h3><ul>
-<li><a href="https://www.iconfont.cn/">Iconfont</a><ul>
-<li>阿里巴巴出品，国内最流行！</li>
-</ul>
-</li>
-<li><a href="https://fontawesome.com/v4.7.0/icons/">Font Awesome Icons</a><ul>
-<li>经典系列~</li>
-</ul>
-</li>
-<li><a href="https://www.flaticon.com/">flaticon</a><ul>
-<li>彩色矢量图~</li>
-</ul>
-</li>
-</ul>
-<h3 id="图片资源"><a href="#图片资源" class="headerlink" title="图片资源"></a>图片资源</h3><ul>
-<li><a href="https://undraw.co/illustrations">unDraw</a><ul>
-<li>2.5D插画风格</li>
-</ul>
-</li>
-</ul>
-<h3 id="绘图工具"><a href="#绘图工具" class="headerlink" title="绘图工具"></a>绘图工具</h3><ul>
-<li><a href="https://echarts.apache.org/zh/index.html">ECharts</a><ul>
-<li>百度出品，全球最主流</li>
-</ul>
-</li>
-<li><a href="https://chartjs.bootcss.com/">Chart.js</a><ul>
-<li>更简单</li>
-</ul>
-</li>
-</ul>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
-<li><a href="https://docschina.org/">印记中文</a><ul>
-<li>前端文档库</li>
-</ul>
-</li>
-<li><a href="https://landing.ant.design/index-cn">Antd Landing</a><ul>
-<li>无需代码为项目创建一个专属首页</li>
-</ul>
-</li>
-<li><a href="https://coverr.co/">coverr</a><ul>
-<li>为前端界面使用视频作为背景图</li>
-</ul>
-</li>
-<li><a href="https://www.sketch.com/">Sketch</a><ul>
-<li>轻量级的矢量图片处理工具（轻量级的Photoshop）</li>
-</ul>
-</li>
-<li><a href="https://hoppscotch.io/">hoppscotch</a><ul>
-<li>前 Postwoman，免费快速的 Web 端 API 请求构造器</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>收藏整理</category>
-      </categories>
-      <tags>
-        <tag>经验</tag>
-        <tag>前端</tag>
-        <tag>前端框架</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ctrl-C，Ctrl-Z，Ctrl-D 的区别</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220204-Ctrl-C%EF%BC%8CCtrl-Z%EF%BC%8CCtrl-D-%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>shell</tag>
-        <tag>信号量</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何写好技术博客？</title>
-    <url>/e.%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/History/220415-%E5%A6%82%E4%BD%95%E5%9D%9A%E6%8C%81%E5%86%99%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%EF%BC%9F/</url>
-    <content><![CDATA[<p>写技术博客是大部分程序员都很想坚持却又总是断断续续的一件事。大家愿意写技术博客是因为有很多好处，例如写博客有助于整理平常的思考、梳理一个复杂难懂的技术细节；同时也可以满足分享与传播的欲望，幸运的话还能提升自己的 impact。</p>
-]]></content>
-      <categories>
-        <category>观察思考</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>经验</tag>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux 绑定程序到特定 CPU 上运行</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220506-Linux-%E7%BB%91%E5%AE%9A%E7%A8%8B%E5%BA%8F%E5%88%B0%E7%89%B9%E5%AE%9A-CPU-%E4%B8%8A%E8%BF%90%E8%A1%8C/</url>
-    <content><![CDATA[<p>现在我们日程使用的手机、电脑、服务器使用的基本上都是多核 CPU，多核 CPU 允许我们并行地运行多个程序。我们的程序（进程/线程）跑在哪一个核心上是由操作系统内核来调度的，内核会将我们的程序调度到不同的核心上来运行，那有没有方法能让我们的程序一直在同一个 CPU 上运行呢？</p>
-<p>答案当然是有的，Linux 提供了 CPU 亲和性（CPU affinity）的设置来允许我们控制程序使其在同一块 CPU 上完成。</p>
-]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>技术研究</tag>
-        <tag>调度</tag>
-        <tag>CPU</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>多核处理器可以并行运行多个进程吗？</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220520-%E5%A4%9A%E6%A0%B8%E5%A4%84%E7%90%86%E5%99%A8%E5%8F%AF%E4%BB%A5%E5%B9%B6%E8%A1%8C%E8%BF%90%E8%A1%8C%E5%A4%9A%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%90%97%EF%BC%9F/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>CPU</tag>
-        <tag>进程</tag>
-        <tag>线程</tag>
-        <tag>并行</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无人机 SLAM 建图常用地图类型及八叉树地图</title>
-    <url>/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/210924-%E6%97%A0%E4%BA%BA%E6%9C%BA-SLAM-%E5%BB%BA%E5%9B%BE%E5%B8%B8%E7%94%A8%E5%9C%B0%E5%9B%BE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%85%AB%E5%8F%89%E6%A0%91%E5%9C%B0%E5%9B%BE/</url>
-    <content><![CDATA[<p>无人机在进行路径规划之前要通过传感器对周围环境的感知建立空间模型，特别是在陌生的三维环境中，无人机要能够快速的进行环境信息的采集和建立合适的空间模型来提高路径规划的效率。</p>
-]]></content>
-      <categories>
-        <category>科研分享</category>
-      </categories>
-      <tags>
-        <tag>无人机</tag>
-        <tag>SLAM</tag>
-        <tag>自主导航</tag>
-        <tag>八叉树</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux 内核空间和用户空间</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220513-Linux-%E5%86%85%E6%A0%B8%E7%A9%BA%E9%97%B4%E5%92%8C%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4/</url>
-    <content><![CDATA[<p>Linux 为了提高操作系统的稳定性和可用性将内存地址空间划分为内核空间（kernel space）和用户空间（user space），本文以 32 位系统为例介绍 Linux 系统的内核空间和用户空间。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>操作系统</tag>
-        <tag>内核</tag>
-      </tags>
-  </entry>
-<<<<<<< HEAD
-  <entry>
-    <title>Github 使用经典问题：如何同步 fork 项目原仓库的更新</title>
-    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/200407-Github%20%E4%BD%BF%E7%94%A8%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98%EF%BC%9A%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%20fork%20%E9%A1%B9%E7%9B%AE%E5%8E%9F%E4%BB%93%E5%BA%93%E7%9A%84%E6%9B%B4%E6%96%B0/</url>
-    <content><![CDATA[<p>Github 我们经常会通过 fork 开源项目在自己的仓库中更新，然后提交 Pull Request (Merge Request) 为开源项目做贡献。</p>
-<p>不过我们经常会遇到原仓库更新，重新 fork 显然是不优雅的，那我我们该怎么同步更新呢？</p>
-<span id="more"></span>
-
-<p><img src="pic1.jpg"></p>
-<h1 id="如何在-Github-网页端同步更新？"><a href="#如何在-Github-网页端同步更新？" class="headerlink" title="如何在 Github 网页端同步更新？"></a>如何在 Github 网页端同步更新？</h1><ol>
-<li>进入你自己的 fork 过来的仓库。</li>
-<li>点击 “Pull requests” ，如何点击右侧绿色的 “New pull request”。</li>
-<li>Github 首先会比较源仓库与你 fork 后的仓库，如果你没有做任何更改，则找不到要 PR 的内容。所以，我们需要点击 “switching the base”，会将我们的仓库作为基础版本，原仓库作为 head 版本，现在我们会看到我们的需要需要 “catch up” 的更新。</li>
-<li>点击 “Create pull request”，起一个名字，然后点击 “Create pull request”。</li>
-<li>点击 “Merge pull request”，然后点击 “Confirm merge”。</li>
-<li>如果我们没提交什么新代码，merge 过程将自动完成。</li>
-</ol>
-<h1 id="如何通过本地命令行同步更新？"><a href="#如何通过本地命令行同步更新？" class="headerlink" title="如何通过本地命令行同步更新？"></a>如何通过本地命令行同步更新？</h1><ol>
-<li>验证远程分支可以 fetch 或 push<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
-<li>指明我们需要同步的仓库<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote add upstream https://github.com/OriginalRepo/OriginalProject.git</span><br></pre></td></tr></table></figure></li>
-<li>验证<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
-<li>拉取更新的 branches 和 commits<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git fetch upstream</span><br></pre></td></tr></table></figure></li>
-<li>Checkout 本地分支<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout master</span><br></pre></td></tr></table></figure></li>
-<li>合并<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git merge upstream/master</span><br></pre></td></tr></table></figure></li>
-<li>提交<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术探究</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Github</tag>
-        <tag>版本管理</tag>
-      </tags>
-  </entry>
-=======
->>>>>>> 57a6f90f7f4c21913847238dd47dcb12af6ffd75
 </search>
