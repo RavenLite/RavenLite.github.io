@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/letter-r-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/letter-r-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/letter-r-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/letter-r-32x32.png?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Crazyflie,AI-deck,边缘计算,无人机," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Blog | Raven Xu" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="Olimex 推出的 ARM-USB-TINY-H 是一款 OPENOCD ARM JTAG DEBUGGERS，也是 Bitcraze 官方实验也是我们所使用的 JTAG Debugger，这份 USER’S MANUAL 也是重要的参考来源。以下内容基于版本 Document revision G, October 2020，是对其中值得注意的内容的翻译与再总结。  Chapter 1: O">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Olimex Debugger User&#39;s Manual 翻译与总结">
+<meta property="og:url" content="https://ravenxu.top/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/Olimex%20Debugger%20User's%20Manual%20%E7%BF%BB%E8%AF%91%E4%B8%8E%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="Blog | Raven Xu">
+<meta property="og:description" content="Olimex 推出的 ARM-USB-TINY-H 是一款 OPENOCD ARM JTAG DEBUGGERS，也是 Bitcraze 官方实验也是我们所使用的 JTAG Debugger，这份 USER’S MANUAL 也是重要的参考来源。以下内容基于版本 Document revision G, October 2020，是对其中值得注意的内容的翻译与再总结。  Chapter 1: O">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ravenxu.top/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/Olimex%20Debugger%20User%27s%20Manual%20%E7%BF%BB%E8%AF%91%E4%B8%8E%E6%80%BB%E7%BB%93/pic1.jpg">
+<meta property="og:image" content="https://ravenxu.top/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/Olimex%20Debugger%20User%27s%20Manual%20%E7%BF%BB%E8%AF%91%E4%B8%8E%E6%80%BB%E7%BB%93/pic2.png">
+<meta property="og:image" content="https://ravenxu.top/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/Olimex%20Debugger%20User%27s%20Manual%20%E7%BF%BB%E8%AF%91%E4%B8%8E%E6%80%BB%E7%BB%93/pic3.jpg">
+<meta property="article:published_time" content="2020-10-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-05-23T02:41:06.379Z">
+<meta property="article:author" content="Raven Xu">
+<meta property="article:tag" content="Crazyflie">
+<meta property="article:tag" content="AI-deck">
+<meta property="article:tag" content="边缘计算">
+<meta property="article:tag" content="无人机">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ravenxu.top/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/Olimex%20Debugger%20User%27s%20Manual%20%E7%BF%BB%E8%AF%91%E4%B8%8E%E6%80%BB%E7%BB%93/pic1.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://ravenxu.top/c.科研分享/History/Olimex Debugger User's Manual 翻译与总结/"/>
+
+
+
+
+
+  <title>Olimex Debugger User's Manual 翻译与总结 | Blog | Raven Xu</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+		<a target="_blank" rel="noopener" href="https://github.com/Raven98/Raven98.github.io" class="github-corner" aria-label="View source on Github">
+		<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog | Raven Xu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Make positive impact</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a target="_blank" href="https://seunetsi.feishu.cn/docx/doxcnHCanima7oriZf1gcYDuCib" rel="section noopener">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ravenxu.tophttps://raven.feishu.cn/docs/doccn8zT24vC5Hvu0dXSF122BQd">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog | Raven Xu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a class="post-title-link post-title-link-external" target="_blank" href="https://raven.feishu.cn/docs/doccn8zT24vC5Hvu0dXSF122BQd" itemprop="url">
+                Olimex Debugger User's Manual 翻译与总结
+                <i class="fa fa-external-link"></i>
+              </a>
+            </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-10-28T00:00:00+08:00">
+                2020-10-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/" itemprop="url" rel="index">
+                    <span itemprop="name">科研分享</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a target="_blank" rel="noopener" href="https://raven.feishu.cn/docs/doccn8zT24vC5Hvu0dXSF122BQd#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="https://raven.feishu.cn/docs/doccn8zT24vC5Hvu0dXSF122BQd" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-files-o"></i>
+            </span>
+            <span id="busuanzi_value_page_pv"></span>次阅读
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p><strong>Olimex</strong> 推出的 <strong>ARM-USB-TINY-H</strong> 是一款 <strong>OPENOCD ARM JTAG DEBUGGERS</strong>，也是 Bitcraze 官方实验也是我们所使用的 JTAG Debugger，这份 <a href="https://link.zhihu.com/?target=https://www.olimex.com/Products/ARM/JTAG/_resources/ARM-USB-TINY_and_TINY_H_manual.pdf">USER’S MANUAL</a> 也是重要的参考来源。<br>以下内容基于版本 Document revision G, October 2020，是对其中值得注意的内容的翻译与再总结。</p>
+</blockquote>
+<h2 id="Chapter-1-Overview"><a href="#Chapter-1-Overview" class="headerlink" title="Chapter 1: Overview"></a>Chapter 1: Overview</h2><h3 id="Basic-Information"><a href="#Basic-Information" class="headerlink" title="Basic Information"></a>Basic Information</h3><ul>
+<li>ARM-USB-TINY-H 与 ARM-USB-TINY 两款产品基本上没什么区别，唯一的区别是ARM-USB-TINY-H 在于其名字中的 H 代表 HighSpeed，即拥有更低的延迟，RTCK的 JTAG 时钟达到30Mhz，并且相比普通版有 3-5 倍快的编程吞吐量。</li>
+<li>Programmer/Debugger 是 ARM MCU 开发不可缺少的工具， ARM-USB-TINY是一款利用 OS 上的 Openocd 来利用板子上的 JTAG 接口进行软硬件开发的产品。</li>
+<li>可以为开发板供电。</li>
+<li>除了 JTAG 接口，还有 SWD 接口有相同的功能。可以使用 adapter 将 JTAG 信号转换成 SWD 信号利用我们的 debugger 进行调试。</li>
+</ul>
+<span id="more"></span>
+
+<h3 id="Comparison-among-4-Debuggers"><a href="#Comparison-among-4-Debuggers" class="headerlink" title="Comparison among 4 Debuggers"></a>Comparison among 4 Debuggers</h3><p><img src="pic1.jpg" alt="img"></p>
+<ul>
+<li>ARM-USB-TINY-H更被推荐用于家庭使用，研究与开发</li>
+<li>四款产品拥有相同的 Vendor ID，以及不同的 Product ID。（USB 接口设备有一个 <a href="https://link.zhihu.com/?target=https://the-sz.com/products/usbid/">ID 数据库</a>）</li>
+</ul>
+<p><img src="pic2.png" alt="img"></p>
+<h2 id="Chapter-2-Device-Description"><a href="#Chapter-2-Device-Description" class="headerlink" title="Chapter 2: Device Description"></a>Chapter 2: Device Description</h2><h3 id="LED"><a href="#LED" class="headerlink" title="LED"></a>LED</h3><p>Debugger 有一个红色的 LED 灯在 JTAG 接口端。通电后会亮，正在进行读写操作时会闪烁。</p>
+<h3 id="Ports-and-Connectors"><a href="#Ports-and-Connectors" class="headerlink" title="Ports and Connectors"></a>Ports and Connectors</h3><blockquote>
+<p>Ports 指 Debugger 自身的两个端口，USB-B 与 JTAG 20 male<br>Connectors 指将 Debugger 连接到 PC 和开发板的线。在我们的场景下，分别需要 USB A-B，JTAG 20-10 adapter 线。</p>
+</blockquote>
+<ul>
+<li><p>Port: USB Type B</p>
+</li>
+<li><ul>
+<li>需要一根 USB A-B 线来连接到 PC</li>
+<li>USB 连接基于其中的一块 FTDI Chip，driver需要更改 VID 与 PID 使用上面提供的 Olimex 对应的 ID。</li>
+</ul>
+</li>
+<li><p>Port: JTAG</p>
+</li>
+<li><ul>
+<li>是一个 20 口的公线（有针的是 male，有孔的是 female）</li>
+<li>2.54mm间距（IEEE 1149.1）</li>
+<li>注意 JTAG 线因为形状原因无法直接分辨正反。通常会用一些手段，比如 Debugger 的 JTAG端会有一个卡槽与连接线对应。同时连接线也有标红的一根线来表明这是 1 号线。</li>
+<li>JTAG 端的引脚如图</li>
+</ul>
+</li>
+</ul>
+<p><img src="pic3.jpg" alt="img"></p>
+<ul>
+<li><ul>
+<li><ul>
+<li>PIN1 和 PIN2 用于探测目标板是否已经被供电，如果没有，通过 PIN19 来供电。USB 允许有限的供电输出功率，对于更大的板子还是希望通过外部的供电方式来进行。</li>
+</ul>
+</li>
+<li><p>JTAG 接口通常是 20PIN (2.54mm）或者是 mini 版本的 10PIN（1.27mm）。我们的 AI-deck 就是 mini 版本的，所以还需要一个 20-10 的转接器。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Chapter-3-Setting-up-ARM-USB-TINY"><a href="#Chapter-3-Setting-up-ARM-USB-TINY" class="headerlink" title="Chapter 3: Setting up ARM-USB-TINY"></a>Chapter 3: Setting up ARM-USB-TINY</h2><h3 id="Hardware-Requirement"><a href="#Hardware-Requirement" class="headerlink" title="Hardware Requirement"></a>Hardware Requirement</h3><ul>
+<li><p>我们得有一块开发板/MCU和一台 PC 才能完成 debug/programming 任务</p>
+</li>
+<li><p>ARM-USB-TINY 附带一根 20-20 pin female-female 2.54mm/0.1inch connector 线</p>
+</li>
+<li><p>ARM-USB-TINY 不附带 USB Type A-B 线</p>
+</li>
+<li><p>需要的硬件根据实际情况会有所不同，例如</p>
+</li>
+<li><ul>
+<li>需要 JTAG 20-10 pin adapter 如果板子上的 JTAG 调试接口是 mini 接口</li>
+<li>需要 JTAG-SWD adapter 如果板子只支持 SWD 信号</li>
+</ul>
+</li>
+</ul>
+<h3 id="Software-Configuration"><a href="#Software-Configuration" class="headerlink" title="Software Configuration"></a>Software Configuration</h3><h3 id="OpenOCD"><a href="#OpenOCD" class="headerlink" title="OpenOCD"></a>OpenOCD</h3><ul>
+<li><ul>
+<li>可以看出 ARM-USB-TINY 默认就是为 OpenOCD 这一软件 tool 服务的</li>
+<li>不同系统有不同方式，对于 Mac 的话就是简单的brew install openocd</li>
+<li>也可以选择自行 compile 的方式还实现更多自定义配置</li>
+</ul>
+</li>
+</ul>
+<h3 id="Driver"><a href="#Driver" class="headerlink" title="Driver"></a>Driver</h3><ul>
+<li><ul>
+<li>使用 USB 就需要 driver</li>
+<li>有很多可用的 driver（因为最初使用的是 FTDI 的 driver，不是开源的，与 OpenOCD 的开源理念违背，所以有很多人自发编写维护了很多 driver）</li>
+<li>Driver installation in Windows 在 Page 14-16</li>
+<li>Driver installation in Linux 在 Page 16-17</li>
+<li>Driver installation in MAC OS X 在 Page 17-18</li>
+</ul>
+</li>
+</ul>
+<h3 id="Driver-installation-in-MAC-OS-X"><a href="#Driver-installation-in-MAC-OS-X" class="headerlink" title="Driver installation in MAC OS X"></a>Driver installation in MAC OS X</h3><ul>
+<li><p>MacOS 的 driver 主要在</p>
+</li>
+<li><ul>
+<li>/System/Library/Extensions/目录下的 Kernel 插件</li>
+<li>Application Bundle 中</li>
+</ul>
+</li>
+<li><p>kextunload可以卸载 Kernal 插件</p>
+</li>
+<li><p>kextstat可以查看被加载的 Kernal 插件</p>
+</li>
+</ul>
+<blockquote>
+<p>验证 USB 被识别可以点击 –&gt;关于本机–&gt;系统报告–&gt;硬件–&gt;USB 查看是否有目标 USB<br>或者在命令行输入 ​lsusb​ 查看</p>
+</blockquote>
+<h3 id="Basic-OpenOCD-connection"><a href="#Basic-OpenOCD-connection" class="headerlink" title="Basic OpenOCD connection"></a>Basic OpenOCD connection</h3><ul>
+<li><p>最容易判断 debugger 软硬件安装是否正确的方式还是建立一个到目标的连接，连接建立后</p>
+</li>
+<li><ul>
+<li>可以本地或者远程地访问 GDB server</li>
+<li>可以使用 telnet 访问 server 来执行 debug</li>
+<li>可以配置一个图形界面连接到 GDB server</li>
+</ul>
+</li>
+</ul>
+<h3 id="Starting-OpenOCD-GDB-server-via-FTDI-drivers"><a href="#Starting-OpenOCD-GDB-server-via-FTDI-drivers" class="headerlink" title="Starting OpenOCD GDB server via FTDI drivers"></a>Starting OpenOCD GDB server via FTDI drivers</h3><blockquote>
+<p>这是 0.8.0 及之后版本的 OpenOCD 默认使用的连接方式</p>
+</blockquote>
+<p>例如，使用 openocd 在 ARM-USB-TINY-H 和一个 STM32F1 开发板之间建立连接</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openocd-x64-0.8.0.exe -f ./interface/ftdi/olimex-arm-usb-tiny-h.cfg -f ./target/stm32f1x.cfg</span><br></pre></td></tr></table></figure>
+
+<p>我们需要指明可执行程序的文件夹</p>
+<p>典型的成功响应例如</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Info: JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)</span><br><span class="line">Info: JTAG tap: stm32f1x.bs tap/device found: 0x06418041 (mfg: 0x020, part: 0x6418, ver: 0x0)</span><br><span class="line">Info: stm32f1x.cpu: hardware has 6 breakpoints, 4 watchpoints</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>TAP是开发板上的组件，用于 debug 调试，有支持 JTAG 的，也有支持 SWD 的。可能不止一个。</p>
+</blockquote>
+<p>连接建立成功后（即 GDB Server 启动成功后）可以再开启一个终端使用 telnet 连接到默认端口 4444，使用细节可以参考 <a href="https://link.zhihu.com/?target=https://www.olimex.com/Products/ARM/JTAG/_resources/Manual_TELNET.pdf">Using OpenOCD with TELNET connection</a></p>
+<h3 id="Starting-OpenOCD-GDB-server-via-LibUSB-drivers"><a href="#Starting-OpenOCD-GDB-server-via-LibUSB-drivers" class="headerlink" title="Starting OpenOCD GDB server via LibUSB drivers"></a>Starting OpenOCD GDB server via LibUSB drivers</h3><blockquote>
+<p>这是 0.8.0 之前版本的 OpenOCD 默认使用的连接方式</p>
+</blockquote>
+<p>同样，建立连接的命令（接口配置文件地址不一样）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openocd -f interface/olimex-arm-usb-tiny-h.cfg -f target/stm32f1x.cfg</span><br></pre></td></tr></table></figure>
+
+<p>成功后的响应结果</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)</span><br><span class="line">Info : JTAG tap: stm32f1x.bs tap/device found: 0x06418041 (mfg: 0x020, part: 0x6418, ver: 0x0)</span><br><span class="line">Info : stm32f1x.cpu: hardware has 6 breakpoints, 4 watchpoints</span><br></pre></td></tr></table></figure>
+
+<h3 id="Starting-OpenOCD-GDB-to-a-SWD-target-connection-with-ARM-JTAG-SWD"><a href="#Starting-OpenOCD-GDB-to-a-SWD-target-connection-with-ARM-JTAG-SWD" class="headerlink" title="Starting OpenOCD GDB to a SWD target connection with ARM-JTAG-SWD"></a>Starting OpenOCD GDB to a SWD target connection with ARM-JTAG-SWD</h3><blockquote>
+<p>0.9.0 及之后版本的 OpenOCD 增加了对 SWD 的支持</p>
+</blockquote>
+<p>建立连接的命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openocd -f interface/ftdi/olimex-arm-usb-tiny-h.cfg -f interface/ftdi/olimexarm-jtag-swd.cfg -f target/stm32f1x.cfg</span><br></pre></td></tr></table></figure>
+
+<p>成功后的响应结果</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Info : FTDI SWD mode enabled adapter speed: 1000 kHz adapter_nsrst_delay: 100 cortex_m reset_config sysresetreq</span><br><span class="line">Info : clock speed 1000 kHz</span><br><span class="line">Info : SWD IDCODE 0x1ba01477 Info : stm32f1x.cpu: hardware has 6 breakpoints, 4 watchpoints</span><br></pre></td></tr></table></figure>
+
+<h3 id="Advanced-OpenOCD-practices"><a href="#Advanced-OpenOCD-practices" class="headerlink" title="Advanced OpenOCD practices"></a>Advanced OpenOCD practices</h3><h3 id="Using-multiple-ARM-USB-TINY-interfaces"><a href="#Using-multiple-ARM-USB-TINY-interfaces" class="headerlink" title="Using multiple ARM-USB-TINY interfaces"></a>Using multiple ARM-USB-TINY interfaces</h3><p>在同一台 PC 上使用多个同款 debugger 也是可以的，虽然他们的 VendorID 和 ProductID 都是相同的，但是可以根据 serial numbers（序列号）来进行区分。在 Linux 下使用lsusb -v就能看到序列号。</p>
+<p>如果有多个同款 debugger 被同时使用，我们需要为每个 debugger 分别编写 cfg 接口配置文件，在文件内指定目标的序列号，例如如下两个 cfg 文件即可区分同型号的两个 debugger：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">-olimex-arm-usb-tiny-h1.cfg</span><br><span class="line"></span><br><span class="line">interface ftdi</span><br><span class="line">ftdi_device_desc &quot;Olimex OpenOCD JTAG ARM-USB-TINY-H&quot; </span><br><span class="line">ftdi_vid_pid 0x15ba 0x002a </span><br><span class="line">ftdi_serial OLYMTEEY</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">-olimex-arm-usb-tiny-h2.cfg</span><br><span class="line"></span><br><span class="line">interface ftdi </span><br><span class="line">ftdi_device_desc &quot;Olimex OpenOCD JTAG ARM-USB-TINY-H&quot; </span><br><span class="line">ftdi_vid_pid 0x15ba 0x002a </span><br><span class="line">ftdi_serial OLYMTGH5</span><br></pre></td></tr></table></figure>
+
+<h3 id="Changing-the-VID-and-PID-of-the-debugger"><a href="#Changing-the-VID-and-PID-of-the-debugger" class="headerlink" title="Changing the VID and PID of the debugger"></a>Changing the VID and PID of the debugger</h3><blockquote>
+<p>修改 debugger 的 VID 与 PID 对于初学者是不推荐的，因为很有可能改不回来~<br>一般的使用场景并不需要我们修改 ID，所以这是不被推荐的行为</p>
+</blockquote>
+<p>修改 VID 和 PID 不需要硬件工具，通过软件就可以改变。</p>
+<p>一旦修改了 ID，drivers 和 script 也得跟着修改，需要一个新的 driver。</p>
+<p>完成修改需要一个软件：MProg。具体细节请查看原文档 Page22-23。</p>
+<h3 id="Some-graphical-tools"><a href="#Some-graphical-tools" class="headerlink" title="Some graphical tools"></a>Some graphical tools</h3><p>有几款界面工具可以帮助我们可视化地看到调试信息。</p>
+<ul>
+<li><p>IAR Embedded Workbench for ARM</p>
+</li>
+<li><ul>
+<li>商业版，可免费试用一段时间</li>
+</ul>
+</li>
+<li><p>Rowley Crossworks for ARM</p>
+</li>
+<li><ul>
+<li>推荐配合 FTDI 驱动使用，虽然也支持 LibUSB 驱动</li>
+<li>支持 ARM-JTAG-SWD 转换器</li>
+</ul>
+</li>
+<li><p>STM32CubeIDE</p>
+</li>
+<li><p>CooCox IDE (discontinued)</p>
+</li>
+<li><ul>
+<li>停止维护</li>
+</ul>
+</li>
+<li><p>Olimex Open Development Suite (ODS) package (discontinued)</p>
+</li>
+<li><ul>
+<li>停止维护</li>
+</ul>
+</li>
+</ul>
+<h2 id="Chapter-4-Frequently-Asked-Questions"><a href="#Chapter-4-Frequently-Asked-Questions" class="headerlink" title="Chapter 4: Frequently Asked Questions"></a>Chapter 4: Frequently Asked Questions</h2><ul>
+<li><p>A: What USB cable do I need?</p>
+</li>
+<li><ul>
+<li>我应该用什么 USB 线？</li>
+</ul>
+</li>
+<li><p>Q: You should have a USB type A-B cable to connect to PC, all PC USB hosts have USB-A connector while ARM-USB-TINY has USB-B connector so the cable should be USB A-to-B type. Note that such a cable is not included in the package.</p>
+</li>
+<li><ul>
+<li>您应该有一个 USB A-B 的线连接到PC。所有的 PC USB 接口都是 USB-A 接口，而 ARM-USB-TINY 则是 USB-B 接口，所以 USB 线应该是 USB A-to-B 型。请注意，包装中没有这根线。</li>
+</ul>
+</li>
+<li><p>Q: Does your JTAG connector layout differ from the JTAG connector layout of other debuggers?</p>
+</li>
+<li><ul>
+<li>你们的 JATG 连接器的针脚布局与其他的 debugger 有什么区别吗？</li>
+</ul>
+</li>
+<li><p>A: No. It is the standard 20-pin ARM JTAG layout.</p>
+</li>
+<li><ul>
+<li>不。它就是标准的 20-pin ARM JTAG 的布局。</li>
+</ul>
+</li>
+<li><p>Q: What are the LEDs for?</p>
+</li>
+<li><ul>
+<li>LED 灯的用途是？</li>
+</ul>
+</li>
+<li><p>A: The LED is mainly meant to indicate programming/debugging in progress. The red LED should blink when you have an on-going operation (read, write).</p>
+</li>
+<li><ul>
+<li>LED 的主要目的是指明是否正在进行 programming/debugging。当我们进行读写操作时红色的 LED 灯会闪烁。</li>
+</ul>
+</li>
+<li><p>Q: I have downloaded the latest version of OpenOCD but there is no configuration for my target. Send me one please.</p>
+</li>
+<li><ul>
+<li>我已经下载了最新版本的 OpenOCD，但是里面没有适配我的调试对象的配置文件，请发给我一个。</li>
+</ul>
+</li>
+<li><p>A: We commit or forward everything we have done directly to the OpenOCD repositories. If you can’t find a suitable cfg there – you are out of luck. You either have write it yourself or ask politely somebody at the OpenOCD community to do it for you.</p>
+</li>
+<li><ul>
+<li>我们将所做的一切直接提交或转发到了 OpenOCD 库。如果你在那里找不到合适的 cfg 配置文件，那你就有点不幸。你要么自己写，要么礼貌地请 OpenOCD 社区的人帮你写。</li>
+</ul>
+</li>
+<li><p>Q: I can’t write proper makefile for my board under your Eclipse-like IDE. Can you please write it for me?</p>
+</li>
+<li><ul>
+<li>我写不出来适合我的开发板的 Makefile 在你们的类 Eclipse IDE 环境下。可以请你们为我写一个吗？</li>
+</ul>
+</li>
+<li><p>A: No. That’s the bad (good?) side of open software – it is a community effort – everybody has to write and commit something. You learn something in the end, however.</p>
+</li>
+<li><ul>
+<li>不可以。这就是开源软件好或不好的一点，它需要一个社区的努力，每个人都得为社区贡献些东西。当然，你最终也会学到一些东西。</li>
+</ul>
+</li>
+<li><p>Q: I have LPC1227 board and can’t program it with your OpenOCD debugger. What do I do wrong?</p>
+</li>
+<li><ul>
+<li>我有一个 LPC1227 开发板但是不能用你们的 OpenOCD 调试器，我做错了什么？</li>
+</ul>
+</li>
+<li><p>A: LPC1227 lacks JTAG according to the microcontroller’s datasheet. The board can be programmed only via SWD (Serial Wire Debug) interface. Olimex OpenOCD debuggers have JTAG by default. You would need an additional adapter – ARM-JTAG-SWD.</p>
+</li>
+<li><ul>
+<li>根据参数表来看，LPC1227 缺少 JTAG 接口。这块开发板只能通过 SWD 接口来编程。Olimex OpenOCD 的 debugger 默认支持 JTAG。你需要一个附加的转接器——ARM-JTAG-SWD。</li>
+</ul>
+</li>
+<li><p>Q: Howdy, guys. I can’t program my MSP430 and PIC16 boards with your robust debugger. I need help ASAP.</p>
+</li>
+<li><ul>
+<li>你好。我用不了你们强大的 debugger 来编程我的 MSP430 和 PIC16 开发板。我需要尽快的帮忙。</li>
+</ul>
+</li>
+<li><p>A: Technically, it is possible to program targets different than ARM using our OpenOCD debugger. Practically, almost all users use the debugger for ARM programming and only ARM targets are officially supported. There is a reason that the prefix in the name of the debugger is ‘ARM-‘.</p>
+</li>
+<li><ul>
+<li>从技术上讲，使用我们的 OpenOCD 调试器可以编程非 ARM 架构的目标。实际上，几乎所有用户都使用调试器进行ARM编程，只有ARM目标才得到官方支持。调试器名称中的前缀是“ARM-”是有原因的。</li>
+</ul>
+</li>
+</ul>
+<h2 id="Chapter-5-Revision-History-and-Support"><a href="#Chapter-5-Revision-History-and-Support" class="headerlink" title="Chapter 5: Revision History and Support"></a>Chapter 5: Revision History and Support</h2><h3 id="Revision-History"><a href="#Revision-History" class="headerlink" title="Revision History"></a>Revision History</h3><ul>
+<li>第一版始于 2014.07.16，此文对应的是 2020.10.08 出版的 Document Revision G</li>
+</ul>
+<h3 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h3><ul>
+<li><p><a href="https://link.zhihu.com/?target=https://www.olimex.com/">Olimex 官网</a></p>
+</li>
+<li><p><a href="https://link.zhihu.com/?target=https://www.olimex.com/forum/">JTAG 官方论坛</a></p>
+</li>
+<li><p>WIKI</p>
+</li>
+<li><ul>
+<li><a href="https://link.zhihu.com/?target=https://www.olimex.com/wiki/ARM-USB-TINY-H">ARM-USB-TINY-H</a></li>
+<li><a href="https://link.zhihu.com/?target=https://www.olimex.com/wiki/ARM-USB-TINY">ARM-USB-TINY</a></li>
+<li><a href="https://link.zhihu.com/?target=https://www.olimex.com/wiki/ARM-USB-OCD-H">ARM-USB-OCD-H</a></li>
+<li><a href="https://link.zhihu.com/?target=https://www.olimex.com/wiki/ARM-USB-OCD">ARM-USB-OCD</a></li>
+</ul>
+</li>
+<li><p>官方商店购买</p>
+</li>
+<li><ul>
+<li><a href="https://link.zhihu.com/?target=https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY-H/">ARM-USB-TINY-H</a></li>
+<li><a href="https://link.zhihu.com/?target=https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY/">ARM-USB-TINY</a></li>
+<li><a href="https://link.zhihu.com/?target=https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD-H/">ARM-USB-OCD-H</a></li>
+<li><a href="https://link.zhihu.com/?target=https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD/">ARM-USB-OCD</a></li>
+<li><a href="https://link.zhihu.com/?target=https://www.olimex.com/Products/ARM/JTAG/ARM-JTAG-20-10/">ARM-JTAG-20-10</a></li>
+<li><a href="https://link.zhihu.com/?target=https://www.olimex.com/Products/ARM/JTAG/ARM-JTAG-SWD/">ARM-JTAG-SWD</a></li>
+<li><a href="https://link.zhihu.com/?target=https://www.olimex.com/Products/Components/Cables/CABLE-USB-A-B-1.8M/">CABLE-USB-A-B-1.8M</a></li>
+</ul>
+</li>
+<li><p>经销商渠道购买</p>
+</li>
+<li><ul>
+<li><a href="https://link.zhihu.com/?target=https://www.olimex.com/Distributors/">经销商列表</a></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>我们在其全球经销商，<a href="https://link.zhihu.com/?target=https://www.mouser.hk/manufacturer/olimex/">贸泽电子 MOUSER ELECTRONICS</a> 购买过，还不错。美国仓库发货，比淘宝便宜但是耗时久一些。</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Crazyflie/" rel="tag"><i class="fa fa-tag"></i> Crazyflie</a>
+          
+            <a href="/tags/AI-deck/" rel="tag"><i class="fa fa-tag"></i> AI-deck</a>
+          
+            <a href="/tags/%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97/" rel="tag"><i class="fa fa-tag"></i> 边缘计算</a>
+          
+            <a href="/tags/%E6%97%A0%E4%BA%BA%E6%9C%BA/" rel="tag"><i class="fa fa-tag"></i> 无人机</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E3%80%8C%E8%B0%83%E7%A0%94%E6%B1%87%E6%8A%A5%E3%80%8DGoogle%20Network/" rel="next" title="「调研汇报」Google Network">
+                <i class="fa fa-chevron-left"></i> 「调研汇报」Google Network
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E3%80%8CCrazyflie%E5%BC%80%E6%BA%90%E6%97%A0%E4%BA%BA%E6%9C%BA%E3%80%8DAI-deck%20-%20%E4%BD%8E%E5%8A%9F%E8%80%97%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97%E5%AE%9E%E6%88%98/" rel="prev" title="「Crazyflie开源无人机」AI-deck - 低功耗边缘计算实战">
+                「Crazyflie开源无人机」AI-deck - 低功耗边缘计算实战 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7Carchive">
+              
+                  <span class="site-state-item-count">70</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">157</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.linkedin.com/in/%E7%91%9E%E6%96%87-%E8%AE%B8-bb512712b/" target="_blank" title="LinkedIn">
+                      
+                        <i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/RavenLite" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/ravenxu98/pins" target="_blank" title="Zhihu">
+                      
+                        <i class="fa fa-fw fa-star"></i>Zhihu</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:xrwgood@qq.com" target="_blank" title="Email">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>Email</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-1-Overview"><span class="nav-text">Chapter 1: Overview</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Basic-Information"><span class="nav-text">Basic Information</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Comparison-among-4-Debuggers"><span class="nav-text">Comparison among 4 Debuggers</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-2-Device-Description"><span class="nav-text">Chapter 2: Device Description</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LED"><span class="nav-text">LED</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ports-and-Connectors"><span class="nav-text">Ports and Connectors</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-3-Setting-up-ARM-USB-TINY"><span class="nav-text">Chapter 3: Setting up ARM-USB-TINY</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hardware-Requirement"><span class="nav-text">Hardware Requirement</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Software-Configuration"><span class="nav-text">Software Configuration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenOCD"><span class="nav-text">OpenOCD</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Driver"><span class="nav-text">Driver</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Driver-installation-in-MAC-OS-X"><span class="nav-text">Driver installation in MAC OS X</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Basic-OpenOCD-connection"><span class="nav-text">Basic OpenOCD connection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Starting-OpenOCD-GDB-server-via-FTDI-drivers"><span class="nav-text">Starting OpenOCD GDB server via FTDI drivers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Starting-OpenOCD-GDB-server-via-LibUSB-drivers"><span class="nav-text">Starting OpenOCD GDB server via LibUSB drivers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Starting-OpenOCD-GDB-to-a-SWD-target-connection-with-ARM-JTAG-SWD"><span class="nav-text">Starting OpenOCD GDB to a SWD target connection with ARM-JTAG-SWD</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Advanced-OpenOCD-practices"><span class="nav-text">Advanced OpenOCD practices</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Using-multiple-ARM-USB-TINY-interfaces"><span class="nav-text">Using multiple ARM-USB-TINY interfaces</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Changing-the-VID-and-PID-of-the-debugger"><span class="nav-text">Changing the VID and PID of the debugger</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Some-graphical-tools"><span class="nav-text">Some graphical tools</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-4-Frequently-Asked-Questions"><span class="nav-text">Chapter 4: Frequently Asked Questions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-5-Revision-History-and-Support"><span class="nav-text">Chapter 5: Revision History and Support</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Revision-History"><span class="nav-text">Revision History</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Link"><span class="nav-text">Link</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Raven Xu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">
+  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+    本站总访问量 <span id="busuanzi_value_site_uv"></span>
+  </span>
+  </div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'RavenLite',
+            repo: 'RavenLite.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'e9cb1d86ff72f87ce95bd5b8a3b68385ca9021ee',
+            
+                client_id: 'c7e19c2c115361e6bb8b'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

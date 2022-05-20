@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/letter-r-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/letter-r-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/letter-r-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/letter-r-32x32.png?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="研究生,科普," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Blog | Raven Xu" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="最近有幸得到了东南大学预推免的机会，之前凭借自己对行业的观察和直觉选择了数据科学方向，但发现自己甚至还没有对数据科学的一些基本了解借此机会对当前计算机领域各个研究方向做一个全面的基础的了解，算是一个扫盲的过程。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机热门研究领域扫盲">
+<meta property="og:url" content="https://ravenxu.top/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%83%AD%E9%97%A8%E7%A0%94%E7%A9%B6%E9%A2%86%E5%9F%9F%E6%89%AB%E7%9B%B2/index.html">
+<meta property="og:site_name" content="Blog | Raven Xu">
+<meta property="og:description" content="最近有幸得到了东南大学预推免的机会，之前凭借自己对行业的观察和直觉选择了数据科学方向，但发现自己甚至还没有对数据科学的一些基本了解借此机会对当前计算机领域各个研究方向做一个全面的基础的了解，算是一个扫盲的过程。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-cd6d71e4481f5ffe432c6b1255ae601b_hd.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006y8mN6ly1g67cepr7rej314v0u0x0u.jpg">
+<meta property="article:published_time" content="2019-08-20T06:00:00.000Z">
+<meta property="article:modified_time" content="2021-05-21T11:05:39.149Z">
+<meta property="article:author" content="Raven Xu">
+<meta property="article:tag" content="研究生">
+<meta property="article:tag" content="科普">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic3.zhimg.com/80/v2-cd6d71e4481f5ffe432c6b1255ae601b_hd.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://ravenxu.top/c.科研分享/History/计算机热门研究领域扫盲/"/>
+
+
+
+
+
+  <title>计算机热门研究领域扫盲 | Blog | Raven Xu</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+		<a target="_blank" rel="noopener" href="https://github.com/Raven98/Raven98.github.io" class="github-corner" aria-label="View source on Github">
+		<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog | Raven Xu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Make positive impact</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a target="_blank" href="https://seunetsi.feishu.cn/docx/doxcnHCanima7oriZf1gcYDuCib" rel="section noopener">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ravenxu.tophttps://raven.feishu.cn/docs/doccnSIzlsNg5MwML59wz8Fh85f">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog | Raven Xu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a class="post-title-link post-title-link-external" target="_blank" href="https://raven.feishu.cn/docs/doccnSIzlsNg5MwML59wz8Fh85f" itemprop="url">
+                计算机热门研究领域扫盲
+                <i class="fa fa-external-link"></i>
+              </a>
+            </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-20T14:00:00+08:00">
+                2019-08-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/" itemprop="url" rel="index">
+                    <span itemprop="name">科研分享</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a target="_blank" rel="noopener" href="https://raven.feishu.cn/docs/doccnSIzlsNg5MwML59wz8Fh85f#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="https://raven.feishu.cn/docs/doccnSIzlsNg5MwML59wz8Fh85f" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-files-o"></i>
+            </span>
+            <span id="busuanzi_value_page_pv"></span>次阅读
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近有幸得到了东南大学预推免的机会，之前凭借自己对行业的观察和直觉选择了数据科学方向，但发现自己甚至还没有对数据科学的一些基本了解<br>借此机会对当前计算机领域各个研究方向做一个全面的基础的了解，算是一个扫盲的过程。</p>
+<span id="more"></span>
+
+<h1 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h1><h2 id="云与云计算"><a href="#云与云计算" class="headerlink" title="云与云计算"></a>云与云计算</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_41918841/article/details/89088987">云计算到底是怎么玩的(入门介绍)</a></li>
+</ul>
+<p>计算机资源不在本地，通过网络使用其他设备的计算机资源（计算资源，网络资源，存储资源等）。</p>
+<blockquote>
+<p>“云”实质上就是一个网络，狭义上讲，云计算就是一种提供资源的网络，使用者可以随时获取“云”上的资源，按需求量使用，并且可以看成是无限扩展的，只要按使用量付费就可以，“云”就像自来水厂一样，我们可以随时接水，并且不限量，按照自己家的用水量，付费给自来水厂就可以。<br>从广义上说，云计算是与信息技术、软件、互联网相关的一种服务，这种计算资源共享池叫做“云”，云计算把许多计算资源集合起来，通过软件实现自动化管理，只需要很少的人参与，就能让资源被快速提供。也就是说，计算能力作为一种商品，可以在互联网上流通，就像水、电、煤气一样，可以方便地取用，且价格较为低廉。<br>总之，云计算不是一种全新的网络技术，而是一种全新的网络应用概念，云计算的核心概念就是以互联网为中心，在网站上提供快速且安全的云计算服务与数据存储，让每一个使用互联网的人都可以使用网络上的庞大计算资源与数据中心。<br>云计算是继互联网、计算机后在信息时代有一种新的革新，云计算是信息时代的一个大飞跃，未来的时代可能是云计算的时代，虽然目前有关云计算的定义有很多，但总体上来说，云计算虽然有许多得含义，但概括来说，云计算的基本含义是一致的，即云计算具有很强的扩展性和需要性，可以为用户提供一种全新的体验，云计算的核心是可以将很多的计算机资源协调在一起，因此，使用户通过网络就可以获取到无限的资源，同时获取的资源不受时间和空间的限制。</p>
+</blockquote>
+<h2 id="虚拟化"><a href="#虚拟化" class="headerlink" title="虚拟化"></a>虚拟化</h2><p>目的是实现调度灵活。时间灵活性与空间灵活性。</p>
+<h2 id="相关技术"><a href="#相关技术" class="headerlink" title="相关技术"></a>相关技术</h2><ul>
+<li>Hypervisor：完成物理资源虚拟化，如VMware，KVM</li>
+<li>OpenStack：KVM这样的Hypervisor软件，实际上是提供了一种虚拟化能力，模拟CPU的运行，更为底层。但是它的用户交互并不良好，不方便使用。于是，为了更好地管理虚拟机，就需要OpenStack这样的云管理平台。（这些属于IaaS）</li>
+<li>容器：容器也是虚拟化，但是属于“轻量级”的虚拟化。它的目的和虚拟机一样，都是为了创造“隔离环境”。但是，它又和虚拟机有很大的不同——虚拟机是操作系统级别的资源隔离，而容器本质上是进程级的资源隔离。而大家常听说的Docker，就是创建容器的工具，是应用容器引擎。</li>
+<li>K8S：除了Docker对容器进行创建之外，我们还需要一个工具，对容器进行编排。这个工具，就是K8S。K8S是一个容器集群管理系统，主要职责是容器编排（Container Orchestration）——启动容器，自动化部署、扩展和管理容器应用，还有回收容器。</li>
+</ul>
+<h2 id="私有云与公有云"><a href="#私有云与公有云" class="headerlink" title="私有云与公有云"></a>私有云与公有云</h2><p>公有云就是阿里云，腾讯云这些云服务商提供的服务。</p>
+<p>私有云是企业或者个人自己拥有的云服务器，并且服务器不对外开放，仅供自己公司内部人使用。比如说有些大的企业数据文档需要共享，用云盘就很方便并且不用交给第三方保管，这从某种意义上来说降低了泄密的风险。另外，云服务器<strong>容错能力、抗风险能力都比较高</strong>，这是传统服务器所不能比的。<br>（私有云利用了云计算的特点，即资源不在本地，员工们随用随取）</p>
+<p>另外还有混合云，主要由提供商管理的公共云与主要由客户业务管理的私有云之间的组合。这使得公司可以选择他们希望在内部保留哪些服务以及他们想要作为更通用（和通用）平台访问哪些服务，同时仍然将所有内容保留在云中。</p>
+<h2 id="IaaS、PaaS-和-SaaS"><a href="#IaaS、PaaS-和-SaaS" class="headerlink" title="IaaS、PaaS 和 SaaS"></a>IaaS、PaaS 和 SaaS</h2><ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20387284">怎么理解 IaaS、SaaS 和 PaaS 的区别？</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21641778/answer/62523535">有哪些通俗易懂的例子可以解释 IaaS、PaaS、SaaS 的区别？ - 何足道的回答 - 知乎</a></p>
+</li>
+<li><p>IaaS：基础设施即服务</p>
+</li>
+<li><p>PaaS：平台即服务</p>
+</li>
+<li><p>SaaS：软件即服务</p>
+</li>
+</ul>
+<p>以阿里云为例，普通的ECS云服务器属于IaaS，但例如云数据库，云存储这样的云应用属于平台级的PaaS。另外例如阿里学生机提供的「轻量应用服务器」也可以认为是PaaS。（IaaS和PaaS的界限不明显）</p>
+<blockquote>
+<p>如果你是一个网站站长，想要建立一个网站。不采用云服务，你所需要的投入大概是：买服务器，安装服务器软件，编写网站程序。现在你追随潮流，采用流行的云计算，如果你采用IaaS服务，那么意味着你就不用自己买服务器了，随便在哪家购买虚拟机，但是还是需要自己装服务器软件而如果你采用PaaS的服务，那么意味着你既不需要买服务器，也不需要自己装服务器软件，只需要自己开发网站程序如果你再进一步，购买某些在线论坛或者在线网店的服务,这意味着你也不用自己开发网站程序，只需要使用它们开发好的程序，而且他们会负责程序的升级、维护、增加服务器等，而你只需要专心运营即可，此即为SaaS。</p>
+</blockquote>
+<blockquote>
+<p>Platform as a Service: 平台即服务, 是面向软件开发者的服务, 云计算平台提供硬件, OS, 编程语言, 开发库, 部署工具, 帮助软件开发者更快的开发软件服务. 比如Google的GAE.SaaS: 软件即服务, 是面向软件消费者的, 用户无需安装, 通过标准的Internet工具(比如浏览器), 即可使用云计算平台提供的软件, 比如Salesforce的CRM管理系统, Google的Gmail.还有IaaS 基础设施即服务, 这个跟PaaS的区别倒是不那么明显, 比如Amazon的IaaS服务AWS越来越像PaaS了。</p>
+</blockquote>
+<p><img src="https://pic3.zhimg.com/80/v2-cd6d71e4481f5ffe432c6b1255ae601b_hd.jpg"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>云计算面向用户隐藏了足够多的技术细节，我认为利用阿里云这些公有云厂商最大的好处一是弹性空间即买即用，二是省去了大量的运维工作。<br>云计算的研究应该还是侧重如何更好地进行资源调度，如何帮助用户进行资源迁移与部署。两个方面分别帮助云服务提供商和用户节省成本。</p>
+<h1 id="分布式系统"><a href="#分布式系统" class="headerlink" title="分布式系统"></a>分布式系统</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xybaby/p/7787034.html">什么是分布式系统，如何学习分布式系统</a><br>分布式系统是由一组通过网络进行通信、为了完成共同的任务而协调工作的计算机节点组成的系统。分布式系统的出现是为了用廉价的、普通的机器完成单个计算机无法完成的计算、存储任务。其目的是利用更多的机器，处理更多的数据。</li>
+</ul>
+<h2 id="以一个请求为例串起分布式系统的技术细节"><a href="#以一个请求为例串起分布式系统的技术细节" class="headerlink" title="以一个请求为例串起分布式系统的技术细节"></a>以一个请求为例串起分布式系统的技术细节</h2><p>　　用户使用Web、APP、SDK，通过HTTP、TCP连接到系统。在分布式系统中，为了高并发、高可用，一般都是多个节点提供相同的服务。那么，第一个问题就是具体选择哪个节点来提供服务，这个就是负载均衡（load balance）。负载均衡的思想很简单，但使用非常广泛，在分布式系统、大型网站的方方面面都有使用，或者说，只要涉及到多个节点提供同质的服务，就需要负载均衡。</p>
+<p>　　通过负载均衡找到一个节点，接下来就是真正处理用户的请求，请求有可能简单，也有可能很复杂。简单的请求，比如读取数据，那么很可能是有缓存的，即分布式缓存，如果缓存没有命中，那么需要去数据库拉取数据。对于复杂的请求，可能会调用到系统中其他的服务。</p>
+<p>　　承上，假设服务A需要调用服务B的服务，首先两个节点需要通信，网络通信都是建立在TCP/IP协议的基础上，但是，每个应用都手写socket是一件冗杂、低效的事情，因此需要应用层的封装，因此有了HTTP、FTP等各种应用层协议。当系统愈加复杂，提供大量的http接口也是一件困难的事情。因此，有了更进一步的抽象，那就是RPC（remote produce call），是的远程调用就跟本地过程调用一样方便，屏蔽了网络通信等诸多细节，增加新的接口也更加方便。</p>
+<p>　　一个请求可能包含诸多操作，即在服务A上做一些操作，然后在服务B上做另一些操作。比如简化版的网络购物，在订单服务上发货，在账户服务上扣款。这两个操作需要保证原子性，要么都成功，要么都不操作。这就涉及到分布式事务的问题，分布式事务是从应用层面保证一致性：某种守恒关系。</p>
+<p>　　上面说道一个请求包含多个操作，其实就是涉及到多个服务，分布式系统中有大量的服务，每个服务又是多个节点组成。那么一个服务怎么找到另一个服务（的某个节点呢）？通信是需要地址的，怎么获取这个地址，最简单的办法就是配置文件写死，或者写入到数据库，但这些方法在节点数据巨大、节点动态增删的时候都不大方便，这个时候就需要服务注册与发现：提供服务的节点向一个协调中心注册自己的地址，使用服务的节点去协调中心拉取地址。</p>
+<p>　　从上可以看见，协调中心提供了中心化的服务：以一组节点提供类似单点的服务，使用非常广泛，比如命令服务、分布式锁。协调中心最出名的就是chubby，zookeeper。</p>
+<p>　　回到用户请求这个点，请求操作会产生一些数据、日志，通常为信息，其他一些系统可能会对这些消息感兴趣，比如个性化推荐、监控等，这里就抽象出了两个概念，消息的生产者与消费者。那么生产者怎么讲消息发送给消费者呢，RPC并不是一个很好的选择，因为RPC肯定得指定消息发给谁，但实际的情况是生产者并不清楚、也不关心谁会消费这个消息，这个时候消息队列就出马了。简单来说，生产者只用往消息队列里面发就行了，队列会将消息按主题（topic）分发给关注这个主题的消费者。消息队列起到了异步处理、应用解耦的作用。</p>
+<p>　　上面提到，用户操作会产生一些数据，这些数据忠实记录了用户的操作习惯、喜好，是各行各业最宝贵的财富。比如各种推荐、广告投放、自动识别。这就催生了分布式计算平台，比如Hadoop，Storm等，用来处理这些海量的数据。</p>
+<p>　　最后，用户的操作完成之后，用户的数据需要持久化，但数据量很大，大到按个节点无法存储，那么这个时候就需要分布式存储：将数据进行划分放在不同的节点上，同时，为了防止数据的丢失，每一份数据会保存多分。传统的关系型数据库是单点存储，为了在应用层透明的情况下分库分表，会引用额外的代理层。而对于NoSql，一般天然支持分布式。</p>
+<h2 id="REST与RPC"><a href="#REST与RPC" class="headerlink" title="REST与RPC"></a>REST与RPC</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://baijiahao.baidu.com/s?id=1617168792520937104&wfr=spider&for=pc">面试问题：REST与RPC区别？</a><br>REST调用及测试都很方便，RPC就显得有点繁琐，但是RPC的效率是毋庸置疑的，所以建议在多系统之间的内部调用采用RPC。  </li>
+</ul>
+<p><strong>对外提供的服务，Rest更加合适。</strong></p>
+<h1 id="数据科学"><a href="#数据科学" class="headerlink" title="数据科学"></a>数据科学</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/54521940/answer/489379445">数据科学 data science 是什么？</a><br>包括了：<ul>
+<li>数据挖掘</li>
+<li>统计推断</li>
+<li>机器学习</li>
+<li>数据工程</li>
+<li>决策智能</li>
+</ul>
+</li>
+</ul>
+<h2 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/40217622">大数据学什么？</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/27292215/answer/133141387">如何入门大数据（数据挖掘方面）？</a></li>
+</ul>
+<p>看了一圈之后发现其实目前的这些热门方向可以连在一起形成一个闭环。</p>
+<h2 id="ETL程序"><a href="#ETL程序" class="headerlink" title="ETL程序"></a>ETL程序</h2><p>ETL是将业务系统的数据经过抽取、清洗转换之后加载到数据仓库的过程，目的是将企业中的分散、零乱、标准不统一的数据整合到一起，为企业的决策提供分析依据。</p>
+<h1 id="物联网"><a href="#物联网" class="headerlink" title="物联网"></a>物联网</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/19751763/answer/95871992">什么是物联网？其发展前景如何？</a></li>
+</ul>
+<h2 id="边缘计算"><a href="#边缘计算" class="headerlink" title="边缘计算"></a>边缘计算</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/52864297">一文读懂边缘计算和边缘智能，以及它们和ARM的暧昧关系</a><br>“大智能”在云端，“小智能”在边缘，仍是长期趋势。</li>
+</ul>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>看完之后依旧头大，还没完全清楚自己感兴趣的方向。另外一个感觉就是这些名词总是在把简单问题复杂化，接下来的这些天再继续了解。  </p>
+<h2 id="从招聘入手"><a href="#从招聘入手" class="headerlink" title="从招聘入手"></a>从招聘入手</h2><p>突发奇想想看看大厂们的招聘都在招什么岗位</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://campus.alibaba.com/positionList.htm?spm=a1z3e1.11770916.0.0.6c0f723anKzi6x">阿里巴巴校园招聘岗位</a></p>
+</li>
+<li><p>算法工程师</p>
+<ul>
+<li>语音对话交互：深度学习、语音识别、语音合成、自然语言处理、语音交互、人工智能</li>
+<li>运筹优化：机器学习、运筹学（电商，物流和计算资源调度）</li>
+<li>自然语言处理</li>
+<li>计算机图形</li>
+<li>计算机视觉</li>
+<li>机器学习</li>
+</ul>
+</li>
+<li><p>数据研发工程师</p>
+<ul>
+<li>大数据的采集、存储、处理，通过分布式大数据平台加工数据，支持业务管理决策</li>
+<li>大数据体系的设计、开发、维护，通过数据仓库、元数据、质量体系有效的管理和组织几百P的数据</li>
+<li>大数据产品的研发，通过对数据的理解，发挥你的商业sense，发掘数据价值，探索大数据商业化</li>
+</ul>
+</li>
+<li><p>研发工程师</p>
+<ul>
+<li>基础技术（基础软件的设计、开发和维护）</li>
+<li>高性能分布式技术</li>
+<li>搜索技术</li>
+<li>电子商务产品技术</li>
+<li>海量数据处理和开发</li>
+<li>客户端开发</li>
+</ul>
+</li>
+<li><p>基础平台研发工程师（全栈）</p>
+<ul>
+<li>云基础设施技术</li>
+<li>虚拟化技术</li>
+<li>MySQL、PostgrelSQL、MongoDB、Redis、HBase等开源数据库内核的改进</li>
+<li>分布式系统</li>
+<li>大数据在线引擎体系</li>
+</ul>
+</li>
+</ul>
+<h2 id="SEU"><a href="#SEU" class="headerlink" title="SEU"></a>SEU</h2><p>根据SEU计算机学院的导师方向对目前计算机科学的研究领域做一个分类</p>
+<ul>
+<li>网络计算</li>
+<li>数据科学</li>
+<li>机器学习与知识工程</li>
+<li>智能系统与应用</li>
+<li>计算机软件与理论</li>
+<li>影响科学与图像处理</li>
+</ul>
+<p>总体来说，交叉技术运用的越来越明显，人工智能，网络，软件理论是几个主要的研究方向。</p>
+<p>最后放一张闲来无事做的SEU计算机学院导师们研究方向的词云。<br><img src="http://ww4.sinaimg.cn/large/006y8mN6ly1g67cepr7rej314v0u0x0u.jpg"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/" rel="tag"><i class="fa fa-tag"></i> 研究生</a>
+          
+            <a href="/tags/%E7%A7%91%E6%99%AE/" rel="tag"><i class="fa fa-tag"></i> 科普</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/MySQL%20varchar%E9%95%BF%E5%BA%A6%E6%8E%A2%E6%9E%90/" rel="next" title="MySQL简单优化">
+                <i class="fa fa-chevron-left"></i> MySQL简单优化
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/d.%E6%9D%82%E6%96%87%E9%9A%8F%E7%AC%94/History/%E8%AE%B0%E5%9C%A8%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%AE%9E%E4%B9%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%9C%88/" rel="prev" title="1125-记在字节实习的第一个月">
+                1125-记在字节实习的第一个月 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7Carchive">
+              
+                  <span class="site-state-item-count">70</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">157</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.linkedin.com/in/%E7%91%9E%E6%96%87-%E8%AE%B8-bb512712b/" target="_blank" title="LinkedIn">
+                      
+                        <i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/RavenLite" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/ravenxu98/pins" target="_blank" title="Zhihu">
+                      
+                        <i class="fa fa-fw fa-star"></i>Zhihu</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:xrwgood@qq.com" target="_blank" title="Email">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>Email</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%91%E8%AE%A1%E7%AE%97"><span class="nav-text">云计算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%91%E4%B8%8E%E4%BA%91%E8%AE%A1%E7%AE%97"><span class="nav-text">云与云计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E5%8C%96"><span class="nav-text">虚拟化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E6%8A%80%E6%9C%AF"><span class="nav-text">相关技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%81%E6%9C%89%E4%BA%91%E4%B8%8E%E5%85%AC%E6%9C%89%E4%BA%91"><span class="nav-text">私有云与公有云</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IaaS%E3%80%81PaaS-%E5%92%8C-SaaS"><span class="nav-text">IaaS、PaaS 和 SaaS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F"><span class="nav-text">分布式系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A5%E4%B8%80%E4%B8%AA%E8%AF%B7%E6%B1%82%E4%B8%BA%E4%BE%8B%E4%B8%B2%E8%B5%B7%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82"><span class="nav-text">以一个请求为例串起分布式系统的技术细节</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#REST%E4%B8%8ERPC"><span class="nav-text">REST与RPC</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6"><span class="nav-text">数据科学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE"><span class="nav-text">大数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ETL%E7%A8%8B%E5%BA%8F"><span class="nav-text">ETL程序</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91"><span class="nav-text">物联网</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97"><span class="nav-text">边缘计算</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8E%E6%8B%9B%E8%81%98%E5%85%A5%E6%89%8B"><span class="nav-text">从招聘入手</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SEU"><span class="nav-text">SEU</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Raven Xu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">
+  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+    本站总访问量 <span id="busuanzi_value_site_uv"></span>
+  </span>
+  </div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'RavenLite',
+            repo: 'RavenLite.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'e9cb1d86ff72f87ce95bd5b8a3b68385ca9021ee',
+            
+                client_id: 'c7e19c2c115361e6bb8b'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
