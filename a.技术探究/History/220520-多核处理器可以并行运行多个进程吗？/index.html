@@ -81,15 +81,15 @@
 
 
 
-<meta name="description" content="Internet, News and Football">
+<meta name="description" content="最近在知乎上看到一个回答说多核 CPU 同时只能并行一个进程但是可以并行这个进程的多个线程。 我怎么记得多核 CPU 是可以并行运行多个进程的？刚想驳斥一下这个答案发现竟然有将近 100 人点了赞，于是乎我不禁陷入了自我怀疑中，难道是我记错了？虽然不记得在哪个文献上看到过，但确实记得看过类似的表述：「对多核处理器，同一时间只能运行一个进程里的多个线程」。一直没有深究过这句话的对错，直到最近深入研究">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多核处理器可以并行运行多个进程吗？">
 <meta property="og:url" content="https://ravenxu.top/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/History/220520-%E5%A4%9A%E6%A0%B8%E5%A4%84%E7%90%86%E5%99%A8%E5%8F%AF%E4%BB%A5%E5%B9%B6%E8%A1%8C%E8%BF%90%E8%A1%8C%E5%A4%9A%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%90%97%EF%BC%9F/index.html">
 <meta property="og:site_name" content="Blog | Raven Xu">
-<meta property="og:description" content="Internet, News and Football">
+<meta property="og:description" content="最近在知乎上看到一个回答说多核 CPU 同时只能并行一个进程但是可以并行这个进程的多个线程。 我怎么记得多核 CPU 是可以并行运行多个进程的？刚想驳斥一下这个答案发现竟然有将近 100 人点了赞，于是乎我不禁陷入了自我怀疑中，难道是我记错了？虽然不记得在哪个文献上看到过，但确实记得看过类似的表述：「对多核处理器，同一时间只能运行一个进程里的多个线程」。一直没有深究过这句话的对错，直到最近深入研究">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-05-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-20T05:37:35.311Z">
+<meta property="article:modified_time" content="2022-05-24T05:41:57.229Z">
 <meta property="article:author" content="Raven Xu">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="CPU">
@@ -374,7 +374,9 @@
       
 
       
-        
+        <p>最近在知乎上看到一个回答说多核 CPU 同时只能并行一个进程但是可以并行这个进程的多个线程。</p>
+<p>我怎么记得多核 CPU 是可以并行运行多个进程的？<br>刚想驳斥一下这个答案发现竟然有将近 100 人点了赞，于是乎我不禁陷入了自我怀疑中，难道是我记错了？虽然不记得在哪个文献上看到过，但确实记得看过类似的表述：「对多核处理器，同一时间只能运行一个进程里的多个线程」。一直没有深究过这句话的对错，直到最近深入研究 Linux 的进程、线程模型，才对这句话产生了怀疑。</p>
+
       
     </div>
     
