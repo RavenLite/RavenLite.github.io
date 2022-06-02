@@ -3579,4 +3579,20 @@
         <tag>挂载</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Linux 的进程和线程是如何使用内存的？</title>
+    <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220603-Linux-%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E6%98%AF%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%86%85%E5%AD%98%E7%9A%84%EF%BC%9F/</url>
+    <content><![CDATA[<p>毫无疑问，操作系统中内存的资源分配是由操作系统内核来完成的。以 32 位操作系统为例，它一共有 4G 的物理内存空间，为了让进程可以更方便地使用内存，不必关心底层的物理内存分配，内核以虚拟内存的方式为进程分配内存，每个进程都有 4G 的虚拟内存空间。</p>
+<p>你可能会想问，一共只有 4G 的物理内存，那是怎么做到给每个进程都能分配 4G 虚拟内存空间的呢？</p>
+]]></content>
+      <categories>
+        <category>技术探究</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>进程</tag>
+        <tag>线程</tag>
+        <tag>内存</tag>
+      </tags>
+  </entry>
 </search>

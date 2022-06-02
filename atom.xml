@@ -6,7 +6,7 @@
   <link href="https://ravenxu.top/atom.xml" rel="self"/>
   
   <link href="https://ravenxu.top/"/>
-  <updated>2022-05-24T05:40:46.396Z</updated>
+  <updated>2022-06-02T10:05:29.744Z</updated>
   <id>https://ravenxu.top/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux 的进程和线程是如何使用内存的？</title>
+    <link href="https://ravenxu.top/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220603-Linux-%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E6%98%AF%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%86%85%E5%AD%98%E7%9A%84%EF%BC%9F/"/>
+    <id>https://ravenxu.top/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220603-Linux-%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E6%98%AF%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%86%85%E5%AD%98%E7%9A%84%EF%BC%9F/</id>
+    <published>2022-06-02T16:00:00.000Z</published>
+    <updated>2022-06-02T10:05:29.744Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;毫无疑问，操作系统中内存的资源分配是由操作系统内核来完成的。以 32 位操作系统为例，它一共有 4G 的物理内存空间，为了让进程可以更方便地使用内存，不必关心底层的物理内存分配，内核以虚拟内存的方式为进程分配内存，每个进程都有 4G</summary>
+        
+      
+    
+    
+    
+    <category term="技术探究" scheme="https://ravenxu.top/categories/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/"/>
+    
+    
+    <category term="Linux" scheme="https://ravenxu.top/tags/Linux/"/>
+    
+    <category term="进程" scheme="https://ravenxu.top/tags/%E8%BF%9B%E7%A8%8B/"/>
+    
+    <category term="线程" scheme="https://ravenxu.top/tags/%E7%BA%BF%E7%A8%8B/"/>
+    
+    <category term="内存" scheme="https://ravenxu.top/tags/%E5%86%85%E5%AD%98/"/>
+    
+  </entry>
   
   <entry>
     <title>挂载到底是什么意思？</title>
@@ -589,38 +620,6 @@
     <category term="InfluxDB" scheme="https://ravenxu.top/tags/InfluxDB/"/>
     
     <category term="Telegraf" scheme="https://ravenxu.top/tags/Telegraf/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>修改motd，使用字符画生成工具，配置一个实用有趣的服务器登录脚本</title>
-    <link href="https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/211224-%E4%BF%AE%E6%94%B9motd%EF%BC%8C%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7%EF%BC%8C%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%AE%9E%E7%94%A8%E6%9C%89%E8%B6%A3%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%99%BB%E5%BD%95%E8%84%9A%E6%9C%AC/"/>
-    <id>https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/211224-%E4%BF%AE%E6%94%B9motd%EF%BC%8C%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7%EF%BC%8C%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%AE%9E%E7%94%A8%E6%9C%89%E8%B6%A3%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%99%BB%E5%BD%95%E8%84%9A%E6%9C%AC/</id>
-    <published>2021-12-23T16:00:00.000Z</published>
-    <updated>2022-01-09T08:08:31.653Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;使用终端登录远程服务器时会有欢迎信息，那如何对这个欢迎信息进行修改并做一定的个性化呢？一起来看看吧。&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="知识角落" scheme="https://ravenxu.top/categories/%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/"/>
-    
-    
-    <category term="运维" scheme="https://ravenxu.top/tags/%E8%BF%90%E7%BB%B4/"/>
-    
-    <category term="服务器" scheme="https://ravenxu.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-    <category term="Linux" scheme="https://ravenxu.top/tags/Linux/"/>
-    
-    <category term="motd" scheme="https://ravenxu.top/tags/motd/"/>
     
   </entry>
   
