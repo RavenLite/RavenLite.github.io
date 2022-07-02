@@ -3610,4 +3610,20 @@
         <tag>挂载</tag>
       </tags>
   </entry>
+  <entry>
+    <title>二叉树重点知识全集</title>
+    <url>/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86%E5%85%A8%E9%9B%86/</url>
+    <content><![CDATA[<p>二叉树是一种基础数据结构，是算法面试的常客，也是众多数据结构的基石。</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>树</tag>
+        <tag>二叉树</tag>
+        <tag>红黑树</tag>
+        <tag>B树</tag>
+        <tag>堆</tag>
+      </tags>
+  </entry>
 </search>
