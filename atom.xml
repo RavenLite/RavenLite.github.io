@@ -6,7 +6,7 @@
   <link href="https://ravenxu.top/atom.xml" rel="self"/>
   
   <link href="https://ravenxu.top/"/>
-  <updated>2022-07-02T15:28:51.187Z</updated>
+  <updated>2022-07-10T15:12:52.209Z</updated>
   <id>https://ravenxu.top/</id>
   
   <author>
@@ -17,9 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>TCP 为什么要粘包和拆包？</title>
+    <link href="https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/220624-TCP-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%B2%98%E5%8C%85%E5%92%8C%E6%8B%86%E5%8C%85%EF%BC%9F/"/>
+    <id>https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/220624-TCP-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%B2%98%E5%8C%85%E5%92%8C%E6%8B%86%E5%8C%85%EF%BC%9F/</id>
+    <published>2022-06-23T16:00:00.000Z</published>
+    <updated>2022-07-10T15:12:52.209Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天我们将从稳定性角度深挖 TCP 协议的运作机制。&lt;/p&gt;
+&lt;p&gt;如今，大半个互联网都建立在 TCP 协议之上，我们使用的 HTTP 协议、消息队列、存储、缓存，都需要用到 TCP 协议——这是因为 TCP</summary>
+        
+      
+    
+    
+    
+    <category term="知识角落" scheme="https://ravenxu.top/categories/%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/"/>
+    
+    
+    <category term="计算机网络" scheme="https://ravenxu.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="TCP" scheme="https://ravenxu.top/tags/TCP/"/>
+    
+    <category term="拆包" scheme="https://ravenxu.top/tags/%E6%8B%86%E5%8C%85/"/>
+    
+    <category term="粘包" scheme="https://ravenxu.top/tags/%E7%B2%98%E5%8C%85/"/>
+    
+  </entry>
+  
+  <entry>
     <title>二叉树重点知识全集</title>
-    <link href="https://ravenxu.top/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86%E5%85%A8%E9%9B%86/"/>
-    <id>https://ravenxu.top/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86%E5%85%A8%E9%9B%86/</id>
+    <link href="https://ravenxu.top/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/220610-%E4%BA%8C%E5%8F%89%E6%A0%91%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86%E5%85%A8%E9%9B%86/"/>
+    <id>https://ravenxu.top/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/220610-%E4%BA%8C%E5%8F%89%E6%A0%91%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86%E5%85%A8%E9%9B%86/</id>
     <published>2022-06-09T16:00:00.000Z</published>
     <updated>2022-07-02T15:28:51.187Z</updated>
     
@@ -593,37 +625,6 @@
     <category term="shell" scheme="https://ravenxu.top/tags/shell/"/>
     
     <category term="信号量" scheme="https://ravenxu.top/tags/%E4%BF%A1%E5%8F%B7%E9%87%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++ 引用的理解与实现原理</title>
-    <link href="https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220114-C-%E5%BC%95%E7%94%A8%E7%9A%84%E7%90%86%E8%A7%A3%E4%B8%8E%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/"/>
-    <id>https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220114-C-%E5%BC%95%E7%94%A8%E7%9A%84%E7%90%86%E8%A7%A3%E4%B8%8E%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</id>
-    <published>2022-01-13T16:00:00.000Z</published>
-    <updated>2022-06-07T14:21:14.185Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;如何理解引用？&lt;/p&gt;
-&lt;p&gt;在使用上，我们要把引用当成另一个对象的“别名”，即看到一个引用，我们可以直接把它脑补成原来的对象，这样会衍生出引用的一系列特性。&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="知识角落" scheme="https://ravenxu.top/categories/%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/"/>
-    
-    
-    <category term="C++" scheme="https://ravenxu.top/tags/C/"/>
-    
-    <category term="C/C++" scheme="https://ravenxu.top/tags/C-C/"/>
-    
-    <category term="引用" scheme="https://ravenxu.top/tags/%E5%BC%95%E7%94%A8/"/>
     
   </entry>
   
