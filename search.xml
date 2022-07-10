@@ -3643,4 +3643,18 @@
         <tag>粘包</tag>
       </tags>
   </entry>
+  <entry>
+    <title>小团队轻量级 Code Review 实践</title>
+    <url>/220617-%E5%B0%8F%E5%9B%A2%E9%98%9F%E8%BD%BB%E9%87%8F%E7%BA%A7-Code-Review-%E5%AE%9E%E8%B7%B5/</url>
+    <content><![CDATA[<p>就像很多其他有学习成本的事情一样，Code Review 最难的就是迈出第一步。</p>
+<p>一旦开始，花在 Review 过程的每一分钟都会很快被成倍地赚回来。</p>
+]]></content>
+      <categories>
+        <category>科研分享</category>
+      </categories>
+      <tags>
+        <tag>Code Review</tag>
+        <tag>GitHub</tag>
+      </tags>
+  </entry>
 </search>
