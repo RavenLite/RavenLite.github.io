@@ -3627,23 +3627,6 @@
       </tags>
   </entry>
   <entry>
-    <title>TCP 为什么要粘包和拆包？</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/220624-TCP-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%B2%98%E5%8C%85%E5%92%8C%E6%8B%86%E5%8C%85%EF%BC%9F/</url>
-    <content><![CDATA[<p>今天我们将从稳定性角度深挖 TCP 协议的运作机制。</p>
-<p>如今，大半个互联网都建立在 TCP 协议之上，我们使用的 HTTP 协议、消息队列、存储、缓存，都需要用到 TCP 协议——这是因为 TCP 协议提供了可靠性。</p>
-<p>简单来说，可靠性就是让数据无损送达。但若是考虑到成本，就会变得非常复杂——因为还需要尽可能地提升吞吐量、降低延迟、减少丢包率。</p>
-]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
-        <tag>TCP</tag>
-        <tag>拆包</tag>
-        <tag>粘包</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux 内核有 Bug，怎么不停机修复？</title>
     <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220715-Linux-%E5%86%85%E6%A0%B8%E6%9C%89-Bug%EF%BC%8C%E6%80%8E%E4%B9%88%E4%B8%8D%E5%81%9C%E6%9C%BA%E4%BF%AE%E5%A4%8D%EF%BC%9F/</url>
     <content><![CDATA[<p>随着线上问题的增多，在线修复内核漏洞的方式变得不可或缺。而内核热补丁便是一种以模块化的方式动态地给 Linux 内核打补丁而无需重启系统的一项技术。基于该技术，管理员可以在不重启机器的情况下，修复内核的 Bug 或安全漏洞，最大程度上减少系统宕机时间，以此来提升系统的可用性和稳定性。</p>
@@ -3670,6 +3653,35 @@
       <tags>
         <tag>Code Review</tag>
         <tag>GitHub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TCP/IP 寻址方法</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/TCP-IP-%E5%AF%BB%E5%9D%80%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>TCP/IP</tag>
+        <tag>Anycast</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TCP 为什么要粘包和拆包？</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220624-TCP-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%B2%98%E5%8C%85%E5%92%8C%E6%8B%86%E5%8C%85%EF%BC%9F/</url>
+    <content><![CDATA[<p>今天我们将从稳定性角度深挖 TCP 协议的运作机制。</p>
+<p>如今，大半个互联网都建立在 TCP 协议之上，我们使用的 HTTP 协议、消息队列、存储、缓存，都需要用到 TCP 协议——这是因为 TCP 协议提供了可靠性。</p>
+<p>简单来说，可靠性就是让数据无损送达。但若是考虑到成本，就会变得非常复杂——因为还需要尽可能地提升吞吐量、降低延迟、减少丢包率。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
+        <tag>TCP</tag>
+        <tag>拆包</tag>
+        <tag>粘包</tag>
       </tags>
   </entry>
 </search>
