@@ -48,12 +48,49 @@
   </entry>
   
   <entry>
-    <title>TCP/IP 寻址方法</title>
-    <link href="https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/TCP-IP-%E5%AF%BB%E5%9D%80%E6%96%B9%E6%B3%95/"/>
-    <id>https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/TCP-IP-%E5%AF%BB%E5%9D%80%E6%96%B9%E6%B3%95/</id>
-    <published>2022-06-30T16:00:00.000Z</published>
-    <updated>2022-07-19T14:00:33.439Z</updated>
+    <title>C++ 刷题最熟悉的陌生人</title>
+    <link href="https://ravenxu.top/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C-%E5%88%B7%E9%A2%98%E6%9C%80%E7%86%9F%E6%82%89%E7%9A%84%E9%99%8C%E7%94%9F%E4%BA%BA/"/>
+    <id>https://ravenxu.top/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C-%E5%88%B7%E9%A2%98%E6%9C%80%E7%86%9F%E6%82%89%E7%9A%84%E9%99%8C%E7%94%9F%E4%BA%BA/</id>
+    <published>2022-07-07T16:00:00.000Z</published>
+    <updated>2022-07-19T14:18:41.504Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;C++ 刷题时经常会用到一些不是那么常用但是却非常有用的 STL</summary>
+        
+      
+    
+    
+    
+    <category term="学习笔记" scheme="https://ravenxu.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="算法" scheme="https://ravenxu.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="C++" scheme="https://ravenxu.top/tags/C/"/>
+    
+    <category term="STL" scheme="https://ravenxu.top/tags/STL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TCP/IP 寻址方法</title>
+    <link href="https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/220701-TCP-IP-%E5%AF%BB%E5%9D%80%E6%96%B9%E6%B3%95/"/>
+    <id>https://ravenxu.top/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/220701-TCP-IP-%E5%AF%BB%E5%9D%80%E6%96%B9%E6%B3%95/</id>
+    <published>2022-06-30T16:00:00.000Z</published>
+    <updated>2022-07-19T14:17:17.059Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;TCP/IP</summary>
+        
+      
     
     
     
@@ -128,8 +165,8 @@
   
   <entry>
     <title>二叉树重点知识全集</title>
-    <link href="https://ravenxu.top/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/220610-%E4%BA%8C%E5%8F%89%E6%A0%91%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86%E5%85%A8%E9%9B%86/"/>
-    <id>https://ravenxu.top/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/220610-%E4%BA%8C%E5%8F%89%E6%A0%91%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86%E5%85%A8%E9%9B%86/</id>
+    <link href="https://ravenxu.top/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/220610-%E4%BA%8C%E5%8F%89%E6%A0%91%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86%E5%85%A8%E9%9B%86/"/>
+    <id>https://ravenxu.top/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/220610-%E4%BA%8C%E5%8F%89%E6%A0%91%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86%E5%85%A8%E9%9B%86/</id>
     <published>2022-06-09T16:00:00.000Z</published>
     <updated>2022-07-02T15:28:51.187Z</updated>
     
@@ -594,37 +631,6 @@
     <category term="gcc" scheme="https://ravenxu.top/tags/gcc/"/>
     
     <category term="g++" scheme="https://ravenxu.top/tags/g/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 Github Actions 自动编译、发布 LaTeX 文档</title>
-    <link href="https://ravenxu.top/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/220225-%E4%BD%BF%E7%94%A8-Github-Actions-%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91%E3%80%81%E5%8F%91%E5%B8%83-LaTeX-%E6%96%87%E6%A1%A3/"/>
-    <id>https://ravenxu.top/c.%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/History/220225-%E4%BD%BF%E7%94%A8-Github-Actions-%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91%E3%80%81%E5%8F%91%E5%B8%83-LaTeX-%E6%96%87%E6%A1%A3/</id>
-    <published>2022-02-24T16:00:00.000Z</published>
-    <updated>2022-03-01T05:50:33.631Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Github Actions 是 Github 推出的持续化集成工具，进一步加快软件开发的编译、部署、发布流程。基于 Github 进行多人协作编辑 Latex 文档是非常先进的科研文档写作方式，如今可以利用 Github Actions</summary>
-        
-      
-    
-    
-    
-    <category term="科研分享" scheme="https://ravenxu.top/categories/%E7%A7%91%E7%A0%94%E5%88%86%E4%BA%AB/"/>
-    
-    
-    <category term="LaTeX" scheme="https://ravenxu.top/tags/LaTeX/"/>
-    
-    <category term="Github" scheme="https://ravenxu.top/tags/Github/"/>
-    
-    <category term="Github Actions" scheme="https://ravenxu.top/tags/Github-Actions/"/>
-    
-    <category term="自动化流程" scheme="https://ravenxu.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%81%E7%A8%8B/"/>
     
   </entry>
   

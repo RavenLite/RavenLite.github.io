@@ -3611,22 +3611,6 @@
       </tags>
   </entry>
   <entry>
-    <title>二叉树重点知识全集</title>
-    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/220610-%E4%BA%8C%E5%8F%89%E6%A0%91%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86%E5%85%A8%E9%9B%86/</url>
-    <content><![CDATA[<p>二叉树是一种基础数据结构，是算法面试的常客，也是众多数据结构的基石。</p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>树</tag>
-        <tag>二叉树</tag>
-        <tag>红黑树</tag>
-        <tag>B树</tag>
-        <tag>堆</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux 内核有 Bug，怎么不停机修复？</title>
     <url>/a.%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%A9%B6/220715-Linux-%E5%86%85%E6%A0%B8%E6%9C%89-Bug%EF%BC%8C%E6%80%8E%E4%B9%88%E4%B8%8D%E5%81%9C%E6%9C%BA%E4%BF%AE%E5%A4%8D%EF%BC%9F/</url>
     <content><![CDATA[<p>随着线上问题的增多，在线修复内核漏洞的方式变得不可或缺。而内核热补丁便是一种以模块化的方式动态地给 Linux 内核打补丁而无需重启系统的一项技术。基于该技术，管理员可以在不重启机器的情况下，修复内核的 Bug 或安全漏洞，最大程度上减少系统宕机时间，以此来提升系统的可用性和稳定性。</p>
@@ -3656,18 +3640,6 @@
       </tags>
   </entry>
   <entry>
-    <title>TCP/IP 寻址方法</title>
-    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/TCP-IP-%E5%AF%BB%E5%9D%80%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>知识角落</category>
-      </categories>
-      <tags>
-        <tag>TCP/IP</tag>
-        <tag>Anycast</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>TCP 为什么要粘包和拆包？</title>
     <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/History/220624-TCP-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%B2%98%E5%8C%85%E5%92%8C%E6%8B%86%E5%8C%85%EF%BC%9F/</url>
     <content><![CDATA[<p>今天我们将从稳定性角度深挖 TCP 协议的运作机制。</p>
@@ -3682,6 +3654,49 @@
         <tag>TCP</tag>
         <tag>拆包</tag>
         <tag>粘包</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TCP/IP 寻址方法</title>
+    <url>/g.%E7%9F%A5%E8%AF%86%E8%A7%92%E8%90%BD/220701-TCP-IP-%E5%AF%BB%E5%9D%80%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>TCP/IP 寻址方法是网络协议中容易被忽视的细节，如果没有对四种方法有清晰的认识，很可能会对具体协议的寻址方法有所疑惑。</p>
+]]></content>
+      <categories>
+        <category>知识角落</category>
+      </categories>
+      <tags>
+        <tag>TCP/IP</tag>
+        <tag>Anycast</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++ 刷题最熟悉的陌生人</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C-%E5%88%B7%E9%A2%98%E6%9C%80%E7%86%9F%E6%82%89%E7%9A%84%E9%99%8C%E7%94%9F%E4%BA%BA/</url>
+    <content><![CDATA[<p>C++ 刷题时经常会用到一些不是那么常用但是却非常有用的 STL 函数，如果忘记用法当场实现的话会非常麻烦，所以想在这里做统一整理。</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>C++</tag>
+        <tag>STL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>二叉树重点知识全集</title>
+    <url>/b.%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/History/220610-%E4%BA%8C%E5%8F%89%E6%A0%91%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86%E5%85%A8%E9%9B%86/</url>
+    <content><![CDATA[<p>二叉树是一种基础数据结构，是算法面试的常客，也是众多数据结构的基石。</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>树</tag>
+        <tag>二叉树</tag>
+        <tag>红黑树</tag>
+        <tag>B树</tag>
+        <tag>堆</tag>
       </tags>
   </entry>
 </search>
